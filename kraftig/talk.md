@@ -78,7 +78,7 @@ Code is something that coincidentally makes the API work.
 * External facing APIs are where design up-front matters!
   * Changing API is painful
   * creating backwards incompatibility is horrible
-  * design carefully! (Butt keep simple things simple ...)
+  * design carefully! (But keep simple things simple ...)
 * If a function or method is more than 30LOC, break it up!
 * Refactor --- keep in mind that programming is about abstractions (and we discover new abstractions as we go along)
 * Always see your test fail once!  (Here's a question: Can we have a robot making random changes in code and see if tests fail?)
