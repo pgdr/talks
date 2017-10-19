@@ -1,9 +1,38 @@
+Version numbering: 25.3, 8.0.0960, 4.13.7, 4.13.b1, 4.0.2, 2.60.3, 3.0, 1.13.3, 1.13.0rc2
+Version numbering: 2017.10
+
+
+Version numbering:  Major.Minor.Micro/Patch
+If Micro contains a letter, a=alpha, b=beta, rc=release candidate
+beta is intended stable, but may change
+rc is feature frozen
+
+
+
 Mantra: Bad code can be deleted, bad API is legacy
+
+
+API = functionality
+code = machinery
+
+
+Code is something that coincidentally makes the API work.
+
+
+
 
 Good PR: +14, -521 --- Bad PR: +3123, -1
 
+
 Command-query separation
 
-Mindre kode er bedre enn mer kode
 
-Et bibliotek er ikke komplett når det ikke er mer å legge til ... 
+Contract driven
+
+
+Data invariant
+
+
+Less code is better than more code
+
+Perfection of a library is achieved, not when there isn't more to add, but when there isn't more to remove.
