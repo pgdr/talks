@@ -12,7 +12,7 @@ Lets talk about API vs Code.
 
 # Version numbers
 
-Version numbering: 25.3, 8.0.0960, 4.13.7, 4.13.b1, 4.0.2, 2.60.3, 3.0, 1.13.3, 1.13.0rc2, 0.20.3
+Version numbering: 25.3, 8.0.0960, 4.13.7, 4.13.b1, 4.0.2, 2.60.3, 3.0, 1.13.3, 1.13.0rc2, 0.20.3, 1.8.3.1
 
 Version numbering: 2017.10, 2017.10
 
@@ -32,11 +32,13 @@ Version numbering:  Major.Minor.Micro/Patch
 * The micro number should be increased whenever the implementation changes, while the API does not.
 
 * If Micro contains a letter, a=alpha, b=beta, rc=release candidate
- * beta is intended stable, but may change
- * rc is feature frozen
+  * beta is intended stable, but may change
+  * rc is feature frozen
 
 
 ## Why the obsession with version numbers?
+
+Because better men than we paved the road.  They wrote unix, GNU coreutils, Linux, all the software that we use and adore.  They found a way.  (Quote Eric S Raymond)
 
 A version is defined by its API, its functionality
 
@@ -74,9 +76,9 @@ Code is something that coincidentally makes the API work.
 * API: Simple things should be simple, complex things should be possible
 * Code is the enemy --- write less, delete, don't write
 * External facing APIs are where design up-front matters!
- * Changing API is painful
- * creating backwards incompatibility is horrible
- * design carefully! (Butt keep simple things simple ...)
+  * Changing API is painful
+  * creating backwards incompatibility is horrible
+  * design carefully! (Butt keep simple things simple ...)
 * If a function or method is more than 30LOC, break it up!
 * Refactor --- keep in mind that programming is about abstractions (and we discover new abstractions as we go along)
 * Always see your test fail once!  (Here's a question: Can we have a robot making random changes in code and see if tests fail?)
