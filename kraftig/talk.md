@@ -8,6 +8,8 @@ development.
 
 Lets talk about API vs Code.
 
+
+
 # Version numbers
 
 Version numbering: 25.3, 8.0.0960, 4.13.7, 4.13.b1, 4.0.2, 2.60.3, 3.0, 1.13.3, 1.13.0rc2, 0.20.3
@@ -16,6 +18,8 @@ Version numbering: 2017.10, 2017.10
 
 
 ## Software Release Cycle
+
+> These are the facts of the case and they are undisputed.
 
 Pre-alpha -> alpha -> beta -> release candidate -> gold
 
@@ -28,8 +32,8 @@ Version numbering:  Major.Minor.Micro/Patch
 * The micro number should be increased whenever the implementation changes, while the API does not.
 
 * If Micro contains a letter, a=alpha, b=beta, rc=release candidate
-** beta is intended stable, but may change
-** rc is feature frozen
+ * beta is intended stable, but may change
+ * rc is feature frozen
 
 
 ## Why the obsession with version numbers?
@@ -46,6 +50,40 @@ API = functionality
 code = machinery
 
 Code is something that coincidentally makes the API work.
+
+
+
+
+# Popular scientific approach
+
+## Site 1
+
+* test first
+* rigorous, regular refactoring
+* continuous integration
+* simple design
+* single coding standard to which all programmers adhere
+
+3 / 5
+
+## Site 2
+
+* PEP-8
+* YAGNI (You ain't gonna need it)
+* Test _your_ code, not others'
+* API: Simple things should be simple, complex things should be possible
+* Code is the enemy --- write less, delete, don't write
+* External facing APIs are where design up-front matters!
+ * Changing API is painful
+ * creating backwards incompatibility is horrible
+ * design carefully! (Butt keep simple things simple ...)
+* If a function or method is more than 30LOC, break it up!
+* Refactor --- keep in mind that programming is about abstractions (and we discover new abstractions as we go along)
+* Always see your test fail once!  (Here's a question: Can we have a robot making random changes in code and see if tests fail?)
+* Continuously address technical debt.
+
+0/10.
+
 
 
 
@@ -75,10 +113,18 @@ Use TDD: Sit down, and act like a user of your API!!
 Command-query separation
 
 
-Contract driven
+Design by Contract
+* Formal API (contracts)
+* data invariants (who has seen the following?)
+```
+private void datainvariant() {
+    assert this.age >= 0;
+    assert !this.name.isEmpty();
+    assert this.parent != null;
+}
+```
 
-
-Data invariant
+It's not necessarily a good idea, but it's good to have an idea about it.
 
 
 ## The end
