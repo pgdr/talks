@@ -88,12 +88,13 @@ Linux, all the software that we use and adore.  They found a way.
 > programming interfaces (APIs) — narrow, well-defined sets of procedure calls
 > and data structures.
 
-(Quote Eric S Raymond)
+-- Eric S. Raymond
 
 
 A version is defined by its API, its functionality
 
 Once a function goes in, it must stay in until next major version!
+
 
 ## Consequence of software development
 
