@@ -67,15 +67,16 @@ Version numbering: 2017.10, 2017.10
 
 > These are the facts of the case and they are undisputed.
 
-Pre-alpha -> alpha -> beta -> release candidate -> gold
 
-Every version should have
+### The anatomy of the version numer
 
 Version numbering:  Major.Minor.Micro/Patch
 
 * The major number should be increased whenever the API changes in an incompatible way.
 * The minor number should be increased whenever the API changes in a compatible way.
 * The micro number should be increased whenever the implementation changes, while the API does not.
+
+Pre-alpha -> alpha -> beta -> release candidate -> gold
 
 * If Micro contains a letter, a=alpha, b=beta, rc=release candidate
   * beta is intended stable, but may change
