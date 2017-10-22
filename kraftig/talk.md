@@ -232,7 +232,7 @@ Design by Contract
 * Formal API (contracts)
 * data invariants (who has seen the following?)
 
-```
+```java
 private void datainvariant() {
     assert this.age >= 0;
     assert !this.name.isEmpty();
