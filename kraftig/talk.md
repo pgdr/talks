@@ -91,6 +91,8 @@ Version numbering:
 
 > These are the facts of the case and they are undisputed.
 
+(Though, if you have no intention of making reusable code, don't bother with
+this difficult stuff.)
 
 ### The anatomy of the version number
 
