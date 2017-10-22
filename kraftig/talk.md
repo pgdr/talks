@@ -10,11 +10,17 @@ development.
 
 # The Art of Unix Programming
 
+
 > Those who do not understand Unix are condemned to reivent it, poorly.
+
+-- Henry Spencer
+
 
 > This is the Unix philosophy: Write programs that do one thing and do it well.
 > Write programs to work together.  Write programs to handle text streams,
 > because that is a universal interface.
+
+-- Eric S. Raymond
 
 1. Rule of Modularity: Write simple parts connected by clean interfaces.
 2. Rule of Clarity: Clarity is better than cleverness.
@@ -162,7 +168,8 @@ Good PR: +14, -521 --- Bad PR: +3123, -1
 
 > One of my most productive days was throwing away 1000 lines of code.
 
-(Ken Thompson)
+-- Ken Thompson
+
 
 
 ## How to design a good API
