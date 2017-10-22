@@ -25,20 +25,31 @@ development.
 1. Rule of Modularity: Write simple parts connected by clean interfaces.
 2. Rule of Clarity: Clarity is better than cleverness.
 3. Rule of Composition: Design programs to be connected to other programs.
-4. Rule of Separation: Separate policy from mechanism; separate interfaces from engines.
-5. Rule of Simplicity: Design for simplicity; add complexity only where you must.
-6. Rule of Parsimony: Write a big program only when it is clear by demonstration that nothing else will do.
-7. Rule of Transparency: Design for visibility to make inspection and debugging easier.
+4. Rule of Separation: Separate policy from mechanism; separate interfaces from
+   engines.
+5. Rule of Simplicity: Design for simplicity; add complexity only where you
+   must.
+6. Rule of Parsimony: Write a big program only when it is clear by demonstration
+   that nothing else will do.
+7. Rule of Transparency: Design for visibility to make inspection and debugging
+   easier.
 8. Rule of Robustness: Robustness is the child of transparency and simplicity.
-9. Rule of Representation: Fold knowledge into data so program logic can be stupid and robust.
-10. Rule of Least Surprise: In interface design, always do the least surprising thing.
-11. Rule of Silence: When a program has nothing surprising to say, it should say nothing.
+9. Rule of Representation: Fold knowledge into data so program logic can be
+   stupid and robust.
+10. Rule of Least Surprise: In interface design, always do the least surprising
+    thing.
+11. Rule of Silence: When a program has nothing surprising to say, it should say
+    nothing.
 12. Rule of Repair: When you must fail, fail noisily and as soon as possible.
-13. Rule of Economy: Programmer time is expensive; conserve it in preference to machine time.
-14. Rule of Generation: Avoid hand-hacking; write programs to write programs when you can.
-15. Rule of Optimization: Prototype before polishing. Get it working before you optimize it.
+13. Rule of Economy: Programmer time is expensive; conserve it in preference to
+    machine time.
+14. Rule of Generation: Avoid hand-hacking; write programs to write programs
+    when you can.
+15. Rule of Optimization: Prototype before polishing. Get it working before you
+    optimize it.
 16. Rule of Diversity: Distrust all claims for “one true way”.
-17. Rule of Extensibility: Design for the future, because it will be here sooner than you think.
+17. Rule of Extensibility: Design for the future, because it will be here sooner
+    than you think.
 
 
 Lets talk about API vs Code.
@@ -58,9 +69,22 @@ Lets talk about API vs Code.
 
 # Version numbers
 
-Version numbering: 25.3, 8.0.0960, 4.13.7, 4.13.b1, 4.0.2, 2.60.3, 3.0, 1.13.3, 1.13.0rc2, 0.20.3, 1.8.3.1
+Version numbering:
+* 25.3
+* 8.0.0960
+* 4.13.7
+* 4.13.b1
+* 4.0.2
+* 2.60.3
+* 3.0
+* 1.13.3
+* 1.13.0rc2
+* 0.20.3
+* 1.8.3.1
 
-Version numbering: 2017.10, 2017.10
+Version numbering:
+* 2017.10
+* 2017.10
 
 
 ## Software Release Cycle
@@ -148,8 +172,10 @@ Code is something that coincidentally makes the API work.
   * creating backwards incompatibility is horrible
   * design carefully! (But keep simple things simple ...)
 * If a function or method is more than 30LOC, break it up!
-* Refactor --- keep in mind that programming is about abstractions (and we discover new abstractions as we go along)
-* Always see your test fail once!  (Here's a question: Can we have a robot making random changes in code and see if tests fail?)
+* Refactor --- keep in mind that programming is about abstractions (and we
+  discover new abstractions as we go along)
+* Always see your test fail once!  (Here's a question: Can we have a robot
+  making random changes in code and see if tests fail?)
 * Continuously address technical debt.
 
 0/10.
@@ -172,14 +198,19 @@ If we have the choice between implementing a feature, and using an existing
 library, the pros and cons are:
 
 * implement it yourself, you (or rather your team) carries the weight
-* use somebody else's implementation, they carry the weight, you only carry the load of using that library (which may or may not be expensive)
+* use somebody else's implementation, they carry the weight, you only carry the
+  load of using that library (which may or may not be expensive)
 
-If all else is equal, less code is better than more code.  Fewer lines is lower
-weight.
+If all else is equal, _less code_ is better than _more code_.  Fewer lines
+equals lower weight.
 
 We should think in terms of code as being something that's just there for the
 API to work.
 
+> Thou shalt study thy libraries and strive not to re-invent them without cause,
+> that thy code may be short and readable and thy days pleasant and productive.
+
+-- Henry Spencer's _"The Ten Commandments for C Programmers"_
 
 
 ## How to design a good API
