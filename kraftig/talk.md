@@ -68,7 +68,7 @@ Version numbering: 2017.10, 2017.10
 > These are the facts of the case and they are undisputed.
 
 
-### The anatomy of the version numer
+### The anatomy of the version number
 
 Version numbering:  Major.Minor.Micro/Patch
 
@@ -81,6 +81,15 @@ Pre-alpha -> alpha -> beta -> release candidate -> gold
 * If Micro contains a letter, a=alpha, b=beta, rc=release candidate
   * beta is intended stable, but may change
   * rc is feature frozen
+
+Examples:
+* 2.3.pre-alpha1
+* 2.3.pre-alpha2
+* 2.3.a1
+* 2.3.a2
+* 2.3.b1
+* 2.3.rc1
+* 2.3.rc2
 
 
 ## Why the obsession with version numbers?
@@ -107,8 +116,8 @@ Once a function goes in, it must stay in until next major version!
 
 Mantra: Bad code can be deleted, bad API is legacy
 
-API = functionality
-code = machinery
+* API = functionality
+* code = machinery
 
 Code is something that coincidentally makes the API work.
 
@@ -150,6 +159,13 @@ Code is something that coincidentally makes the API work.
 
 # Code is mass
 
+Good PR: +14, -521 --- Bad PR: +3123, -1
+
+> One of my most productive days was throwing away 1000 lines of code.
+
+-- Ken Thompson
+
+
 Code is mass and has a weight.  And somebody is going to carry it.
 
 If we have the choice between implementing a feature, and using an existing
@@ -163,13 +179,6 @@ weight.
 
 We should think in terms of code as being something that's just there for the
 API to work.
-
-
-Good PR: +14, -521 --- Bad PR: +3123, -1
-
-> One of my most productive days was throwing away 1000 lines of code.
-
--- Ken Thompson
 
 
 
