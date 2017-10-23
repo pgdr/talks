@@ -148,6 +148,10 @@ Mantra: Bad code can be deleted, bad API is legacy
 Code is something that coincidentally makes the API work.
 
 
+> Due to the required backwards compatibility there is certainly a
+> code-complexity price related to this.
+
+-- Joakim
 
 
 # Popular scientific approach
