@@ -1,0 +1,228 @@
+\documentclass{beamer}
+
+\begin{document}
+
+\begin{frame}
+  \frametitle{Talking about software development}
+
+  We are \emph{software developers}, but talk surprisingly little about software
+  development.
+
+  I want us to be more \emph{concerned with and actively talk} about software
+  development.
+
+  I notice that we don't do it like they do it.
+
+  So why care about \emph{our history}?
+\end{frame}
+
+\begin{frame}
+  \frametitle{The Art of Unix Programming}
+
+  \begin{quote}
+    Those who do not understand Unix are condemned to reinvent it, poorly.
+    ---~Henry Spencer
+  \end{quote}
+
+  \begin{quote}
+    This is the Unix philosophy: Write programs that do one thing and do it
+    well.  Write programs to work together.  Write programs to handle text
+    streams, because that is a universal interface. ---~Eric S Raymond
+  \end{quote}
+
+  \begin{enumerate}
+  \item Rule of Modularity: Write simple parts connected by clean interfaces.
+  \item Rule of Clarity: Clarity is better than cleverness.
+  \item Rule of Composition: Design programs to be connected to other programs.
+  \end{enumerate}
+
+  \begin{itemize}
+  \item (Design for simplicity; add complexity only where you must.)
+  \item (Write a big program only when it is clear by demonstration that nothing
+    else will do.)
+  \item (In interface design, always do the least surprising thing.)
+  \item (When a program has nothing surprising to say, it should say nothing.)
+  \item (When you must fail, fail noisily and as soon as possible.)
+  \item (Programmer time is expensive; conserve it in preference to machine
+    time.)
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Version numbers}
+
+Version numbering:
+
+\begin{itemize}
+\item 25.3
+\item 8.0.0960
+\item 4.13.7
+\item 4.13.b1
+\item 4.0.2
+\item 2.60.3
+\item 3.0
+\item 1.13.3
+\item 1.13.0rc2
+\item 0.20.3
+\item 1.8.3.1
+\end{itemize}
+
+
+Version numbering:
+\begin{itemize}
+\item 2017.10
+\item 2017.10
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Software release cycle}
+
+  \begin{quote}
+    These are the facts of the case and they are undisputed.
+  \end{quote}
+
+  (Though, if you have no intention of making reusable code, don't bother with
+  this difficult stuff.)
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{The anatomy of the version number}
+
+  Version numbering:  Major.Minor.Micro/Patch
+
+  \begin{itemize}
+  \item The major number should be increased whenever the API changes in an
+    incompatible way.
+  \item The minor number should be increased whenever the API changes in a
+    compatible way.
+  \item The micro number should be increased whenever the implementation
+    changes, while the API does not.
+  \end{itemize}
+
+\end{frame}
+\begin{frame}
+  \frametitle{The anatomy of the version number, cont'd}
+
+  Pre-alpha $\to$ alpha $\to$ beta $\to$ release candidate $\to$ gold
+
+  \begin{itemize}
+  \item If Micro contains a letter, a=alpha, b=beta, rc=release candidate
+  \item beta is intended stable, but may change
+  \item rc is feature frozen
+  \end{itemize}
+
+  Examples:
+  \begin{itemize}
+  \item 2.3.pre-alpha1
+  \item 2.3.pre-alpha2
+  \item 2.3.a1
+  \item 2.3.a2
+  \item 2.3.b1
+  \item 2.3.rc1
+  \item 2.3.rc2
+  \end{itemize}
+\end{frame}
+
+
+\begin{frame}
+  \frametitle{Why the obsession with version numbers?}
+
+  Because better men than we paved the road.  They wrote Unix, GNU coreutils,
+  Linux, all the software that we use and adore.  They found a way.
+
+  \begin{quote}
+    The first and most important quality of modular code is encapsulation.
+    Well-encapsulated modules don't expose their internals to each other.  They
+    don't call into the middle of each others' implementations, and they don't
+    promiscuously share global data.  They communicate using application
+    programming interfaces (APIs) -- narrow, well-defined sets of procedure
+    calls and data structures.  ---~Eric S. Raymond
+  \end{quote}
+
+  A version is defined by its API, its functionality
+
+  Once a function goes in, it must stay in until next major version!
+\end{frame}
+
+\begin{frame}
+  \frametitle{Consequence of software development}
+
+  Mantra: Bad code can be deleted, bad API is legacy
+
+  * API = functionality
+
+  * code = machinery
+
+  Code is something that coincidentally makes the API work.
+
+  \begin{quote}
+    Due to the required backwards compatibility there is certainly a
+    code-complexity price related to this.  ---~Joakim
+  \end{quote}
+\end{frame}
+
+\begin{frame}
+  \begin{itemize}
+  \item PEP-8
+  \item YAGNI (You ain't gonna need it)
+  \item Test \emph{your} code, not others'
+  \item API: Simple things should be simple, complex things should be possible
+  \item Code is the enemy --- write less, delete, don't write
+  \item External facing APIs are where design up-front matters!
+    \begin{itemize}
+    \item Changing API is painful
+    \item creating backwards incompatibility is horrible
+    \item design carefully! (But keep simple things simple ...)
+    \end{itemize}
+  \item If a function or method is more than 30LOC, break it up!
+  \item Refactor --- keep in mind that programming is about abstractions (and we
+    discover new abstractions as we go along)
+  \item Always see your test fail once!  (Here's a question: Can we have a robot
+    making random changes in code and see if tests fail?)
+  \item Continuously address technical debt.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{ Code is mass}
+
+  Good PR: +14, -521 --- Bad PR: +3123, -1
+
+  \begin{quote}
+    One of my most productive days was throwing away 1000 lines of code.
+    ---~Ken Thompson
+  \end{quote}
+
+  Code is mass and has a weight.  And somebody is going to carry it.
+
+  If we have the choice between implementing a feature, and using an existing
+  library, the pros and cons are:
+
+  \begin{itemize}
+  \item implement it yourself, you (or rather your team) carries the weight
+  \item use somebody else's implementation, they carry the weight, you only
+    carry the load of using that library (which may or may not be expensive)
+  \end{itemize}
+
+  If all else is equal, \emph{less code} is better than \emph{more code}.  Fewer
+  lines equals lower weight.  (Not invented here)
+
+
+  We should think in terms of code as being something that's just there for the
+  API to work.
+
+  \begin{quote}
+    Thou shalt study thy libraries and strive not to re-invent them without
+    cause, that thy code may be short and readable and thy days pleasant and
+    productive.
+
+    ---~Henry Spencer's \emph{"The Ten Commandments for C Programmers"}
+  \end{quote}
+
+\end{frame}
+
+\end{document}
