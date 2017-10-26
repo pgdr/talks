@@ -11,7 +11,7 @@ development.
 # The Art of Unix Programming
 
 
-> Those who do not understand Unix are condemned to reivent it, poorly.
+> Those who do not understand Unix are condemned to reinvent it, poorly.
 
 -- Henry Spencer
 
@@ -42,6 +42,18 @@ development.
 > every module or class should have responsibility over a single part of the
 > functionality provided by the software, and that responsibility should be
 > entirely encapsulated by the class.
+
+-- Wikipedia
+
+## Coupling
+
+> A routine that takes one parameter is more loosely coupled to modules that
+> call it than a routine that takes six parameters.
+>
+> A class with four well-defined public methods is more loosely coupled to
+> modules that use it than a class that exposes 37 public methods.
+
+-- McConnell, Code complete, 2nd ed.
 
 
 
@@ -114,7 +126,7 @@ Examples:
 
 ## Why the obsession with version numbers?
 
-Because better men than we paved the road.  They wrote unix, GNU coreutils,
+Because better men than we paved the road.  They wrote Unix, GNU coreutils,
 Linux, all the software that we use and adore.  They found a way.
 
 > The first and most important quality of modular code is encapsulation.

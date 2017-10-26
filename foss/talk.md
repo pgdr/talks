@@ -1,0 +1,5 @@
+# Why Free Software?
+
+> Software is like sex: it's better when it's free."
+
+-- Linus Torvalds
