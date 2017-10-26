@@ -52,7 +52,15 @@ development.
     than you think.
 
 
-Lets talk about API vs Code.
+## Single responsibility principle
+
+> every module or class should have responsibility over a single part of the
+> functionality provided by the software, and that responsibility should be
+> entirely encapsulated by the class.
+
+
+
+## Lets talk about API vs Code.
 
 > APIs should come with programs, and vice versa.  An API that you must write C
 > code to use, which cannot be invoked easily from the command line, is harder
@@ -100,7 +108,8 @@ Version numbering:  Major.Minor.Micro/Patch
 
 * The major number should be increased whenever the API changes in an incompatible way.
 * The minor number should be increased whenever the API changes in a compatible way.
-* The micro number should be increased whenever the implementation changes, while the API does not.
+* The micro number should be increased whenever the implementation changes,
+  while the API does not.
 
 Pre-alpha -> alpha -> beta -> release candidate -> gold
 
@@ -208,7 +217,8 @@ library, the pros and cons are:
   load of using that library (which may or may not be expensive)
 
 If all else is equal, _less code_ is better than _more code_.  Fewer lines
-equals lower weight.
+equals lower weight.  (Not invented here)
+
 
 We should think in terms of code as being something that's just there for the
 API to work.
@@ -264,6 +274,7 @@ It's not necessarily a good idea, but it's good to have an idea about it.
 * Data Class
 * Indecent Exposure (You should have a compelling reason for every item you make public.)
 * Lazy Class
+
 
 
 ## The end
