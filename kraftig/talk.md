@@ -273,6 +273,10 @@ It's not necessarily a good idea, but it's good to have an idea about it.
 * Lazy Class
 
 
+> If you need more than 3 levels of indentation, you're screwed anyway, and
+> should fix your program.
+
+-- Linus Torvalds
 
 ## The end
 
