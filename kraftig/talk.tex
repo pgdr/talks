@@ -1,5 +1,6 @@
 \documentclass{beamer}
-
+\newcommand{\megaskip}{\bigskip\bigskip\bigskip\bigskip}
+\newcommand{\bigpause}{\bigskip\pause}
 \begin{document}
 
 \begin{frame}
@@ -8,10 +9,16 @@
   We are \emph{software developers}, but talk surprisingly little about software
   development.
 
+  \bigskip
+
   I want us to be more \emph{concerned with and actively talk} about software
   development.
 
+  \megaskip\pause
+
   I notice that we don't do it like they do it.
+
+  \bigskip
 
   So why care about \emph{our history}?
 \end{frame}
@@ -24,35 +31,45 @@
     ---~Henry Spencer
   \end{quote}
 
+  \bigpause
+
   \begin{quote}
     This is the Unix philosophy: Write programs that do one thing and do it
     well.  Write programs to work together.  Write programs to handle text
     streams, because that is a universal interface. ---~Eric S Raymond
   \end{quote}
 
+  \bigpause
+
   \begin{enumerate}
   \item Rule of Modularity: Write simple parts connected by clean interfaces.
   \item Rule of Clarity: Clarity is better than cleverness.
   \item Rule of Composition: Design programs to be connected to other programs.
+  \item ...
   \end{enumerate}
 
-  \begin{itemize}
-  \item (Design for simplicity; add complexity only where you must.)
-  \item (Write a big program only when it is clear by demonstration that nothing
-    else will do.)
-  \item (In interface design, always do the least surprising thing.)
-  \item (When a program has nothing surprising to say, it should say nothing.)
-  \item (When you must fail, fail noisily and as soon as possible.)
-  \item (Programmer time is expensive; conserve it in preference to machine
-    time.)
-  \end{itemize}
+  \textbf{Question}: How can we live up to these rules?
+
+  % \begin{itemize}
+  % \item (Design for simplicity; add complexity only where you must.)
+  % \item (Write a big program only when it is clear by demonstration that nothing
+  %   else will do.)
+  % \item (In interface design, always do the least surprising thing.)
+  % \item (When a program has nothing surprising to say, it should say nothing.)
+  % \item (When you must fail, fail noisily and as soon as possible.)
+  % \item (Programmer time is expensive; conserve it in preference to machine
+  %   time.)
+  % \end{itemize}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Version numbers}
 
+
 Version numbering:
+
+  \pause
 
 \begin{itemize}
 \item 25.3
@@ -68,6 +85,7 @@ Version numbering:
 \item 1.8.3.1
 \end{itemize}
 
+\pause
 
 Version numbering:
 \begin{itemize}
@@ -80,25 +98,36 @@ Version numbering:
 \begin{frame}
   \frametitle{Software release cycle}
 
+  Why the nagging about version numbering?
+
+  \bigskip
+
+  Well it's not about giving software a name consisting of numbers and dots!
+
+  \megaskip
+
   \begin{quote}
     These are the facts of the case and they are undisputed.
   \end{quote}
 
-  (Though, if you have no intention of making reusable code, don't bother with
-  this difficult stuff.)
+  \megaskip
+
+  (Skip if no intention of making reusable code)
 \end{frame}
 
 
 \begin{frame}
   \frametitle{The anatomy of the version number}
 
-  Version numbering:  Major.Minor.Micro/Patch
+  Version numbering:  Major.Minor.Micro (Micro = Patch)
+
+  \megaskip
 
   \begin{itemize}
   \item The major number should be increased whenever the API changes in an
-    incompatible way.
+    incompatible way.\pause
   \item The minor number should be increased whenever the API changes in a
-    compatible way.
+    compatible way.\pause
   \item The micro number should be increased whenever the implementation
     changes, while the API does not.
   \end{itemize}
@@ -109,11 +138,15 @@ Version numbering:
 
   Pre-alpha $\to$ alpha $\to$ beta $\to$ release candidate $\to$ gold
 
+  \pause
+
   \begin{itemize}
   \item If Micro contains a letter, a=alpha, b=beta, rc=release candidate
   \item beta is intended stable, but may change
   \item rc is feature frozen
   \end{itemize}
+
+  \pause
 
   Examples:
   \begin{itemize}
@@ -134,16 +167,21 @@ Version numbering:
   Because better men than we paved the road.  They wrote Unix, GNU coreutils,
   Linux, all the software that we use and adore.  They found a way.
 
+  \bigskip
+
   \begin{quote}
     The first and most important quality of modular code is encapsulation.
-    Well-encapsulated modules don't expose their internals to each other.  They
-    don't call into the middle of each others' implementations, and they don't
-    promiscuously share global data.  They communicate using application
-    programming interfaces (APIs) -- narrow, well-defined sets of procedure
-    calls and data structures.  ---~Eric S. Raymond
+    % Well-encapsulated modules don't expose their internals to each other.  They
+    % don't call into the middle of each others' implementations, and they don't
+    % promiscuously share global data.
+
+    They communicate using APIs---narrow, well-defined sets of procedure calls
+    and data structures.  ---~Eric S. Raymond
   \end{quote}
 
   A version is defined by its API, its functionality
+
+  \bigskip
 
   Once a function goes in, it must stay in until next major version!
 \end{frame}
@@ -153,11 +191,19 @@ Version numbering:
 
   Mantra: Bad code can be deleted, bad API is legacy
 
-  * API = functionality
+  % \begin{quote}
+  %   it means that responsibility for interface usage errors belongs to the
+  %   interface designer, not the interface user. ---~Scott Meyers
+  % \end{quote}
 
-  * code = machinery
+  \begin{itemize}
+  \item API = functionality
+  \item code = machinery
+  \end{itemize}
 
   Code is something that coincidentally makes the API work.
+
+  \bigpause
 
   \begin{quote}
     Due to the required backwards compatibility there is certainly a
@@ -167,28 +213,28 @@ Version numbering:
 
 \begin{frame}
   \begin{itemize}
-  \item PEP-8
-  \item YAGNI (You ain't gonna need it)
-  \item Test \emph{your} code, not others'
-  \item API: Simple things should be simple, complex things should be possible
-  \item Code is the enemy --- write less, delete, don't write
+  \item PEP-8 \pause
+  \item YAGNI (You ain't gonna need it) \pause
+  \item Test \emph{your} code, not others' \pause
+  \item API: Simple things should be simple, complex things should be possible (\emph{interface usage errors belongs to the   interface designer ---~Scott Meyers})\pause
+  \item Code is the enemy --- write less, delete, don't write \pause
   \item External facing APIs are where design up-front matters!
     \begin{itemize}
     \item Changing API is painful
     \item creating backwards incompatibility is horrible
     \item design carefully! (But keep simple things simple ...)
-    \end{itemize}
-  \item If a function or method is more than 30LOC, break it up!
+    \end{itemize} \pause
+  \item If a function or method is more than 30LOC, break it up! \pause
   \item Refactor --- keep in mind that programming is about abstractions (and we
-    discover new abstractions as we go along)
+    discover new abstractions as we go along) \pause
   \item Always see your test fail once!  (Here's a question: Can we have a robot
-    making random changes in code and see if tests fail?)
+    making random changes in code and see if tests fail?) \pause
   \item Continuously address technical debt.
   \end{itemize}
 \end{frame}
 
 \begin{frame}
-  \frametitle{ Code is mass}
+  \frametitle{Code is mass}
 
   Good PR: +14, -521 --- Bad PR: +3123, -1
 
@@ -199,6 +245,8 @@ Version numbering:
 
   Code is mass and has a weight.  And somebody is going to carry it.
 
+  \bigpause
+
   If we have the choice between implementing a feature, and using an existing
   library, the pros and cons are:
 
@@ -207,13 +255,20 @@ Version numbering:
   \item use somebody else's implementation, they carry the weight, you only
     carry the load of using that library (which may or may not be expensive)
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Code is mass cont'd}
 
   If all else is equal, \emph{less code} is better than \emph{more code}.  Fewer
   lines equals lower weight.  (Not invented here)
 
+  \bigpause
 
   We should think in terms of code as being something that's just there for the
   API to work.
+
+  \bigpause
 
   \begin{quote}
     Thou shalt study thy libraries and strive not to re-invent them without
