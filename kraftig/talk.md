@@ -37,6 +37,11 @@ development.
 * (Programmer time is expensive; conserve it in preference to machine time.)
 
 
+> it means that responsibility for interface usage errors belongs to the
+> interface designer, not the interface user.
+
+--- Scott Meyers
+
 ## Single responsibility principle
 
 > every module or class should have responsibility over a single part of the
