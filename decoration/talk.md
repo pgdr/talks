@@ -85,7 +85,7 @@ if not val:
     print('Validation error: %s' % val.msg)  # but False does not have a .msg?
 ```
 
-this outputs `Validation error: asserting that s has length at most 8`.
+this outputs `Validation error: asserting that s has length at most 8 for s=SOMESTRING`.
 
 
 ### Decorator implementation
