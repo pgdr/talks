@@ -1,4 +1,5 @@
-# Decorators and context managers in Python
+# Decoration -- Decorators and context managers in Python
+
 
 We will talk about two advanced but simple features of Python that make coding
 more fun (and more safe and more sane and everything).
@@ -137,7 +138,48 @@ def validator(msg):
 ```
 
 
+
+
+
+
 ## Context managers
+
+Have you ever written a line of code, an action, where you thought _"Oh, I must
+remember to revert the action later"_?  The famous action/counter-action pattern
+is hard to work with, tedious, and error prone.
+
+Examples are
+1. `f = open(fname)`
+2. `conn = db.open_connection()`
+3. `lock.acquire()`
+4. `os.chdir(new_path)`
+5. `grid.enable_active_indexing_mode()`
+
+These all have counter-actions
+1. `f.close()`
+2. `conn.close()`
+3. `lock.release()`
+4. `os.chdir(old_dir)` (you stored `old_dir`, right?)
+5. `grid.disable_active_indexing_mode()` (or was it already enabled before the
+   _action_?)
+
+These are examples that are _hard to use correctly_ and _easy to use
+incorrectly_.  If the API developer forces you to work this way, they are not
+doing their job.
+
+If we forget to
+1. close the file, we risk running out of OS file descriptors and die
+2. close the DB connection, we overload the server, may not correctly flush
+   queries
+3. release the lock, we might end up in a deadlock state
+4. revert the current working directory, this may crash
+5. revert back the state of the object we got, caller may be very surprised,
+   even mad
+
+A _context manager_ is a construct that allows you to forget about the second
+part.
+
+
 
 ```python
 with open('fname', 'r') as f:
@@ -173,10 +215,30 @@ os.cwd()  # here we are back to the old cwd
 
 The with statement is achieved through the use of a context manager.
 
+A context manager in Python is simply anything that has the `__enter__` and
+`__exit__` functions.
 
-### Context manager decorators
+Whenever we go into the context manager (open file or db, acquire lock, change
+dir or whatever), the `__enter__` function is called.
 
-Simple context managers can use decorators!
+Whenever the `with` scope ends, the `__exit__` function is called.
+
+Now all the API developer has to do is to implement these two functions, and it
+will become _much_ simpler to use correctly, and _much_ harder to use
+incorrectly.
+
+
+### Context managers via decorators
+
+Bonus point, because Python is awesome.  Simple context managers can use
+decorators!
+
+Python has a decorator called `contextlib.contextmanager` that we can use to
+very easily construct context managers.
+
+All you need to do is to make a function _containing one `yield` statement_, and
+decorate it with `contextlib.contextmanager`.
+
 
 ```python
 # taken from Komodo by jokva
@@ -192,3 +254,19 @@ def pushd(path):
     os.chdir(prev)
 ```
 
+
+If we would implement an `active_indexing_mode` in `EclGrid`, we could simply
+write:
+
+```python
+
+    @contextlib.contextmanager
+    def ai(self):
+        """Temporarily enable active indexing mode."""
+        old_mode = self.active_indexing_mode
+        self.active_indexing_mode = True
+
+        yield
+
+        self.active_indexing_mode = old_mode
+```
