@@ -260,13 +260,72 @@ write:
 
 ```python
 
-    @contextlib.contextmanager
-    def ai(self):
-        """Temporarily enable active indexing mode."""
-        old_mode = self.active_indexing_mode
-        self.active_indexing_mode = True
+@contextlib.contextmanager
+def ai(self):
+    """Temporarily enable active indexing mode."""
+    old_mode = self.active_indexing_mode
+    self.active_indexing_mode = True
 
-        yield
+    yield
 
-        self.active_indexing_mode = old_mode
+    self.active_indexing_mode = old_mode
+```
+
+
+Finally, we added, in Everest, a temp area working dir in < 15 lines:
+
+
+```python
+@contextlib.contextmanager
+def tmp(path=None, teardown=True):
+    """Create and go into tmp directory, returns the path.
+
+    This function creates a temporary directory and enters that directory.  The
+    returned object is the path to the created directory.
+
+    If @path is not specified, we create an empty directory, otherwise, it must
+    be a path to an existing directory.  In that case, the directory will be
+    copied into the temporary directory.
+
+    If @teardown is True (defaults to True), the directory is (attempted)
+    deleted after context, otherwise it is kept as is.
+
+    """
+    cwd = os.getcwd()
+    fname = tempfile.NamedTemporaryFile().name
+
+    if path:
+        if not os.path.isdir(path):
+            raise IOError('No such directory: %s' % path)
+        shutil.copytree(path, fname)
+    else:
+        # no path to copy, create empty dir
+        os.mkdir(fname)
+
+    os.chdir(fname)
+
+    yield fname  # give control to caller scope
+
+    os.chdir(cwd)
+
+    if teardown:
+        shutil.rmtree(fname)
+
+```
+
+With this, you can copy and goto a completely new directory in `tmp` with
+
+```python
+
+with tmp('test_data/my_case'):
+    do_tests()
+
+```
+
+
+```python
+
+with tmp('test_data/my_case', teardown=False) as pth:
+    print('work area=%s' % pth)
+    do_tests()
 ```
