@@ -329,3 +329,28 @@ with tmp('test_data/my_case', teardown=False) as pth:
     print('work area=%s' % pth)
     do_tests()
 ```
+
+
+Then, of course, you can make a decorator
+```python
+def tmpdir(path):
+    def real_decorator(function):
+        def wrapper(*args, **kwargs):
+            with tmp(path):
+                return function(*args, **kwargs)
+
+        return wrapper
+
+    return real_decorator
+```
+
+so you can use it like this to make a function run with a given `cwd`:
+
+
+```python
+
+@tmpdir('tests/test_data/case1')
+def test_run_case1(self):
+    self.assertEqual(fname, x)
+
+```
