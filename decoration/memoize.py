@@ -11,12 +11,7 @@ class memoize(dict):
         y = self[x] = self.fun(x)
         return y
 
-
-def memoized(f):
-    return memoize(f)
-
-
-@memoized
+@memoize
 def fib(n):
     if n <= 2:
         return 1
