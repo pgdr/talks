@@ -1,5 +1,25 @@
 # Decoration -- Decorators and context managers in Python
 
+## Abstract
+
+Once you've learnt the basics of Python, the first things to learn that really
+separates Python from other languages are decorators and context managers.
+
+Decorators are functions that wrap and possibly modify functions.  They may
+alter the input to a function, or alter the output of the function.  They may
+change the storage of a function, etc.
+
+Decorators allow you to write a function in the way it is supposed to be
+written, and if that "just doesn't work", let you decorate it to be even more
+powerful.
+
+
+If you've ever thought "I must remember to clean up later", Python will help you
+with a context manager.  You have probably seen the `with open` construct.  We
+go into more details what that means and how to define your own `with`.
+
+
+## Introduction
 
 We will talk about two advanced but simple features of Python that make coding
 more fun (and more safe and more sane and everything).
@@ -30,6 +50,28 @@ class MyClass(object):
     @staticmethod
     def true():
         return MyClass(True)
+```
+
+### Minor example
+
+```python
+def paragraph(f):
+    def wrapper(*args):
+        print('<p>')
+        f(*args)
+        print('</p>')
+    return wrapper
+
+def pp(s):
+    print(s)
+
+pp = paragraph(pp)
+
+# >>> pp('hallo')
+#
+# <p>
+# hallo
+# </p>
 ```
 
 
