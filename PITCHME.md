@@ -67,7 +67,6 @@ class memoize:
 +++
 
 ```python
-
 class memoize:
     def __init__(self, fun):
         self.fun = fun
@@ -80,10 +79,6 @@ sq = memoize(lambda x: x**2)
 
 sq(7)        # short for sq.__call__(7)
              #           memoize.__call__(sq, 7)
-             # which just calls
-             #           7**2 = 49
-
-# >>> 49
 ```
 
 
@@ -101,7 +96,6 @@ class memoize(dict):
         if x not in self:
             self[x] = self.fun(x)
         return self[x]
-
 ```
 
 +++
@@ -127,7 +121,6 @@ class memoize(dict):
 Using memoized `fib`
 
 ```python
-
 class memoize(dict):
     def __init__(self, fun):
         self.fun = fun
@@ -147,7 +140,6 @@ fib = memoize(fib)  # overwrites the `fib` name
 `@` is syntactic sugar
 
 ```python
-
 class memoize(dict):
     def __init__(self, fun):
         self.fun = fun
@@ -158,7 +150,6 @@ def fib(n):
     if n <= 2:
         return 1
     return fib(n-1) + fib(n-2)
-
 ```
 
 
@@ -203,7 +194,6 @@ Enter decorators.
 Suppose the following was possible:
 
 ```python
-
 val = is_f77('SOMESTRING')
 if not val:
     print('Validation error: %s' % val.msg)  # no such .msg?
@@ -214,7 +204,6 @@ if not val:
 We implemented a _decorator_ used like
 
 ```python
-
 @validation('asserting that r > 0')
 def is_valid_realization(r):
     return r > 0
@@ -227,7 +216,6 @@ def is_f77(s):
 +++
 
 ```python
-
 val = is_f77('SOMESTRING')
 if not val:
     print('Validation error: %s' % val.msg)  # no such .msg?
@@ -446,7 +434,6 @@ If we would implement an `active_indexing_mode` in `EclGrid`, we could simply
 write:
 
 ```python
-
 @contextlib.contextmanager
 def ai(self):
     """Temporarily enable active indexing mode."""
@@ -482,7 +469,6 @@ def tmp(path=None, teardown=True):
 
     if teardown:
         shutil.rmtree(fname)
-
 ```
 
 +++
@@ -490,10 +476,8 @@ def tmp(path=None, teardown=True):
 With this, you can copy and goto a completely new directory in `tmp` with
 
 ```python
-
 with tmp('test_data/my_case'):
     do_tests()
-
 ```
 
 +++
@@ -526,9 +510,7 @@ so you can use it like this to make a function run with a given `cwd`:
 +++
 
 ```python
-
 @tmpdir('tests/test_data/case1')
 def test_run_case1(self):
     self.assertEqual(fname, x)
-
 ```
