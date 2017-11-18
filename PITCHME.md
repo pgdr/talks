@@ -5,25 +5,36 @@
 ### Abstract
 
 Once you've learnt the basics of Python, the first things to learn that really
-separates Python from other languages are decorators and context managers.
+separates Python from other languages are
+
+*decorators* and *context managers*.
 
 +++
 
-Decorators are functions that wrap and possibly modify functions.  They may
-alter the input to a function, or alter the output of the function.  They may
-change the storage of a function, etc.
+**Decorators** are functions that wrap and possibly modify functions.
+
+They may alter the input to a function, or alter the output of the function.
+
+They may change the storage of a function, etc.
 
 +++
 
-Decorators allow you to write a function in the way it is supposed to be
-written, and if that "just doesn't work", let you decorate it to be even more
-powerful.
+**Decorators** allow you to write a function in the way it is supposed to be
+written
+
+and if that "just doesn't work"
+
+let you decorate it to be even more powerful.
 
 +++
 
 If you've ever thought "I must remember to clean up later", Python will help you
-with a context manager.  You have probably seen the `with open` construct.  We
-go into more details what that means and how to define your own `with`.
+with a context manager.
+
+You have probably seen the `with open` construct.
+
+We go into more details what **context managers** are and how to define your own
+`with`.
 
 
 ---
