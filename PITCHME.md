@@ -120,14 +120,10 @@ class memoize(dict):
 ```
 
 
++++
 
+Using memoized `fib`
 
-
-
-
----
-
-Suppose we want do:
 ```python
 
 class memoize(dict):
@@ -140,13 +136,14 @@ def fib(n):
         return 1
     return fib(n-1) + fib(n-2)
 
-fib = memoize(fib)
+fib = memoize(fib)  # overwrites the `fib` name
 ```
 
 
 +++
 
-Suppose we want do:
+`@` is syntactic sugar
+
 ```python
 
 class memoize(dict):
@@ -168,6 +165,7 @@ def fib(n):
 
 ---
 #### Decorators in Everest
+---
 
 In Everest we had a couple of validator functions:
 
