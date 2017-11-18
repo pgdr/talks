@@ -29,15 +29,15 @@ go into more details what that means and how to define your own `with`.
 ---
 ### Introduction
 
-We will talk about two advanced but simple features of Python that make coding
-more fun (and more safe and more sane and everything).
+We will talk about two advanced
+
+but simple features of Python that make coding more fun
+
+(and more safe and more sane and everything).
 
 
 ---
 ### Decorators
-
-What is a decorator?  How do we make one?
-
 
 
 ---
@@ -49,9 +49,6 @@ def fib(n):
         return 1
     return fib(n-1) + fib(n-2)
 ```
-
-This function is too slow!  Each `fib(n)` gets called exponentially often.
-
 
 
 +++
@@ -184,14 +181,24 @@ def is_f77(s):
 
 +++
 
-We wanted a validator function to be able to output a _reason_ why it is False,
-but at the same time, a validator should return True or False?
+```python
+def is_valid_realization(r):
+    return r > 0
+```
 
-How to come around it so it is cute and nice to use, and hard to use wrong?
+wanted:
+1. output _why_ it is False
+2. a validator should return True or False?
+
+How to come around it so it is
+1. easy to use right
+2. hard to use incorrectly?
 
 +++
 
 Enter decorators.
+
++++
 
 Suppose the following was possible:
 
@@ -204,9 +211,7 @@ if not val:
 
 +++
 
-We implemented a decorator that you could use like this:
-
-
+We implemented a _decorator_ used like
 
 ```python
 
@@ -221,8 +226,6 @@ def is_f77(s):
 
 +++
 
-Now, if we run
-
 ```python
 
 val = is_f77('SOMESTRING')
@@ -230,7 +233,7 @@ if not val:
     print('Validation error: %s' % val.msg)  # no such .msg?
 ```
 
-this outputs
+gives
 
 ```
 Validation error: s has length at most 8 for s=SOMESTRING
@@ -239,6 +242,8 @@ Validation error: s has length at most 8 for s=SOMESTRING
 
 ---
 #### Decorator implementation
+---
+
 
 So how do we implement a decorator?
 
