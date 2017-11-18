@@ -1,25 +1,25 @@
-# Decorations & context managers
+## Decorations & context managers
 
 
 ---
-## Abstract
+### Abstract
 
 Once you've learnt the basics of Python, the first things to learn that really
 separates Python from other languages are decorators and context managers.
 
----
++++
 
 Decorators are functions that wrap and possibly modify functions.  They may
 alter the input to a function, or alter the output of the function.  They may
 change the storage of a function, etc.
 
----
++++
 
 Decorators allow you to write a function in the way it is supposed to be
 written, and if that "just doesn't work", let you decorate it to be even more
 powerful.
 
----
++++
 
 If you've ever thought "I must remember to clean up later", Python will help you
 with a context manager.  You have probably seen the `with open` construct.  We
@@ -27,21 +27,21 @@ go into more details what that means and how to define your own `with`.
 
 
 ---
-## Introduction
+### Introduction
 
 We will talk about two advanced but simple features of Python that make coding
 more fun (and more safe and more sane and everything).
 
 
 ---
-## Decorators
+### Decorators
 
 What is a decorator?  How do we make one?
 
 
 
 ---
-### Fibonacchi
+#### Fibonacchi
 
 ```python
 def fib(n):
@@ -54,9 +54,7 @@ This function is too slow!  Each `fib(n)` gets called exponentially often.
 
 
 
-
-
----
++++
 
 Here is awesome 1/3:
 
@@ -91,7 +89,7 @@ sq(7)        # short for sq.__call__(7)
 
 
 
----
++++
 
 Here is awesome 2/3:
 
@@ -107,7 +105,7 @@ class memoize(dict):
 
 ```
 
----
++++
 
 Here is awesome 3/3:
 
@@ -149,7 +147,7 @@ fib = memoize(fib)
 ```
 
 
----
++++
 
 Suppose we want do:
 ```python
@@ -172,32 +170,7 @@ def fib(n):
 
 
 ---
-### Minor example
-
-```python
-def paragraph(f):
-    def wrapper(*args):
-        print('<p>')
-        f(*args)
-        print('</p>')
-    return wrapper
-
-def pp(s):
-    print(s)
-
-pp = paragraph(pp)
-
-# >>> pp('hallo')
-#
-# <p>
-# hallo
-# </p>
-```
-
-
-
----
-### Decorators in Everest
+#### Decorators in Everest
 
 In Everest we had a couple of validator functions:
 
@@ -209,14 +182,14 @@ def is_f77(s):
     return len(s) <= 8
 ```
 
----
++++
 
 We wanted a validator function to be able to output a _reason_ why it is False,
 but at the same time, a validator should return True or False?
 
 How to come around it so it is cute and nice to use, and hard to use wrong?
 
----
++++
 
 Enter decorators.
 
@@ -229,7 +202,7 @@ if not val:
     print('Validation error: %s' % val.msg)  # no such .msg?
 ```
 
----
++++
 
 We implemented a decorator that you could use like this:
 
@@ -246,7 +219,7 @@ def is_f77(s):
     return len(s) <= 8
 ```
 
----
++++
 
 Now, if we run
 
@@ -265,13 +238,13 @@ Validation error: s has length at most 8 for s=SOMESTRING
 
 
 ---
-### Decorator implementation
+#### Decorator implementation
 
 So how do we implement a decorator?
 
 First we made a class that wraps a bool, and contains a msg:
 
----
++++
 
 ```python
 class Validation(object):
@@ -291,7 +264,7 @@ class Validation(object):
         return Validation(False, msg=msg)
 ```
 
----
++++
 
 `__bool__` is  just so we can evalute
 
@@ -301,8 +274,8 @@ class Validation(object):
   * output `Validation.false(err_msg)`.
 
 
----
-### The decorator!
++++
+#### The decorator!
 
 ```python
 def validator(msg):
@@ -324,7 +297,7 @@ def validator(msg):
 
 
 ---
-## Context managers
+### Context managers
 ---
 
 Have you ever written a line of code, an action, where you thought
@@ -353,7 +326,7 @@ These all have counter-actions
 5. `grid.disable_active_indexing_mode()` (or was it already enabled before the
    _action_?)
 
----
++++
 
 These are examples that are
 * _hard to use correctly_ and
@@ -362,7 +335,7 @@ These are examples that are
 If the API developer forces you to work this way, they are not doing their job.
 
 
----
++++
 
 If we forget to
 `1.`  close the file, we risk running out of OS file descriptors and die
@@ -402,7 +375,7 @@ You can run `popd` to return to the previous directory.
 When `pushd` is called, the directory is pushed onto a stack (`dirs`) and when
 `popd` is called, it is popped off the stack.
 
----
++++
 
 We want to have this functionality:
 
@@ -414,15 +387,16 @@ with pushd('~/some/path'):
 os.cwd()  # here we are back to the old cwd
 ```
 
+
 ---
-### Classical context manager
+#### Classical context manager
 
 The with statement is achieved through the use of a context manager.
 
 A context manager in Python is simply anything that has the `__enter__` and
 `__exit__` functions.
 
----
++++
 
 Whenever we go into the context manager (open file or db, acquire lock, change
 dir or whatever), the `__enter__` function is called.
@@ -435,18 +409,17 @@ incorrectly.
 
 
 ---
-### Context managers via decorators
+#### Context managers via decorators
 
-Bonus point, because Python is awesome.  Simple context managers can use
-decorators!
+Context managers use decorators!
 
-Python has a decorator called `contextlib.contextmanager` that we can use to
-very easily construct context managers.
+with `@contextlib.contextmanager`.
 
-All you need to do is to make a function _containing one `yield` statement_, and
-decorate it with `contextlib.contextmanager`.
+make a function
+1. _containing one `yield` statement_
+2. and decorate it with `contextlib.contextmanager`.
 
----
++++
 
 ```python
 # taken from Komodo by jokva
@@ -462,7 +435,7 @@ def pushd(path):
     os.chdir(prev)
 ```
 
----
++++
 
 If we would implement an `active_indexing_mode` in `EclGrid`, we could simply
 write:
@@ -507,7 +480,7 @@ def tmp(path=None, teardown=True):
 
 ```
 
----
++++
 
 With this, you can copy and goto a completely new directory in `tmp` with
 
@@ -518,7 +491,7 @@ with tmp('test_data/my_case'):
 
 ```
 
----
++++
 
 
 ```python
@@ -528,7 +501,7 @@ with tmp('test_data/my_case', teardown=False) as pth:
     do_tests()
 ```
 
----
++++
 
 Then, of course, you can make a decorator
 ```python
@@ -545,7 +518,7 @@ def tmpdir(path):
 
 so you can use it like this to make a function run with a given `cwd`:
 
----
++++
 
 ```python
 
