@@ -79,7 +79,9 @@ class memoize:
 sq = memoize(lambda x: x**2)
 
 sq(7)        # short for sq.__call__(7)
-             #            memoize.__call__(sq, 7)
+             #           memoize.__call__(sq, 7)
+             # which just calls
+             #           7**2 = 49
 
 # >>> 49
 ```
