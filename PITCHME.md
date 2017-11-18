@@ -406,22 +406,24 @@ A context manager in Python is simply anything that has the `__enter__` and
 
 +++
 
-Whenever we go into the context manager (open file or db, acquire lock, change
-dir or whatever), the `__enter__` function is called.
+* on entry to context manager (open file, acquire lock, etc)
+  * `__enter__` function is called.
+* when `with` scope ends
+  * `__exit__` function is called.
 
-Whenever the `with` scope ends, the `__exit__` function is called.
-
-Now all the API developer has to do is to implement these two functions, and it
-will become _much_ simpler to use correctly, and _much_ harder to use
-incorrectly.
+The API developer only needs to implement these two functions
+* _much_ simpler to use correctly,
+* _much_ harder to use incorrectly.
 
 
 ---
 #### Context managers via decorators
 
-Context managers use decorators!
+Context managers use decorators with
 
-with `@contextlib.contextmanager`.
+```python
+@contextlib.contextmanager
+```
 
 make a function
 1. _containing one `yield` statement_
@@ -472,11 +474,8 @@ def tmp(path=None, teardown=True):
     fname = tempfile.NamedTemporaryFile().name
 
     if path:
-        if not os.path.isdir(path):
-            raise IOError('No such directory: %s' % path)
         shutil.copytree(path, fname)
     else:
-        # no path to copy, create empty dir
         os.mkdir(fname)
 
     with pushd(cwd):
