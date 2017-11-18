@@ -406,12 +406,12 @@ A context manager in Python is simply anything that has the `__enter__` and
 
 +++
 
-* on entry to context manager (open file, acquire lock, etc)
+* on entry to `with` (open file, acquire lock..)
   * `__enter__` function is called.
 * when `with` scope ends
   * `__exit__` function is called.
 
-The API developer only needs to implement these two functions
+The API developer only implements these 2
 * _much_ simpler to use correctly,
 * _much_ harder to use incorrectly.
 
