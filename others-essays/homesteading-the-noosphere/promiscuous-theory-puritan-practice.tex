@@ -1,0 +1,61 @@
+\section{Promiscuous Theory, Puritan Practice}
+
+Through all these changes, nevertheless, there remained a broad consensus theory
+of what `free software' or `open source' is.  The clearest expression of this
+common theory can be found in the various open-source licenses, all of which
+have crucial common elements.
+
+In 1997 these common elements were distilled into the Debian Free Software
+Guidelines, which became the Open Source Definition.  Under the guidelines
+defined by the OSD, an open-source license must protect an unconditional right
+of any party to modify (and redistribute modified versions of) open-source
+software.
+
+Thus, the implicit theory of the OSD (and OSD-conformant licenses such as the
+GPL, the BSD license, and Perl's Artistic License) is that anyone can hack
+anything.  Nothing prevents half a dozen different people from taking any given
+open-source product (such as, say the Free Software Foundations's gcc C
+compiler), duplicating the sources, running off with them in different
+evolutionary directions, but all claiming to be the product.
+
+This kind of divergence is called a fork.  The most important characteristic of
+a fork is that it spawns competing projects that cannot later exchange code,
+splitting the potential developer community.  (There are phenomena that look
+superficially like forking but are not, such as the proliferation of different
+Linux distributions.  In these pseudo-forking cases there may be separate
+projects, but they use mostly common code and can benefit from each other's
+development efforts completely enough that they are neither technically nor
+sociologically a waste, and are not perceived as forks.)
+
+The open-source licenses do nothing to restrain forking, let alone
+pseudo-forking; in fact, one could argue that they implicitly encourage both.
+In practice, however, pseudo-forking is common but forking almost never happens.
+Splits in major projects have been rare, and are always accompanied by
+re-labeling and a large volume of public self-justification.  It is clear, in
+such cases as the GNU Emacs/XEmacs split, or the gcc/egcs split, or the various
+fissionings of the BSD splinter groups, that the splitters felt they were going
+against a fairly powerful community norm [BSD].
+
+In fact (and in contradiction to the anyone-can-hack-anything consensus theory)
+the open-source culture has an elaborate but largely unadmitted set of ownership
+customs.  These customs regulate who can modify software, the circumstances
+under which it can be modified, and (especially) who has the right to
+redistribute modified versions back to the community.
+
+The taboos of a culture throw its norms into sharp relief.  Therefore, it will
+be useful later on if we summarize some important ones here:
+\begin{itemize}
+\item There is strong social pressure against forking projects.  It does not
+  happen except under plea of dire necessity, with much public
+  self-justification, and requires a renaming.
+\item Distributing changes to a project without the cooperation of the
+  moderators is frowned upon, except in special cases like essentially trivial
+  porting fixes.
+\item Removing a person's name from a project history, credits, or maintainer
+  list is absolutely not done without the person's explicit consent.
+\end{itemize}
+
+In the remainder of this essay, we shall examine these taboos and ownership
+customs in detail.  We shall inquire not only into how they function but what
+they reveal about the underlying social dynamics and incentive structures of the
+open-source community.

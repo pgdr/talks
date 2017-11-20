@@ -1,0 +1,43 @@
+\section{Conflict and Conflict Resolution}
+
+We've seen that within projects, an increasing complexity of roles is expressed
+by a distribution of design authority and partial property rights.  While this
+is an efficient way to distribute incentives, it also dilutes the authority of
+the project leader—most importantly, it dilutes the leader's authority to squash
+potential conflicts.
+
+While technical arguments over design might seem the most obvious risk for
+internecine conflict, they are seldom a serious cause of strife.  These are
+usually relatively easily resolved by the territorial rule that authority
+follows responsibility.
+
+Another way of resolving conflicts is by seniority—if two contributors or groups
+of contributors have a dispute, and the dispute cannot be resolved objectively,
+and neither owns the territory of the dispute, the side that has put the most
+work into the project as a whole (that is, the side with the most property
+rights in the whole project) wins.
+
+(Equivalently, the side with the least invested loses.  Interestingly this
+happens to be the same heuristic that many relational database engines use to
+resolve deadlocks.  When two threads are deadlocked over resources, the side
+with the least invested in the current transaction is selected as the deadlock
+victim and is terminated.  This usually selects the longest running transaction,
+or the more senior, as the victor.)
+
+These rules generally suffice to resolve most project disputes.  When they do
+not, fiat of the project leader usually suffices.  Disputes that survive both
+these filters are rare.
+
+Conflicts do not, as a rule, become serious unless these two criteria
+("authority follows responsibility" and "seniority wins") point in different
+directions, and the authority of the project leader is weak or absent.  The most
+obvious case in which this may occur is a succession dispute following the
+disappearance of the project lead.  I have been in one fight of this kind.  It
+was ugly, painful, protracted, only resolved when all parties became exhausted
+enough to hand control to an outside person, and I devoutly hope I am never
+anywhere near anything of the kind again.
+
+Ultimately, all of these conflict-resolution mechanisms rest on the entire
+hacker community's willingness to enforce them.  The only available enforcement
+mechanisms are flaming and shunning—public condemnation of those who break
+custom, and refusal to cooperate with them after they have done so.
