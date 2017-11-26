@@ -348,6 +348,8 @@ If the API developer forces you to work this way, they are not doing their job.
 
 +++
 
+Key problem: if `dispose` not called, resource leaked.
+
 If we forget to
 `1.`  close the file, we risk running out of OS file descriptors and die
 +++
