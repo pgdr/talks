@@ -7,16 +7,26 @@ separates Python from other languages are decorators and context managers.
 
 Decorators are functions that wrap and possibly modify functions.  They may
 alter the input to a function, or alter the output of the function.  They may
-change the storage of a function, etc.
+change the storage of a function, or circumvent the function all together.
 
 Decorators allow you to write a function in the way it is supposed to be
-written, and if that "just doesn't work", let you decorate it to be even more
+written, and when that "just doesn't work", let you decorate it to be even more
 powerful.
 
 
-If you've ever thought "I must remember to clean up later", Python will help you
-with a context manager.  You have probably seen the `with open` construct.  We
-go into more details what that means and how to define your own `with`.
+If you've ever thought "I must remember to clean up later", you might be facing
+a bad API that wasn't designed with a context manager.  You have probably seen
+the `with open` construct.  We go into more details what that means and how to
+define your own `with`.
+
+We occasionally use decorators to make context managers and context managers
+inside decorators.
+
+Would you like to see a function pointer that points to a function that returns
+a decorated function, which, when called, returns a function that returns a
+function that returns a function?  And furthermore, that this looks completely
+sane?
+
 
 
 ## Introduction
