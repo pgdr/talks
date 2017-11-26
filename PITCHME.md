@@ -311,7 +311,17 @@ def validator(msg):
 ```
 
 
++++
 
+Other uses of decorators
+
+* Django uses `@login_required`
+* Flask uses `@app.route`
+* `@validate_json` or `@validate_config`
+* Add signed messages with `@signed(secret_key)`
+* Wrap text in html (literally decorate)
+* Decorate your UI component (textarea with scrollbar)
+* timing, sleeping, debugging, logging
 
 
 
