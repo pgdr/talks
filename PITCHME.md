@@ -306,6 +306,8 @@ def validator(msg):
 
 ---
 ### Context managers
+
+(_the dispose pattern_)
 ---
 
 Have you ever written a line of code, an action, where you thought
@@ -314,6 +316,7 @@ Have you ever written a line of code, an action, where you thought
 
 The famous action/counter-action pattern is hard to work with, tedious, and
 error prone.
+
 
 ---
 
