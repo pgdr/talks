@@ -1,4 +1,10 @@
 def debug(f):
+    # TODO it is probably best to find out if `f` is a function, a method, a
+    # classmethod or a staticmethod.
+    #
+    # That way we can correctly print a sensible `args` without potentially
+    # ending in an infinite loop.
+
     def wrapper(*args, **kwargs):
         from os import getenv
         debug = getenv('DEBUG')
