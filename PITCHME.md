@@ -1,5 +1,16 @@
 ## Decorations & context managers
 
+---
+### Preamble
+
+> Program into Your Language, Not in It
+>
+> Don't limit your programming thinking only to the concepts that are supported
+> automatically by your language. The best programmers think of what they want
+> to do, and then they assess how to accomplish their objectives with the
+> programming tools at their disposal.
+
+-- Code complete
 
 ---
 ### Abstract
@@ -375,6 +386,16 @@ f       # f is closed
 ```
 
 How does this work?
+
+(Go down to see note about Java and C\#)
+
++++
+
+* Lisp has macros, so ...
+* C++ has RAII
+* Java has `try-with-resource` and `AutoClosable`
+* C\# has `using` and `IDisposable`
+* C has DYI
 
 ---
 
