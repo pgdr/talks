@@ -185,4 +185,4 @@ _(tivoization is built-in in cc)_
 
 ---
 
-fin
+happy coding
