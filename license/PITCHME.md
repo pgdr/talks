@@ -172,7 +172,7 @@ GPL3 also contains more
 * nc = non-commercial
 * nd = no-derivates
 
-tivoization built-in
+_(tivoization is built-in in cc)_
 
 +++
 
