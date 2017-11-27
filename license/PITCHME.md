@@ -110,7 +110,8 @@ GPL3 also contains more
 * explicit patents stuff
   * (cannot deny rights via patents)
 * make AGPL explicitly necessary
-  * (if software not sent, no distr nec.)
+  * (if software not sent, no distribution necessary)
+  * (recall Wordpress)
 
 ---
 
