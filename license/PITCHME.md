@@ -67,7 +67,8 @@ Examples
 #### GPL 2 states
 
 * copy, modify, and distribute the software
-* modifications to software GPL must be available under GPL
+* modifications to software GPL 2
+  * must be available under GPL 2
 * (with build instructions)
 
 ---
@@ -97,7 +98,8 @@ Linus Torvalds says he understands the car manufacturer.
 #### GPL 3 states
 
 * copy, modify, and distribute the software
-* modifications to software GPL must be available under GPL
+* modifications to software GPL 3
+  * must be available under GPL 3
 * (with build instructions)
 
 +++
@@ -105,8 +107,10 @@ Linus Torvalds says he understands the car manufacturer.
 GPL3 also contains more
 * specific about license compatibility (e.g. apache)
 * DRM (tivo)
-* explicit patents stuff (cannot deny rights via patents)
-* make AGPL explicitly necessary (if software not sent, no distr nec.)
+* explicit patents stuff
+  * (cannot deny rights via patents)
+* make AGPL explicitly necessary
+  * (if software not sent, no distr nec.)
 
 ---
 
