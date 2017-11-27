@@ -20,6 +20,19 @@ Go through
 * Everything you make is immediately your copyright (caveat employee)
 * Licenses are contracts!
 
++++
+
+### COPYRIGHT
+
+* If you have copyright
+  * you can relicense to whatever
+* You cannot give away copyright
+  * hence, e.g. FSF and ERT ask you to
+  * sign a contract allowing them to relicense your code
+* FSF owns all GNU code and could therefore upgrade GPL2 to GPL3
+* Linux copyrights scattered around, cannot upgrade (won't anyway)
+
+
 ---
 
 ### GNU General Public License
