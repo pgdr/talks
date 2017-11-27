@@ -12,6 +12,19 @@ Go through
 * BSD
 * CREATIVE COMMONS
 
++++
+
+Examples
+
+* GNU GPL 2 (Linux, MediaWiki, +++, ERT, OPM)
+* GNU GPL 3 (GCC, GNU, +++, Sunbeam)
+* GNU AGPL (Launchpad)
+* GNU LGPL (QT, Vorbis*, Segyio)
+* MIT (Jenkins, Atom, Compiz, Mono, Ncurses, Node.js)
+* APACHE (Android, Apache, Kubernetes, PyCharm)
+* BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
+* CREATIVE COMMONS (Wikipedia content)
+
 ---
 
 ### COPYRIGHT
