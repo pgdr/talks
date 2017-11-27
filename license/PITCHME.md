@@ -5,8 +5,8 @@
 Go through
 
 * GNU GPL 2 v 3
-* GNU LGPL
 * GNU AGPL
+* GNU LGPL
 * MIT
 * APACHE
 * BSD
@@ -36,14 +36,11 @@ Go through
 
 ### OPPHAVSRETT TIL ÅNDSVERK
 
-> den som skaper et åndsverk, har opphavsrett til verket.
+> den som skaper et åndsverk har opphavsrett
 
-> finnes ingen lovbestemmelse som regulerer hvilke rettigheter arbeidsgiveren
-> har til det de ansatte har skapt
+> finnes ingen lovbestemmelse vedr. arbeidsgiver
 
-> unntak: datamaskinprogrammer.  opphavsretten til datamaskinprogrammer som er
-> åndsverk går over til arbeidsgiveren dersom ikke annet er skriftlig avtalt
-> (§39g)
+> unntak: datamaskinprogrammer.  opphavsretten går til arbeidsgiveren (§39g)
 
 (Covered under _"Lov om opphavsrett til åndsverk"_)
 
@@ -64,11 +61,13 @@ Go through
 
 ##### Tivoization
 
-I
-* make a car
+Suppose that I go ahead and
+* make a car running Linux
 * only signed software can run on car
 * people can get and modify source code
-* but not run it on my car
+* but not run the modified software on the car
+
+Was it really possible to modify the source code as per GPL 2?
 
 ---
 
@@ -98,16 +97,6 @@ GPL3 also contains more
 
 ---
 
-#### LGPL 3 (Library/Lesser GPL)
-
-* For libraries
-* copy, modify, and distribute the software
-* derivative work must be redistributed under LGPL
-* applications using the library needn't
-
-
----
-
 #### AGPL 3 (Affero GPL)
 
 * For network software
@@ -115,6 +104,16 @@ GPL3 also contains more
 * derivative work must be redistributed under AGPL
 * if the software is used in "web publication"
   * the source code must be made available
+
+---
+
+#### LGPL 3 (Library/Lesser GPL)
+
+* For libraries
+* copy, modify, and distribute the software
+* derivative work must be redistributed under LGPL
+* applications using the library needn't
+
 
 ---
 
