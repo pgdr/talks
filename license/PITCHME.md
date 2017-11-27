@@ -26,11 +26,26 @@ Go through
 
 * If you have copyright
   * you can relicense to whatever
-* You cannot give away copyright
+* You cannot give away copyright (in Norway you can?)
   * hence, e.g. FSF and ERT ask you to
   * sign a contract allowing them to relicense your code
 * FSF owns all GNU code and could therefore upgrade GPL2 to GPL3
 * Linux copyrights scattered around, cannot upgrade (won't anyway)
+
++++
+
+### OPPHAVSRETT TIL ÅNDSVERK
+
+> den som skaper et åndsverk, har opphavsrett til verket.
+
+> finnes ingen lovbestemmelse som regulerer hvilke rettigheter arbeidsgiveren
+> har til det de ansatte har skapt
+
+> unntak: datamaskinprogrammer.  opphavsretten til datamaskinprogrammer som er
+> åndsverk går over til arbeidsgiveren dersom ikke annet er skriftlig avtalt
+> (§39g)
+
+(Covered under _"Lov om opphavsrett til åndsverk"_)
 
 
 ---
