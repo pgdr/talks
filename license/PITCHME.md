@@ -163,6 +163,10 @@ GPL3 also contains more
 
 ### Creative commons
 
+(for content)
+
++++
+
 * by = attribution
 * sa = share-alike
 * nc = non-commercial
