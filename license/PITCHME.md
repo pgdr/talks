@@ -16,7 +16,7 @@ Go through
 
 Examples
 
-* GNU GPL 2 (Linux, MediaWiki, +++, ERT, OPM)
+* GNU GPL 2 (Linux, MediaWiki, Wordpress, +++, ERT, OPM)
 * GNU GPL 3 (GCC, GNU, +++, Sunbeam)
 * GNU AGPL (Launchpad)
 * GNU LGPL (QT, Vorbis*, Segyio)
