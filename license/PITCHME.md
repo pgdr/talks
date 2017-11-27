@@ -90,7 +90,7 @@ Richard M. Stallman was annoyed.
 
 Made GNU GPL3
 
-Linus Thorvalds says he understands the car manufacturer.
+Linus Torvalds says he understands the car manufacturer.
 
 ---
 
