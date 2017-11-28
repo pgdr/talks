@@ -182,39 +182,33 @@ A cryptographic hash function is a function (e.g. `md5`, `sha256`)
 +++
 
 * `sha('hello') = 5891b5b`
-* `sha('hallo') = 622cb33` (completely different)
-* `sha(  ???  ) = 5891b5b` (impossible to subst. `???`)
+* `sha('hallo') = 622cb33` (avalanche)
+* `sha(' ??? ') = 5891b5b` (non-invertible)
 
 (_hexadecimal is `0123456789abcdef`_)
 
 +++
 
 So suppose we ask Alice:
+
 * find an integer _n_ s.t.
-  * `sha('hello_n_') = 0???`.
+  * `sha('hellon') = 0???`.
   * probability: 1/16
 
 +++
 
 So suppose we ask Alice:
+
 * find an integer _n_ s.t.
-  * `sha('hello_n_') = 0???`.
-  * probability: 1/16
-* find an integer _n_ s.t.
-  * `sha('hello_n_') = 00???`.
+  * `sha('hellon') = 00???`.
   * probability: 1/256
 
 +++
 
 So suppose we ask Alice:
+
 * find an integer _n_ s.t.
-  * `sha('hello_n_') = 0???`.
-  * probability: 1/16
-* find an integer _n_ s.t.
-  * `sha('hello_n_') = 00???`.
-  * probability: 1/256
-* find an integer _n_ s.t.
-  * `sha('hello_n_') = 00000???`.
+  * `sha('hellon') = 00000???`.
   * probability: 1M^-1^
 
 +++
