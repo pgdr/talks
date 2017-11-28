@@ -1,5 +1,7 @@
 ## Licenses
 
+(cc-by-sa 4.0)
+
 ---
 
 Go through

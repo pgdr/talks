@@ -1,5 +1,7 @@
 ## Decorations & context managers
 
+(cc-by-sa 4.0)
+
 ---
 ### Preamble
 

@@ -1,19 +1,30 @@
 # Talking about software development (bærekraftig utvikling)
 
+(cc-by-sa 4.0)
+
++++
+
 We are software developers, but talk surprisingly little about software
 development.
+
++++
 
 I want us to be more concerned with and actively talk about software
 development.
 
 
+---
 
 # The Art of Unix Programming
+
++++
 
 
 > Those who do not understand Unix are condemned to reinvent it, poorly.
 
 -- Henry Spencer
+
++++
 
 
 > This is the Unix philosophy: Write programs that do one thing and do it well.
@@ -22,11 +33,18 @@ development.
 
 -- Eric S. Raymond
 
++++
+
+
 1. Rule of Modularity: Write simple parts connected by clean interfaces.
 2. Rule of Clarity: Clarity is better than cleverness.
 3. Rule of Composition: Design programs to be connected to other programs.
 
+
 ...
+
++++
+
 
 * (Design for simplicity; add complexity only where you must.)
 * (Write a big program only when it is clear by demonstration that nothing else
@@ -36,13 +54,25 @@ development.
 * (When you must fail, fail noisily and as soon as possible.)
 * (Programmer time is expensive; conserve it in preference to machine time.)
 
++++
+
+
 
 > it means that responsibility for interface usage errors belongs to the
 > interface designer, not the interface user.
 
---- Scott Meyers
+-- Scott Meyers
+
++++
+
+
+
+---
 
 ## Single responsibility principle
+
++++
+
 
 > every module or class should have responsibility over a single part of the
 > functionality provided by the software, and that responsibility should be
@@ -50,7 +80,12 @@ development.
 
 -- Wikipedia
 
+---
+
 ## Coupling
+
++++
+
 
 > A routine that takes one parameter is more loosely coupled to modules that
 > call it than a routine that takes six parameters.
@@ -62,7 +97,13 @@ development.
 
 
 
+---
+
+
 ## Lets talk about API vs Code.
+
++++
+
 
 > APIs should come with programs, and vice versa.  An API that you must write C
 > code to use, which cannot be invoked easily from the command line, is harder
@@ -77,7 +118,13 @@ development.
 
 
 
+---
+
+
 # Version numbers
+
++++
+
 
 Version numbering:
 * 25.3
@@ -92,17 +139,20 @@ Version numbering:
 * 0.20.3
 * 1.8.3.1
 
++++
+
+
 Version numbering:
 * 2017.10
 * 2017.10
 
 
+
+---
+
 ## Software Release Cycle
 
-> These are the facts of the case and they are undisputed.
-
-(Though, if you have no intention of making reusable code, don't bother with
-this difficult stuff.)
++++
 
 ### The anatomy of the version number
 
@@ -113,11 +163,15 @@ Version numbering:  Major.Minor.Micro/Patch
 * The micro number should be increased whenever the implementation changes,
   while the API does not.
 
++++
+
 Pre-alpha -> alpha -> beta -> release candidate -> gold
 
 * If Micro contains a letter, a=alpha, b=beta, rc=release candidate
   * beta is intended stable, but may change
   * rc is feature frozen
+
++++
 
 Examples:
 * 2.3.pre-alpha1
@@ -129,10 +183,14 @@ Examples:
 * 2.3.rc2
 
 
++++
+
 ## Why the obsession with version numbers?
 
 Because better men than we paved the road.  They wrote Unix, GNU coreutils,
 Linux, all the software that we use and adore.  They found a way.
+
++++
 
 > The first and most important quality of modular code is encapsulation.
 > Well-encapsulated modules don't expose their internals to each other.  They
@@ -143,10 +201,17 @@ Linux, all the software that we use and adore.  They found a way.
 
 -- Eric S. Raymond
 
++++
 
 A version is defined by its API, its functionality
 
+
 Once a function goes in, it must stay in until next major version!
+
+
+---
+
+
 
 
 ## Consequence of software development
@@ -158,6 +223,7 @@ Mantra: Bad code can be deleted, bad API is legacy
 
 Code is something that coincidentally makes the API work.
 
++++
 
 > Due to the required backwards compatibility there is certainly a
 > code-complexity price related to this.
@@ -165,7 +231,12 @@ Code is something that coincidentally makes the API work.
 -- Joakim
 
 
+---
+
+
 # Popular scientific approach
+
++++
 
 ## Site 1
 
@@ -176,6 +247,8 @@ Code is something that coincidentally makes the API work.
 * single coding standard to which all programmers adhere
 
 3 / 5
+
++++
 
 ## Site 2
 
@@ -199,6 +272,7 @@ Code is something that coincidentally makes the API work.
 
 
 
+---
 
 # Code is mass
 
@@ -208,8 +282,11 @@ Good PR: +14, -521 --- Bad PR: +3123, -1
 
 -- Ken Thompson
 
++++
 
 Code is mass and has a weight.  And somebody is going to carry it.
+
++++
 
 If we have the choice between implementing a feature, and using an existing
 library, the pros and cons are:
@@ -218,9 +295,13 @@ library, the pros and cons are:
 * use somebody else's implementation, they carry the weight, you only carry the
   load of using that library (which may or may not be expensive)
 
++++
+
 If all else is equal, _less code_ is better than _more code_.  Fewer lines
 equals lower weight.  (Not invented here)
 
+
++++
 
 We should think in terms of code as being something that's just there for the
 API to work.
@@ -229,6 +310,9 @@ API to work.
 > that thy code may be short and readable and thy days pleasant and productive.
 
 -- Henry Spencer's _"The Ten Commandments for C Programmers"_
+
+
+---
 
 
 ## How to design a good API
@@ -241,9 +325,12 @@ API to work.
 -- C.A.R. Hoare
 
 
+---
+
 Use TDD: Sit down, and act like a user of your API!!
 
 Command-query separation
+
 
 
 Design by Contract
@@ -260,12 +347,20 @@ private void datainvariant() {
 
 It's not necessarily a good idea, but it's good to have an idea about it.
 
+
+
+
+---
+
+
 ## Code smells
 
 > A code smell is a surface indication that usually corresponds to a deeper
 > problem in the system
 
 -- Martin Fowler / Ken Beck
+
++++
 
 * Long method
 * Conditional Complexity
@@ -278,10 +373,17 @@ It's not necessarily a good idea, but it's good to have an idea about it.
 * Lazy Class
 
 
++++
+
 > If you need more than 3 levels of indentation, you're screwed anyway, and
 > should fix your program.
 
 -- Linus Torvalds
+
+
+
+---
+
 
 ## The end
 
