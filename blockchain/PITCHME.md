@@ -211,4 +211,8 @@ So suppose we ask Alice:
   * `sha('hellon') = 00000???`.
   * probability: 1M^-1^
 
-+++
+Due to nature of `sha`, no strategy
+
+---
+
+### Block
