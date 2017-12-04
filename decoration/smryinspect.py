@@ -103,5 +103,7 @@ if __name__ == '__main__':
             interactive(smry, keys)
         except EOFError:
             exit('\n')
+        except KeyboardInterrupt:
+            exit('\n')
     else:
         lookup(smry, keys, argv[2].upper().strip())
