@@ -99,6 +99,9 @@ if __name__ == '__main__':
 
     smry, keys = load_smry(argv[1])
     if len(argv) == 2:
-        interactive(smry, keys)
+        try:
+            interactive(smry, keys)
+        except EOFError:
+            exit('\n')
     else:
-        lookup(smry, keys, argv[2])
+        lookup(smry, keys, argv[2].upper().strip())

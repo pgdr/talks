@@ -47,7 +47,7 @@ if __name__ == '__main__':
         print('Corpus: %d words' % len(c))
 
         best, score = argmin(w, c, edit)
-        if score > 0
+        if score > 0:
             print('Did you mean: %s (dist=%d)' % (best, score))
         else:
             print('Ok: %s' % w)
