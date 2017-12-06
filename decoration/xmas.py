@@ -59,6 +59,11 @@ def reflow(text):
         OPT, split = cost(split-1, b, data)
     return result, B
 
+
+def spaces(s):
+    s = s.strip()
+    return s.count(' ')
+
 def triangle(text):
     """Returns upside down triangle of text"""
     result, B = reflow(text)
@@ -69,6 +74,9 @@ def triangle(text):
         pad = ' ' + ' '*b + ' '
         if i < len(result):
             s = result[i]
+            if (b-len(s)) > spaces(s) > 0:
+                s = s.replace(' ', '  ')
+
             pad = ' '
             pad += ' '* ((b - len(s)) // 2)
             pad += s
