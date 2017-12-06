@@ -72,23 +72,26 @@ def triangle(text):
             pad += s
             pad += ' '* ((b - len(s)) // 2)
             pad += ' '
-            if (len(s) % 2) != 0:
+            if ((b-len(s)) % 2) != 0:
                 pad += ' '
-        ret.append(' '*i + '/' + pad + '\\')
+        ret.append(' '*i + '/ ' + pad + '\\')
     return ret
 
 
 def treeangle(text):
-    final = triangle(text)
+    text.insert(0, '')
+    final = triangle(text)  # the triangle is upside down
     final.reverse()
     final.append('-'*len(final[-1]))
-    final.append(' '*(len(final[0])-5) + '| |')
-    final.insert(0,' '*(len(final[0])-5) + '/  \\')
-    final.insert(0,' '*(len(final[0])-5) + '  /\\')
-    final.insert(0,' '*(len(final[0])-5) + '   \\/')
-    final.insert(0,' '*(len(final[0])-5) + '/__  __\\')
-    final.insert(0,' '*(len(final[0])-8) + '\\      /')
-    final.insert(0,' '*(len(final[0])-8) + '___/\\___')
+    final.append(' '*(len(final[0])-5) + '| |')          # foot
+
+    final.insert(0,' '*(len(final[0])-5) + '/  \\')      #  the top
+    final.insert(0,' '*(len(final[0])-5) + '  /\\')      #  the top
+
+    final.insert(0,' '*(len(final[0])-5) + '   \\/')     #  the star
+    final.insert(0,' '*(len(final[0])-5) + '/__  __\\')  #  the star
+    final.insert(0,' '*(len(final[0])-8) + '\\      /')  #  the star
+    final.insert(0,' '*(len(final[0])-8) + '___/\\___')  #  the star
     return '\n'.join(final)
 
 
