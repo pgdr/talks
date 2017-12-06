@@ -37,7 +37,8 @@ def cost(j, b, data):
 
 
 
-def get_matrix(text):
+def reflow(text):
+    """Returns textarea as a list of strings and base length."""
     data = tuple(map(len, text))
     N = len(data)
 
@@ -59,7 +60,8 @@ def get_matrix(text):
     return result, B
 
 def triangle(text):
-    result, B = get_matrix(text)
+    """Returns upside down triangle of text"""
+    result, B = reflow(text)
 
     ret = []
 
@@ -79,6 +81,7 @@ def triangle(text):
 
 
 def treeangle(text):
+    """Generates a christmas tree containing the text."""
     text.insert(0, '')
     final = triangle(text)  # the triangle is upside down
     final.reverse()
