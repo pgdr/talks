@@ -303,6 +303,7 @@ In Everest: temporary working dir
 
 +++
 
+Changes and copies dir, yields, deletes
 
 ```python
 @contextlib.contextmanager
