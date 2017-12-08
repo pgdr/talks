@@ -136,5 +136,6 @@ def treeangle(text):
 def xmasdecorator(fun):
     def wrapper(text):
         text = treeangle(text.split())
-        fun(text)
+        res = fun(text)
+        return res
     return wrapper
