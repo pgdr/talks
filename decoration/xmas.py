@@ -118,16 +118,16 @@ def treeangle(text):
     final = triangle(text)  # the triangle is upside down
     base = len(final[-1])
     final.append('-'*base)
-    final.append(' '*(base//2-2) + '| |')          # foot
 
 
-    final.insert(0,' '*(base//2-4) + '___/\\___')  #  the star
-    final.insert(1,' '*(base//2-4) + '\\      /')  #  the star
-    final.insert(2,' '*(base//2-4) + '/__  __\\')  #  the star
-    final.insert(3,' '*(base//2-4) + '   \\/')     #  the star
-
-    final.insert(4,' '*(base//2-3) + '  /\\')      #  the top
-    final.insert(5,' '*(base//2-2) + '/  \\')      #  the top
+    final.insert(0,' '*(base//2-4) + '___/\\___')  # the star
+    final.insert(1,' '*(base//2-4) + '\\      /')  # the star
+    final.insert(2,' '*(base//2-4) + '/__  __\\')  # the star
+    final.insert(3,' '*(base//2-4) + '   \\/')     # the star
+    final.insert(4,' '*(base//2-4) + '   /\\')     # the top
+    final.insert(5,' '*(base//2-4) + '  /  \\')    # the top
+    # ... tree ...
+    final.append(' '  *(base//2-4) + '  |  |')     # the foot
 
     return '\n'.join(final)
 
