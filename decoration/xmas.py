@@ -70,8 +70,31 @@ def spaces(s):
     s = s.strip()
     return s.count(' ')
 
+def add_spacing(s, b):
+    """Add spaces in a line s to get closer to b characters."""
+    rem = lambda s_, b_: b_ - len(s_)  # remaining characters
+    orig = ''.join(list(s))
+    if (rem(s,b)) > s.count('. '):
+        s = s.replace('. ', '.  ')
+    if (rem(s,b)) > 2*spaces(s) > 0:
+        s = s.replace(' ', '   ')
+        logging.debug('double-spaced: "%s"' % s)
+    if (rem(s,b)) > spaces(s) > 0:
+        s = s.replace(' ', '  ')
+    if (rem(s,b)) > s.count('. '):
+        s = s.replace('. ', '.  ')
+
+    sidepad = rem(s,b)//2
+    s = ' '*sidepad + s + ' '*sidepad
+    if rem(s,b) > 0:
+        s = s + ' '*rem(s,b)
+    logging.debug('\n%s\n%s\n%s\n%s\n' % ('='*b, orig, s, '='*b))
+
+
+    return s
+
 def triangle(text):
-    """Returns upside down triangle of text"""
+    """Returns triangle of text"""
     result, B = reflow(text)
 
     ret = []
@@ -80,24 +103,12 @@ def triangle(text):
         line = ' ' + ' '*b + ' '
         if i < len(result):
             s = result[i]
-            if (b-len(s)) > 2*spaces(s) > 0:
-                s = s.replace(' ', '   ')
-                logging.debug('double-spaced: "%s"' % s)
-            if (b-len(s)) > spaces(s) > 0:
-                s = s.replace(' ', '  ')
-            if (b-len(s)) > s.count('. '):
-                s = s.replace('. ', '.  ')
             logging.debug('stretch penalty %2d for "%s".' % (b-len(s), s))
-
-            line = ' '
-            line += ' '* ((b - len(s)) // 2)
-            line += s
-            line += ' '* ((b - len(s)) // 2)
-            line += ' '
-            if ((b-len(s)) % 2) != 0:
-                line += ' '
+            s = add_spacing(s, b)
+            line = ' %s ' % s
             evenpad = ' ' if (B%2)==1 else ''
         ret.append(' '*i + '/' + evenpad + line + '\\')
+    ret.reverse()
     return ret
 
 
@@ -105,17 +116,19 @@ def treeangle(text):
     """Generates a christmas tree containing the text."""
     text.insert(0, '')
     final = triangle(text)  # the triangle is upside down
-    final.reverse()
-    final.append('-'*len(final[-1]))
-    final.append(' '*(len(final[0])-5) + '| |')          # foot
+    base = len(final[-1])
+    final.append('-'*base)
+    final.append(' '*(base//2-2) + '| |')          # foot
 
-    final.insert(0,' '*(len(final[0])-5) + '/  \\')      #  the top
-    final.insert(0,' '*(len(final[0])-5) + '  /\\')      #  the top
 
-    final.insert(0,' '*(len(final[0])-5) + '   \\/')     #  the star
-    final.insert(0,' '*(len(final[0])-5) + '/__  __\\')  #  the star
-    final.insert(0,' '*(len(final[0])-8) + '\\      /')  #  the star
-    final.insert(0,' '*(len(final[0])-8) + '___/\\___')  #  the star
+    final.insert(0,' '*(base//2-4) + '___/\\___')  #  the star
+    final.insert(1,' '*(base//2-4) + '\\      /')  #  the star
+    final.insert(2,' '*(base//2-4) + '/__  __\\')  #  the star
+    final.insert(3,' '*(base//2-4) + '   \\/')     #  the star
+
+    final.insert(4,' '*(base//2-3) + '  /\\')      #  the top
+    final.insert(5,' '*(base//2-2) + '/  \\')      #  the top
+
     return '\n'.join(final)
 
 
