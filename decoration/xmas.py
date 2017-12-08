@@ -1,4 +1,8 @@
+from math import sqrt
+import logging
+
 INF = 10**10
+
 class memoize(dict):
     """Memoization wrapper for unary function."""
     def __init__(self, fun):
@@ -38,15 +42,15 @@ def cost(j, b, data):
 
 
 def reflow(text):
-    """Returns textarea as a list of strings and base length."""
+    """Return triangular textarea as a list of strings and base length."""
     data = tuple(map(len, text))
     N = len(data)
-
-    B = 0
+    B = int(sqrt(2 * sum(data)))  # lower bound on base of triangle
     OPT = INF
     while OPT >= INF:
         B += 1
         OPT, split = cost(N-1, B, data)
+    logging.info('acc penalty: %d' % OPT)
 
     prev_split = N
     b = B
@@ -57,6 +61,8 @@ def reflow(text):
         result.append(' '.join(text[split:prev_split]))
         prev_split = split
         OPT, split = cost(split-1, b, data)
+    logging.info('base size:   %d' % B)
+    logging.info('tri height:  %d' % len(result))
     return result, B
 
 
@@ -71,20 +77,27 @@ def triangle(text):
     ret = []
 
     for i,b in enumerate(range(B, 0, -2)):
-        pad = ' ' + ' '*b + ' '
+        line = ' ' + ' '*b + ' '
         if i < len(result):
             s = result[i]
+            if (b-len(s)) > 2*spaces(s) > 0:
+                s = s.replace(' ', '   ')
+                logging.debug('double-spaced: "%s"' % s)
             if (b-len(s)) > spaces(s) > 0:
                 s = s.replace(' ', '  ')
+            if (b-len(s)) > s.count('. '):
+                s = s.replace('. ', '.  ')
+            logging.debug('stretch penalty %2d for "%s".' % (b-len(s), s))
 
-            pad = ' '
-            pad += ' '* ((b - len(s)) // 2)
-            pad += s
-            pad += ' '* ((b - len(s)) // 2)
-            pad += ' '
+            line = ' '
+            line += ' '* ((b - len(s)) // 2)
+            line += s
+            line += ' '* ((b - len(s)) // 2)
+            line += ' '
             if ((b-len(s)) % 2) != 0:
-                pad += ' '
-        ret.append(' '*i + '/ ' + pad + '\\')
+                line += ' '
+            evenpad = ' ' if (B%2)==1 else ''
+        ret.append(' '*i + '/' + evenpad + line + '\\')
     return ret
 
 
