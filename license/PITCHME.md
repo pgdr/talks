@@ -34,6 +34,7 @@ Examples
 * No license can take away your copyright
 * Everything you make is immediately your copyright (caveat employee)
 * Licenses are contracts!
+* Only rightful owners can sue. ([Perens](https://slashdot.org/comments.pl?sid=11459425&cid=55709541))
 
 +++
 
