@@ -1,0 +1,291 @@
+Design Patterns: Elements of Reusable Object-Oriented Software is a software
+engineering book describing software design patterns.  The book's authors are
+Erich Gamma, Richard Helm, Ralph Johnson and John Vlissides with a foreword by
+Grady Booch.  The book is divided into two parts, with the first two chapters
+exploring the capabilities and pitfalls of object-oriented programming, and the
+remaining chapters describing 23 classic software design patterns.  The book
+includes examples in C++ and Smalltalk.
+
+It has been influential to the field of software engineering and is regarded as
+an important source for object-oriented design theory and practice.  More than
+500,000 copies have been sold in English and in 13 other languages.  The authors
+are often referred to as the Gang of Four.
+
+History.
+
+The book started at a birds of a feather session at OOPSLA '90, "Towards an
+Architecture Handbook", run by Bruce Anderson, where Erich Gamma and Richard
+Helm met and discovered their common interest.  They were later joined by Ralph
+Johnson and John Vlissides.  The original publication date of the book was
+October 21, 1994 with a 1995 copyright, hence it is often cited with a
+1995-year, despite being published in 1994.  The book was first made available
+to the public at the OOPSLA meeting held in Portland, Oregon, in October 1994.
+In 2005 the ACM SIGPLAN awarded that year's Programming Languages Achievement
+Award to the authors, in recognition of the impact of their work "on programming
+practice and programming language design".  As of March 2012, the book was in
+its 40th printing.
+
+Chapter 1 is a discussion of object-oriented design techniques, based on the
+authors' experience, which they believe would lead to good object-oriented
+software design, including:
+
+"Program to an 'interface', not an 'implementation'."  Composition over
+inheritance: "Favor 'object composition' over 'class inheritance'."
+
+The authors claim the following as advantages of interfaces over implementation:
+
+clients remain unaware of the specific types of objects they use, as long as the
+object adheres to the interface clients remain unaware of the classes that
+implement these objects; clients only know about the abstract class defining the
+interface
+
+Use of an interface also leads to dynamic binding and polymorphism, which are
+central features of object-oriented programming.
+
+The authors refer to inheritance as white-box reuse, with white-box referring to
+visibility, because the internals of parent classes are often visible to
+subclasses. In contrast, the authors refer to object composition as black-box
+reuse because no internal details of composed objects need be visible in the
+code using them.
+
+The authors discuss the tension between inheritance and encapsulation at length
+and state that in their experience, designers overuse inheritance . The danger
+is stated as follows:
+
+"Because inheritance exposes a subclass to details of its parent's
+implementation, it's often said that 'inheritance breaks encapsulation'".
+
+They warn that the implementation of a subclass can become so bound up with the
+implementation of its parent class that any change in the parent's
+implementation will force the subclass to change. Furthermore, they claim that a
+way to avoid this is to inherit only from abstract classes---but then, they
+point out that there is minimal code reuse.
+
+Using inheritance is recommended mainly when adding to the functionality of
+existing components, reusing most of the old code and adding relatively small
+amounts of new code.
+
+To the authors, 'delegation' is an extreme form of object composition that can
+always be used to replace inheritance. Delegation involves two objects: a
+'sender' passes itself to a 'delegate' to let the delegate refer to the
+sender. Thus the link between two parts of a system are established only at
+runtime, not at compile-time. The Callback article has more information about
+delegation.
+
+The authors also discuss so-called parameterized types, which are also known as
+generics or templates . These allow any type to be defined without specifying
+all the other types it uses---the unspecified types are supplied as 'parameters'
+at the point of use.
+
+The authors admit that delegation and parameterization are very powerful but add
+a warning:
+
+"Dynamic, highly parameterized software is harder to understand and build than
+more static software."
+
+The authors further distinguish between 'Aggregation', where one object 'has' or
+'is part of' another object and acquaintance, where one object merely 'knows of'
+another object. Sometimes acquaintance is called 'association' or the 'using'
+relationship. Acquaintance objects may request operations of each other, but
+they aren't responsible for each other. Acquaintance is a weaker relationship
+than aggregation and suggests much looser coupling between objects, which can
+often be desirable for maximum maintainability in a design.
+
+
+The authors employ the term 'toolkit' where others might today use 'class
+library', as in C# or Java. In their parlance, toolkits are the object-oriented
+equivalent of subroutine libraries, whereas a 'framework' is a set of
+cooperating classes that make up a reusable design for a specific class of
+software. They state that applications are hard to design, toolkits are harder,
+and frameworks are the hardest to design.
+
+
+Chapter 2 is a step-by-step case study on "the design of a
+'What-You-See-Is-What-You-Get' document editor called Lexi."
+
+The chapter goes through seven problems that must be addressed in order to
+properly design Lexi, including any constraints that must be followed. Each
+problem is analyzed in depth, and solutions are proposed. Each solution is
+explained in full, including pseudo-code and a slightly modified version of
+Object Modeling Technique where appropriate.
+
+Finally, each solution is associated directly with one or more design
+patterns. It is shown how the solution is a direct implementation of that design
+pattern.
+
+The seven problems and their solutions, are as follows:
+
+Document Structure.
+
+The document is "an arrangement of basic graphical elements" such as characters,
+lines, other shapes, etc., that "capture the total information content of the
+document". The structure of the document contains a collection of these
+elements, and each element can in turn be a substructure of other elements.
+
+Problems and Constraints.
+
+Text and graphics should be treated the same way.  The implementation should
+treat complex and simple structures the same way. It should not have to know the
+difference between the two.  Specific derivatives of abstract elements should
+have specialized analytical elements.
+
+Solution and Pattern.
+
+A recursive composition is a hierarchical structure of elements, that builds
+"increasingly complex elements out of simpler ones" . Each node in the structure
+knows of its own children and its parent. If an operation is to be performed on
+the whole structure, each node calls the operation on its children.
+
+This is an implementation of the composite pattern, which is a collection of
+nodes. The node is an abstract base class, and derivatives can either be leaves,
+or collections of other nodes. When an operation is performed on the parent,
+that operation is recursively passed down the hierarchy.
+
+Formatting
+
+Formatting differs from structure. Formatting is a method of constructing a
+particular instance of the document's physical structure. This includes breaking
+text into lines, using hyphens, adjusting for margin widths, etc.
+
+Problems and Constraints.
+
+Balance between quality, speed and storage space Keep formatting independent
+from the document structure.
+
+Solution and Pattern.
+
+A Compositor class will encapsulate the algorithm used to format a
+composition. Compositor is a subclass of the primitive object of the document's
+structure. A Compositor has an associated instance of a Composition object. When
+a Compositor runs its Compose, it iterates through each element of its
+associated Composition, and rearranges the structure by inserting Row and Column
+objects as needed.
+
+The Compositor itself is an abstract class, allowing for derivative classes to
+use different formatting algorithms.
+
+The Strategy Pattern is used to accomplish this goal. A Strategy is a method of
+encapsulating multiple algorithms to be used based on a changing context. In
+this case, formatting should be different, depending on whether text, graphics,
+simple elements, etc., are being formatted.
+
+Embellishing the User Interface.
+
+The ability to change the graphical interface that the user uses to interact
+with the document.
+
+Problems and Constraints.
+
+Demarcate a page of text with a border around the editing area Scroll bars that
+let the user view different parts of the page User interface objects should not
+know about the embellishments Avoid an "explosion of classes" that would be
+caused by subclassing for "every possible combination of embellishments" and
+elements.
+
+Solution and Pattern.
+
+The use of a transparent enclosure allows elements that augment the behaviour of
+composition to be added to a composition. These elements, such as Border and
+Scroller, are special subclasses of the singular element itself. This allows the
+composition to be augmented, effectively adding state-like elements. Since these
+augmentations are part of the structure, their appropriate Operation will be
+called when the structure's Operation() is called. This means that the client
+does not need any special knowledge or interface with the structure in order to
+use the embellishments.
+
+This is a Decorator pattern, one that adds responsibilities to an object without
+modifying the object itself.
+
+
+Supporting Multiple Look-And-Feel Standards.
+
+
+Look-and-feel refers to platform-specific UI standards. These standards "define
+guidelines for how applications appear and react to the user".
+
+Problems and Constraints.
+
+The editor must implement standards of multiple platforms so that it is portable
+Easily adapt to new and emergent standards Allow for run-time changing of
+look-and-feel.  Have a set of abstract elemental subclasses for each category of
+elements.  Have a set of concrete subclasses for each abstract subclass that can
+have a different look-and-feel standard.
+
+Solution and Pattern.
+
+Since object creation of different concrete objects cannot be done at runtime,
+the object creation process must be abstracted. This is done with an abstract
+guiFactory, which takes on the responsibility of creating UI elements. The
+abstract guiFactory has concrete implementations, such as MotifFactory, which
+creates concrete elements of the appropriate type. In this way, the program need
+only ask for a ScrollBar and, at run-time, it will be given the correct concrete
+element.
+
+
+
+This is an Abstract Factory. A regular factory creates concrete objects of one
+type. An abstract factory creates concrete objects of varying types, depending
+on the concrete implementation of the factory itself. Its ability to focus on
+not just concrete objects, but entire families of concrete objects
+"distinguishes it from other creational patterns, which involve only one kind of
+product object".
+
+
+Supporting Multiple Window Systems.
+
+Just as look-and-feel is different across platforms, so is the method of
+handling windows. Each platform displays, lays out, handles input to and output
+from, and layers windows differently.
+
+Problems and Constraints.
+
+The document editor must run on many of the "important and largely incompatible
+window systems" that exist.  An Abstract Factory cannot be used. Due to
+differing standards, there will not be a common abstract class for each type of
+widget.  Do not create a new, nonstandard windowing system.
+
+Solution and Pattern.
+
+It is possible to develop "our own abstract and concrete product classes",
+because "all window systems do generally the same thing".  Each window system
+provides operations for drawing primitive shapes, iconifying/de-iconifying,
+resizing, and refreshing window contents.
+
+An abstract base Window class can be derived to the different types of existing
+windows, such as application, iconified, dialog. These classes will contain
+operations that are associated with windows, such as reshaping, graphically
+refreshing, etc. Each window contains elements, whose Draw() functions are
+called upon by the Window's own draw-related functions.
+
+In order to avoid having to create platform-specific Window subclasses for every
+possible platform, an interface will be used. The Window class will implement a
+Window implementation abstract class. This class will then in turn be derived
+into multiple platform-specific implementations, each with platform-specific
+operations. Hence, only one set of Window classes are needed for each type of
+Window, and only one set of WindowImp classes are needed for each platform. In
+addition, adding a new window type does not require any modification of platform
+implementation, or vice versa.
+
+This is a Bridge pattern. Window and WindowImp are different, but
+related. Window deals with windowing in the program, and WindowImp deals with
+windowing on a platform. One of them can change without ever having to modify
+the other. The Bridge pattern allows these two "separate class hierarchies to
+work together even as they evolve independently".
+
+User Operations
+
+All actions the user can take with the document, ranging from entering text,
+changing formatting, quitting, saving, etc.
+
+Problems and Constraints.
+
+Operations must be accessed through different inputs, such as a menu option and a keyboard shortcut for the same command.
+Each option has an interface, which should be modifiable.
+Operations are implemented in several different classes.
+In order to avoid coupling, there must not be a lot of dependencies between implementation and user interface classes.
+Undo and redo commands must be supported on most document changing operations, with no arbitrary limit on the number of levels of undo.
+Functions are not viable, since they don't undo/redo easily, are not easily associated with a state, and are hard to extend or reuse.
+Menus should be treated like hierarchical composite structures. Hence, a menu is a menu item that contains menu items which may contain other menu items, etc.
+
+
+cc-by-sa 4.0 Wikipedia:Design Patterns.

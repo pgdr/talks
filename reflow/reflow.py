@@ -16,7 +16,7 @@ def lc(i, j, b, data):
     c = sum(data[i:j + 1]) + (j - i)
     if c > b:
         return INF
-    return b - c
+    return (1+(b - c))**2
 
 
 @lru_cache(maxsize=10**4)
@@ -40,6 +40,7 @@ def cost(j, b, data):
 def reflow(text):
     """Return textarea as a list of strings and square size."""
     data = tuple(map(len, text))  # (list of word lengths)
+    logging.debug('Actual data we use for DP: %s' % str(data))
     N = len(data)
     B = int(sqrt(2 * sum(data)))
     OPT = INF
@@ -138,6 +139,7 @@ if __name__ == '__main__':
         d = []
         for x in stdin:
             d.append(x.strip())
-        d = ' '.join(d).replace('\n', ' ')
-        d = d.replace('  ', ' ')
+        d = ' '.join(d).replace('\n', ' ').replace('=', ' ')
+        while '  ' in d:
+            d = d.replace('  ', ' ')
         main(d)
