@@ -21,7 +21,6 @@ class memoize(dict):
         return y
 
 
-@memoize
 def lc(i, j, b, data):
     c = sum(data[i:j + 1]) + (j - i)
     if c > b:
@@ -39,7 +38,7 @@ def cost(j, b, data):
     best = INF
     best_idx = j
     for i in range(1, j + 1):
-        c, _ = cost(i - 1, b - 2, data)
+        c, _ = cost(i - 1, b, data)
         c += lc(i, j, b, data)
         if c < best:
             best = c
@@ -48,14 +47,14 @@ def cost(j, b, data):
 
 
 def reflow(text):
-    """Return triangular textarea as a list of strings and base length."""
-    data = tuple(map(len, text))
+    """Return textarea as a list of strings and square size."""
+    data = tuple(map(len, text))  # (list of word lengths)
     N = len(data)
-    B = int(sqrt(2 * sum(data)))  # lower bound on base of triangle
+    B = int(sqrt(2 * sum(data)))
     OPT = INF
     while OPT >= INF:
         B += 1
-        OPT, split = cost(N - 1, B, data)
+        OPT, split = cost(N , B, data)
     logging.info('acc penalty: %d' % OPT)
 
     prev_split = N
@@ -76,12 +75,20 @@ def spaces(s):
     return s.count(' ')
 
 
-def add_spacing(s, b):
+def _add_intersentence_spacing(s, b):
+    rem = lambda s_, b_: b_ - len(s_)  # remaining characters
+    for c in '.!?;:':
+        pre  = '%s '  % c
+        post = '%s  ' % c
+        if (rem(s, b)) >= s.count(pre):
+            s = s.replace(pre, post)
+    return s
+
+def _add_spacing(s, b):
     """Add spaces in a line s to get closer to b characters."""
     rem = lambda s_, b_: b_ - len(s_)  # remaining characters
     orig = ''.join(list(s))
-    if (rem(s, b)) > s.count('. '):
-        s = s.replace('. ', '.  ')
+    s = _add_intersentence_spacing(s, b)
     if (rem(s, b)) > 2 * spaces(s) > 0:
         s = s.replace(' ', '   ')
         logging.debug('double-spaced: "%s"' % s)
@@ -90,10 +97,7 @@ def add_spacing(s, b):
     if (rem(s, b)) > s.count('. '):
         s = s.replace('. ', '.  ')
 
-    sidepad = rem(s, b) // 2
-    s = ' ' * sidepad + s + ' ' * sidepad
-    if rem(s, b) > 0:
-        s = s + ' ' * rem(s, b)
+    s += ' ' * rem(s, b)
     logging.debug('\n%s\n%s\n%s\n%s\n' % ('=' * b, orig, s, '=' * b))
 
     return s
@@ -108,18 +112,18 @@ def triangle(text):
     for i in range(len(result)):
         s = result[i]
         logging.debug('stretch penalty %2d for "%s".' % (B - len(s), s))
-        s = add_spacing(s, B)
+        s = _add_spacing(s, B)
         line = '| %s |' % s
         ret.append(line)
     ret.reverse()
     return ret
 
 
-def treeangle(text):
-    """Generates a christmas tree containing the text."""
+def square(text):
+    """Generates a square containing the text."""
     text = text.split()
     text.insert(0, '')
-    final = triangle(text)  # the triangle is upside down
+    final = triangle(text)
     base = len(final[-1])
     final = ['-' * base] + final
     final.append('-' * base)
@@ -128,10 +132,13 @@ def treeangle(text):
 
 
 def main(text):
-    print(treeangle(text))
+    print(square(text))
 
 
 if __name__ == '__main__':
+    logging.basicConfig(format='%(message)s',
+                        level=logging.INFO)
+
     from sys import argv
     if len(argv) > 1:
         main(' '.join(argv[1:]))
