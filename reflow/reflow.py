@@ -1,24 +1,15 @@
 #!/usr/bin/env python
 from __future__ import print_function
 
+try:
+    from functools32 import lru_cache
+except ImportError:
+    from functools import lru_cache
+
 from math import sqrt
 import logging
 
 INF = 10**10
-
-
-class memoize(dict):
-    """Memoization wrapper for unary function."""
-
-    def __init__(self, fun):
-        self.fun = fun
-
-    def __call__(self, *args):
-        return self[args]
-
-    def __missing__(self, args):
-        y = self[args] = self.fun(*args)
-        return y
 
 
 def lc(i, j, b, data):
@@ -28,7 +19,7 @@ def lc(i, j, b, data):
     return b - c
 
 
-@memoize
+@lru_cache(maxsize=10**4)
 def cost(j, b, data):
     if b <= 0:
         return INF, 0
