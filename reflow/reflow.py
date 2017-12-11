@@ -19,8 +19,14 @@ def lc(i, j, b, data):
     return (1 + (b - c))**2
 
 
-@lru_cache(maxsize=10**4)
-def cost(j, b, data):
+@lru_cache(maxsize=10**8)
+def cost(j, b, data, remaining):
+    """Cost of placing a newline after j given b characters per line.
+
+    Return the score and the index of the next newline (backwards).
+    """
+    if remaining < 0:
+        return INF, 0
     if b <= 0:
         return INF, 0
     if j == 0:
@@ -29,7 +35,7 @@ def cost(j, b, data):
     best = INF
     best_idx = j
     for i in range(1, j + 1):
-        c, _ = cost(i - 1, b, data)
+        c, _ = cost(i - 1, b, data, remaining-1)
         c += lc(i, j, b, data)
         if c < best:
             best = c
@@ -42,11 +48,13 @@ def reflow(text):
     data = tuple(map(len, text))  # (list of word lengths)
     logging.debug('Actual data we use for DP: %s' % str(data))
     N = len(data)
-    B = int(sqrt(2 * sum(data)))
+    logging.info('N=%d' % N)
+    B = int(sqrt(sum(data)))  # lower bounds of square
     OPT = INF
     while OPT >= INF:
+        logging.debug('Testing size B=%d' % B)
         B += 1
-        OPT, split = cost(N, B, data)
+        OPT, split = cost(N, B, data, B)
     logging.info('acc penalty: %d' % OPT)
 
     prev_split = N
@@ -56,7 +64,7 @@ def reflow(text):
     while split > 0:
         result.append(' '.join(text[split:prev_split]))
         prev_split = split
-        OPT, split = cost(split - 1, b, data)
+        OPT, split = cost(split - 1, b, data, b)
     logging.info('base size:   %d' % B)
     logging.info('tri height:  %d' % len(result))
     return result, B
@@ -129,7 +137,7 @@ def main(text):
 
 
 if __name__ == '__main__':
-    logging.basicConfig(format='%(message)s', level=logging.INFO)
+    logging.basicConfig(format='%(message)s', level=logging.DEBUG)
 
     from sys import argv
     if len(argv) > 1:
