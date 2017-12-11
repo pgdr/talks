@@ -16,7 +16,7 @@ def lc(i, j, b, data):
     c = sum(data[i:j + 1]) + (j - i)
     if c > b:
         return INF
-    return (1+(b - c))**2
+    return (1 + (b - c))**2
 
 
 @lru_cache(maxsize=10**4)
@@ -46,7 +46,7 @@ def reflow(text):
     OPT = INF
     while OPT >= INF:
         B += 1
-        OPT, split = cost(N , B, data)
+        OPT, split = cost(N, B, data)
     logging.info('acc penalty: %d' % OPT)
 
     prev_split = N
@@ -70,11 +70,12 @@ def spaces(s):
 def _add_intersentence_spacing(s, b):
     rem = lambda s_, b_: b_ - len(s_)  # remaining characters
     for c in '.!?;:':
-        pre  = '%s '  % c
+        pre = '%s ' % c
         post = '%s  ' % c
         if (rem(s, b)) >= s.count(pre):
             s = s.replace(pre, post)
     return s
+
 
 def _add_spacing(s, b):
     """Add spaces in a line s to get closer to b characters."""
@@ -128,8 +129,7 @@ def main(text):
 
 
 if __name__ == '__main__':
-    logging.basicConfig(format='%(message)s',
-                        level=logging.INFO)
+    logging.basicConfig(format='%(message)s', level=logging.INFO)
 
     from sys import argv
     if len(argv) > 1:
