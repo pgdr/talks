@@ -1,11 +1,21 @@
-# Deploy Is Not Copy
+# KOMODO
+
+## Deploy Is Not Copy
+
++++
 
 Why Install is so important that we have added it as a separate point in the
 architecture contracts.
 
++++
+
 How we ended up where we are with `/project/res` today.
 
++++
+
 Why per-project Jenkins jobs is an anti-pattern.
+
++++
 
 Why Komodo is necessary.
 
@@ -13,8 +23,15 @@ Why Komodo is necessary.
 
 ## CP vs install
 
-First, since not all are experience Linux/UNIX, there is actually an `install`
-command that might be interesting, which is like `cp`, but
++++
+
+First, since not all are experience Linux/UNIX
+
+there is actually an `install`
+
+command that might be interesting,
+
+which is like `cp`, but
 
 +++
 
