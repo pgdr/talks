@@ -9,15 +9,19 @@ architecture contracts.
 
 +++
 
-How we ended up where we are with `/project/res` today.
+How we ended up where we are with
+
+> `/project/res`
+
+today.
 
 +++
 
-Why per-project Jenkins jobs is an anti-pattern.
+Why per-project Jenkins jobs is an _anti-pattern_ (?)
 
 +++
 
-Why Komodo is necessary.
+Why Komodo was necessary.
 
 ---
 
@@ -25,9 +29,7 @@ Why Komodo is necessary.
 
 +++
 
-First, since not all are experience Linux/UNIX
-
-there is actually an `install`
+There is an `install`
 
 command that might be interesting,
 
@@ -179,13 +181,15 @@ permissions.
 ## Enter Komodo
 
 After discussing with Joakim and Jean-Paul I brain-stormed with Jørgen to find
-alternative ways.  We discussed several ideas, and together with Jean-Paul
-agreed that we would be allowed to spend some time on trying.
+alternative ways.
+
+We discussed several ideas, and together with Jean-Paul agreed that we would be
+allowed to spend some time on trying.
 
 As you might know, Komodo demands that your software is installable.
 
-Hence, step 1 for getting something into Komodo is to make an install script in
-the source tree.
+Hence, *Step 1* for getting something into Komodo is to make an install script
+in the source tree.
 
 +++
 
@@ -266,7 +270,7 @@ needed for running on cluster
 Do we want to support more than just the regular "run this on the cluster"
 software?
 
-Komodo wasn't meant as a 
+Komodo wasn't meant as a replacement for `/prog/sdpsoft` or RHEL distribution.
 
 
 ---
