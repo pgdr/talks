@@ -59,7 +59,7 @@ Suppose `C` → `B` → `A` and also `C` → `A`
 
 Suppose `Res` breaks the API
 
-(E.g. from `2.3` and `3.0`)
+(E.g. from `2.3` to `3.0`)
 
 There is now a **demarcation**
 
@@ -68,6 +68,14 @@ There is now a **demarcation**
 * `fmu_postprocessing` must make a choice
  * use `Res 2.3` or `Res 3.0`?
 * `Everest` depends on `Res 2.3`
+* ... because `Seba` depends on `Res 2.3`
+
++++
+
+All projects related to Res are now partitioned into
+
+* Res 2.3
+* Res 3.0
 
 +++
 
