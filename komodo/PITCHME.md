@@ -129,15 +129,16 @@ So let's install, e.g. Clippy.
 +++
 
 I make a Jenkins job that
-* `cp Clippy/bin/clippy /project/res/bin` (or somewhere else?)
-* `cp Clippy/python/clippy /project/res/lib` (or somewhere else?)
-
-Oh, and don't forget
-* `cp Clippy/data/the_important_file.yml /project/res/share` ?
+```
+cp Clippy/bin/clippy    /project/res/bin  # or?
+cp Clippy/python/clippy /project/res/lib  # or?
+# don't forget
+cp Clippy/data/the_important_file.yml /project/res/share  # or?
+```
 
 +++
 
-Run Jenkins Cliippy-deploy nightly (or so).
+Run Jenkins Clippy-deploy nightly (or so).
 
 +++
 
