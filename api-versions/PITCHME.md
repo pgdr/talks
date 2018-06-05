@@ -97,11 +97,19 @@ The more branches we need to backport to
 
 +++
 
-Do you consider introducing a new symbol. Stop. Don't.
+Do you consider introducing a new symbol?
+
+Stop.
+
+Don't.
+
++++
 
 Exercise 1.
 
-Fix the issue without touching the API.  API changes ripple for years.
+Fix the issue without touching the API.
+
+API changes ripple for years.
 
 +++
 
@@ -120,24 +128,18 @@ API = Design = years
 
 +++
 
-Such decisions take as long time to make, review and commit as the bug fixes.
+Such decisions take as long time to make,
+
+review and commit as the bug fixes.
 
 +++
 
-E.g. we renamed res to ert more than one year ago ~800 commits ago ... we still
-have users.
+E.g. we renamed `res` to `ert` more than
 
----
+* one year ago
+* ~800 commits ago
 
-## Legal issues
-
-+++
-
-_Oracle America, Inc. v. Google, Inc._
-
-+++
-
-Inconclusive.
+... we still have ert users.
 
 ---
 
