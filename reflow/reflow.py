@@ -20,13 +20,11 @@ def lc(i, j, b, data):
 
 
 @lru_cache(maxsize=10**8)
-def cost(j, b, data, remaining):
+def cost(j, b, data):
     """Cost of placing a newline after j given b characters per line.
 
     Return the score and the index of the next newline (backwards).
     """
-    if remaining < 0:
-        return INF, 0
     if b <= 0:
         return INF, 0
     if j == 0:
@@ -35,7 +33,7 @@ def cost(j, b, data, remaining):
     best = INF
     best_idx = j
     for i in range(1, j + 1):
-        c, _ = cost(i - 1, b, data, remaining-1)
+        c, _ = cost(i - 1, b, data)
         c += lc(i, j, b, data)
         if c < best:
             best = c
@@ -43,18 +41,18 @@ def cost(j, b, data, remaining):
     return best, best_idx
 
 
-def reflow(text):
+def reflow(text, B=70):
     """Return textarea as a list of strings and square size."""
     data = tuple(map(len, text))  # (list of word lengths)
     logging.debug('Actual data we use for DP: %s' % str(data))
     N = len(data)
     logging.info('N=%d' % N)
-    B = int(sqrt(sum(data)))  # lower bounds of square
+    #B = int(sqrt(sum(data)))  # lower bounds of square
     OPT = INF
     while OPT >= INF:
         logging.debug('Testing size B=%d' % B)
         B += 1
-        OPT, split = cost(N, B, data, B)
+        OPT, split = cost(N, B, data)
     logging.info('acc penalty: %d' % OPT)
 
     prev_split = N
@@ -64,7 +62,7 @@ def reflow(text):
     while split > 0:
         result.append(' '.join(text[split:prev_split]))
         prev_split = split
-        OPT, split = cost(split - 1, b, data, b)
+        OPT, split = cost(split - 1, b, data)
     logging.info('base size:   %d' % B)
     logging.info('tri height:  %d' % len(result))
     return result, B
