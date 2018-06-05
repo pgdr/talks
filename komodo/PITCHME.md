@@ -47,6 +47,25 @@ which is like `cp`, but
 
 (perhaps something to add to Everest)
 
++++
+
+```make
+Makefile:
+install:
+    # Documentation
+    $(MAKE) -C docs install
+    # Configuration files
+    install -d $(DESTDIR)/etc/netctl/{examples,hooks,interfaces}
+    install -m644 docs/examples/* $(DESTDIR)/etc/netctl/examples/
+    # Libs
+    install -d $(DESTDIR)/usr/lib/netctl/{connections,dhcp}
+    install -m644 src/lib/{globals,interface,ip,rfkill,wpa} $(DESTDIR)/usr/lib/netctl/
+    install -m644 src/lib/connections/* $(DESTDIR)/usr/lib/netctl/connections/
+    install -m644 src/lib/dhcp/* $(DESTDIR)/usr/lib/netctl/dhcp/
+    install -m755 src/lib/{auto.action,network} $(DESTDIR)/usr/lib/netctl/
+    # Scripts
+    ...
+```
 
 ---
 
