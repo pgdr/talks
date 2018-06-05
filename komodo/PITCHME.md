@@ -129,28 +129,24 @@ does not scale.
 
 +++
 
-And this is how many people do it in Equinor.  They say, why can't you just put
-this script up there?
+And this is how many people do it in Equinor.
+
+> why can't you just put this script up there?
 
 Well, it doesn't scale.
 
 
 +++
 
+## Debian with 30k packages.
 
-Take Debian with 30k packages.
++++
 
-They do not accept anything but "perfect".  And is perfect so hard?
-
-No, it's not so hard.  Write a proper (short, viz jokva) `setup.py` script.
-
-Should we accept anything less than perfect?  Why?
-
-Because it's difficult?  It's not.
-
-Because it takes time?  It doesn't.
-
-We shouldn't accept being mediocre.  There's no reason.
+* don't accept anything but "perfect"
+* it's not so hard
+* should we accept anything less?
+ * Because it's difficult?  It's not.
+ * Because it takes time?  It doesn't.
 
 ---
 
@@ -158,12 +154,12 @@ We shouldn't accept being mediocre.  There's no reason.
 
 +++
 
-That was the way deploy to `/project/res` used to be when jokva and I started.
+Used to be de-facto deploy
 
 (And still is.)
 
-Lots of files where copied into place, by different users, with different
-permissions.
+`cp this` and `cp that`
+* by different users, with different permissions.
 
 +++
 
@@ -199,16 +195,13 @@ permissions.
 
 ## Enter Komodo
 
-After discussing with Joakim and Jean-Paul I brain-stormed with Jørgen to find
-alternative ways.
++++
 
-We discussed several ideas, and together with Jean-Paul agreed that we would be
-allowed to spend some time on trying.
+* After discussing with Joakim and Jean-Paul
+* brain-storming with Jørgen
+* try doing it properly; Komodo demands installable.
 
-As you might know, Komodo demands that your software is installable.
-
-Hence, *Step 1* for getting something into Komodo is to make an install script
-in the source tree.
+**Step 1** getting into Komodo: install script in the source tree.
 
 +++
 
