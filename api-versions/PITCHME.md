@@ -1,4 +1,8 @@
-# API=Versions=Software
+# API
+# =
+# Versions
+# =
+# Software
 
 ---
 # Analogy time
@@ -8,11 +12,19 @@
 
 * Definitions
 * Lemmata
-* (Propositions)
 * Theorems
 * Corollaries
-* (and proofs)
-* (and text)
+
++++
+
+* Definitions = Types
+* Lemmata = Helper functions
+* Theorems = Main functions
+* Corollaries = Utilities using Theorem
+
+Text = documentation
+
+Proofs = implementation
 
 ---
 
@@ -23,6 +35,21 @@
 Version Selection is NP-complete.
 
 +++
+
+By reduction from 3-SAT.
+
+* Clause → package with three versions
+* Variable → package with two versions
+* Formula → package depending on all clauses
+
+"QED"!
+
+---
+
+# Version selection complexity for developers
+
+---
+
 
 Suppose C → B → A and also C → A
 
@@ -38,6 +65,15 @@ Suppose Res breaks the API (e.g. changing namespace from res→ert).
 
 * fmu_postprocessing must make a choice; use Res 2.3 or Res 2.4?
 * Everest depends on Res 2.3.  (Possibly because of Seba.)
+
+
++++
+
+## Additional work
+
+The more major.minor branches we have
+
+The more branches we need to backport to
 
 
 
