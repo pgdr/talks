@@ -48,6 +48,18 @@ By reduction from 3-SAT.
 
 "QED"!
 
++++
+
+* Anaconda uses a (slow) SAT solver
+* `apt-get` uses heuristics + SAT solver
+* Eclipse uses sat4j SAT solver
+* Fedora DNF uses a SAT solver
+* FreeBSD uses a SAT solver
+* SUSE uses `libsolv`
+* ...
+
+
+
 ---
 
 ## Version selection complexity for developers
@@ -86,6 +98,18 @@ All projects related to Res are now partitioned into
 Python 2 v 3 anyone?
 
 +++
+
+
+
+E.g. we renamed `res` to `ert` more than
+
+* one year ago
+* ~800 commits ago
+
+... we still have ert users.
+
++++
+
 
 ### Additional work
 
@@ -137,15 +161,6 @@ API = Design = years
 Such decisions take as long time to make,
 
 review and commit as the bug fixes.
-
-+++
-
-E.g. we renamed `res` to `ert` more than
-
-* one year ago
-* ~800 commits ago
-
-... we still have ert users.
 
 ---
 
