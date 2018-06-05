@@ -23,6 +23,45 @@ Why per-project Jenkins jobs is an _anti-pattern_ (?)
 
 Why Komodo was necessary.
 
++++
+
+* `ert-deploy`
+* `FUSD-deploy`
+* `libecl-deploy`
+* `segyio-deploy`
+* `pyDAKOTA-deploy`
+* `webportal-deploy`
+* `well2seis-deploy`
+* `ert-statoil-deploy`
+* `fmu-storage-deploy`
+* `segyviewlib-deploy`
+* `Seba-WPRO-deploy-joaho`
+* `libecl-shared-opm-deploy`
+* `libecl-static-opm-deploy`
+* `fmu-storage-deploy-client`
+* `ert-statoil-deploy-setuptools`
+
++++
+
+* `PM-deploy`
+* `sunbeam-deploy`
+* `pyDAKOTA-deploy`
+* `Sentry-deploy-V2-PROD`
+* `ERT-deploy-pgdr-branch`
+* `Sentry-deploy-V1-STAGE`
+* `Sentry-deploy-V2-STAGE`
+* `ERT-deploy-ariel-branch`
+* `opm-parser-deploy-joaho`
+* `ERT-upstream-v1.7-deploy`
+* `ERT-upstream-v1.8-deploy`
+* `ERT-deploy-jpb-branch-RH6`
+* `FUSD-deploy_TO_BE_DELETED`
+* `ERT-deploy-alin-branch-RH6`
+* `ERT-deploy-upstream-branch`
+* `ERT-deploy-joaho-branch-RH6`
+* `segyviewlib-deploy_TO_BE_DELETED`
+* `ERT-upstream-master-nightly-deploy-RH6_TO_BE_DELETED`
+
 ---
 
 ## CP vs install
