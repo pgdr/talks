@@ -69,6 +69,9 @@ There is now a **demarcation**
  * use `Res 2.3` or `Res 2.4`?
 * `Everest` depends on `Res 2.3`.  (Possibly because of `Seba`.)
 
++++
+
+Python 2 v 3 anyone?
 
 +++
 
