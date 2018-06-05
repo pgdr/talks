@@ -57,17 +57,17 @@ Suppose `C` → `B` → `A` and also `C` → `A`
 
 +++
 
-Suppose `Res` breaks the API (e.g. changing namespace from `res`→`ert`).
+Suppose `Res` breaks the API
 
-(E.g. from `2.3` and `2.4`)
+(E.g. from `2.3` and `3.0`)
 
 There is now a **demarcation**
 
 +++
 
 * `fmu_postprocessing` must make a choice
- * use `Res 2.3` or `Res 2.4`?
-* `Everest` depends on `Res 2.3`.  (Possibly because of `Seba`.)
+ * use `Res 2.3` or `Res 3.0`?
+* `Everest` depends on `Res 2.3`
 
 +++
 
