@@ -5,6 +5,10 @@
 # Software
 
 ---
+
+API changes ripple for years.
+
+---
 ## Analogy time
 ### mathematical papers
 
@@ -101,6 +105,10 @@ Do you consider introducing a new symbol?
 
 Stop.
 
+Take a deep breath.
+
+Talk to someone.
+
 Don't.
 
 +++
@@ -108,8 +116,6 @@ Don't.
 Exercise 1.
 
 Fix the issue without touching the API.
-
-API changes ripple for years.
 
 +++
 
