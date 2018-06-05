@@ -105,7 +105,7 @@ Run Jenkins deploy-clippy nightly (or so).
 Some issues:
 
 * separate the installation from the source code
-** no tests (need nightly integration tests, but where?)
+ * no tests (need nightly integration tests, but where?)
 * this means that when you add a new file, it may and may not be copied
 * It's _additive_, meaning that when you rename a file, the old remains
 

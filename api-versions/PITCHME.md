@@ -1,12 +1,12 @@
 # API
-# =
+## =
 # Versions
-# =
+## =
 # Software
 
 ---
-# Analogy time
-## mathematical papers
+## Analogy time
+### mathematical papers
 
 +++
 
@@ -28,7 +28,7 @@ Proofs = implementation
 
 ---
 
-# The inherent complexity of versions
+## The inherent complexity of versions
 
 +++
 
@@ -46,30 +46,33 @@ By reduction from 3-SAT.
 
 ---
 
-# Version selection complexity for developers
-
----
-
-
-Suppose C → B → A and also C → A
-
-(e.g. Everest → fmu_postprocessing → Res)
+## Version selection complexity for developers
 
 +++
 
-Suppose Res breaks the API (e.g. changing namespace from res→ert).
 
-(E.g. from 2.3 and 2.4)
+Suppose `C` → `B` → `A` and also `C` → `A`
 
-+++
-
-* fmu_postprocessing must make a choice; use Res 2.3 or Res 2.4?
-* Everest depends on Res 2.3.  (Possibly because of Seba.)
-
+(e.g. `Everest` → `fmu_postprocessing` → `Res`)
 
 +++
 
-## Additional work
+Suppose `Res` breaks the API (e.g. changing namespace from `res`→`ert`).
+
+(E.g. from `2.3` and `2.4`)
+
+There is now a **demarcation**
+
++++
+
+* `fmu_postprocessing` must make a choice
+ ** use `Res 2.3` or `Res 2.4`?
+* `Everest` depends on `Res 2.3`.  (Possibly because of `Seba`.)
+
+
++++
+
+### Additional work
 
 The more major.minor branches we have
 
@@ -79,7 +82,7 @@ The more branches we need to backport to
 
 ---
 
-# Don't touch it!
+## Don't touch it!
 
 +++
 
@@ -115,7 +118,7 @@ have users.
 
 ---
 
-# Legal issues
+## Legal issues
 
 +++
 
@@ -127,7 +130,7 @@ Inconclusive.
 
 ---
 
-# Q∕A
+## Q∕A
 
 +++
 
