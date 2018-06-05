@@ -62,6 +62,13 @@ Why Komodo was necessary.
 * `segyviewlib-deploy_TO_BE_DELETED`
 * `ERT-upstream-master-nightly-deploy-RH6_TO_BE_DELETED`
 
+
++++
+
+It might work when #devs + #projs <= 10.
+
+It does not scale.
+
 ---
 
 ## CP vs install
@@ -84,7 +91,6 @@ which is like `cp`, but
 * unlinks if necessary
 * etc
 
-(perhaps something to add to Everest)
 
 +++
 
@@ -110,21 +116,15 @@ install:
 
 ## Installation
 
-So while `install` is an improvement over `cp` it's a different kind of install
-I want to talk about.
+`install` more suited to `cp`
 
-The purpose of installation of a project is to convert the source tree into
-executables and libraries, and making available extra files.
+a different kind of install
 
-(Please read `man hier`, although old, still valid.)
-
-
----
++++
 
 ### Jenkins deploy
 
-So let's install my software, e.g., Clippy.  (A celebration for the GitHub
-acquisition.)
+So let's install, e.g. Clippy.
 
 +++
 
@@ -137,7 +137,21 @@ Oh, and don't forget
 
 +++
 
-Run Jenkins deploy-clippy nightly (or so).
+Run Jenkins Cliippy-deploy nightly (or so).
+
++++
+
+
+Some issues:
+
+* separate the installation from the source code
+
++++
+
+Some issues:
+
+* separate the installation from the source code
+ * no tests (need nightly integration tests, but where?)
 
 +++
 
@@ -146,25 +160,27 @@ Some issues:
 * separate the installation from the source code
  * no tests (need nightly integration tests, but where?)
 * this means that when you add a new file, it may and may not be copied
-* It's _additive_, meaning that when you rename a file, the old remains
+
++++
+
+Some issues:
+
+* separate the installation from the source code
+ * no tests (need nightly integration tests, but where?)
+* this means that when you add a new file, it may and may not be copied
+* it's _additive_, meaning that when you rename a file, the old remains
 
 +++
 
 How the software is installed is a part of the development!
 
-When we use proper install tools (cmake/setuptools/make) to install, we put the
-install responsibility in the source tree, and make it possible to test.
-
-This is called _installation testing_ and can be done on Travis by a simple
-install before tests are run.
-
-How do you test that Jenkins deploy scripts are up-to-date?
-
 +++
 
-However, if you are a maintainer of one or two, or maybe five applications, this
-may work.  But if you are responsible for 10 or more, it will not.  It simply
-does not scale.
+Use proper tools (cmake/setuptools/make) to install → testable
+
+Called _installation testing_
+
+How do you test that Jenkins deploy scripts are up-to-date?
 
 +++
 
