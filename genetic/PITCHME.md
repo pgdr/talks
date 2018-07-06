@@ -76,8 +76,6 @@ def genetic_algorithm(generator, mut, cros, fit):
     pool = [generator() for _ in range(SIZE)]
     for i in range(GENS):
         pool = _iterate(pool, mut, cros, fit)
-        if fit(pool[0]) == 0:
-            break
     return pool
 ```
 
