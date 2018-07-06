@@ -110,3 +110,11 @@ the Evolutionary Computation and Artificial Life Research Communities
 
 
 ---
+
+[Walking gaits](https://youtu.be/H6OB1E8NsLw?list=PL5278ezwmoxQODgYB0hWnC0-Ob09GZGe2)
+
+---
+
+[No claws](https://youtu.be/_5Y1hSLhYdY?list=PL5278ezwmoxQODgYB0hWnC0-Ob09GZGe2)
+
+---
