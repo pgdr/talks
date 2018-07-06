@@ -31,7 +31,7 @@ You need three functions to use GAs.
 make a random mutation of an individual
 
 ```python
-def mutate(ind : Individual) -> Individual:
+def mutate(ind: Individual) -> Individual:
     pass
 ```
 
@@ -42,7 +42,7 @@ def mutate(ind : Individual) -> Individual:
 ### crossover
 
 ```python
-def crossover(ind1 : Individual, ind2 : Individual) -> Individual:
+def crossover(ind1: Individual, ind2: Individual) -> Individual:
     pass
 ```
 
@@ -51,7 +51,7 @@ def crossover(ind1 : Individual, ind2 : Individual) -> Individual:
 ### fitness
 
 ```python
-def fitness(ind : Individual) -> float:
+def fitness(ind: Individual) -> float:
     pass
 ```
 
@@ -70,7 +70,7 @@ def _iterate(pool, mut, cros, fit):
     for i in range(10):
         for j in range(10):
             nextpool.append(cros(pool[i], pool[j]))
-    return sorted(list(set(nextpool)), key=fit)[:min(len(pool), len(nextpool))]
+    return sorted(list(set(nextpool)), key=fit)[:len(pool)]
 
 def genetic_algorithm(generator, mut, cros, fit):
     pool = [generator() for _ in range(SIZE)]
@@ -85,3 +85,28 @@ def genetic_algorithm(generator, mut, cros, fit):
 
 ---
 
+The Surprising Creativity of Digital Evolution: A Collection of Anecdotes from
+the Evolutionary Computation and Artificial Life Research Communities
+
+---
+
+![Inheritance](https://raw.githubusercontent.com/pgdr/talks/master/genetic/inheritance.png)
+
+---
+
+![Locomotion](https://raw.githubusercontent.com/pgdr/talks/master/genetic/locomotion.png)
+
+---
+
+![Locomotion2](https://raw.githubusercontent.com/pgdr/talks/master/genetic/locomotion2.png)
+
+---
+
+![Pole-vault](https://raw.githubusercontent.com/pgdr/talks/master/genetic/pole-vault.png)
+
+---
+
+![Collision detection](https://raw.githubusercontent.com/pgdr/talks/master/genetic/collision-detection.png)
+
+
+---
