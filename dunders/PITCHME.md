@@ -122,7 +122,9 @@ Now ... Javascript, on the other hand ...
 
 Was developed to never let the programmer down
 
-+++
+
+---
+
 
 The big JS quiz
 
@@ -188,6 +190,7 @@ NaN
 ```js
 > ['5'] * 5
 25
+
 > ['5'] + 5
 "55"
 ```
@@ -377,12 +380,12 @@ SyntaxError
 +++
 
 ```python
-> "1" / "2"
-TypeError
-
 > "1" + "2"
 '12'
 
+> "1" / "2"
+TypeError
+x
 > [] + -0
 TypeError
 ```
