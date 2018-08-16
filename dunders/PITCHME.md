@@ -26,11 +26,18 @@ Great for communicating intent!
 
 +++
 
-Leaves out the unnecessary `{` and `}` and `;` and type declarations
+Leaves out the unnecessary
+
+* `{` and `}`
+* `;`
+
+and type declarations
 
 +++
 
-Code is typically quite dense, despite being easy to read.
+Code is typically quite dense
+
+despite being easy to read.
 
 +++
 
@@ -42,6 +49,12 @@ Development time is in general more expensive than the additional waiting time.
 * adopt to new requirements
 
 ---
+
+In Javascript you can't do OOP.
+
+In Java you can't not do OOP.
+
++++
 
 To OOP or not to OOP?  Why not both?
 
@@ -55,19 +68,29 @@ wiiiidely used
 
 +++
 
-Is in thorough use (and therefore has libraries, documentation and forum support for)
+Is in thorough use
 
-* Web-programming (replacing php/cgi/.net/...)
-* System Programming (replacing bash/perl/ruby,...)
+(and therefore has libraries,
+
+documentation and forum support for)
+
+* Web-programming (replacing php, cgi, .net, ...)
+* System Programming (replacing bash, perl, ruby, ...)
 * desktop applications (replacing Java, C++, C#, ...)
 
 +++
 
-A wider audience means more eyes which means a more robust architecture
+A wider audience means
+
+more eyes, means
+
+more robust architecture
 
 +++
 
-Great selection of libraries (both batteries-included and 3rd party)!
+Great selection of libraries
+
+(both batteries-included and 3rd party)!
 
 +++
 
@@ -88,7 +111,7 @@ Finally: No coercion is done.
 
 +++
 
-You are never surprised (except that something exists)
+You are never surprised
 
 +++
 
@@ -214,11 +237,11 @@ true
 +++
 
 ```js
-> "1" / "2"
-0.5
-
 > "1" + "2"
 "12"
+
+> "1" / "2"
+0.5
 ```
 
 +++
@@ -226,17 +249,6 @@ true
 ```js
 > [] + -0
 "0"
-```
-
-
-+++
-
-```js
-> new Date(0) + 1
-"Thu Jan 01 1970 01:00:00 GMT+0100 (CET)1"
-
-> new Date(42) - 1
-41
 ```
 
 +++
@@ -304,21 +316,17 @@ True
 ### ??? "42.00"
 ### ??? > 42 .toFixed(2)
 ### ??? "42.00"
-```
-> '
-+++
 
-```python
 %0.2f' % 42
 42
 ```
 
++++
+
 ```python
 > [] + []
 []
-```
 
-```python
 > [] + {}
 TypeError
 
@@ -332,6 +340,8 @@ TypeError
 TypeError
 ```
 
++++
+
 ```python
 > ['5'] * 5
 ['5', '5', '5', '5', '5']
@@ -344,6 +354,8 @@ TypeError
 > {} + []
 TypeError
 ```
+
++++
 
 ```python
 > ({} + []) + {}
@@ -362,6 +374,8 @@ SyntaxError
 SyntaxError
 ```
 
++++
+
 ```python
 > "1" / "2"
 TypeError
@@ -373,13 +387,7 @@ TypeError
 TypeError
 ```
 
-```python
-> datetime.time(0) + 0
-TypeError
-
-> datetime.time(0) + 0
-TypeError
-```
++++
 
 ```python
 > [] == []
@@ -388,6 +396,8 @@ True
 > [] == ![]
 SyntaxError
 ```
+
++++
 
 ```python
 > [1,2,3] == [1,2,3]
@@ -403,6 +413,8 @@ False
 False
 ```
 
++++
+
 ```python
 > str(None)
 'None'
@@ -411,6 +423,5 @@ False
 ```
 
 ---
-
 
 showtime
