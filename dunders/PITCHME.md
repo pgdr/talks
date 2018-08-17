@@ -26,6 +26,8 @@ Was developed for readability
 
 +++
 
+Java:
+
 ```java
 class Main {
     public static void main(String[] args) {
@@ -33,6 +35,9 @@ class Main {
     }
 }
 ```
+
+
+Python:
 
 ```python
 print('Hello, world!')
@@ -115,13 +120,13 @@ Great selection of libraries
 
 It's very easy to extend with C libraries if something is too slow for you
 
-+++
+---
 
 A proper and fully functional REPL (actually several)
 
-being interpreted makes debugging trivial.
++++
 
-Trivial.
+being interpreted makes debugging fun.
 
 ---
 
@@ -142,11 +147,12 @@ Was developed to never let the programmer down
 
 This has big negative consequenses.
 
-What would look like
+What would in Python look like
 ```
-TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+TypeError: unsupported operand type(s) for +: ...
 ```
-in Python can end up in Javascript like
+
+in Javascript is like
 ```js
 NaN
 ```
@@ -232,21 +238,15 @@ NaN
 "0[object Object]1"
 ```
 
-+++
-
 ```js
 > {} + []
 "0"
 ```
 
-+++
-
 ```js
 > ({} + []) + {}
 "[object Object][object Object]"
 ```
-
-+++
 
 ```js
 > 0 + {}
@@ -381,6 +381,7 @@ TypeError
 ```python
 > ['5'] * 5
 ['5', '5', '5', '5', '5']
+
 > ['5'] + 5
 TypeError
 
