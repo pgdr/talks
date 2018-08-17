@@ -4,7 +4,11 @@ better than js
 
 +++
 
-Because Peter Norvig does.
+You're never surprised
+
+_(in a negative way)_
+
+_(few wtfs)_
 
 +++
 
@@ -60,7 +64,7 @@ To OOP or not to OOP?  Why not both?
 
 +++
 
-Portable.  Java?  Hah.
+Very portable.
 
 ---
 
@@ -117,10 +121,20 @@ You are never surprised
 
 Now ... Javascript, on the other hand ...
 
+Was developed to never let the programmer down
 
 +++
 
-Was developed to never let the programmer down
+This has big negative consequenses.
+
+What would look like
+```
+TypeError: unsupported operand type(s) for +: 'dict' and 'dict'
+```
+in Python can end up in Javascript like
+```js
+NaN
+```
 
 
 ---
@@ -227,6 +241,10 @@ NaN
 +++
 
 ```js
+
+> (!+[]+[]+![]).length
+9
+
 > !+[]+[]+![]
 "truefalse"
 
@@ -321,7 +339,7 @@ True
 ### ??? "42.00"
 
 %0.2f' % 42
-42
+'42.00'
 ```
 
 +++
@@ -385,7 +403,7 @@ SyntaxError
 
 > "1" / "2"
 TypeError
-x
+
 > [] + -0
 TypeError
 ```
@@ -427,4 +445,8 @@ False
 
 ---
 
-showtime
+So is everything SyntaxError?
+
++++
+
+Showtime
