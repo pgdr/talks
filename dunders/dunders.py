@@ -25,18 +25,17 @@ class interval(object):
         return interval(self._left * other,
                         self._right * other)
 
-    def __iter__(self):
-        yield self._left
-        yield self._right
-
 
 def main():
     import pint
+    from uncertainties import ufloat
     unit = pint.UnitRegistry()
-    a = interval(1 * unit('m'), 2 * unit('ft'))
-    b = a + interval(3* unit('m'),unit('m')* 4)
-    print(b * 10)
+    m = unit('m')
+    s = unit('s')
 
+    a = interval(ufloat(10, 1)*m, 2*s)
+    b = a + interval(3*m, 4*s)
+    print(b * 10)
 
 if __name__ == '__main__':
     main()
