@@ -2,103 +2,11 @@
 
 +++
 
-based on
+Mostly musings, but also heavily based on
 * The Pragmatic Programmer
 * Code Complete
-* ...
+* Making software
 
----
-
-
-how we work
-
-
-+++
-
-there is no right way
-
-+++
-
-the only request is that we work in an agile way:
-
-+++
-
-- **Individuals and interactions** over processes and tools
-- **Working software** over comprehensive documentation
-- **Customer collaboration** over contract negotiation
-- **Responding to change** over following a plan
-
-+++
-
-
-a workflow that works for _our_ team
-
-+++
-
-_pic of teamboard_
-
-+++
-
-_pic of pr_
-
-+++
-
-_pic of review approval and green buttons_
-
-
-
-
-
----
-
-
-So what is _collaborative construction_?
-
-
-+++
-
-1. Rubber duck
-2. Pair programming
-3. Peer review / informal walk through
-4. Formal inspection
-
-+++
-
-Rubber duck ...
-
-> _insights are often found by simply describing the problem aloud_
-
-+++
-
-The rubber duck insight from pair programming
-
-+++
-
-Pair programming
-
-* four eyes over two
-* rotate pairs
-* the programmers should be "compatible"
-
-+++
-
-Peer reviews and walk-throughs
-
-* Either read and commented by reviewer
-* ... or walk-through hosted and moderated by author
-* 
-
-+++
-
-Formal inspection
-
-* Use checklist
-* focus on defects (not fixes)
-* moderator
-* all participants must prepare
-* leaders do not attend
-
-_(while code inspection is effective, conducting reviews in meetings is not)_
 
 ---
 
@@ -165,7 +73,119 @@ authors get blind
 
 
 
+
+
+
+
 ---
+
+
+how we work
+
+
++++
+
+there is no right way
+
++++
+
+the only request is that we work in an agile way:
+
++++
+
+- **Individuals and interactions** over processes and tools
+- **Working software** over comprehensive documentation
+- **Customer collaboration** over contract negotiation
+- **Responding to change** over following a plan
+
++++
+
+
+a workflow that works for _our_ team
+
++++
+
+_pic of teamboard_
+
++++
+
+_pic of pr_
+
++++
+
+_pic of review approval and green buttons_
+
+
+
+---
+
+Techniques for encouraging good coding
+
+* assign two people to every part of the project
+  * at least two people thinks the code readable
+* review every line of code
+  * improves code quality because author know the code will be read
+  * reduce _"bus factor"_
+  * unconciously moves project towards a "higher" code standard
+* require code sign-off
+  * to the best of senior technical personnel's knowledge, the code is error-free
+
+---
+
+
+So what is _collaborative construction_?
+
+
++++
+
+1. Rubber duck
+2. Pair programming
+3. Peer review / informal walk through
+4. Formal inspection
+
++++
+
+Rubber duck ...
+
+> _insights are often found by simply describing the problem aloud_
+
++++
+
+The rubber duck insight from pair programming
+
++++
+
+Pair programming
+
+* four eyes over two
+* rotate pairs
+* the programmers should be "compatible"
+
++++
+
+Peer reviews and walk-throughs
+
+* Either read and commented by reviewer
+* ... or walk-through hosted and moderated by author
+
+_(Used unintelligently, walk-throughs are more trouble than they are worth)_
+
++++
+
+Formal inspection
+
+* Use checklist
+* focus on defects (not fixes)
+* moderator
+* all participants must prepare
+* leaders do not attend
+
+_(while code inspection is effective, conducting reviews in meetings is not)_
+
+---
+
+
+
 
 
 Pros of code review
@@ -177,6 +197,7 @@ Pros of code review
 * improve variable names, local/global
 * formatting and comments
 * new team members need guidance
+* reviewer gets to read more code
 
 +++
 
@@ -184,23 +205,20 @@ Pros of code review
 * someone leaving the project has less impact
 * bug tickets can be assigned to more people (fixed faster)
 * you don't _get away_ with dirty hacks
-* 
 
 +++
 
 * reading other people's source code and documentation,
 * either informally or during code reviews
 * It's not snooping; it's learning
+* when introducing bugs, you're not the only one to blame
+
+
+
+
 
 ---
 
-We do review because four eyes are better than two
-
----
-
-We do review because it distributes knowledge
-
----
 
 Cons
 
@@ -250,4 +268,3 @@ https://mail.python.org/pipermail/python-ideas/2018-August/052722.html
 > When reading a message, we're responsible for correctly interpreting such
 > intent, and everyone is usually better off if, when in doubt, the
 > interpretation leans towards ambiguity over malice.
-
