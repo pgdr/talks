@@ -163,6 +163,9 @@ Pair programming
 * four eyes over two
 * rotate pairs
 * the programmers should be "compatible"
+* quality improves on complex tasks (not simple)
+
+con: personality clashes can disrupt productivity
 
 +++
 
@@ -207,6 +210,7 @@ Pros of code review
 * better code quality
 * someone leaving the project has less impact
 * bug tickets can be assigned to more people (fixed faster)
+  * essential when sick leave
 * you don't _get away_ with dirty hacks
 
 +++
@@ -217,7 +221,21 @@ Pros of code review
 * when introducing bugs, you're not the only one to blame
 
 
++++
 
+hard data
+
++++
+
+* Finding 1 bug/10min (wow!)
+* max 60 min of review (fatigue)
+* up to 400---500 LOC per hour
+
+Conclusion
+* PR should be at most 500 lines
+* review should take at most 1h
+
+(Best to have code in IDE)
 
 
 ---

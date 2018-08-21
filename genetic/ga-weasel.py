@@ -22,6 +22,7 @@ def genetic_algorithm(generator, mut, cros, fit):
         pool = _iterate(pool, mut, cros, fit)
         if fit(pool[0]) == 0:
             break
+        print(pool[0], fit(pool[0]))
     return pool
 # END GENETIC ALGORITHM
 
