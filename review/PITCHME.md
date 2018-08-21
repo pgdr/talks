@@ -13,6 +13,8 @@ Mostly musings, but also heavily based on
 
 What is _quality_?
 
+> _"the degree of excellence of something"_
+
 +++
 
 - no bugs
@@ -37,7 +39,7 @@ What is _quality_?
 - features
 - efficient
 - readable and understandable
-- extendible
+- extendible and reusable
 
 ---
 
@@ -147,20 +149,20 @@ So what is _collaborative construction_?
 
 +++
 
-1. Rubber duck / self-check
+1. Self-check
 2. Pair programming
 3. Peer review / informal walk through
 4. Formal inspection
 
 +++
 
-Rubber duck ...
-
-> _insights are often found by simply describing the problem aloud_
 
 Self-check:
 
-> self-checking is much faster; not as efficient; better than nothing
+* read your own code
+* quickest and simplest form of review
+
+> Not as efficient, but better than nothing
 
 +++
 
@@ -172,6 +174,8 @@ Pair programming
 * the programmers should be "compatible"
   * personality clashes can disrupt productivity
 * quality improves on complex tasks (not simple)
+
+> _insights are often found by simply describing the problem aloud_
 
 
 
@@ -188,6 +192,7 @@ _(Used unintelligently, walk-throughs are more trouble than they are worth)_
 
 Formal inspection
 
+* for large non-trivial proposals
 * Use checklist
 * focus on defects (not fixes)
 * moderator
@@ -195,6 +200,8 @@ Formal inspection
 * leaders do not attend
 
 _(while code inspection is effective, conducting reviews in meetings is not)_
+
+> IBM reports 80-90% defects found, saving 25% resources
 
 ---
 
@@ -219,6 +226,7 @@ Pros of code review
 * someone leaving the project has less impact
 * bug tickets can be assigned to more people (fixed faster)
   * essential when sick leave
+  * cost 10-100 times more expensive after deploy
 * you don't _get away_ with dirty hacks
 
 +++
