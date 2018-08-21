@@ -69,12 +69,11 @@ why?
 
 +++
 
-authors get blind
+no ...
 
-
-
-
-
+- too close to the concepts
+- semantic satiation
+- especially true for code
 
 
 ---
@@ -105,15 +104,19 @@ a workflow that works for _our_ team
 
 +++
 
-_pic of teamboard_
+![Kanban](https://raw.githubusercontent.com/pgdr/talks/master/review/kanban.png)
 
 +++
 
-_pic of pr_
+![Reviewing](https://raw.githubusercontent.com/pgdr/talks/master/review/everreview.png)
 
 +++
 
-_pic of review approval and green buttons_
+![PR](https://raw.githubusercontent.com/pgdr/talks/master/review/everpr.png)
+
++++
+
+![Everest approved](https://raw.githubusercontent.com/pgdr/talks/master/review/evergreen.png)
 
 
 
