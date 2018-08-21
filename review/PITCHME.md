@@ -126,10 +126,16 @@ Techniques for encouraging good coding
 
 * assign two people to every part of the project
   * at least two people thinks the code readable
+
++++
+
 * review every line of code
   * improves code quality because author know the code will be read
   * reduce _"bus factor"_
   * unconciously moves project towards a "higher" code standard
+
++++
+
 * require code sign-off
   * to the best of senior technical personnel's knowledge, the code is error-free
 
@@ -141,7 +147,7 @@ So what is _collaborative construction_?
 
 +++
 
-1. Rubber duck
+1. Rubber duck / self-check
 2. Pair programming
 3. Peer review / informal walk through
 4. Formal inspection
@@ -152,20 +158,22 @@ Rubber duck ...
 
 > _insights are often found by simply describing the problem aloud_
 
+Self-check:
+
+> self-checking is much faster; not as efficient; better than nothing
+
 +++
 
-The rubber duck insight from pair programming
-
-+++
 
 Pair programming
 
 * four eyes over two
 * rotate pairs
 * the programmers should be "compatible"
+  * personality clashes can disrupt productivity
 * quality improves on complex tasks (not simple)
 
-con: personality clashes can disrupt productivity
+
 
 +++
 
@@ -273,7 +281,14 @@ creates tension between distributed teams
 
 +++
 
-https://mail.python.org/pipermail/python-ideas/2018-August/052722.html
+
+guidelines on how to communicate online:
+
+1. Assume that you are asking *me* for a *favour*.
+2. Assume your *boss* will read what you say.
+3. Assume *your family* will read what you say.
+
++++
 
 > Never attribute to malice that which is adequately explained by lack of
 > context in online conversations.
@@ -283,8 +298,12 @@ https://mail.python.org/pipermail/python-ideas/2018-August/052722.html
 > Online, there is no tone of voice, facial expressions, or extra context to
 > really help distinguish intent.
 
++++
+
 > When writing a message, we're responsible for ensuring that the intent is
 > clearly portrayed.
+
++++
 
 > When reading a message, we're responsible for correctly interpreting such
 > intent, and everyone is usually better off if, when in doubt, the
