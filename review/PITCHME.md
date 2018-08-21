@@ -49,10 +49,10 @@ What is an editor's job?
 
 an editor
 
+- reviews and edits drafts
 - reviews manuscript for publishing
-- review and edit drafts
-- oversee publication process
-- working closely with author to perfect manuscript
+- oversees publication process
+- works closely with author to perfect manuscript
 
 why?
 
@@ -60,10 +60,10 @@ why?
 
 an editor
 
+- reviews and edits drafts
 - reviews manuscript for publishing
-- review and edit drafts
-- oversee publication process
-- working closely with author to perfect manuscript
+- oversees publication process
+- works closely with author to perfect manuscript
 
 why?
 
@@ -74,7 +74,11 @@ why?
 no ...
 
 - too close to the concepts
+  * could it be told differently
+  * simpler?
 - semantic satiation
+  * good names
+  * correctly chosen words
 - especially true for code
 
 
@@ -83,14 +87,9 @@ no ...
 
 how we work
 
+(there is no right way)
 
-+++
-
-there is no right way
-
-+++
-
-the only request is that we work in an agile way:
+(except agile)
 
 +++
 
@@ -133,8 +132,8 @@ Techniques for encouraging good coding
 
 * review every line of code
   * improves code quality because author know the code will be read
+    * unconciously moves project towards a "higher" code standard
   * reduce _"bus factor"_
-  * unconciously moves project towards a "higher" code standard
 
 +++
 
@@ -170,7 +169,6 @@ Self-check:
 Pair programming
 
 * four eyes over two
-* rotate pairs
 * the programmers should be "compatible"
   * personality clashes can disrupt productivity
 * quality improves on complex tasks (not simple)
@@ -193,11 +191,9 @@ _(Used unintelligently, walk-throughs are more trouble than they are worth)_
 Formal inspection
 
 * for large non-trivial proposals
-* Use checklist
 * focus on defects (not fixes)
-* moderator
+* Use checklist and a moderator
 * all participants must prepare
-* leaders do not attend
 
 _(while code inspection is effective, conducting reviews in meetings is not)_
 
@@ -283,23 +279,8 @@ cargo cult?
 
 +++
 
-creates tension between distributed teams
+creates tension between distributed teams ...
 
-(more on this now!)
-
-+++
-
-
-guidelines on how to communicate online:
-
-1. Assume that you are asking *me* for a *favour*.
-2. Assume your *boss* will read what you say.
-3. Assume *your family* will read what you say.
-
-+++
-
-> Never attribute to malice that which is adequately explained by lack of
-> context in online conversations.
 
 +++
 
@@ -308,11 +289,22 @@ guidelines on how to communicate online:
 
 +++
 
+> Never attribute to malice that which is adequately explained by lack of
+> context in online conversations.
+
++++
+
 > When writing a message, we're responsible for ensuring that the intent is
 > clearly portrayed.
 
 +++
 
-> When reading a message, we're responsible for correctly interpreting such
-> intent, and everyone is usually better off if, when in doubt, the
-> interpretation leans towards ambiguity over malice.
+guidelines on how to communicate online:
+
+1. Assume that you are asking *me* for a *favour*.
+2. Assume your *boss* will read what you say.
+3. Assume *your family* will read what you say.
+
+---
+
+happy reviewing
