@@ -15,16 +15,6 @@ about me
 
 ---
 
-Blockchain is a solution looking for a problem
-
-+++
-
-besides Bitcoin
-
-* no real use cases yet
-
----
-
 About property and ownership
 
 * what does it mean to own something?
@@ -37,14 +27,20 @@ practically;
 * if you steal something, the police might want to have a say
 
 
-+++
+---
 
-suppose that Alice owns something (a bike?) and Bob steals the bike.
-
-* Besides philosophical issues,
-* the police and the court system
+suppose that Alice owns one and Bob steals the bike.
 
 Alice presses charges.  Bob returns the bike.
+
++++
+
+
+Suppose we place ownership of a physical good
+
+e.g. a bike
+
+on a blockchain
 
 +++
 
@@ -66,13 +62,17 @@ Alice presses charges and the court decides the property is Alice's.
 
 The government does not acknowledge the blockchain.
 
+There is a discrepancy between the _"truth"_ and the blockchain;
+
+the blockchain is no longer the truth.
+
 ---
 
 Conclusion:
 
 * To be effective
 * any blockchain _needs the acknowledgement_
-* from the relevant governments
+* from the relevant governments.
 
 or
 
