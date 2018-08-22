@@ -38,8 +38,18 @@ What is _quality_?
 - no bugs
 - features
 - efficient
-- readable and understandable
-- extendible and reusable
+- maintainable
+  - readable and understandable
+
++++
+
+- no bugs
+- features
+- efficient
+- maintainable
+  - readable and understandable
+- really good
+  - extendible and reusable
 
 ---
 
@@ -122,26 +132,6 @@ a workflow that works for _our_ team
 
 
 ---
-
-Techniques for encouraging good coding
-
-* assign two people to every part of the project
-  * at least two people thinks the code readable
-
-+++
-
-* review every line of code
-  * improves code quality because author know the code will be read
-    * unconciously moves project towards a "higher" code standard
-  * reduce _"bus factor"_
-
-+++
-
-* require code sign-off
-  * to the best of senior technical personnel's knowledge, the code is error-free
-
----
-
 
 So what is _collaborative construction_?
 
