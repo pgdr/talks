@@ -27,9 +27,14 @@ besides Bitcoin
 
 About property and ownership
 
+* what does it mean to own something?
+* philosophical question
+
 +++
 
-what does it mean to own something?
+practically;
+
+* if you steal something, the police might want to have a say
 
 
 +++
@@ -55,6 +60,8 @@ Suppose now that the property is "defined" in a blockchain
   * ... or didn't sell "by reason of insanity"
   * ...
 
++++
+
 Alice presses charges and the court decides the property is Alice's.
 
 The government does not acknowledge the blockchain.
@@ -66,3 +73,7 @@ Conclusion:
 * To be effective
 * any blockchain _needs the acknowledgement_
 * from the relevant governments
+
+or
+
+* it cannot define ownership
