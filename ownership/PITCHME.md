@@ -29,7 +29,7 @@ practically;
 
 ---
 
-suppose that Alice owns one and Bob steals the bike.
+Suppose that Alice owns a bike and Bob steals it.
 
 Alice presses charges.  Bob returns the bike.
 
