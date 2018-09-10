@@ -18,4 +18,4 @@ if __name__ == '__main__':
         d.append(x.strip())
     d = ' '.join(d).replace('\n', ' ')
     d = d.replace('  ', ' ')
-    log(d)
+    main(d)

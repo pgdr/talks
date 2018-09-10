@@ -27,62 +27,87 @@ programming contest.
 
 
 
+# Python --- why?
 
+
+Python doesn't suck.
+
+Was developed for readability
+
+Great for communicating intent!
 
 # Python decoration
 
-We are going to explore a topic in Python programming
+Why do I want to talk about _decorators_ ?
 
-* no exam
-* no memorizing ...
-* it's enough that you recognize it next time you see it
+Because it further improves readability and enables communication!
 
-Why?
+Furthermore,
 
 * We use it a lot in Equinor, and it's widely used in general
 * Few students learn it during their studies
 
 
-So this topic is decorators.  If you have seen Python code, you have probably
-seen decorators in use.
+If you have seen Python code, you have probably seen decorators in use.
 
-They look quite innocent, @decorator//myfunc.
+They look quite innocent,
 
-The next 40 minutes or so, we will dive into what this actually means, how we write one ourselves, and what it is useful for.
+```
+@decorator
+def myfunc():
+    ...
+```
 
-So, to what it actually means: myfunc=otherfunc(myfunc).
+The next half hour or so, we will dive into what this actually means, how we
+write one ourselves, and what it is useful for.
+
+So, to what it actually means:
+
+```python
+myfunc = otherfunc(myfunc).
+```
 
 That wasn't so hard.  That is literally what it means...
 
 Okay, so let's see one in action before we tear the definition apart.
 
 
-// SHOW EXAMPLE ?? //
+# Example : Xmas
 
 Okay, so what happened?
 
-Since @d f() is equal to f=d(f), we see that d takes a function as argument, hence
 
+# Definition of decorator
+
+Since `@d f()` is equal to `f=d(f)`, we see that `d` takes a function as
+argument, hence
+
+```
 def timeit(func):
     ...
+```
 
-Furthermore, we see that f needs to be assigned a function, so d needs to return
-a function as well!  And, often a different function (we'll see an example later
-where we return back f.
 
+Furthermore, we see that `f` needs to be assigned a function, so `d` needs to
+return a function as well!  And, often a different function (we'll see an
+example later where we return back `f`.
+
+```python
 def decorator(func):
     def inner_function(args):
         ...
     return inner_function
+```
 
-now, decorator takes a function, and decorator(func) returns a function.
+now, `decorator` takes a function, and `decorator(func)` returns a function.
 
 Okay, but then we can actually take a look at what we can do;
 
+```python
 def decorator(func):
     def new_function(the, args, to, func_):
         return_value = func(the, args, to, func_)
     return new_function
-
+```
 
 That's it.  That's all there is to it.

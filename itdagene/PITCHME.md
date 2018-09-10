@@ -9,7 +9,6 @@
 @decorator
 def myfunc(args):
     ...
-
 ```
 
 +++
