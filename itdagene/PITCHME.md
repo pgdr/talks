@@ -115,6 +115,14 @@ sq = noop(sq)
 ```
 
 
++++
+
+# the classic example: timeit
+
++++
+
+
+
 
 +++
 
@@ -335,7 +343,7 @@ def my_function(timeseries):
 * `@lru_cache`
 * `@logging`
 * `@debug`
-* `@timit`
+* `@timeit`
 
 
 ---
