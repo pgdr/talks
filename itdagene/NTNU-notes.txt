@@ -1,3 +1,36 @@
+# Equinor
+
+We do open source (show github)
+
+As you can see, when we have code open online, it's quite easy to prove
+for your that we actually do some programming.
+
+Indeed, most of you would be convinced that we actually know
+programming!
+
+
+One of the first things we ask on an interview is whether the candidate
+has code online.
+
+Do yourself a favor; take some code, an assignment or something else
+that you made, make it a bit prettier, and put it online somewhere.
+
+There is literally no better way of proving that you can code than to
+show us.
+
+
+
+# Programming competitions
+
+Something else that is a very good trick is to participate in a
+programming contest.
+
+
+
+
+
+# Python decoration
+
 We are going to explore a topic in Python programming
 
 * no exam

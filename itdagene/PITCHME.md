@@ -40,11 +40,11 @@ def timeit(func):
     def wrapper(args):
         from datetime import datetime as dt
         start = dt.now()
-        ret = func(args)
+        result = func(args)
         end = dt.now()
         print('f({}) took time {}'.format(args,
                                           (end - start)))
-        return ret
+        return result
     return wrapper
 ```
 
