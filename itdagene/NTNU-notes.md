@@ -91,7 +91,6 @@ def timeit(func):
     ...
 ```
 
-
 Furthermore, we see that `f` needs to be assigned a function, so `d` needs to
 return a function as well!  And, often a different function (we'll see an
 example later where we return back `f`.

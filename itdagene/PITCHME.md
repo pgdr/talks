@@ -150,3 +150,130 @@ myfunc = decorator(myfunc)
 ---
 
 ## What's cool about that?
+
+
++++
+
+Platonic functions:
+
+```python
+@memoize
+def fib(x):
+    if x <= 1:
+        return 1
+    return fix(x-1) + fib(x-2)
+```
+
++++
+
+Minimizing diff
+
+```patch
++@memoize
+def my_slow_function():
+    # load stuff from database
+    # or do other slow stuff
+```
+
+
+
+---
+
+
+# Examples in the wild
+
++++
+
+#### Keybindings
+
+```python
+def save_buffer():
+    pass
+
+# somewhere below
+
+keybindings.add(save_buffer, keys)
+```
+
++++
+
+```python
+@keybinding.add(Keys.CTRL * 'x' + Keys.CTRL * 's')
+def save_buffer():
+    # save to file here ...
+```
+
+
++++
+
+
+#### Filters
+
+```python
+def my_filter(gen):
+    # do filter stuff
+
+# somewhere below
+
+app.filter(my_filter, 'filtername')
+```
+
++++
+
+
+
+```python
+@app.filter('filtername')
+def my_filter(gen):
+    # do filter stuff
+```
+
+
++++
+
+#### Pipeline
+
+
+```python
+def fft(timeseries):
+    # do Fourier transform
+
+
+@after(fft)
+def powerdensity(timeseries):
+   pass
+
+@after(powerdensity)
+@output
+def my_function(timeseries):
+    # plot
+```
+
++++
+
+* `@login_required`
+* `@app.route`
+* `@validate_config`
+* `@lru_cache`
+* `@logging`
+* `@debug`
+* `@timit`
+
+
+---
+
+## Case study: contract-driven development
+
++++
+
+```python
+def function(args):
+    datainvariant()
+    # some code
+    # lots more code
+    # yet more code
+    datainvariant()
+    return answer
+```
+
+Problems?
