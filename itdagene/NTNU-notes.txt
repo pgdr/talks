@@ -1,0 +1,55 @@
+We are going to explore a topic in Python programming
+
+* no exam
+* no memorizing ...
+* it's enough that you recognize it next time you see it
+
+Why?
+
+* We use it a lot in Equinor, and it's widely used in general
+* Few students learn it during their studies
+
+
+So this topic is decorators.  If you have seen Python code, you have probably
+seen decorators in use.
+
+They look quite innocent, @decorator//myfunc.
+
+The next 40 minutes or so, we will dive into what this actually means, how we write one ourselves, and what it is useful for.
+
+So, to what it actually means: myfunc=otherfunc(myfunc).
+
+That wasn't so hard.  That is literally what it means...
+
+Okay, so let's see one in action before we tear the definition apart.
+
+
+// SHOW EXAMPLE ?? //
+
+Okay, so what happened?
+
+Since @d f() is equal to f=d(f), we see that d takes a function as argument, hence
+
+def timeit(func):
+    ...
+
+Furthermore, we see that f needs to be assigned a function, so d needs to return
+a function as well!  And, often a different function (we'll see an example later
+where we return back f.
+
+def decorator(func):
+    def inner_function(args):
+        ...
+    return inner_function
+
+now, decorator takes a function, and decorator(func) returns a function.
+
+Okay, but then we can actually take a look at what we can do;
+
+def decorator(func):
+    def new_function(the, args, to, func_):
+        return_value = func(the, args, to, func_)
+    return new_function
+
+
+That's it.  That's all there is to it.
