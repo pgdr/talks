@@ -12,24 +12,23 @@ def myfunc(args):
 
 ```
 
----
++++
 
 
 ```python
-
 myfunc = otherfunc(myfunc)
-
 ```
 
++++
 
 ```python
-
 def myfunc(x):
     import time
     time.sleep(1.5)
     return x**2
+```
 
-
+```
 >>> myfunc(7)
 49
 ```
@@ -122,7 +121,6 @@ def decorator(func):
     def new_function(the, args, to, func_):
         return_value = func(the, args, to, func_)
     return new_function
-
 
 def myfunc(args):
     print('Hello, world!')
