@@ -26,9 +26,8 @@ Saturday October 6 2018
 ---
 
 ```python
-
 @decorator
-def myfunc(args):
+def fun(args):
     ...
 ```
 
@@ -36,10 +35,89 @@ def myfunc(args):
 
 
 ```python
-myfunc = otherfunc(myfunc)
+fun = decorator(fun)
 ```
 
 +++
+
+```python
+@dec
+def fun(args):            def fun(args):
+    ...                          ...
+                          fun = dec(fun)
+```
+
++++
+
+```python
+def noop(f):
+    return f
+
+def sq(x):
+    return x**2
+sq = noop(sq)
+```
+
++++
+
+```python
+def noop(f):
+    def other_function():
+        # hmm?
+    return other_function
+
+def sq(x):
+    return x**2
+sq = noop(sq)
+```
+
++++
+
+```python
+def noop(f):
+    def other_function(arg):
+        # hmm?
+    return other_function
+
+def sq(x):
+    return x**2
+sq = noop(sq)
+```
+
++++
+
+```python
+def noop(f):
+    def other_function(arg):
+        result = f(arg)
+        return result
+    return other_function
+
+def sq(x):
+    return x**2
+sq = noop(sq)
+```
+
++++
+
+```python
+def noop(f):
+    def other_function(arg):
+        print('before call')
+        result = f(arg)
+        print('after call')
+        return result
+    return other_function
+
+def sq(x):
+    return x**2
+sq = noop(sq)
+```
+
+
+
++++
+
 
 ```python
 def myfunc(x):
