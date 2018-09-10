@@ -77,6 +77,10 @@ Okay, so let's see one in action before we tear the definition apart.
 Okay, so what happened?
 
 
+# Example: `timeit`
+
+suppose a function
+
 # Definition of decorator
 
 Since `@d f()` is equal to `f=d(f)`, we see that `d` takes a function as

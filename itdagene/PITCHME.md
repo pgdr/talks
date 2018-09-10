@@ -2,6 +2,27 @@
 
 (cc-by-sa 4.0)
 
++++
+
+# Open
+
+show us the code
+
++++
+
+# NCPC
+
+Nordic Collegiate Programming Contest
+
+Saturday October 6 2018
+
+[https://ncpc.idi.ntnu.no/](ncpc.idi.ntnu.no)
+
++++
+
+![NCPC 2017 final standings](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/ncpc2017.png)
+
+
 ---
 
 ```python
