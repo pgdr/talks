@@ -499,6 +499,6 @@ def update_ssn(self, new_ssn):
 
 * Code is about communicating intent
 
-> _'Programs are meant to be read by humans and only incidentally for computers to execute.'_
+> _Programs are meant to be read by humans and only incidentally for computers to execute._ (Knuth)
 
---- Donald Knuth
+* decorators often improve readability
