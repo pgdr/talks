@@ -134,7 +134,7 @@ def slow(x):
 
 ```python
 def timeit(func):
-    def wrapper(args):
+    def new_func(args):
         from datetime import datetime as dt
         start = dt.now()
         result = func(args)
@@ -144,10 +144,20 @@ def timeit(func):
                                            args,
                                            duration))
         return result
-    return wrapper
+    return new_func
 ```
 
 +++
+
+```python
+def slow(x):
+    ...
+slow = timeit(slow)
+```
+
+
++++
+
 
 ```python
 @timeit
@@ -166,70 +176,8 @@ slow(50) took time 0:00:02.524620
 
 ---
 
-## Breakdown
 
-+++
-
-```python
-@decorator
-def f():
-    ...
-```
-
-```python
-f = decorator(f)
-```
-
-`decorator` takes a function as argument, hence
-
-```python
-def decorator(func):
-    ...
-```
-
-But `decorator(f)` also _returns_ a function, so
-
-```python
-def decorator(func):
-    def inner_function(args):
-        ...
-    return inner_function
-
-```
-
-+++
-
-```python
-def decorator(func):
-    def new_function(the, args, to, func_):
-        return_value = func(the, args, to, func_)
-    return new_function
-
-
-@decorator
-def myfunc(args):
-    print('Hello, world!')
-
-```
-
-That's equivalent to ...
-
-+++
-
-```python
-def decorator(func):
-    def new_function(the, args, to, func_):
-        return_value = func(the, args, to, func_)
-    return new_function
-
-def myfunc(args):
-    print('Hello, world!')
-myfunc = decorator(myfunc)
-```
-
----
-
-## What's cool about that?
+## Why?
 
 
 +++
@@ -241,7 +189,7 @@ Platonic functions:
 def fib(x):
     if x <= 1:
         return 1
-    return fix(x-1) + fib(x-2)
+    return fib(x-1) + fib(x-2)
 ```
 
 +++
@@ -253,6 +201,22 @@ Minimizing diff
 def my_slow_function():
     # load stuff from database
     # or do other slow stuff
+```
+
++++
+
+Safer
+```python
+def database_function():
+    lock = get_lock()
+    do_some_stuff()
+
+    # lots of code
+
+    do_more_stuff()
+
+    lock.release()
+    return stuff
 ```
 
 
