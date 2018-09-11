@@ -189,7 +189,7 @@ Platonic functions:
 def fib(x):
     if x <= 1:
         return 1
-    return fib(x-1) + fib(x-2)
+    return fib(x - 1) + fib(x - 2)
 ```
 
 +++
@@ -220,7 +220,6 @@ def database_function():
 ```
 
 
-
 ---
 
 
@@ -242,9 +241,9 @@ keybindings.add(save_buffer, keys)
 +++
 
 ```python
-@keybinding.add(Keys.CTRL * 'x' + Keys.CTRL * 's')
+@keybinding.add(keys)
 def save_buffer():
-    # save to file here ...
+    pass
 ```
 
 
@@ -256,6 +255,7 @@ def save_buffer():
 ```python
 def my_filter(gen):
     # do filter stuff
+
 
 # somewhere below
 
