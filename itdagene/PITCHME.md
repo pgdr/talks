@@ -205,6 +205,20 @@ def my_slow_function():
 
 +++
 
+Explicit is better than implicit
+
+```python
+@app.register
+def my_listener():
+    # load stuff from database
+    # or do other slow stuff
+
+app.register(my_listener)
+```
+
+
++++
+
 Safer
 ```python
 def database_function():
@@ -226,6 +240,18 @@ def database_function():
 # Examples in the wild
 
 +++
+
+
+#### Do it in `tmp`
+
+```python
+@tmpdir
+def my_test():
+    assert file_writeing_works()
+```
+
++++
+
 
 #### Keybindings
 
@@ -296,7 +322,7 @@ def my_function(timeseries):
 +++
 
 * `@login_required`
-* `@app.route`
+* `@app.route('/index.html')`
 * `@validate_config`
 * `@lru_cache`
 * `@logging`
@@ -306,7 +332,70 @@ def my_function(timeseries):
 
 ---
 
+## Advanced: `@decorator(something)`
+
+```python
+@html('h1')
+def header(arg):
+    print(arg)
+```
+
+
+
+
++++
+
+
+```python
+def header(arg):
+    print(arg)
+
+header = html('h1')(header)
+```
+
++++
+
+
+```python
+def html(tag):
+    def the_real_decorator(func):
+        def the_new_func(args):
+            args = '<{tag}>{arg}</{tag}>'.format(tag=tag, arg=args)
+            return func(args)
+        return the_new_func
+    return the_real_decorator
+
+header = html('h1')(header)
+```
+
+
+---
+
+
 ## Case study: contract-driven development
+
++++
+
+When you design a class, `Person`:
+
+* `age >= 0`
+* `name is not None`
+* `len(ssn) == 11`
+
+called _invariants_
+
++++
+
+For every public function:
+
+```python
+
+def update_ssn(self, new_ssn):
+    datainvariant()
+    # actually do stuff
+    datainvariant()
+    return result
+```
 
 +++
 
@@ -321,3 +410,59 @@ def function(args):
 ```
 
 Problems?
+
++++
+
+Exceptions
+
+* exceptions are legal
+* leaving the object in an invalid state is not
+* datainvariant not run on postcondition
+
++++
+
+Multiple return statements
+
+```python
+def update_ssn(self, new_ssn):
+    datainvariant()
+    old_ssn = do_lots_of_stuff
+    if new_ssn == old_ssn:
+        return
+    # actually do stuff
+    datainvariant()
+    return result
+```
+
++++
+
+```python
+def contract(invariant):
+    def the_real_decorator(func):
+        def the_new_func(*args):
+            invariant()
+            try:
+                return func(*args)
+            finally:
+                invariant()
+        return the_new_func
+    return the_real_decorator
+
+
+@contract(Person.invariant)
+def update_ssn(self, new_ssn):
+    do_stuff()
+    return result
+```
+
+
+---
+
+# Summary
+
+
+* Code is about communicating intent
+
+> _'Programs are meant to be read by humans and only incidentally for computers to execute.'_
+
+--- Donald Knuth
