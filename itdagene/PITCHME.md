@@ -415,6 +415,11 @@ When you design a class, `Person`:
 
 called _invariants_
 
+```python
+def datainvariant():
+	if age < 0: raise InvariantError()
+```
+
 +++
 
 For every public function:
