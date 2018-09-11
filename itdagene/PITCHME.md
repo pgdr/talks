@@ -2,7 +2,7 @@
 
 Pål Grønås Drange, _Leading Advisor_
 
-![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinoir.png)
+![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
 
 _(cc-by-sa 4.0)_
 
