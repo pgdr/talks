@@ -122,14 +122,12 @@ sq = noop(sq)
 +++
 
 
-```python
-
+```
 def slow(x):
-    s = 0
-    for i in range(x * 10**6):
-        s += i
-    return s
-
+	s = 0
+	for i in range(x * 10**6):
+		s += i
+	return s
 ```
 
 +++
