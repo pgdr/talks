@@ -216,8 +216,17 @@ Explicit is better than implicit
 def my_listener():
     # load stuff from database
     # or do other slow stuff
+```
 
-app.register(my_listener)
+
+```python
+def my_listener():
+    # load stuff from database
+    # or do other slow stuff
+
+
+# somewhere else
+app.register(my_listener)  # which one?
 ```
 
 
@@ -251,7 +260,7 @@ def database_function():
 ```python
 @tmpdir
 def my_test():
-    assert file_writeing_works()
+	assert file_write_works()
 ```
 
 +++
@@ -261,9 +270,10 @@ def my_test():
 
 ```python
 def save_buffer():
-    pass
+	pass
 
 # somewhere below
+# but where?
 
 keybindings.add(save_buffer, keys)
 ```
@@ -284,7 +294,7 @@ def save_buffer():
 
 ```python
 def my_filter(gen):
-    # do filter stuff
+	# do filter stuff
 
 
 # somewhere below
@@ -299,7 +309,7 @@ app.filter(my_filter, 'filtername')
 ```python
 @app.filter('filtername')
 def my_filter(gen):
-    # do filter stuff
+	# do filter stuff
 ```
 
 
@@ -310,25 +320,47 @@ def my_filter(gen):
 
 ```python
 def fft(timeseries):
-    # do Fourier transform
+	# do Fourier transform
 
 
 @after(fft)
 def powerdensity(timeseries):
-   pass
+	pass
 
 @after(powerdensity)
 @output
 def my_function(timeseries):
-    # plot
+	# plot
 ```
+
++++
+
+* `@login_required`
+
++++
+
+* `@login_required`
+* `@app.route('/index.html')`
 
 +++
 
 * `@login_required`
 * `@app.route('/index.html')`
 * `@validate_config`
-* `@lru_cache`
+
++++
+
+* `@login_required`
+* `@app.route('/index.html')`
+* `@validate_config`
+* `@lru_cache` or `@memoize`
+
++++
+
+* `@login_required`
+* `@app.route('/index.html')`
+* `@validate_config`
+* `@lru_cache` or `@memoize`
 * `@logging`
 * `@debug`
 * `@timeit`
@@ -341,18 +373,13 @@ def my_function(timeseries):
 ```python
 @html('h1')
 def header(arg):
-    print(arg)
+	print(arg)
 ```
-
-
-
-
 +++
-
 
 ```python
 def header(arg):
-    print(arg)
+	print(arg)
 
 header = html('h1')(header)
 ```
