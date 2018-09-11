@@ -122,21 +122,12 @@ sq = noop(sq)
 +++
 
 
-
-
-+++
-
-
 ```python
-def myfunc(x):
-    import time
-    time.sleep(1.5)
-    return x**2
-```
-
-```
->>> myfunc(7)
-49
+def slow(x):
+    s = 0
+    for i in range(x * 10**6):
+        s += i
+    return s
 ```
 
 +++
@@ -148,8 +139,10 @@ def timeit(func):
         start = dt.now()
         result = func(args)
         end = dt.now()
-        print('f({}) took time {}'.format(args,
-                                          (end - start)))
+        duration = end - start
+        print('{}({}) took time {}'.format(func.__name__,
+                                           args,
+                                           duration))
         return result
     return wrapper
 ```
@@ -157,16 +150,17 @@ def timeit(func):
 +++
 
 ```python
+@timeit
+def slow(x):
+    ...
+```
 
-def myfunc(x):
-    import time
-    time.sleep(1.5)
-    return x**2
++++
 
-
->>> myfunc(7)
-f(7) took time 0:00:01.501650
-49
+```python
+>>> slow(50)
+slow(50) took time 0:00:02.524620
+1249999975000000
 ```
 
 
