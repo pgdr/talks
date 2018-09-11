@@ -1,6 +1,13 @@
 ## Decorators
 
-(cc-by-sa 4.0)
+Pål Grønås Drange
+
+Leading Advisor Software Engineering
+
+![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
+
+
+_(cc-by-sa 4.0)_
 
 +++
 
