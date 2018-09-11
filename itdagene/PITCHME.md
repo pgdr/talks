@@ -1,11 +1,8 @@
 ## Decorators
 
-Pål Grønås Drange
+Pål Grønås Drange, _Leading Advisor_
 
-Leading Advisor Software Engineering
-
-![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
-
+![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinoir.png)
 
 _(cc-by-sa 4.0)_
 
