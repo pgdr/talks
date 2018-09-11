@@ -315,7 +315,7 @@ def my_filter(gen):
 
 +++
 
-#### Pipeline
+#### Pipeline (declarative programming)
 
 
 ```python
@@ -325,7 +325,7 @@ def fft(timeseries):
 
 @after(fft)
 def powerdensity(timeseries):
-	pass
+	# compute power density function
 
 @after(powerdensity)
 @output
@@ -389,12 +389,12 @@ header = html('h1')(header)
 
 ```python
 def html(tag):
-    def the_real_decorator(func):
-        def the_new_func(args):
-            args = '<{tag}>{arg}</{tag}>'.format(tag=tag, arg=args)
-            return func(args)
-        return the_new_func
-    return the_real_decorator
+	def the_real_decorator(func):
+		def the_new_func(args):
+			args = '<{tag}>{arg}</{tag}>'.format(tag=tag, arg=args)
+			return func(args)
+		return the_new_func
+	return the_real_decorator
 
 header = html('h1')(header)
 ```
