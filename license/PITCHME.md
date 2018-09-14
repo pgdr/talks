@@ -13,6 +13,7 @@ Go through
 * APACHE
 * BSD
 * CREATIVE COMMONS
+* ODbL
 
 +++
 
@@ -26,6 +27,7 @@ Examples
 * APACHE (Android, Apache, Kubernetes, PyCharm)
 * BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
 * CREATIVE COMMONS (Wikipedia content)
+* Open Database Licence (Norne)
 
 ---
 
@@ -34,7 +36,6 @@ Examples
 * No license can take away your copyright
 * Everything you make is immediately your copyright (caveat employee)
 * Licenses are contracts!
-* Only rightful owners can sue. ([Perens](https://slashdot.org/comments.pl?sid=11459425&cid=55709541))
 
 +++
 
@@ -59,6 +60,16 @@ Examples
 > unntak: datamaskinprogrammer.  opphavsretten går til arbeidsgiveren (§39g)
 
 (Covered under _"Lov om opphavsrett til åndsverk"_)
+
+
++++
+
+### COPYLEFT
+
+* Copyleft
+* share-alike
+
+concerns _redistribution_ of copyrighted work
 
 
 ---
@@ -185,6 +196,12 @@ _(tivoization is built-in in cc)_
 * cc-nc
 * cc-by-sa-nc
 * cc-nd
+
+---
+
+### Open Database Licence
+
+Like cc-by-sa for database content
 
 ---
 
