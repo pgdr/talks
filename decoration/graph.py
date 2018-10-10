@@ -59,6 +59,11 @@ def c4():
 G = c4()
 print(G)
 
+# ... prints
+# Graph(c4,
+#       V=['a', 'b', 'c', 'd'],
+#       E=[('a', 'b'), ('b', 'c'), ('c', 'd'), ('d', 'a')])
+
 
 @graph
 def peterson():
@@ -72,3 +77,8 @@ def peterson():
 
 P = peterson()
 print(P)
+
+# ... prints
+# Graph(peterson,
+#       V=['A', 'B', 'C', 'D', 'E', 'a', 'b', 'c', 'd', 'e'],
+#       E=[('A', 'B'), ('B', 'C'), ('C', 'D'), ('D', 'E'), ('E', 'A'), ('a', 'A'), ('a', 'c'), ('b', 'B'), ('b', 'd'), ('c', 'C'), ('c', 'e'), ('d', 'D'), ('d', 'a'), ('e', 'E'), ('e', 'b')])
