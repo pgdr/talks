@@ -85,6 +85,9 @@ instead of
 
 ```
 import pdb; pdb.set_trace()
+
+import IPython.embed; embed()
+
 # pidb/pudb/pdbpp/ipython
 ```
 
