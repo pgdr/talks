@@ -8,7 +8,7 @@
 
 ---
 
-**why**
+# why
 
 +++
 
@@ -26,17 +26,27 @@
  * `range` (`xrange`)
  * `dict.keys` (`dict.iterkeys`)
  * `map` (`itertools.imap`)
+
++++
+
+**carrott**
+
 * restrictions on comparators (`'foo' > 4`)
 * advanced unpacking `a, *b, c = range(5)`
 * keyword-only arguments
  * `def f(*,a): return a`
  * `f(2)` → `TypeError: f() takes 0 positional arguments`
+
++++
+
+**carrott**
+
 * _f-strings_ (Python 3.6) `f'{round(0.5)} → 0`
 * _asyncio_ ?!
 
 +++
 
-**tools**
+# tools
 
 * `caniusepython3 -r req.txt`
 * `2to3`
@@ -57,7 +67,7 @@
 * `hash(·)` is randomized per process
 * pickling in py2, unpickling in py3 fails (_obviously_)
 * sorting works (or doesn't(?), but behaves)
-Python 3 and asyncio
+
 
 ---
 
@@ -65,14 +75,28 @@ Python 3 and asyncio
 
 +++
 
+# breakpoint()
+
++++
+
 `breakpoint`
-* instead of
- * `import pdb; pdb.set_trace()`
- * `# pidb/pudb/pdbpp/ipython`
-* set
- * `PYTHONBREAKPOINT=IPython.embed` or
- * `PYTHONBREAKPOINT=print`
- * ... with `breakpoint(a, end='hmm')` (why?)
+
+instead of
+
+```
+import pdb; pdb.set_trace()
+# pidb/pudb/pdbpp/ipython
+```
+
++++
+
+`breakpoint`
+
+set
+
+* `PYTHONBREAKPOINT=IPython.embed` or
+* `PYTHONBREAKPOINT=print`
+* ... with `breakpoint(a, end='hmm')` (why?)
 
 +++
 
@@ -85,6 +109,8 @@ Python 3 and asyncio
 * data class
  * gives `__lt__`, `__eq__`, `__repr__`
 
++++
+
 ```
 @dataclass
 class Position:
@@ -92,8 +118,10 @@ class Position:
   latitude: float = 0.0
   longitude: float = 0.0
 ```
-* ...
- * `@dataclass(frozen, order, eq, repr, init)`
+
+params:
+
+`@dataclass(frozen, order, eq, repr, init)`
 
 +++
 
