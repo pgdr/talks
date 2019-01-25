@@ -21,6 +21,7 @@
 
 **carrot**
 
+* (it's a better language)
 * unicode
 * better iterations
  * `range` (`xrange`)
@@ -32,16 +33,21 @@
 **carrott**
 
 * restrictions on comparators (`'foo' > 4`)
-* advanced unpacking `a, *b, c = range(5)`
+* advanced unpacking
+ * `a, *b, c = range(5)`
 * keyword-only arguments
- * `def f(*,a): return a`
- * `f(2)` → `TypeError: f() takes 0 positional arguments`
+
+```
+def f(*,a): return a
+f(2) → TypeError: f() takes 0 positional arguments
+```
 
 +++
 
 **carrott**
 
-* _f-strings_ (Python 3.6) `f'{round(0.5)} → 0`
+* _f-strings_ (Python 3.6)
+ * `f'{round(0.5)} → 0`
 * _asyncio_ ?!
 
 +++
@@ -49,6 +55,7 @@
 # tools
 
 * `caniusepython3 -r req.txt`
+ * `🎉  You have 0 projects blocking you from using Python 3!`
 * `2to3`
  * (`print`, `input`, module renames, ...?)
  * puts `list()` around iterators
@@ -67,7 +74,7 @@
 * `hash(·)` is randomized per process
 * pickling in py2, unpickling in py3 fails (_obviously_)
 * sorting works (or doesn't(?), but behaves)
-
+* `/`
 
 ---
 
