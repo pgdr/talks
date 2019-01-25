@@ -52,10 +52,10 @@ f(2) → TypeError: f() takes 0 positional arguments
 
 +++
 
-# tools
+**tools**
 
 * `caniusepython3 -r req.txt`
- * `🎉  You have 0 projects blocking you from using Python 3!`
+ * `🎉  You have 0 projects blocking`
 * `2to3`
  * (`print`, `input`, module renames, ...?)
  * puts `list()` around iterators
