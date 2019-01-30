@@ -74,6 +74,8 @@ Can run _any_ program
 there is not a single thing today not involving an instruction written by a
 developer
 
+digitalization = it
+
 
 +++
 ### software dev is complex
