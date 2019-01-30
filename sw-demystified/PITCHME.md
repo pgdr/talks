@@ -213,9 +213,14 @@ open source
  * no respons to change
  * You ain't gonna need it
 
++++
+
+![Kanban Push](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/kanban-push.png)
 
 +++
-insert pic of kanban push board
+
+![Kanban Pull](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/kanban-pull.png)
+
 
 
 +++
@@ -226,11 +231,6 @@ insert pic of kanban push board
  * immediate feedback
  * immediate response to change
  * minimal scope creep (*)
-
-
-+++
-insert pic of kanban pull board
-
 
 
 +++
