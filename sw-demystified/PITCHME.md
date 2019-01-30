@@ -76,11 +76,16 @@ They can simulate (as far as we know) a human brain!
 +++
 ### Software development
 
-is extremely complex
+* is extremely complex
+* is the formalization of ideas
+* needs to be 100% correct or else it crashes
+ * or even worse, it doesn't
 
 
 +++
 ### Software development
+
+* is extremely complex
 
  ... but billions of CPUs run millions of instructions per second
 
