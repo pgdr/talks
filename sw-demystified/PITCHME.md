@@ -1,10 +1,12 @@
 ## SW dev demystified
 
++++
+## SW dev demystified
+
 > Mysticism is the practice of religious ecstasies together with whatever
 > ideologies, ethics, rites, myths, legends, and magic may be related to them.
 
 +++
-
 ## SW dev demystified
 
 > It may also refer to the attainment of insight in ultimate or hidden truths,
@@ -12,7 +14,6 @@
 
 
 +++
-
 ## Game of Life
 
 * Each living cell with
@@ -22,30 +23,28 @@
 * Each dead cell with
  * three neighbors becomes populated
 
-+++
 
++++
 ![Glider](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol-glider.gif)
 
 
 +++
-
 ![Cannon](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/cannon.gif)
 
-+++
 
++++
 ![Spaceships](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/spaceships.gif)
 
 
 +++
-
 ![GOL machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol.gif)
 
-+++
 
++++
 ![Turing machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/turing.png)
 
-+++
 
++++
 ### Power
 
 Turing completeness
@@ -58,75 +57,81 @@ Turing completeness
 
 Can run _any_ program
 
-+++
 
++++
 ### software dev is complex
 
-+++
 
++++
 ### software dev is complex
 
  ... but billions of CPUs run millions of instructions per second
 
-+++
 
++++
 ### software dev is complex
 
 there is not a single thing today not involving an instruction written by a
 developer
 
-+++
 
++++
 ### software dev is complex
 
 > Access to developers is a bigger threat to business success than access to
 > capital.
 
-+++
 
++++
 ### software dev is complex
 
  ... but we have methods, best practices and experience
 
----
 
+
+---
 ### Software Craftsmanship
 
-+++
 
++++
 ### Software Craftsmanship
 
 * responsibility
 * trust
 
-+++
 
++++
 ### Software Craftsmanship
 
 The waterfall model
 
-+++
 
++++
 ### Software Craftsmanship
 
 The waterfall model is broken
 
-+++
 
++++
 ### Software Craftsmanship
 
 Agile manifesto
 
+
 +++
+### Software Craftsmanship
 
 **Individuals and interactions** over _processes and tools_
 **Working software** over _comprehensive documentation_
 **Customer collaboration** over _contract negotiation_
 **Responding to change** over _following a plan_
 
----
 
+
+---
 ### Software projects
+
+
 
 +++
 ### Software projects
@@ -136,6 +141,7 @@ Agile manifesto
 * product mistakes (8%)
 * technology mistakes (4%)
 
+
 +++
 ### Software projects in Equinor
 
@@ -144,7 +150,9 @@ Agile manifesto
  * all developed by/for Equinor shall be open source
  * all development utlize open source technologies
 
+
 +++
+### Software projects in Equinor
 
 * 4-layer IT architecture
  * Data
@@ -155,20 +163,22 @@ Agile manifesto
 * Cloud ready/enabled
 * Self protecting solution – (Zero Trust)
 
----
 
+
+---
 ### Methodology
 
-+++
 
+
++++
 ### Methodology
 
 * An actual field
  * ... with actual literature
  * ... and experience
 
-+++
 
++++
 ### Methodology
 
 * **Push** vs pull
@@ -178,12 +188,12 @@ Agile manifesto
  * no respons to change
  * You ain't gonna need it
 
-+++
 
++++
 insert pic of kanban push board
 
-+++
 
++++
 ### Methodology
 
 * Push vs **pull**
@@ -192,13 +202,13 @@ insert pic of kanban push board
  * immediate response to change
  * minimal scope creep (*)
 
-+++
 
++++
 insert pic of kanban pull board
 
 
-+++
 
++++
 ### Methodology
 
 Summarizing
@@ -209,16 +219,19 @@ Summarizing
 
 does not work!
 
+
 +++
 ### Methodology
 
 Testing
 
 
+
 +++
 ### Methodology
 
 CI / CD
+
 
 
 +++
@@ -235,23 +248,28 @@ Summarizing
 We don't do it for fun
 
 
----
 
+---
 ## PART II
 
----
 
+
+---
 #### Technology
 
 * Question: What is the cloud?
 * Answer: Someone elses machine
 
-+++
-#### Technology
-* Microservices
 
 +++
 #### Technology
+
+* Microservices
+
+
++++
+#### Technology
+
 * IaaS
 * Containers
  * Docker
@@ -260,8 +278,10 @@ We don't do it for fun
  * pay-per-use
 * cloud native?
 
+
 +++
 #### Technology
+
 * access control
 * Zero trust model
 
@@ -277,6 +297,7 @@ We don't do it for fun
  * (mouse and keyboards)
  * (users and screens)
 
+
 +++
 #### Technology
 
@@ -284,16 +305,20 @@ We don't do it for fun
  * _API first strategy_
  * _AI ready_
 
+
 +++
 #### Technology
 
 (intermezzo)
 
+
++++
 ##### Machine Learning
 
 * Accuracy
 * 99% accurate is good </
 * data leakage
+
 
 +++
 #### Technology
