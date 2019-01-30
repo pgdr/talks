@@ -365,6 +365,6 @@ Machine learning is:
 
 * Software engineering is a complex field
  * need an education, need experience
-* Software projects **are different**
+* Software projects **are different**, not c&c
 * Agile is not for fun
  * nor is it lean or anything else you hear
