@@ -60,31 +60,31 @@ Can run _any_ program
 
 +++
 
-SW development is the most complex field ...
+### software dev is complex
 
 +++
 
-SW development is the most complex field ...
+### software dev is complex
 
  ... but billions of CPUs run millions of instructions per second
 
 +++
 
-SW development is the most complex field ...
+### software dev is complex
 
 there is not a single thing today not involving an instruction written by a
 developer
 
 +++
 
-SW development is the most complex field ...
+### software dev is complex
 
 > Access to developers is a bigger threat to business success than access to
 > capital.
 
 +++
 
-SW development is the most complex field ...
+### software dev is complex
 
  ... but we have methods, best practices and experience
 
@@ -92,36 +92,86 @@ SW development is the most complex field ...
 
 ## Software Craftsmanship
 
++++
+
+### Software Craftsmanship
+
 * responsibility
 * trust
 
 +++
 
-## Software Craftsmanship
+### Software Craftsmanship
 
 The waterfall model
 
 +++
 
-## Software Craftsmanship
+### Software Craftsmanship
 
 The waterfall model is broken
 
 +++
 
-## Software Craftsmanship
+### Software Craftsmanship
 
 Agile manifesto
 
 +++
 
-*Individuals and interactions* over _processes and tools_
-*Working software* over _comprehensive documentation_
-*Customer collaboration* over _contract negotiation_
-*Responding to change* over _following a plan_
+**Individuals and interactions** over _processes and tools_
+**Working software** over _comprehensive documentation_
+**Customer collaboration** over _contract negotiation_
+**Responding to change** over _following a plan_
+
+---
+
+# Software projects
 
 +++
 
-##
+### Software projects
 
-## Metodology
+* process mistakes (45%)
+* people mistakes (42%)
+* product mistakes (8%)
+* technology mistakes (4%)
+
+---
+
+
+# Metodology
+
++++
+
+### Metodology
+
+* An actual field
+ * ... with actual literature
+ * ... and experience
+
++++
+
+### Metodology
+
+* Push vs pull
+
+
+---
+
+# PART II
+
+---
+
+# Technology
+
+* Cloud
+* Microservices
+* IaaS
+* Containers
+ * scalability
+ * pay-per-use
+* access control
+* APIs
+ * AI ready
+ * ML (GUI) [viz recall]
