@@ -1,19 +1,5 @@
 ## Software development demystified
 
-+++
-## Software development demystified
-
-> Mysticism refers to the attainment of insight in ultimate or hidden truths,
-> and to human transformation supported by various practices and experiences.
-
-+++
-## Software development demystified
-
-> Mysticism refers to the attainment of insight in ultimate or hidden truths,
-> and to human transformation supported by various practices and experiences.
-
-... so, nothing to demystify
-
 
 +++
 ## Game of Life
@@ -130,21 +116,39 @@ _(backed by empirical evidence)_
 
 The waterfall model
 
+* Requirements
+* Design
+* Implementation
+* Validation
+* Maintenance
 
 +++
 ### Software Craftsmanship
 
 The waterfall model is broken
 
+* don't know exactly what their requirements are
+* not aware of future difficulties
+* makes changes difficult
+* excludes the client and/or end user
+* delays testing until after completion
+* US DoD have a stated preference
+ * encourages evolutionary acquisition
+ * iterative and Incremental Development
+
++++
+### Software Craftsmanship
+
+There is no silver bullet to software development
+
+* agile
+* scrum
+* lean
 
 +++
 ### Software Craftsmanship
 
 Agile manifesto
-
-
-+++
-### Software Craftsmanship
 
 **Individuals and interactions** over _processes and tools_
 **Working software** over _comprehensive documentation_
@@ -155,11 +159,6 @@ Agile manifesto
 
 ---
 ### Software projects
-
-We have a choice now,
-
-1. do IT projects correctly to best of knowledge
-2. do IT projects as C&C, waterfall or [insert preference]
 
 
 +++
@@ -190,9 +189,7 @@ open source
  * Business logic
  * API first (— all data exposed by APIs)
  * User interface
-* No point-to-point integration
-* Cloud ready/enabled
-* Self protecting solution – (Zero Trust)
+* Cloud ready/enabled (with no trust)
 
 
 ---
@@ -293,19 +290,33 @@ We don't do it for fun
 
 ![There is no cloud](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/no-cloud.png)
 
+---
+#### Technology
 
+* Question: Why cloud?
+
+* scalability
+* pay-per-use
+
+---
+#### Technology
+
+* Question: What is the cloud for Equinor
+
+OMNIA is our MS Azure configuration
+
+* OMNIA data
+* OMNIA apps
+* OMNIA aurora
+* OMNIA radix
 
 +++
 #### Technology
 
 * IaaS
-* Containers
- * Docker
- * Kubernetes
- * scalability
- * pay-per-use
-* cloud native?
-
+ * pure cloud (just someone else's computer)
+* PaaS
+ * a method of delivering a capability (application deployment, hosting..)
 
 +++
 #### Technology
