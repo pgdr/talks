@@ -129,7 +129,6 @@ Agile manifesto
 # Software projects
 
 +++
-
 ### Software projects
 
 * process mistakes (45%)
@@ -137,7 +136,24 @@ Agile manifesto
 * product mistakes (8%)
 * technology mistakes (4%)
 
----
++++
+### Software projects in Equinor
+
+* Use **free and open source software** to make Equinor a more competitive, agile and cost-effective organization
+ * procurement and software deliveries shall evaluate
+ * all developed by/for Equinor shall be open source
+ * all development utlize open source technologies
+
++++
+
+* 4-layer IT architecture
+ * Data
+ * Business logic
+ * API first (all data/(f) exposed by APIs
+ * User interface (UI/UX)
+* No point-to-point integration
+* Cloud ready/enabled
+* Self protecting solution – (Zero Trust)
 
 
 # Methodology
@@ -193,7 +209,18 @@ Summarizing
 does not work!
 
 +++
+### Methodology
 
+Testing
+
+
++++
+### Methodology
+
+CI / CD
+
+
++++
 ### Methodology
 
 Summarizing
@@ -242,14 +269,30 @@ We don't do it for fun
 #### Technology
 
 * APIs
- * AI ready
- * ML (GUI) [viz recall]
+ * programming interface
+ * how programs communicate with other programs
+* GUIs
+ * Graphical User Interfaces
+ * (mouse and keyboards)
+ * (users and screens)
 
 +++
 #### Technology
 
+* APIs
+ * _API first strategy_
+ * _AI ready_
+
 +++
 #### Technology
+
+(intermezzo)
+
+##### Machine Learning
+
+* Accuracy
+* 99% accurate is good </
+* data leakage
 
 +++
 #### Technology
