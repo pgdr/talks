@@ -140,11 +140,11 @@ Agile manifesto
 ---
 
 
-# Metodology
+# Methodology
 
 +++
 
-### Metodology
+### Methodology
 
 * An actual field
  * ... with actual literature
@@ -152,9 +152,59 @@ Agile manifesto
 
 +++
 
-### Metodology
+### Methodology
 
-* Push vs pull
+* **Push** vs pull
+ * leads to congestion
+ * lack of testing
+ * scope creep
+ * no respons to change
+ * You ain't gonna need it
+
++++
+
+insert pic of kanban push board
+
++++
+
+### Methodology
+
+* Push vs **pull**
+ * testing is natural part
+ * immediate feedback
+ * immediate response to change
+ * minimal scope creep (*)
+
++++
+
+insert pic of kanban pull board
+
+
++++
+
+### Methodology
+
+Summarizing
+
+* c&c
+* push
+* waterfall
+
+does not work!
+
++++
+
+### Methodology
+
+Summarizing
+
+* agile
+ * individuals and interactions
+ * working software
+ * customer collaboration
+ * response to change
+
+We don't do it for fun
 
 
 ---
@@ -163,15 +213,43 @@ Agile manifesto
 
 ---
 
-# Technology
+#### Technology
 
-* Cloud
+* Question: What is the cloud?
+* Answer: Someone elses machine
+
++++
+#### Technology
 * Microservices
+
++++
+#### Technology
 * IaaS
 * Containers
+ * Docker
+ * Kubernetes
  * scalability
  * pay-per-use
+* cloud native?
+
++++
+#### Technology
 * access control
+* Zero trust model
+
+
++++
+#### Technology
+
 * APIs
  * AI ready
  * ML (GUI) [viz recall]
+
++++
+#### Technology
+
++++
+#### Technology
+
++++
+#### Technology
