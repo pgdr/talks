@@ -1,20 +1,24 @@
-## SW dev demystified
+## Software development demystified
 
 +++
-## SW dev demystified
+## Software development demystified
 
-> Mysticism is the practice of religious ecstasies together with whatever
-> ideologies, ethics, rites, myths, legends, and magic may be related to them.
-
-+++
-## SW dev demystified
-
-> It may also refer to the attainment of insight in ultimate or hidden truths,
+> Mysticism refers to the attainment of insight in ultimate or hidden truths,
 > and to human transformation supported by various practices and experiences.
+
++++
+## Software development demystified
+
+> Mysticism refers to the attainment of insight in ultimate or hidden truths,
+> and to human transformation supported by various practices and experiences.
+
+... so, nothing to demystify
 
 
 +++
 ## Game of Life
+
+Imagine an infinite grid, with each cell alive or dead.
 
 * Each living cell with
  * one or no neighbors dies, as if by solitude
@@ -25,70 +29,84 @@
 
 
 +++
+## Game of Life
+
 ![Glider](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol-glider.gif)
 
 
 +++
+## Game of Life
+
 ![Cannon](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/cannon.gif)
 
 
 +++
+## Game of Life
+
 ![Spaceships](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/spaceships.gif)
 
 
 +++
+## Game of Life
+
 ![GOL machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol.gif)
 
 
 +++
+## Game of Life
+
 ![Turing machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/turing.png)
 
 
 +++
-### Power
+### Power (Turing)
 
-Turing completeness
-
+* Game of Life
 * `Y=λf.(λx.f(xx))(λx.f(xx))`
 * programming languages
  * C++
  * Python
  * ...
 
-Can run _any_ program
+Can run _any_ program, simulation, computation.
+
+They can simulate (as far as we know) a human brain!
 
 
 +++
-### software dev is complex
+### Software development
+
+is extremely complex
 
 
 +++
-### software dev is complex
+### Software development
 
  ... but billions of CPUs run millions of instructions per second
 
 
 +++
-### software dev is complex
+### Software development
 
 there is not a single thing today not involving an instruction written by a
 developer
 
-digitalization = it
+#### digitalization = it
 
 
 +++
-### software dev is complex
+### Software development
 
 > Access to developers is a bigger threat to business success than access to
 > capital.
 
 
 +++
-### software dev is complex
+### Software development
 
  ... but we have methods, best practices and experience
 
+_(backed by empirical evidence)_
 
 
 ---
@@ -133,6 +151,10 @@ Agile manifesto
 ---
 ### Software projects
 
+We have a choice now,
+
+1. do IT projects correctly to best of knowledge
+2. do IT projects as C&C, waterfall or [insert preference]
 
 
 +++
@@ -148,9 +170,11 @@ Agile manifesto
 ### Software projects in Equinor
 
 * Use **free and open source software** to make Equinor a more competitive, agile and cost-effective organization
- * procurement and software deliveries shall evaluate
- * all developed by/for Equinor shall be open source
- * all development utlize open source technologies
+ * procurement & software delivery shall evaluate
+ * all developed by/for Equinor shall be
+ * all development utlize
+
+open source
 
 
 +++
@@ -159,12 +183,11 @@ Agile manifesto
 * 4-layer IT architecture
  * Data
  * Business logic
- * API first (all data/(f) exposed by APIs
- * User interface (UI/UX)
+ * API first (— all data exposed by APIs)
+ * User interface
 * No point-to-point integration
 * Cloud ready/enabled
 * Self protecting solution – (Zero Trust)
-
 
 
 ---
