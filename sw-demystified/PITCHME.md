@@ -46,7 +46,7 @@
 
 +++
 
-## Power
+### Power
 
 Turing completeness
 
@@ -90,7 +90,7 @@ developer
 
 ---
 
-## Software Craftsmanship
+### Software Craftsmanship
 
 +++
 
@@ -126,7 +126,7 @@ Agile manifesto
 
 ---
 
-# Software projects
+### Software projects
 
 +++
 ### Software projects
@@ -155,8 +155,9 @@ Agile manifesto
 * Cloud ready/enabled
 * Self protecting solution – (Zero Trust)
 
+---
 
-# Methodology
+### Methodology
 
 +++
 
@@ -236,7 +237,7 @@ We don't do it for fun
 
 ---
 
-# PART II
+## PART II
 
 ---
 
