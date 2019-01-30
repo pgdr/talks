@@ -283,7 +283,11 @@ We don't do it for fun
 #### Technology
 
 * Question: What is the cloud?
-* Answer: Someone elses machine
+
++++
+
+![There is no cloud](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/no-cloud.png)
+
 
 
 +++
