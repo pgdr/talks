@@ -327,21 +327,39 @@ We don't do it for fun
 * APIs
  * _API first strategy_
  * _AI ready_
-
-
-+++
-#### Technology
-
-(intermezzo)
-
+  * aka machine learning
 
 +++
 ##### Machine Learning
 
+Example: Recall
+
++++
+##### Machine Learning
+
+Machine learning is:
+
+* software engineering +
+* statistics
+
 * Accuracy
-* 99% accurate is good </
+* 99% accurate is good (or ... ?)
 * data leakage
 
 
 +++
-#### Technology
+#### Summary
+
+* Cloud is someone else's computer
+* Cloud is treated as a "meta-computer"
+* GUIs are not the future, APIs are
+* Machine learning (AI) is software engineering with statistics using APIs
+
++++
+#### Summary
+
+* Software engineering is a complex field
+ * need an education, need experience
+* Software projects **are different**
+* Agile is not for fun
+ * nor is it lean or anything else you hear
