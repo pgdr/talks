@@ -293,12 +293,6 @@ We don't do it for fun
 +++
 #### Technology
 
-* Microservices
-
-
-+++
-#### Technology
-
 * IaaS
 * Containers
  * Docker
