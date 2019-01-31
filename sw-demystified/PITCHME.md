@@ -175,15 +175,14 @@ Agile is, from day 1:
 
 ![There is no cloud](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/no-cloud.png)
 
----
++++
 #### Technology
 
 * Question: Why cloud?
+ * scalability
+ * pay-per-use
 
-* scalability
-* pay-per-use
-
----
++++
 #### Technology
 
 * Question: What is the cloud for Equinor
