@@ -154,12 +154,12 @@ The waterfall model is broken
 +++
 ### Software development
 
-Agile
+Agile is, from day 1:
 
-* Individuals and interactions
-* Working software
-* Customer collaboration
-* Responding to change
+* individuals and interactions
+* working software
+* customer collaboration
+* responding to change
 
 ---
 ### Software projects
