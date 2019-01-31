@@ -150,7 +150,7 @@ Agile is, from day 1:
  * scalability
  * pay-per-use
  * enables information sharing
- * fascilitates cooperation with externals
+ * fascilitates cooperation, internally and externally
 
 +++
 #### Technology
@@ -167,11 +167,9 @@ OMNIA is our MS Azure configuration
 +++
 #### Technology
 
-* IaaS
- * pure cloud (just someone else's computer)
-* PaaS
- * a method of delivering a capability (application deployment, hosting..)
-
+* Infrastructure as a Service (IaaS)
+* Platform as a Service (PaaS)
+* Software as a Service (SaaS)
 
 +++
 ### Technology in Equinor
