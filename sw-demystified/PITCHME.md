@@ -1,32 +1,14 @@
-## Software development demystified
-
-![Task](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/tasks.png)
-
----
-
-## Game of Life
-
-![GOL machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol.gif)
+### Software development demystified
 
 +++
-## Game of Life
 
-![Turing machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/turing.png)
+### Compl~icated~ex systems
 
+![The Incredible Machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/incredible-machine.gif)
 
 +++
-### Power (Turing)
 
-* Game of Life
-* `Y=λf.(λx.f(xx))(λx.f(xx))`
-* programming languages
- * C++
- * Python
- * ...
-
-Can run _any_ program, simulation, computation.
-
-They can simulate (as far as we know) a human brain!
+![Software system in action](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol.gif)
 
 
 +++
