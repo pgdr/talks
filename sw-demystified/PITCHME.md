@@ -144,6 +144,14 @@ The waterfall model is broken
 * delays testing until after completion
 
 +++
+
+![Kanban Push](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/kanban-push.png)
+
++++
+
+![Kanban Pull](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/kanban-pull.png)
+
++++
 ### Software development
 
 Agile manifesto
@@ -177,61 +185,6 @@ Agile manifesto
  * all development utlize
 
 open source
-
-
-+++
-### Software projects in Equinor
-
-* 4-layer IT architecture
- * Data
- * Business logic
- * API first (— all data exposed by APIs)
- * User interface
-* Cloud ready/enabled (with no trust)
-
-
----
-### Methodology
-
-
-
-+++
-### Methodology
-
-* An actual field
- * ... with actual literature
- * ... and experience
-
-
-+++
-### Methodology
-
-* **Push** vs pull
- * leads to congestion
- * lack of testing
- * scope creep
- * no respons to change
- * You ain't gonna need it
-
-+++
-
-![Kanban Push](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/kanban-push.png)
-
-+++
-
-![Kanban Pull](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/kanban-pull.png)
-
-
-
-+++
-### Methodology
-
-* Push vs **pull**
- * testing is natural part
- * immediate feedback
- * immediate response to change
- * minimal scope creep (*)
-
 
 +++
 ### Methodology
@@ -279,7 +232,18 @@ We don't do it for fun
 
 
 
----
++++
+### Software projects in Equinor
+
+* 4-layer IT architecture
+ * Data
+ * Business logic
+ * API first (— all data exposed by APIs)
+ * User interface
+* Cloud ready/enabled (with no trust)
+
+
++++
 #### Technology
 
 * Question: What is the cloud?
