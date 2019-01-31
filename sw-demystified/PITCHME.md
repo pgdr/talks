@@ -4,39 +4,7 @@
 +++
 ## Game of Life
 
-Imagine an infinite grid, with each cell alive or dead.
-
-* Each living cell with
- * one or no neighbors dies, as if by solitude
- * four or more neighbors dies, as if by overpopulation
- * two or three neighbors survives
-* Each dead cell with
- * three neighbors becomes populated
-
-
-+++
-## Game of Life
-
-![Glider](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol-glider.gif)
-
-
-+++
-## Game of Life
-
-![Cannon](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/cannon.gif)
-
-
-+++
-## Game of Life
-
-![Spaceships](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/spaceships.gif)
-
-
-+++
-## Game of Life
-
 ![GOL machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol.gif)
-
 
 +++
 ## Game of Life
@@ -181,6 +149,8 @@ Agile is, from day 1:
 * Question: Why cloud?
  * scalability
  * pay-per-use
+ * enables information sharing
+ * fascilitates cooperation with externals
 
 +++
 #### Technology
