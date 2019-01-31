@@ -154,14 +154,12 @@ The waterfall model is broken
 +++
 ### Software development
 
-Agile manifesto
+Agile
 
-**Individuals and interactions** over _processes and tools_
-**Working software** over _comprehensive documentation_
-**Customer collaboration** over _contract negotiation_
-**Responding to change** over _following a plan_
-
-(but no silver bullet)
+* Individuals and interactions
+* Working software
+* Customer collaboration
+* Responding to change
 
 ---
 ### Software projects
