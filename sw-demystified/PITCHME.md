@@ -2,7 +2,7 @@
 
 +++
 
-### Compl~icated~ex systems
+### ~Complicated~ Complex systems
 
 ![The Incredible Machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/incredible-machine.gif)
 
