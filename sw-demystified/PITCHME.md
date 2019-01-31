@@ -179,24 +179,14 @@ with access control
 +++
 #### Technology
 
-##### GUI (human interaction)
-* Graphical User Interfaces
-* (mouse and keyboards)
-* (users and screens)
-
-##### API
-* Application Programming Interface
-* how programs communicate with eachother
-* necessary in automation
-
-
-+++
-#### Technology
-
-* APIs
- * _API first strategy_
- * _AI ready_
-  * aka machine learning
+* GUI (human interaction)
+ * Graphical User Interfaces
+ * (mouse and keyboards)
+ * (users and screens)
+* API
+ * Application Programming Interface
+ * how programs communicate with eachother
+ * necessary in automation, machine learning
 
 +++
 ##### Machine Learning
