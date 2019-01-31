@@ -139,23 +139,9 @@ The waterfall model
 
 The waterfall model is broken
 
-* don't know exactly what their requirements are
+* don't know the requirements, don't understand the problem
 * not aware of future difficulties
-* makes changes difficult
-* excludes the client and/or end user
 * delays testing until after completion
-* US DoD have a stated preference
- * encourages evolutionary acquisition
- * iterative and Incremental Development
-
-+++
-### Software development
-
-There is no silver bullet to software development
-
-* agile
-* scrum
-* lean
 
 +++
 ### Software development
@@ -167,7 +153,7 @@ Agile manifesto
 **Customer collaboration** over _contract negotiation_
 **Responding to change** over _following a plan_
 
-
+(but no silver bullet)
 
 ---
 ### Software projects
