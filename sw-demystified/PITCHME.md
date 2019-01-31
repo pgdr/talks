@@ -1,7 +1,9 @@
 ## Software development demystified
 
+![Task](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/tasks.png)
 
-+++
+---
+
 ## Game of Life
 
 ![GOL machine](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/gol.gif)
@@ -188,37 +190,14 @@ with access control
  * how programs communicate with eachother
  * necessary in automation, machine learning
 
-+++
-##### Machine Learning
+machine learning = programming + data + statistics
 
-Example: Recall
-
-+++
-##### Machine Learning
-
-Machine learning is:
-
-* software engineering +
-* statistics
-
-* Accuracy
-* 99% accurate is good (or ... ?)
-* data leakage
-
-
-+++
-#### Summary
-
-* Cloud is someone else's computer
-* Cloud is treated as a "meta-computer"
-* GUIs are not the future, APIs are
-* Machine learning (AI) is software engineering with statistics using APIs
 
 +++
 #### Summary
 
 * Software engineering is a complex field
  * need an education, need experience
-* Software projects **are different**, not c&c
+* Software projects **are different**
 * Agile is not for fun
- * nor is it lean or anything else you hear
+* Cloud and API are the future
