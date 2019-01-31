@@ -166,18 +166,6 @@ Agile is, from day 1:
 ## PART II
 
 
-
-+++
-### Software projects in Equinor
-
-* 4-layer IT architecture
- * Data
- * Business logic
- * API first (— all data exposed by APIs)
- * User interface
-* Cloud ready/enabled (with no trust)
-
-
 +++
 #### Technology
 
@@ -214,6 +202,19 @@ OMNIA is our MS Azure configuration
  * pure cloud (just someone else's computer)
 * PaaS
  * a method of delivering a capability (application deployment, hosting..)
+
+
++++
+### Technology in Equinor
+
+* 4-layer IT architecture
+ * Data
+ * Business logic
+ * API first (— all data exposed by APIs)
+ * User interface
+* Cloud ready/enabled (with no trust)
+
+
 
 +++
 #### Technology
