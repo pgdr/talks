@@ -164,6 +164,10 @@ OMNIA is our MS Azure configuration
 * OMNIA aurora
 * OMNIA radix
 
+with access control
+* legal
+* information owners ...
+
 +++
 #### Technology
 
@@ -171,35 +175,18 @@ OMNIA is our MS Azure configuration
 * Platform as a Service (PaaS)
 * Software as a Service (SaaS)
 
-+++
-### Technology in Equinor
-
-* 4-layer IT architecture
- * Data
- * Business logic
- * API first (— all data exposed by APIs)
- * User interface
-* Cloud ready/enabled (with no trust)
-
-
 
 +++
 #### Technology
 
-* access control
-* Zero trust model
-
-
-+++
-#### Technology
-
-* APIs
- * programming interface
- * how programs communicate with other programs
-* GUIs
+* GUIs (human interaction)
  * Graphical User Interfaces
  * (mouse and keyboards)
  * (users and screens)
+* APIs
+ * Application Programming Interface
+ * how programs communicate with eachother
+ * necessary in automation
 
 
 +++
