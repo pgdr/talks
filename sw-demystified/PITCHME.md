@@ -91,6 +91,9 @@ developer
 > Access to developers is a bigger threat to business success than access to
 > capital.
 
+In fact,
+
+> People are not your most important asset. The right people are.
 
 +++
 ### Software development
