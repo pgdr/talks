@@ -179,14 +179,15 @@ with access control
 +++
 #### Technology
 
-* GUIs (human interaction)
- * Graphical User Interfaces
- * (mouse and keyboards)
- * (users and screens)
-* APIs
- * Application Programming Interface
- * how programs communicate with eachother
- * necessary in automation
+##### GUI (human interaction)
+* Graphical User Interfaces
+* (mouse and keyboards)
+* (users and screens)
+
+##### API
+* Application Programming Interface
+* how programs communicate with eachother
+* necessary in automation
 
 
 +++
