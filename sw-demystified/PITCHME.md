@@ -161,10 +161,6 @@ Agile is, from day 1:
 * customer collaboration
 * responding to change
 
----
-### Software projects
-
-
 
 ---
 ## PART II
