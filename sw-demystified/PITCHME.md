@@ -88,6 +88,33 @@ developer
 +++
 ### Software development
 
+ ... but we have methods, best practices and experience
+
+_(backed by empirical evidence)_
+
+
++++
+### Software development
+
+* Why does it work?
+ * it's a profession
+
+
++++
+### Software development
+
+* we have
+ * education
+ * experience
+ * methods, best practices
+* we also have
+ * responsibility
+ * trust
+
+
++++
+### Software development
+
 > Access to developers is a bigger threat to business success than access to
 > capital.
 
@@ -95,27 +122,9 @@ In fact,
 
 > People are not your most important asset. The right people are.
 
+
 +++
 ### Software development
-
- ... but we have methods, best practices and experience
-
-_(backed by empirical evidence)_
-
-
----
-### Software Craftsmanship
-
-
-+++
-### Software Craftsmanship
-
-* responsibility
-* trust
-
-
-+++
-### Software Craftsmanship
 
 The waterfall model
 
@@ -126,7 +135,7 @@ The waterfall model
 * Maintenance
 
 +++
-### Software Craftsmanship
+### Software development
 
 The waterfall model is broken
 
@@ -140,7 +149,7 @@ The waterfall model is broken
  * iterative and Incremental Development
 
 +++
-### Software Craftsmanship
+### Software development
 
 There is no silver bullet to software development
 
@@ -149,7 +158,7 @@ There is no silver bullet to software development
 * lean
 
 +++
-### Software Craftsmanship
+### Software development
 
 Agile manifesto
 
