@@ -95,13 +95,13 @@ Microsoft lanserte
 +++
 ### I dag
 
-* 500 av de 500 kraftigste superdatamaskinene (Linux)
-* Majoriteten av MS Azure (Linux),
+* 500 av de 500 kraftigste superdatamaskinene
+* Majoriteten av MS Azure,
  * Google og Amazon
  * Facebook og Twitter og Instagram
-* Microsoft IoT er Linux-drevet
-* Google-utviklere bruker Chromebook (Linux)
-* 80% av verdens mobilmarket kjører Android (Linux)
+* Microsoft IoT
+* Google-utviklere bruker Chromebook
+* 80% av verdens mobilmarket kjører Android
 * Toyota, Audi, Ford, Mazda, Subaru, Mercedes, Mitsubishi, Nissan...
 
 
@@ -143,12 +143,10 @@ Microsoft lanserte
 ### Opphavsrett Til Åndsverk
 
 > den som skaper et åndsverk har opphavsrett
+>
+> unntak: datamaskinprogrammer.  opphavsrett går til arbeidsgiveren
 
-> finnes ingen lovbestemmelse vedr. arbeidsgiver
-
-> unntak: datamaskinprogrammer.  opphavsretten går til arbeidsgiveren (§39g)
-
-(_"Lov om opphavsrett til åndsverk"_)
+_("Lov om opphavsrett til åndsverk")_
 
 
 
@@ -182,11 +180,11 @@ To hovedklasser av fri programvare:
 +++
 ### Eksempler
 
-* GNU GPL 2 (Linux, MediaWiki, Wordpress, +++, ERT, OPM)
-* GNU GPL 3 (GCC, GNU, +++, Sunbeam)
+* GNU GPL 2 (Linux, MediaWiki, Wordpress, +++)
+* GNU GPL 3 (GCC, GNU, +++)
 * GNU AGPL (Launchpad)
 * GNU LGPL (QT, Vorbis*, Segyio)
-* MIT (Jenkins, Atom, Compiz, Mono, Ncurses, Node.js)
+* MIT (Jenkins, Atom, Compiz, Mono, Node.js)
 * APACHE (Android, Apache, Kubernetes, PyCharm)
 * BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
 * Creative Commons (Wikipedia content)
@@ -304,14 +302,13 @@ Like cc-by-sa for database content
 
 
 ---
-### Hvorfor
+### Hvorfor, Equinor!?
 
 
-Tre kategorier:
-
-* selskapet / aksjonærer
-* prosjektet / produktet
-* teamet / utviklerne
+* Tre kategorier:
+ * selskapet / aksjonærer
+ * prosjektet / produktet
+ * teamet / utviklerne
 
 
 
