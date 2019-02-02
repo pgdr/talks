@@ -1,8 +1,6 @@
 ### Fri programvare
 
-> I have no idea where this will lead us,
-> but I have a definite feeling it will be
-> a place both wonderful and strange.
+> Hvorfor gi noe bort gratis som vi har brukt millioner på å utvikle?!
 
 _(cc-by-sa 4.0)_
 
@@ -10,19 +8,12 @@ _(cc-by-sa 4.0)_
 +++
 ### Fri programvare
 
-> Hvorfor gi noe bort gratis som vi har brukt millioner på å utvikle?!
+* **kjøre** programvare som ønsket, uavhengig formål
+* **studere** & **endre** programmet etter behov
+* **redistribuere** kopier, gratis eller ikke
+* **distribuere** _endrede versjoner_ til andres nytte
 
-Eller: Kom og få en million kroner i kode.
-
-
----
-### Fri programvare
-
-* kjøre programvare som ønsket, for hvilket formål som helst
-* endre programmet til å bedre passe behov
-* redistribuere kopier, enten gratis eller for en pris
-* distribuere endrede versjoner av programvaren slik at community-et kan nyte
-  godt av dine modifikasjoner.
+_copyleft_
 
 
 ---
