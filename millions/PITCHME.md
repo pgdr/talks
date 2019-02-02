@@ -95,8 +95,8 @@ Microsoft lanserte
 +++
 ### I dag
 
-* 500 av de 500 kraftigste superdatamaskinene Linux
-* Majoriteten av MS Azure kjører Linux,
+* 500 av de 500 kraftigste superdatamaskinene (Linux)
+* Majoriteten av MS Azure (Linux),
  * Google og Amazon
  * Facebook og Twitter og Instagram
 * Microsoft IoT er Linux-drevet
@@ -111,49 +111,6 @@ Microsoft lanserte
 
 ---
 ### Lisenser
-
-
-
-
-+++
-### Fri programvare
-
-To hovedklasser av fri programvare:
-* del på samme vilkår
-* gjør hva du vil
-
-
-
-+++
-### Eksempler
-
-* Kildekode
- * GNU GPL v2 & GNU GPL v3
- * GNU AGPL & GNU LGPL
- * MIT
- * APACHE
- * BSD
-* Andre
- * CREATIVE COMMONS
- * ODbL
-
-
-
-
-+++
-### Eksempler
-
-* GNU GPL 2 (Linux, MediaWiki, Wordpress, +++, ERT, OPM)
-* GNU GPL 3 (GCC, GNU, +++, Sunbeam)
-* GNU AGPL (Launchpad)
-* GNU LGPL (QT, Vorbis*, Segyio)
-* MIT (Jenkins, Atom, Compiz, Mono, Ncurses, Node.js)
-* APACHE (Android, Apache, Kubernetes, PyCharm)
-* BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
-* CREATIVE COMMONS (Wikipedia content)
-* Open Database Licence (Norne)
-
-
 
 
 +++
@@ -198,72 +155,55 @@ To hovedklasser av fri programvare:
 
 
 +++
-### COPYLEFT
+### Fri programvare
 
-* Copyleft
-* share-alike
-
-concerns _redistribution_ of copyrighted work
-
+To hovedklasser av fri programvare:
+* del på samme vilkår (share-alike, _"copyleft"_)
+* gjør hva du vil
 
 
+
++++
+### Eksempler
+
+* Kildekode
+ * GNU GPL v2 & GNU GPL v3
+ * GNU AGPL & GNU LGPL
+ * MIT
+ * APACHE
+ * BSD
+* Andre
+ * CREATIVE COMMONS
+ * ODbL
+
+
+
+
++++
+### Eksempler
+
+* GNU GPL 2 (Linux, MediaWiki, Wordpress, +++, ERT, OPM)
+* GNU GPL 3 (GCC, GNU, +++, Sunbeam)
+* GNU AGPL (Launchpad)
+* GNU LGPL (QT, Vorbis*, Segyio)
+* MIT (Jenkins, Atom, Compiz, Mono, Ncurses, Node.js)
+* APACHE (Android, Apache, Kubernetes, PyCharm)
+* BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
+* Creative Commons (Wikipedia content)
+* Open Database Licence (OpenStreetMaps)
 
 
 +++
 ### GNU General Public License
 
 
-
-
-
 +++
-#### GPL 2 states
+#### GPL 2/3 states
 
 * copy, modify, and distribute the software
-* modifications to software GPL 2
-  * must be available under GPL 2
+* modifications to software GPL 2/3
+  * must be available under GPL 2/3
 * (with build instructions)
-
-
-
-
-
-+++
-##### Tivoization
-
-Suppose that I go ahead and
-* make a car running Linux
-* only signed software can run on car
-* people can get and modify source code
-* but not run the modified software on the car
-
-Was it really possible to modify the source code as per GPL 2?
-
-
-
-
-
-+++
-##### Tivoization
-
-Richard M. Stallman was annoyed.
-
-Made GNU GPL3
-
-Linus Torvalds says he understands the car manufacturer.
-
-
-
-
-
-+++
-#### GPL 3 states
-
-* copy, modify, and distribute the software
-* modifications to software GPL 3
-  * must be available under GPL 3
-* (with build instructions)
-
 
 +++
 
@@ -294,48 +234,20 @@ GPL3 also contains more
 +++
 #### LGPL 3 (Library/Lesser GPL)
 
-* For libraries
-* copy, modify, and distribute the software
-* derivative work must be redistributed under LGPL
-* applications using the library needn't
-
-
-
+* For biblioteker
+* kopiere, endre og distribuere programvaren
+* endrede verk må (derivater) må være LGPL
+* bruk av biblioteket trenger ikke være LGPL
 
 
 +++
-### Non-GPL
+#### BSD, MIT & Apache
 
-
-
-
-
-+++
-#### MIT
-
-* Do whatever you like
-* Must retain the original license
-
-
-
-
-+++
-#### Apache 2
-
-* Do whatever you like
-* Must retain the original license
-* Contains patent stuff
-
-
-
-
-+++
-#### BSD 3
-
-* Include BSD copyright and license notice
-* Do whatever you like
-
-
+* BSD, MIT & Apache
+ * Gjør som du vil
+ * Behold opprinnelig lisens
+* Apache
+ * Noe vedr. patent
 
 
 +++
