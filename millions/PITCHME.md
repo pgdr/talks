@@ -313,7 +313,7 @@ Like cc-by-sa for database content
 
 
 +++
-##### (selskap) Gjør komplementærgoder til forbruksvarer
+##### (selskap) komplementærgoder & forbruksvarer
 
 * Komplementærgoder er produkter
  * sammenfaller med ditt produkt
@@ -326,7 +326,7 @@ Like cc-by-sa for database content
 +++
 ##### (selskap) Reklame og rekruttering
 
-*  konferanser, workshops, universiteter og forteller om
+*  fortell konferanser, workshops, universiteter
  * vår satsing på fri programvare
  * på deling av kunnskap
  * på kompetanseheving,
@@ -339,10 +339,10 @@ Like cc-by-sa for database content
 +++
 ##### (selskap) Åpen impliserer tillitt
 
-* økt tillitt til IT-miljøet i Equinor ved å spille med åpne kort
+* økt tillitt til IT-miljøet (også i Equinor)
 * En av Equinors kjerneverdier er **åpenhet**
- * en måtene IT virkelig kan være åpne på: åpne opp kildekoden.
-* Vi jobber med å åpne også vår infrastruktur. (Kerckhoffs' prinsipp.)
+ * en måtene IT kan være åpne på: åpne kildekoden
+* Vi jobber med å åpne vår infrastruktur
 
 
 +++
@@ -358,8 +358,7 @@ Like cc-by-sa for database content
 +++
 ##### (prosjekt) økt kvalitet
 
-* Kildekode, heter det seg, blir skrevet én gang, men lest tusen ganger og kjørt
-  en million ganger.
+* Kildekode: skrevet én / lest tusen / kjørt million
 * bærer du fri programvare-fanen må du ha
  * README
  * oppdatert beskrivelse av prosjektet
@@ -422,93 +421,19 @@ Ubuntu? — du rundet spillet
 
 
 ---
----
----
----
 
-+++
-### Make it easy to build
-
-When putting your software out you need to also make clear and neutral
-instructions
+Happy coding
 
 ---
-
-### Internal network means hidden assumptions
-+++
-When you build, test and deploy your code on your internal network you have
-access to thousands of sweet libraries.
-
-+++
-
-However!  These sweet libraries come with a hidden cost, because they are hidden
-assumptions.
-
-+++
-
-It makes your software tightly (and invisibly so) coupled to your internal
-infrastructure.
-
-+++
-
-This makes it harder to change your infrastructure, and harder to change your
-software.
-
-
-
 ---
-
-### Why would we give away our precious software for free?
-
-+++
-
-A common misconseption is that free software is free to use.  Especially
-software that is designed to solve one company's or customer's need.
-
-+++
-
-Anyone who wants to use the software themselves need to make changes and
-bugfixes.
-
-+++
-
-These means that they (most likely) want to contribute back with new features,
-new generalizations, new improvements, etc.
-
-
-
 ---
-
-### Great advertising
-
-+++
-
-When you develop free software you can give a lots of talks!
-
-+++
-
-When recruting developers, you get to point them to code and review practices on
-github or lauchpad or wherever you have your code.
-
-+++
-
-If you develop software that students might use, they can download it and test
-it even before they start working in your company.
-
-
-
-
-
-
-
-
-
-
 ---
 ### due diligence
 
-_Using_ open source software often means no warranties!
-
+* _Bruk_ av fri programvare
+ * ingen garantier
+ * ingen support
+ * ingen krav til noe
 
 
 +++
@@ -516,6 +441,7 @@ _Using_ open source software often means no warranties!
 
 * Har pakken (automatiserte) tester?
 * Klarer du å kjøre dem, og går alle testene gjennom?
+
 
 +++
 ### Design
@@ -576,4 +502,4 @@ Er
 
 ---
 
-happy coding
+EOF
