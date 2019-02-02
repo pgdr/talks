@@ -1,5 +1,13 @@
 ### Fri programvare
 
+![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
+
+> `https://github.com/equinor`
+
+
++++
+### Fri programvare
+
 > Hvorfor gi noe bort gratis som vi har brukt millioner på å utvikle?!
 
 _(cc-by-sa 4.0)_
@@ -12,8 +20,6 @@ _(cc-by-sa 4.0)_
 * **studere** & **endre** programmet etter behov
 * **redistribuere** kopier, gratis eller ikke
 * **distribuere** _endrede versjoner_ til andres nytte
-
-_copyleft_
 
 
 ---
@@ -30,7 +36,7 @@ _copyleft_
 * Richard Stallman startet GNU Project
 * —— skrev GNU Manifesto, senere
  * Free Software Foundation
- * GNU General Public License
+ * GNU General Public License (GPL)
 
 
 +++
@@ -40,7 +46,7 @@ _copyleft_
 > professional like gnu)
 
 * Linux (1991)
-* Linux GPL (1992)
+* Linux lisensiert under GPL (1992)
 
 +++
 ### Historie (1990-tallet)
@@ -49,32 +55,6 @@ _copyleft_
 > programvare og er en potensielt alvorlig trussel mot Microsoft
 
 — Microsoft, Halloween documents (1998)
-
-+++
-### Historie (1990-tallet)
-
-
-> fri programvare kan konkurrere mot kommersiell programvare når det gjelder
-> kvalitet
-
-— Microsoft, Halloween documents (1998)
-
-+++
-### Historie (1990-tallet)
-
-> fri programvare-bevegelsen er en langsiktig trussel
-
-— Microsoft, Halloween documents (1998)
-
-+++
-### Historie (1990-tallet)
-
-> Evnen for fri programvare-miljøet til å prosessere, samle og utnytte den
-> kollektive IQ-en til tusenvis av individer på tvers av Internett er simpelthen
-> enestående
-
-— Microsoft, Halloween documents (1998)
-
 
 +++
 ### Historie (1990-tallet)
@@ -96,11 +76,10 @@ Microsoft lanserte
 ### I dag
 
 * 500 av de 500 kraftigste superdatamaskinene
-* Majoriteten av MS Azure,
+* Majoriteten av Microsoft Azure,
  * Google og Amazon
  * Facebook og Twitter og Instagram
 * Microsoft IoT
-* Google-utviklere bruker Chromebook
 * 80% av verdens mobilmarket kjører Android
 * Toyota, Audi, Ford, Mazda, Subaru, Mercedes, Mitsubishi, Nissan...
 
@@ -114,8 +93,9 @@ Microsoft lanserte
 
 
 +++
-### Oppgavsrett
+### Opphavsrett
 
+* Fri programvare er basert på opphavsrett
 * Ingen kan ta bort din opphavsrett til åndsverk
 * Alt du lager er ditt åndsverk (obs: arbeidsgiver)
 * Lisenser er kontrakter
@@ -146,7 +126,7 @@ Microsoft lanserte
 >
 > unntak: datamaskinprogrammer.  opphavsrett går til arbeidsgiveren
 
-_("Lov om opphavsrett til åndsverk")_
+_(«Lov om opphavsrett til åndsverk»)_
 
 
 
