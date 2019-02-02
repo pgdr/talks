@@ -16,9 +16,7 @@ Eller: Kom og få en million kroner i kode.
 
 
 ---
-### Wikipedia
-
-Introduksjon til Wikipedia (som analogi for open source community).
+### Fri programvare
 
 * kjøre programvare som ønsket, for hvilket formål som helst
 * endre programmet til å bedre passe behov
@@ -27,43 +25,84 @@ Introduksjon til Wikipedia (som analogi for open source community).
   godt av dine modifikasjoner.
 
 
-+++
-### History
+---
+### Historie (før 1984)
 
+* Kildekode var skrevet og distribuert
+* Forskjellige arkitekturer
+* Kode var _«public domain»_
+* 1975—85: Kode ble åndsverk, proprietær kode oppstod
 
-> the quality of free software can meet or exceed that of commercial programs
-> and describes it as a potentially serious threat to Microsoft.
+---
+### Historie (1980-tallet)
 
-
-+++
-### History
-
-> free programs can compete with commercial software in terms of quality; the
-> free software movement is a "long-term credible" threat; Employing the
-> traditional Microsoft marketing strategy known as "FUD," ("fear, uncertainty
-> and doubt") will not succeed against the developers of free software.
-
-
-+++
-### History
-
-> The ability of the O.S.S. process to collect and harness the collective
-> I.Q. of thousands of individuals across the Internet is simply amazing
+* Richard Stallman startet GNU Project
+* —— skrev GNU Manifesto, senere
+ * Free Software Foundation
+ * GNU General Public License
 
 
 +++
-### History
+### Historie (1990-tallet)
 
-> The competitive issues go beyond the fact that the software is free.  It is
-> also part of the open-source software, or O.S.S., movement, which encourages
-> widespread, rapid development efforts by making the source code readily
-> available to anyone.  This enables programmers the world over to continually
-> write or suggest improvements or to warn of bugs that need to be fixed.
+> I'm doing a (free) operating system (just a hobby, won't be big and
+> professional like gnu)
+
+* Linux (1991)
+* Linux GPL (1992)
+
++++
+### Historie (1990-tallet)
+
+> Kvaliteten på fri programvare kan møte eller overgå kvaliteten til kommersiell
+> programvare og er en potensielt alvorlig trussel mot Microsoft
+
+— Microsoft, Halloween documents (1998)
+
++++
+### Historie (1990-tallet)
+
+
+> fri programvare kan konkurrere mot kommersiell programvare når det gjelder
+> kvalitet
+
+— Microsoft, Halloween documents (1998)
+
++++
+### Historie (1990-tallet)
+
+> fri programvare-bevegelsen er en langsiktig trussel
+
+— Microsoft, Halloween documents (1998)
+
++++
+### Historie (1990-tallet)
+
+> Evnen for fri programvare-miljøet til å prosessere, samle og utnytte den
+> kollektive IQ-en til tusenvis av individer på tvers av Internett er simpelthen
+> enestående
+
+— Microsoft, Halloween documents (1998)
+
+
++++
+### Historie (1990-tallet)
+
+> Oppfordringen til vidspredt, hurtig utvikling gir programmerere mulighet til å
+> kontinuerlig skrive og foreslå forbedringer, samt å finne bugs
+
+— Microsoft, Halloween documents (1998)
+
++++
+### Historie (1990-tallet)
+
+Microsoft lanserte
+* _"fear, uncertainty and doubt"_ (FUD)
+* _"embrace, extend, extinguish"_ (EEE)
 
 
 +++
 ### I dag
-
 
 * 500 av de 500 kraftigste superdatamaskinene Linux.
 * Majoriteten av MS Azure kjører Linux,
@@ -72,8 +111,6 @@ Introduksjon til Wikipedia (som analogi for open source community).
 * Google-utviklere bruker Chromebook (Linux).
 * 80% av verdens mobilmarket kjører Android (Linux)
 * Toyota, Audi, Ford, Mazda, Subaru, Mercedes, Mitsubishi, Nissan...
-
-
 
 
 ---
