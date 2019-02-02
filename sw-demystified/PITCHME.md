@@ -1,5 +1,7 @@
 ### Software development demystified
 
+> _Talk is cheap. Show me the code._
+
 +++
 
 ### ~Complicated~ Complex systems
