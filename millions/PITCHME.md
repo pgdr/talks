@@ -2,7 +2,7 @@
 
 ![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
 
-> `https://github.com/equinor`
+> [`https://github.com/equinor`](https://github.com/equinor)
 
 
 +++
@@ -93,6 +93,18 @@ Microsoft lanserte
 
 
 +++
+### Opphavsrett Til Åndsverk
+
+> den som skaper et åndsverk har opphavsrett
+>
+> unntak: datamaskinprogrammer.  opphavsrett går til arbeidsgiveren
+
+_(«Lov om opphavsrett til åndsverk»)_
+
+
+
+
++++
 ### Opphavsrett
 
 * Fri programvare er basert på opphavsrett
@@ -114,20 +126,6 @@ Microsoft lanserte
  * signere kontrakt om relisensiering
 * FSF eier all GNU-kode
 * Linux-opphavsrett er spredt
-
-
-
-
-
-+++
-### Opphavsrett Til Åndsverk
-
-> den som skaper et åndsverk har opphavsrett
->
-> unntak: datamaskinprogrammer.  opphavsrett går til arbeidsgiveren
-
-_(«Lov om opphavsrett til åndsverk»)_
-
 
 
 
@@ -167,8 +165,8 @@ To hovedklasser av fri programvare:
 * MIT (Jenkins, Atom, Compiz, Mono, Node.js)
 * APACHE (Android, Apache, Kubernetes, PyCharm)
 * BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
-* Creative Commons (Wikipedia content)
-* Open Database Licence (OpenStreetMaps)
+* Creative Commons (Wikipedia-innhold)
+* Open Database Licence (OpenStreetMaps, ...)
 
 
 +++
@@ -231,12 +229,12 @@ GPL3 also contains more
 +++
 ### Creative commons
 
-(for content)
+(for innhold)
 
 * by = attribution
 * sa = share-alike
-* nc = non-commercial
-* nd = no-derivates
+* nc = non-commercial (ufri)
+* nd = no-derivates (ufri?)
 
 
 
@@ -246,10 +244,11 @@ GPL3 also contains more
 
 * cc
 * cc-by
-* cc-sa
+* cc-by-sa
 * cc-nc
-* cc-by-sa-nc
 * cc-nd
+* cc-by-nc-sa
+* cc-by-nc-nd
 
 
 
@@ -257,7 +256,7 @@ GPL3 also contains more
 +++
 ### Open Database Licence
 
-Like cc-by-sa for database content
+Som cc-by-sa, men for "data"
 
 
 
@@ -352,9 +351,10 @@ Like cc-by-sa for database content
 * i den åpne koden
  * færre bugs
  * flere tester
-* vi regelmessige tilbakemeldinger fra eksterne om
+* vi får regelmessige tilbakemeldinger fra eksterne om
  * feil
  * forbedringspotensiale
+ * ny funksjonalitet
 
 
 +++
@@ -363,18 +363,20 @@ Like cc-by-sa for database content
 * åpen kode får tilgang til mange flere verktøy
  * GitHub
  * Travis
- * codacy
- * appveyor
- * circleci
+ * CircleCI
+ * AppVeyor
+ * Codacy
 * lettere tilgang selv!
 
 
 +++
 ##### (utvikler) hver eneste patch og review ☆ CV
 
-* hver eneste patch, commit og review en stjerne i CV
+* hver eneste
+ * patch,
+ * commit,
+ * review en stjerne i CV-en
 * får sjelden muligheten til å vise vårt arbeid
-* "har du noe kode på GitHub vi kan ta en titt på?"
 
 
 +++
@@ -384,21 +386,20 @@ Lag en
 * pip-pakke
 * en Debian-pakke
 * en RedHat-pakke
+* en npm-pakke
 
 Ubuntu? — du rundet spillet
 
-
+> `apt install my_pkg`
 
 ---
 ##### Idealisme
 
-* noen er idealister og skulle ønske at vi alle bare kunne dele mer.
-* Verden hadde vært et bedre sted, hadde all programvare vært fri
-* hadde alle kunne samarbeidet om å lage de beste produktene
-* Det er ingen som er uenig i dette.
-* Vi som skulle ønske å se åpen kildekode hvor Wikipedia er i dag.
-
-
+* noen er
+ * idealister og skuule
+ * ønsker at vi delte mer
+* verden hadde vært et bedre sted
+ * hadde alle samarbeidet om programvare
 
 ---
 
