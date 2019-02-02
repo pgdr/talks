@@ -1,10 +1,203 @@
-## Why Free Software?
+### Fri programvare
 
-(cc-by-sa 4.0)
+> I have no idea where this will lead us,
+> but I have a definite feeling it will be
+> a place both wonderful and strange.
+
+_(cc-by-sa 4.0)_
+
 
 +++
+### Fri programvare
+
+> Hvorfor gi noe bort gratis som vi har brukt millioner på å utvikle?!
+
+Eller: Kom og få en million kroner i kode.
 
 
+---
+### Wikipedia
+
+Introduksjon til Wikipedia (som analogi for open source community).
+
+* kjøre programvare som ønsket, for hvilket formål som helst
+* endre programmet til å bedre passe behov
+* redistribuere kopier, enten gratis eller for en pris
+* distribuere endrede versjoner av programvaren slik at community-et kan nyte
+  godt av dine modifikasjoner.
+
+
++++
+### History
+
+
+> the quality of free software can meet or exceed that of commercial programs
+> and describes it as a potentially serious threat to Microsoft.
+
+
++++
+### History
+
+> free programs can compete with commercial software in terms of quality; the
+> free software movement is a "long-term credible" threat; Employing the
+> traditional Microsoft marketing strategy known as "FUD," ("fear, uncertainty
+> and doubt") will not succeed against the developers of free software.
+
+
++++
+### History
+
+> The ability of the O.S.S. process to collect and harness the collective
+> I.Q. of thousands of individuals across the Internet is simply amazing
+
+
++++
+### History
+
+> The competitive issues go beyond the fact that the software is free.  It is
+> also part of the open-source software, or O.S.S., movement, which encourages
+> widespread, rapid development efforts by making the source code readily
+> available to anyone.  This enables programmers the world over to continually
+> write or suggest improvements or to warn of bugs that need to be fixed.
+
+
++++
+### I dag
+
+
+* 500 av de 500 kraftigste superdatamaskinene Linux.
+* Majoriteten av MS Azure kjører Linux,
+ * + Google og Amazon.  Facebook og Twitter og Instagram
+* Microsoft IoT er Linux-drevet.
+* Google-utviklere bruker Chromebook (Linux).
+* 80% av verdens mobilmarket kjører Android (Linux)
+* Toyota, Audi, Ford, Mazda, Subaru, Mercedes, Mitsubishi, Nissan...
+
+
+
+
+---
+### Hvorfor
+
+
+Tre kategorier:
+
+* selskapet / aksjonærer
+* prosjektet / produktet
+* teamet / utviklerne
+
+
++++
+### (selskap) Gjør komplementærgoder til forbruksvarer
+
+* Komplementærgoder er produkter
+ * sammenfaller med ditt produkt
+ * avhengig av hverandre.
+* Når prisen på komplementærgoder går ned
+ * går etterspørselen av ditt produkt opp (og pris)
+
+
++++
+### (selskap) Reklame og rekruttering
+
+*  konferanser, workshops, universiteter og forteller om
+ * vår satsing på fri programvare
+ * på deling av kunnskap
+ * på kompetanseheving,
+ * på at vi gir tilbake til community-et.
+* kan vise testdreven utvikling med reviews
+
+
+
+
++++
+### (selskap) Åpen impliserer tillitt
+
+* økt tillitt til IT-miljøet i Equinor ved å spille med åpne kort
+* En av Equinors kjerneverdier er **åpenhet**
+ * en måtene IT virkelig kan være åpne på: åpne opp kildekoden.
+* Vi jobber med å åpne også vår infrastruktur. (Kerckhoffs' prinsipp.)
+
+
++++
+### (prosjekt) Reduserer produktutviklingstid
+
+* baserer deg på lukket programvare, så
+ * velger du samtidig bort en hel haug med goder.
+
+> stå på skuldrene til giganter!
+
+
+
++++
+### (prosjekt) økt kvalitet
+
+* Kildekode, heter det seg, blir skrevet én gang, men lest tusen ganger og kjørt
+  en million ganger.
+* bærer du fri programvare-fanen må du ha
+ * README
+ * oppdatert beskrivelse av prosjektet
+ * instruksjonsmanual
+ * installasjonsmanual
+ * automatiserte tester
+
++++
+### (prosjekt) med nok øyne er enhver bug overfladisk
+
+* i den åpne koden
+ * færre bugs
+ * flere tester
+* vi regelmessige tilbakemeldinger fra eksterne om
+ * feil
+ * forbedringspotensiale
+
+
++++
+### (team) fullt fokus på utvikling
+
+* åpen kode får tilgang til mange flere verktøy
+ * GitHub
+ * Travis
+ * codacy
+ * appveyor
+ * circleci
+* lettere tilgang selv!
+
+
++++
+### (utvikler) hver eneste patch og review ☆ CV
+
+* hver eneste patch, commit og review en stjerne i CV
+* får sjelden muligheten til å vise vårt arbeid
+* "har du noe kode på GitHub vi kan ta en titt på?"
+
+
++++
+### (utvikler) Bidra til fri programvare-community-et
+
+Lag en
+* pip-pakke
+* en Debian-pakke
+* en RedHat-pakke
+
+Ubuntu? — du rundet spillet
+
+
+
+---
+### Idealisme
+
+* noen er idealister og skulle ønske at vi alle bare kunne dele mer.
+* Verden hadde vært et bedre sted, hadde all programvare vært fri
+* hadde alle kunne samarbeidet om å lage de beste produktene
+* Det er ingen som er uenig i dette.
+* Vi som skulle ønske å se åpen kildekode hvor Wikipedia er i dag.
+
+
+
+
+
++++
 ### Make it easy to build
 
 When putting your software out you need to also make clear and neutral
@@ -79,26 +272,35 @@ it even before they start working in your company.
 
 
 
-## Licenses
-
-(cc-by-sa 4.0)
 
 ---
+### Lisenser
 
-Go through
-
-* GNU GPL 2 v 3
-* GNU AGPL
-* GNU LGPL
-* MIT
-* APACHE
-* BSD
-* CREATIVE COMMONS
-* ODbL
 
 +++
+### Fri programvare
 
-Examples
+To hovedklasser av fri programvare:
+* del på samme vilkår
+* gjør hva du vil
+
+
++++
+### Eksempler
+
+* Kildekode
+ * GNU GPL v2 & GNU GPL v3
+ * GNU AGPL & GNU LGPL
+ * MIT
+ * APACHE
+ * BSD
+* Andre
+ * CREATIVE COMMONS
+ * ODbL
+
+
++++
+### Eksempler
 
 * GNU GPL 2 (Linux, MediaWiki, Wordpress, +++, ERT, OPM)
 * GNU GPL 3 (GCC, GNU, +++, Sunbeam)
@@ -110,29 +312,29 @@ Examples
 * CREATIVE COMMONS (Wikipedia content)
 * Open Database Licence (Norne)
 
+
 ---
+### Oppgavsrett
 
-### COPYRIGHT
+* Ingen kan ta bort din opphavsrett til åndsverk
+* Alt du lager er ditt åndsverk (obs: arbeidsgiver)
+* Lisenser er kontrakter
 
-* No license can take away your copyright
-* Everything you make is immediately your copyright (caveat employee)
-* Licenses are contracts!
-
-+++
-
-### COPYRIGHT
-
-* If you have copyright
-  * you can relicense to whatever
-* You cannot give away copyright (in Norway you can?)
-  * hence, e.g. FSF and ERT ask you to
-  * sign a contract allowing them to relicense your code
-* FSF owns all GNU code and could therefore upgrade GPL2 to GPL3
-* Linux copyrights scattered around, cannot upgrade (won't anyway)
 
 +++
+### Opphavsrett
 
-### OPPHAVSRETT TIL ÅNDSVERK
+* Hvis du har opphavsretten
+ * du kan relisensiere
+* Du kan ikke gi bort opphavsretten
+ * FSF og mange andre ber deg ...
+ * signere kontrakt om relisensiering
+* FSF eier all GNU-kode
+* Linux-opphavsrett er spredt
+
+
++++
+### Opphavsrett Til Åndsverk
 
 > den som skaper et åndsverk har opphavsrett
 
@@ -140,7 +342,7 @@ Examples
 
 > unntak: datamaskinprogrammer.  opphavsretten går til arbeidsgiveren (§39g)
 
-(Covered under _"Lov om opphavsrett til åndsverk"_)
+(_"Lov om opphavsrett til åndsverk"_)
 
 
 +++
@@ -203,10 +405,10 @@ GPL3 also contains more
 * specific about license compatibility (e.g. apache)
 * DRM (tivo)
 * explicit patents stuff
-  * (cannot deny rights via patents)
+ * (cannot deny rights via patents)
 * make AGPL explicitly necessary
-  * (if software not sent, no distribution necessary)
-  * (recall Wordpress)
+ * (if software not sent, no distribution necessary)
+ * (recall Wordpress)
 
 ---
 
@@ -216,7 +418,7 @@ GPL3 also contains more
 * copy, modify, and distribute the software
 * derivative work must be redistributed under AGPL
 * if the software is used in "web publication"
-  * the source code must be made available
+ * the source code must be made available
 
 ---
 
@@ -286,13 +488,74 @@ Like cc-by-sa for database content
 
 
 ---
-
-
-## due diligence
+### due diligence
 
 _Using_ open source software often means no warranties!
 
 
+
++++
+### Testing
+
+* Har pakken (automatiserte) tester?
+* Klarer du å kjøre dem, og går alle testene gjennom?
+
++++
+### Design
+
+Er
+* pakken veldokumentert og API-et veldesignet?
+* forventninger til brukere dokumentert?
+
+
++++
+### Kodekvalitet
+
+* Er kodekvaliteten grei?
+* Ser koden ut som noe du kunne tenke deg å debugge?
+
+
++++
+### Bug-database
+
+* Er det mange åpne bug-rapporter (over lang tid)?
+* Er det mange lukkede bug-rapporter (nylig)?
+
+
++++
+### Vedlikehold
+
+* Er pakken "ferdig", hvis ikke, når var siste commit?
+* Er det et aktivt (og sunt) utviklingsmiljø?
+
+
+
++++
+### Bruk
+
+* Er det mange som bruker denne pakken?
+* Er det noen seriøse som avhenger av denne pakken?
+
+
++++
+### Sikkerhet
+
+* Kommer pakken til å håndtere rådata, og tåler den ondsinnet input?
+* Har den noen innslag i _National Vulnerability Database_?
+
+
++++
+### Lisensiering
+
+* Har koden en kjent lisens?
+* Passer lisensen med dine behov?
+
+
++++
+### Avhengigheter
+
+* Avhenger denne pakken på andre pakker?
+* Husk at den kan introdusere nye avhengigheter senere!
 
 ---
 
