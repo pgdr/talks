@@ -79,9 +79,10 @@ Microsoft lanserte
 * Majoriteten av Microsoft Azure,
  * Google og Amazon
  * Facebook og Twitter og Instagram
+ * LinkedIn og eBay og IBM
 * Microsoft IoT
-* 80% av verdens mobilmarket kjører Android
-* Toyota, Audi, Ford, Mazda, Subaru, Mercedes, Mitsubishi, Nissan...
+* 80% av verdens mobilmarked kjører Android
+* Toyota, Audi, Ford, Mazda, Subaru, Mercedes..
 
 
 
@@ -142,22 +143,6 @@ To hovedklasser av fri programvare:
 +++
 ### Eksempler
 
-* Kildekode
- * GNU GPL v2 & GNU GPL v3
- * GNU AGPL & GNU LGPL
- * MIT
- * APACHE
- * BSD
-* Andre
- * CREATIVE COMMONS
- * ODbL
-
-
-
-
-+++
-### Eksempler
-
 * GNU GPL 2 (Linux, MediaWiki, Wordpress, +++)
 * GNU GPL 3 (GCC, GNU, +++)
 * GNU AGPL (Launchpad)
@@ -176,33 +161,21 @@ To hovedklasser av fri programvare:
 +++
 #### GPL 2/3 states
 
-* copy, modify, and distribute the software
-* modifications to software GPL 2/3
-  * must be available under GPL 2/3
-* (with build instructions)
+* kopiere, endre, (re)distribuere
+* endringer må under GPL 2/3
+* (med mulig bygging)
 
-+++
-
-GPL3 also contains more
-* specific about license compatibility (e.g. apache)
-* DRM (tivo)
-* explicit patents stuff
- * (cannot deny rights via patents)
-* make AGPL explicitly necessary
- * (if software not sent, no distribution necessary)
- * (recall Wordpress)
-
-
+(GPL 3 inneholder noe ekstra snacks)
 
 
 +++
 #### AGPL 3 (Affero GPL)
 
-* For network software
-* copy, modify, and distribute the software
-* derivative work must be redistributed under AGPL
-* if the software is used in "web publication"
- * the source code must be made available
+* For nettverksprogrammer
+* kopiere, endre, (re)distribuere
+* endringer må under AGPL
+* hvis programvaren er delt som "web publication"
+ * må også kildekoden distribueres
 
 
 
@@ -212,8 +185,8 @@ GPL3 also contains more
 
 * For biblioteker
 * kopiere, endre og distribuere programvaren
-* endrede verk må (derivater) må være LGPL
-* bruk av biblioteket trenger ikke være LGPL
+* endringer må under LGPL
+* bruk av biblioteket trenger ikke
 
 
 +++
@@ -233,24 +206,8 @@ GPL3 also contains more
 
 * by = attribution
 * sa = share-alike
-* nc = non-commercial (ufri)
+* nc = non-commercial (ufri!)
 * nd = no-derivates (ufri?)
-
-
-
-
-+++
-### Creative commons
-
-* cc
-* cc-by
-* cc-by-sa
-* cc-nc
-* cc-nd
-* cc-by-nc-sa
-* cc-by-nc-nd
-
-
 
 
 +++
@@ -395,11 +352,8 @@ Ubuntu? — du rundet spillet
 ---
 ##### Idealisme
 
-* noen er
- * idealister og skuule
- * ønsker at vi delte mer
+* ønsker folk delte mer
 * verden hadde vært et bedre sted
- * hadde alle samarbeidet om programvare
 
 ---
 
