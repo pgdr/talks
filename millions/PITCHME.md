@@ -4,7 +4,7 @@
 
 > [`https://github.com/equinor`](https://github.com/equinor)
 
-> Pål Grønås Drange, Leading Adviser Software Engineering
+> Pål Grønås Drange, Leading Advisor
 
 +++
 ### Fri programvare
