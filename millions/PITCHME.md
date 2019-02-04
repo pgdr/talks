@@ -171,7 +171,6 @@ To hovedklasser av fri programvare:
 +++
 #### AGPL 3 (Affero GPL)
 
-* For nettverksprogrammer
 * kopiere, endre, (re)distribuere
 * endringer må under AGPL
 * hvis programvaren er delt som "web publication"
