@@ -4,6 +4,7 @@
 
 > [`https://github.com/equinor`](https://github.com/equinor)
 
+> Pål Grønås Drange, Leading Adviser Software Engineering
 
 +++
 ### Fri programvare
@@ -319,7 +320,7 @@ Som cc-by-sa, men for "data"
 
 
 +++
-##### (utvikler) hver eneste patch og review ☆ CV
+##### (utvikler) hver eneste patch og review: ☆ i CV
 
 * hver eneste
  * patch,
