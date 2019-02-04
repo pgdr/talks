@@ -182,7 +182,6 @@ To hovedklasser av fri programvare:
 +++
 #### LGPL 3 (Library/Lesser GPL)
 
-* For biblioteker
 * kopiere, endre og distribuere programvaren
 * endringer må under LGPL
 * bruk av biblioteket trenger ikke
