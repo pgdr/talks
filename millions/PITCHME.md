@@ -247,26 +247,20 @@ Som cc-by-sa, men for "data"
 
 
 +++
-##### (selskap) komplementærgoder & forbruksvarer
+##### (selskap) komplementærprodukter
 
-* Komplementærgoder er produkter
- * sammenfaller med ditt produkt
- * avhengig av hverandre.
-* Når prisen på komplementærgoder går ned
- * går etterspørselen av ditt produkt opp (og pris)
-
+* etterspørselen av produkt
+* invers av pris på komplementærprodukt
 
 
 +++
 ##### (selskap) Reklame og rekruttering
 
-*  fortell konferanser, workshops, universiteter
- * vår satsing på fri programvare
- * på deling av kunnskap
- * på kompetanseheving,
- * på at vi gir tilbake til community-et.
-* kan vise testdreven utvikling med reviews
-
+* kan vise _«ekte utvikling»_
+* fortelle på konferanser, workshops, universiteter
+ * dele kunnskap
+ * kompetanseheving,
+ * gi tilbake
 
 
 
@@ -275,15 +269,15 @@ Som cc-by-sa, men for "data"
 
 * økt tillitt til IT-miljøet (også i Equinor)
 * En av Equinors kjerneverdier er **åpenhet**
- * en måtene IT kan være åpne på: åpne kildekoden
-* Vi jobber med å åpne vår infrastruktur
+ * beste måten IT kan være åpne
+* åpen infrastruktur (Kerckhoffs' prinsipp)
 
 
 +++
 ##### (prosjekt) Reduserer produktutviklingstid
 
-* baserer deg på lukket programvare, så
- * velger du samtidig bort en hel haug med goder.
+* baser deg på lukket programvare
+* velg bort en hel haug med goder
 
 > stå på skuldrene til giganter!
 
