@@ -33,48 +33,33 @@
 +++
 ### Software development
 
-there is not a single thing today not involving an instruction written by a
-developer
+Everything today is accommodated by an instruction written by a developer
 
-#### digitalization = it
-
-
-+++
-### Software development
-
- ... but we have methods, best practices and experience
-
-_(backed by empirical evidence)_
+#### digitalization = IT
 
 
 +++
 ### Software development
+
 
 * Why does it work?
- * it's a profession
 
 
 +++
 ### Software development
 
-* we have
- * education
- * experience
- * methods, best practices
-* we also have
- * responsibility
- * trust
-
+professionalism.
 
 +++
 ### Software development
 
-> Access to developers is a bigger threat to business success than access to
-> capital.
+* education
+* experience
+* methods, best practices
+* ———
+* responsibility
+* trust
 
-In fact,
-
-> People are not your most important asset. The right people are.
 
 
 +++
@@ -82,11 +67,11 @@ In fact,
 
 The waterfall model
 
-* Requirements
-* Design
-* Implementation
-* Validation
-* Maintenance
+1. Requirements
+2. Design
+3. Implementation
+4. Validation
+5. Maintenance
 
 +++
 ### Software development
@@ -117,31 +102,30 @@ Agile is, from day 1:
 
 
 ---
-## PART II
+#### Technology
+
+PART II
 
 
 +++
-#### Technology
 
-* Question: What is the cloud?
+### What is the cloud?
 
 +++
 
 ![There is no cloud](https://raw.githubusercontent.com/pgdr/talks/master/sw-demystified/assets/no-cloud.png)
 
 +++
-#### Technology
+#### Why cloud
 
-* Question: Why cloud?
- * scalability
- * pay-per-use
- * enables information sharing
- * fascilitates cooperation, internally and externally
+
+* scalability
+* pay-per-use
+* enables information sharing
+* fascilitates cooperation, internally and externally
 
 +++
-#### Technology
-
-* Question: What is the cloud for Equinor
+#### What is the cloud for Equinor
 
 OMNIA is our MS Azure configuration
 
@@ -155,7 +139,7 @@ with access control
 * information owners ...
 
 +++
-#### Technology
+#### Services
 
 * Infrastructure as a Service (IaaS)
 * Platform as a Service (PaaS)
@@ -165,16 +149,14 @@ with access control
 +++
 #### Technology
 
-* GUI (human interaction)
- * Graphical User Interfaces
- * (mouse and keyboards)
- * (users and screens)
-* API
- * Application Programming Interface
- * how programs communicate with eachother
- * necessary in automation, machine learning
-
-machine learning = programming + data + statistics
+* GUI (Graphical User Interfaces)
+ * Human interaction.
+ * Mouse and keyboards.
+ * Users and screens.
+* API (Application Programming Interface)
+ * Programs communicating with each other.
+ * Necessary in automation and machine learning.
+ * ML = programming + data + statistics
 
 
 +++
@@ -185,3 +167,17 @@ machine learning = programming + data + statistics
 * Software projects **are different**
 * Agile is not for fun
 * Cloud and API are the future
+
+
++++
+### The future
+
+> Access to developers is a bigger threat to business success than access to
+> capital.
+
+— Stripe 2018 Report
+
+
+> People are not your most important asset. The right people are.
+
+— Jim Collins
