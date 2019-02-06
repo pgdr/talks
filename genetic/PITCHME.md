@@ -4,7 +4,6 @@
 
 ---
 
-
 ![Antenna](https://raw.githubusercontent.com/pgdr/talks/master/genetic/antenna.jpg)
 
 ---
@@ -117,3 +116,5 @@ the Evolutionary Computation and Artificial Life Research Communities
 [No claws](https://youtu.be/_5Y1hSLhYdY?list=PL5278ezwmoxQODgYB0hWnC0-Ob09GZGe2)
 
 ---
+
+[Muscle & bone](https://www.youtube.com/watch?v=z9ptOeByLA4&list=PL5278ezwmoxQODgYB0hWnC0-Ob09GZGe2&index=3)
