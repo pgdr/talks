@@ -92,11 +92,11 @@ the Evolutionary Computation and Artificial Life Research Communities
 
 ---
 
-![Locomotion](https://raw.githubusercontent.com/pgdr/talks/master/genetic/locomotion.png)
+![Locomotion](https://raw.githubusercontent.com/pgdr/talks/master/genetic/locomotion.jpg)
 
 ---
 
-![Locomotion2](https://raw.githubusercontent.com/pgdr/talks/master/genetic/locomotion2.png)
+![Locomotion2](https://raw.githubusercontent.com/pgdr/talks/master/genetic/locomotion2.jpg)
 
 ---
 
