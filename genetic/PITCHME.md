@@ -42,7 +42,8 @@ def mutate(ind: Individual) -> Individual:
 ### crossover
 
 ```python
-def crossover(ind1: Individual, ind2: Individual) -> Individual:
+def crossover(ind1: Individual,
+              ind2: Individual) -> Individual:
     pass
 ```
 
