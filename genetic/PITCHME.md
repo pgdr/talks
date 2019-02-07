@@ -24,8 +24,16 @@ You need three functions to use GAs.
 * fitness
 
 ---
-
 ### mutation
+
+---
+### mutation
+
+![Mutate](https://raw.githubusercontent.com/pgdr/talks/master/genetic/mutate.png)
+
+---
+### mutation
+
 
 make a random mutation of an individual
 
@@ -37,8 +45,16 @@ def mutate(ind: Individual) -> Individual:
 (GAs with mutation is a form of local random search)
 
 ---
-
 ### crossover
+
+---
+### crossover
+
+![Crossover](https://raw.githubusercontent.com/pgdr/talks/master/genetic/crossover.png)
+
+---
+### crossover
+
 
 ```python
 def crossover(ind1: Individual,
