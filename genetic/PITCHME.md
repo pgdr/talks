@@ -76,6 +76,15 @@ def fitness(ind: Individual) -> float:
 #### live
 
 ---
+#### Travelling Salesman
+![TSP](https://raw.githubusercontent.com/pgdr/talks/master/genetic/tsp-nopath.png)
+
+---
+#### Travelling Salesman
+![TSP](https://raw.githubusercontent.com/pgdr/talks/master/genetic/tsp-path.png)
+
+---
+
 
 ---
 ```python
