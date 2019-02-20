@@ -36,7 +36,7 @@ but why?
 2. JavaScript
 3. Go
 4. Kotlin
-5. Typescipt
+5. Typescript
 6. C++
 
 ---
@@ -73,9 +73,13 @@ We want to build a culture of sharing
 
 
 ---
+We need
+
 * Creative thinking
 * logical reasoning
 * technological capabilities
+
+Which demands
 
 1. new ways of working
 2. brainstorming
