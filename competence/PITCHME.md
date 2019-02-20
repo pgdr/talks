@@ -1,4 +1,4 @@
-> _If you put fences around people, you get sheep_
+> _**If you put fences around people, you get sheep**_
 
 
 ---
@@ -53,43 +53,17 @@ Should we wait 4 more years?
 
 
 ---
-Q:
+Questions:
 1. Which competencies are necessary for success?
 2. Do we possess them?
 
+---
 Developers need
 1. formal education (fixed)
 2. experience (...)
 3. competencies (this)
 
-
----
-## Sharing
-
-* Function more consistently as a team
-* Grow intellectual wealth of the organization
-
----
-Why sharing?
-
-* Increase
- * creativity
- * teamwork and collaboration
- * productivity
- * job satisfaction
- * confidence by being seen as SME
-* reduce staff turnover
-* attract future employees
-
-
----
-We want to build a culture of sharing
-
-1. Make it a priority (employees prioritize)
-2. Give incentives (e.g. P@E)
-3. Create a space for sharing
-4. Need adequate slack
-
+> _Life is what happens to you while you're busy making other plans._
 
 
 ---
@@ -112,8 +86,37 @@ How to improve as a programmer?
 **Be an active member of the community**
 
 
+
+
 ---
-The **E** in **EDC** is not Software Innovation
+## Share
+
+* Increase
+ * intellectual wealth of the organization
+ * creativity
+ * teamwork and collaboration
+ * productivity
+ * job satisfaction
+ * confidence by being seen as SME
+* reduce staff turnover
+* attract future employees
+
+
+---
+We want to **build a culture of sharing**
+
+1. Make it a priority (employees prioritize)
+2. Give incentives (e.g. P@E)
+3. Create a space for sharing
+4. Need adequate slack
+
+
+---
+**Equinor Developer Conference**
+
+—
+
+A space for sharing
 
 ---
 We need people to contribute
