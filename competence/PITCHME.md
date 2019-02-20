@@ -20,7 +20,7 @@
 More reasons?
 
 ---
-## 2014
+## Top langs 2014
 
 1. Java
 2. C#
@@ -30,7 +30,7 @@ More reasons?
 6. Ruby
 
 ---
-## 2019
+## Top langs 2019
 
 1. Python
 2. JavaScript
@@ -40,16 +40,18 @@ More reasons?
 6. C++
 
 ---
-Should we wait 4 more years?
+## Top langs 2024
 
+Should we wait 5 more years?
 
 
 ---
 ## Build
 
 * Our most important assets
- * experience
  * knowledge
+ * culture
+ * experience
 
 
 ---
@@ -57,11 +59,6 @@ Questions:
 1. Which competencies are necessary for success?
 2. Do we possess them?
 
----
-Developers need
-1. formal education (fixed)
-2. experience (...)
-3. competencies (this)
 
 > _Life is what happens to you while you're busy making other plans._
 
@@ -105,10 +102,10 @@ How to improve as a programmer?
 ---
 We want to **build a culture of sharing**
 
+1. Give incentives (e.g. P@E)
 1. Make it a priority (employees prioritize)
-2. Give incentives (e.g. P@E)
-3. Create a space for sharing
-4. Need adequate slack
+1. Need adequate slack
+1. Create a space for sharing
 
 
 ---
