@@ -82,6 +82,7 @@ How to improve as a programmer?
 
 **Be an active member of the community**
 
+Friday learning
 
 
 
@@ -119,3 +120,6 @@ A space for sharing
 We need people to contribute
 
 We need you to encourage contributors
+
+---
+How to get people involved?
