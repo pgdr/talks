@@ -122,4 +122,6 @@ We need people to contribute
 We need you to encourage contributors
 
 ---
+## HELP!?!
+
 How to get people involved?
