@@ -12,15 +12,15 @@
 
 
 ---
-# Competence
+## Competence
 
 * building
-* sharing is caring
+* sharing
 
-but why?
+More reasons?
 
 ---
-# 2014
+## 2014
 
 1. Java
 2. C#
@@ -30,7 +30,7 @@ but why?
 6. Ruby
 
 ---
-# 2019
+## 2019
 
 1. Python
 2. JavaScript
@@ -45,59 +45,15 @@ Should we wait 4 more years?
 
 
 ---
-# Build
+## Build
 
-* Wealth of
- * experience and
+* Our most important assets
+ * experience
  * knowledge
-* employees possess is our most important asset
 
 
 ---
-# Sharing
-
-* Function more consistently as a team
-* Grow intellectual wealth of the organization
-
-> Good is good enough!
-
----
-We want to build a culture of sharing
-
-1. Make it a priority (employees prioritize)
-2. Give incentives (e.g. P@E)
-3. Create a space for sharing
-4. Need adequate slack
-5. Is failure accepted?
-6. Is experimentation respected?
-
-
----
-We need
-
-* Creative thinking
-* logical reasoning
-* technological capabilities
-
-Which demands
-
-1. new ways of working
-2. brainstorming
-3. decision making
-4. methodological approach
-5. pattern recognition
-6. research
-7. root cause analysis
-
-
----
-Commitment to excellence
-
-* fact-checking your (and others') work
-* actively seek new ways of working to improve productivity
-
-
----
+Q:
 1. Which competencies are necessary for success?
 2. Do we possess them?
 
@@ -106,9 +62,15 @@ Developers need
 2. experience (...)
 3. competencies (this)
 
----
 
-Why?
+---
+## Sharing
+
+* Function more consistently as a team
+* Grow intellectual wealth of the organization
+
+---
+Why sharing?
 
 * Increase
  * creativity
@@ -118,6 +80,16 @@ Why?
  * confidence by being seen as SME
 * reduce staff turnover
 * attract future employees
+
+
+---
+We want to build a culture of sharing
+
+1. Make it a priority (employees prioritize)
+2. Give incentives (e.g. P@E)
+3. Create a space for sharing
+4. Need adequate slack
+
 
 
 ---
@@ -141,4 +113,9 @@ How to improve as a programmer?
 
 
 ---
-The **E** in EDC stands for Software Innovation(?)
+The **E** in **EDC** is not Software Innovation
+
+---
+We need people to contribute
+
+We need you to encourage contributors
