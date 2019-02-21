@@ -67,15 +67,11 @@ Questions:
 How to improve as a programmer?
 
 1. have a side project
-2. contribute to open source
-3. try to do something new monthly
-4. develop a simple game
-5. participate in hackathons
-6. attend conferences, meetups, share(!)
-7. create an open source project, get contributors
-8. master your tools & learn new tools
-9. read a book
-10. learn and practice DevOps
+1. contribute to open source
+1. try to do something new monthly
+1. develop a simple game
+1. attend conferences, meetups, share(!)
+1. create an open source project, get contributors
 
 ---
 How to improve as a programmer?
@@ -90,13 +86,12 @@ Friday learning
 ## Share
 
 * Increase
- * intellectual wealth of the organization
- * creativity
- * teamwork and collaboration
  * productivity
  * job satisfaction
  * confidence by being seen as SME
-* reduce staff turnover
+ * creativity
+ * teamwork and collaboration
+ * intellectual wealth of the organization
 * attract future employees
 
 
@@ -116,10 +111,6 @@ We want to **build a culture of sharing**
 
 A space for sharing
 
----
-We need people to contribute
-
-We need you to encourage contributors
 
 ---
 ## HELP!?!
