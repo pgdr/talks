@@ -1,6 +1,13 @@
 # Look-and-Feel
-theme-override : https://www.equinor.com/etc/designs/statoil/clientlib.min.css  # equinor/css/PITCHME.css
+theme-override : equinor/css/PITCHME.css  #https://www.equinor.com/etc/designs/statoil/clientlib.min.css
+
+layout : center-right
 
 # Behavior
 transition : none
 published : true
+
+
+
+logo : img/equinor-logo.png
+logo-position : top-right

@@ -1,3 +1,23 @@
+:root {
+    --equinor-color-energy-red:   ff1243;
+    --equinor-color-white:        ffffff;
+    --equinor-color-black:        333333;
+    --equinor-color-slate-blue:   243746;
+    --equinor-color-heritage-red: 7d0023;
+    --equinor-color-moss-green:   007079;
+    --equinor-color-mist-blue:    d5eaf4;
+    --equinor-color-spruce-wood:  ffe7d6;
+    --equinor-color-lichen-green: e6faec;
+}
+
+body, html{
+    width: 100%;
+    font-size: 62.5%;
+    font-family: Equinor, "Lucida Sans", "Lucida Sans Unicode", "Lucida Grande", Lucida, Arial, Helvetica, sans-serif;
+    background:#fff;
+    transform:none !important
+}
+
 .reveal {
     background: white;
 }
@@ -9,5 +29,5 @@
   }
 
 .equinor-title-color {
-    color: rgb(255, 0, 98) !important;
+    color: var(--equinor-color-energy-red) !important;
 }
