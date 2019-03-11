@@ -1,0 +1,6 @@
+# Look-and-Feel
+theme-override : https://www.equinor.com/etc/designs/statoil/clientlib.min.css  # equinor/css/PITCHME.css
+
+# Behavior
+transition : none
+published : true
