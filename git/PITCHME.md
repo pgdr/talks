@@ -47,6 +47,7 @@ _(cc-by-nc-sa 3.0), `git-scm.com`_
 
 ## Git intro
 
+
 +++
 ### Git intro
 
@@ -55,7 +56,6 @@ mkdir project
 cd project
 git init
 ```
-
 
 
 +++
