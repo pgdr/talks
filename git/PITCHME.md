@@ -56,7 +56,6 @@ cd project
 git init
 ```
 
-+++
 
 
 +++
