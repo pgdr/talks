@@ -1,8 +1,9 @@
 ## GIT
 
-Pål Grønås Drange, _Leading Advisor_
 
 ![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
+
+Pål Grønås Drange
 
 _(cc-by-nc-sa 3.0), `git-scm.com`_
 
