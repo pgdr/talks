@@ -1,7 +1,7 @@
 ## GIT
 
 
-![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
+![equinor](https://raw.githubusercontent.com/pgdr/talks/master/git/eq-git.png)
 
 Pål Grønås Drange
 
