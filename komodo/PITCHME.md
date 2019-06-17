@@ -239,11 +239,14 @@ Incompatible packages
 * Two packages are incompatible if they:
   * depend on different versions of same lib
   * if one package in komodo breaks its API
-* Incompatibilities are dealt with on scenario by scenario basis
+
++++
+
+Incompatibilities are dealt with on scenario by scenario basis
   * minimal impact on FMU,
-  * a package can be frozen for a limited time if one presents a plan to
-    mitigate
-  * We cannot stop the komodo train
+  * a package can be frozen for a limited period of time if one presents a plan
+    to mitigate
+  * we cannot stop the komodo train!
   * worst case scenario, a package will not make it to the next stable
 
 +++
@@ -266,8 +269,6 @@ Preparing for new stable
 +++
 
 Bugfix stable
-
-+++
 
 ---
 
