@@ -1,11 +1,6 @@
 # KOMODO
 
-## Deploy Is Not Copy
-
-+++
-
-Why Install is so important that we have added it as a separate point in the
-architecture contracts.
+## Pre-komodo
 
 +++
 
@@ -17,9 +12,15 @@ today.
 
 +++
 
-Why per-project Jenkins jobs is an _anti-pattern_ (?)
+* Where?
+* What ?
+* Why  ?
+* How  ?
+* Who  ?
 
 +++
+
+Why per-project Jenkins jobs is an _anti-pattern_ (?)
 
 Why Komodo was necessary.
 
@@ -71,15 +72,7 @@ It does not scale.
 
 ---
 
-## CP vs install
-
-+++
-
-There is an `install`
-
-command that might be interesting,
-
-which is like `cp`, but
+## What is install?
 
 +++
 
@@ -91,35 +84,6 @@ which is like `cp`, but
 * unlinks if necessary
 * etc
 
-
-+++
-
-```make
-Makefile:
-install:
-    # Documentation
-    $(MAKE) -C docs install
-    # Configuration files
-    install -d $(DESTDIR)/etc/netctl/{examples,hooks,interfaces}
-    install -m644 docs/examples/* $(DESTDIR)/etc/netctl/examples/
-    # Libs
-    install -d $(DESTDIR)/usr/lib/netctl/{connections,dhcp}
-    install -m644 src/lib/{globals,interface,ip,rfkill,wpa} $(DESTDIR)/usr/lib/netctl/
-    install -m644 src/lib/connections/* $(DESTDIR)/usr/lib/netctl/connections/
-    install -m644 src/lib/dhcp/* $(DESTDIR)/usr/lib/netctl/dhcp/
-    install -m755 src/lib/{auto.action,network} $(DESTDIR)/usr/lib/netctl/
-    # Scripts
-    ...
-```
-
----
-
-## Installation
-
-`install` more suited to `cp`
-
-a different kind of install
-
 +++
 
 ### Jenkins deploy
@@ -129,6 +93,7 @@ So let's install, e.g. Clippy.
 +++
 
 I make a Jenkins job that
+
 ```
 cp Clippy/bin/clippy    /project/res/bin  # or?
 cp Clippy/python/clippy /project/res/lib  # or?
@@ -136,31 +101,7 @@ cp Clippy/python/clippy /project/res/lib  # or?
 cp Clippy/data/the_important_file.yml /project/res/share  # or?
 ```
 
-+++
-
 Run Jenkins Clippy-deploy nightly (or so).
-
-+++
-
-
-Some issues:
-
-* separate the installation from the source code
-
-+++
-
-Some issues:
-
-* separate the installation from the source code
- * no tests (need nightly integration tests, but where?)
-
-+++
-
-Some issues:
-
-* separate the installation from the source code
- * no tests (need nightly integration tests, but where?)
-* this means that when you add a new file, it may and may not be copied
 
 +++
 
@@ -171,7 +112,6 @@ Some issues:
 * this means that when you add a new file, it may and may not be copied
 * it's _additive_, meaning that when you rename a file, the old remains
 
-+++
 
 How the software is installed is a part of the development!
 
@@ -192,76 +132,17 @@ And this is how many people do it in Equinor.
 Well, it doesn't scale.
 
 
-+++
-
-## Debian with 30k packages.
-
-+++
-
-* don't accept anything but "perfect"
-* it's not so hard
-* should we accept anything less?
- * Because it's difficult?  It's not.
- * Because it takes time?  It doesn't.
-
 ---
 
-## Deploy to `/project/res`
+## Technical solution
 
 +++
 
-Used to be de-facto deploy
+Several parts
 
-(And still is.)
-
-`cp this` and `cp that`
-* by different users, with different permissions.
-
-+++
-
-* Where
-
-+++
-
-* Where
-* What
-
-+++
-
-* Where
-* What
-* Why
-
-+++
-
-* Where
-* What
-* Why
-* How
-
-+++
-
-* Where
-* What
-* Why
-* How
-* Who
-
----
-
-## Enter Komodo
-
-+++
-
-* After discussing with Joakim and Jean-Paul
-* brain-storming with Jørgen
-* try doing it properly; Komodo demands installable.
-
-**Step 1** getting into Komodo: install script in the source tree.
-
-+++
-
-Decided to make releases (like Debian/Ubuntu)
+* the Komodo _software_
+* the Komodo _configuration_
+* the Komodo _distributions_ (and how they are made)
 
 +++
 
@@ -270,25 +151,25 @@ Has a `repository.yml` of all software, versions, dependencies, maintainers:
 ```yml
 
 everest:
-  0.3.5:
+  0.6.1:
     source: git
     make: setup.py
     depends:
       - python
       - seba
       - libres
-    maintainer: pgdr@equinor.com
+    maintainer: mfane
 ```
 
 +++
 
 And a "release" is
 
-`2018.03.yml`
+`2019.06.yml`
 
 ```yml
-everest: 0.3.5
-libres: 2.3.0
+everest: 0.6.1
+libres: 2.4.2
 python: 2.7.14
 ```
 
@@ -296,7 +177,7 @@ etc.
 
 +++
 
-This solves
+So why Komodo?
 
 
 * Where -- where the install script puts it
@@ -307,40 +188,32 @@ This solves
 
 ---
 
-# Discussions
+## Komodo Release Lifecycle
 
 +++
 
-The two roles of Komodo
-
-* installation improvement
-* actually fixing some issues with the current
-
-+++
-
-Prior to Komodo, not every project _was installable_.
-
-In that way, Komodo serves as a springboard
-
-+++
-
-Komodo was meant to replace `/project/res` deploy for
-
-* Ert,
-* Everest,
-* segyio,
-* ?
-
-needed for running on cluster
-
-+++
-
-Do we want to support more than just the regular "run this on the cluster"
-software?
-
-Komodo wasn't meant as a replacement for `/prog/sdpsoft` or RHEL distribution.
+* Komodos track record
+* API → Semver.org
+* maintainers' roles and responsibility
+* requirements
+  * GIT and CI
+  * Automatic testing
+  * Code review
+  * semver
+  * Nightly testing against stable/testing/unstable
+* bugfix stable
+* preparing for new stable
 
 
 ---
 
-# Q/A
+## The future
+
++++
+
+* `/prog/res/komodo`
+* Python 3
+
++++
+
+## Q&A
