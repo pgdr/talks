@@ -1,4 +1,7 @@
 # KOMODO
+## Maintainer course
+
++++
 
 ## Pre-komodo
 
@@ -134,7 +137,15 @@ Well, it doesn't scale.
 
 ---
 
-## Technical solution
+## Komodo
+
++++
+
+Komodos track record
+
+* Since 2018-01
+  * no outages
+  * no breaks due to incompatible versions
 
 +++
 
@@ -142,7 +153,21 @@ Several parts
 
 * the Komodo _software_
 * the Komodo _configuration_
-* the Komodo _distributions_ (and how they are made)
+* the Komodo _doctrine_
+
+---
+
+## The Komodo software
+
++++
+
+* Builds an atomic deploy with all dependencies included
+* The build recipe is given in a Komodo configuration with explicit versions
+* Openly available at [https://github.com/equinor/komodo]
+
+---
+
+## The Komodo configuration
 
 +++
 
@@ -188,16 +213,7 @@ So why Komodo?
 
 ---
 
-## Komodo Release Lifecycle
-
-+++
-
-Komodos track record
-
-* Since 2018-01
-  * no outages
-  * no breaks due to incompatible versions
-
+## The Komodo doctrine
 
 +++
 
@@ -211,33 +227,47 @@ API → Semver.org
 
 +++
 
-maintainers' roles and responsibility
-* Two packages are incompatible if they
-  * depend on different versions of same lib
-  * if one package in komodo breaks its API
-* We cannot stop the komodo train
-* worst case scenario, a package will not make it to the next stable
+Maintainers' roles and responsibility
+* Making sure that packages are fully functioning in every release
+* Deal with bugs and incompatibility issues in good time before they get to stable
+* Schedule and test new releases of a package
+* Communicate with users of the package
 
 +++
 
-requirements
+Incompatible packages
+* Two packages are incompatible if they:
+  * depend on different versions of same lib
+  * if one package in komodo breaks its API
+* Incompatibilities are dealt with on scenario by scenario basis
+  * minimal impact on FMU,
+  * a package can be frozen for a limited time if one presents a plan to
+    mitigate
+  * We cannot stop the komodo train
+  * worst case scenario, a package will not make it to the next stable
+
++++
+
+Requirements to enter Komodo
 * GIT and CI
 * Automatic testing
 * Code review
-* semver
+* Semantic versioning
 * Nightly testing against stable/testing/unstable
 
-+++
+---
 
-bugfix stable
-
-+++
-
-preparing for new stable
+## Komodo examples
 
 +++
 
+Preparing for new stable
 
++++
+
+Bugfix stable
+
++++
 
 ---
 
