@@ -192,17 +192,51 @@ So why Komodo?
 
 +++
 
-* Komodos track record
-* API → Semver.org
-* maintainers' roles and responsibility
-* requirements
-  * GIT and CI
-  * Automatic testing
-  * Code review
-  * semver
-  * Nightly testing against stable/testing/unstable
-* bugfix stable
-* preparing for new stable
+Komodos track record
+
+* Since 2018-01
+  * no outages
+  * no breaks due to incompatible versions
+
+
++++
+
+API → Semver.org
+
+* API is important
+* semver
+  * major.minor.micro (break, backwards compatible, no change in API)
+  * semver ensures communication of API
+  * semver makes the developer think
+
++++
+
+maintainers' roles and responsibility
+* Two packages are incompatible if they
+  * depend on different versions of same lib
+  * if one package in komodo breaks its API
+* We cannot stop the komodo train
+* worst case scenario, a package will not make it to the next stable
+
++++
+
+requirements
+* GIT and CI
+* Automatic testing
+* Code review
+* semver
+* Nightly testing against stable/testing/unstable
+
++++
+
+bugfix stable
+
++++
+
+preparing for new stable
+
++++
+
 
 
 ---
@@ -214,6 +248,6 @@ So why Komodo?
 * `/prog/res/komodo`
 * Python 3
 
-+++
+---
 
 ## Q&A
