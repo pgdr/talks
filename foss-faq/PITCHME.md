@@ -334,13 +334,20 @@ Software that can be freely accessed, used, changed, and shared by anyone.
 
 Yes!
 
+
++++
+> But is it really free?
+
+* Free as in "free speech"
+* not necessarily free as in "free beer"
+
+
 +++
 > "Free software" vs "open source"?
 
 * free: ideological
 * open: practical
 
-(free as in speech)
 
 
 +++
