@@ -229,7 +229,7 @@ Like cc-by-sa, but for "data"
 ##### (company) Advertising and recruitment
 
 * can show _«real development»_
-* talk about it on conferences, workshops, universities
+* talks at conferences, workshops, universities
  * share knowledge
  * competence lift,
  * give something back
@@ -238,14 +238,14 @@ Like cc-by-sa, but for "data"
 +++
 ##### (company) Openness yields trust
 
-* increased confidence to the IT community (also internally)
+* increased confidence to the IT community
 * One of Equinor's code values (**åpenhet**)
  * best way IT can be open
 * open infrastructure (Kerckhoffs' principle)
 
 
 +++
-##### (project) Redice product development time
+##### (project) Reduce product development time
 
 * If you are based on proprietary software
  * ignore lots of knowledge and solved problems
@@ -257,7 +257,6 @@ Like cc-by-sa, but for "data"
 +++
 ##### (project) increased quality
 
-* Source code: written once / read thousands / run millions
 * if you claim to be free
  * README
  * up-to-date description of product
@@ -286,6 +285,7 @@ Like cc-by-sa, but for "data"
  * CircleCI
  * AppVeyor
  * Codacy
+ * ...
 * and easier access to the code(!)
 
 
@@ -317,9 +317,20 @@ Ubuntu? — you have completed the game!
 # FAQ
 
 +++
+> Do I need to be afraid of open source?
+
+1. Are you only _using_ software?  No
+2. Are you distributing/selling software?  Perhaps
+
++++
+> Do I need to give away my software if I use open source?
+
+Not unless you distribute software containing copyleft software
+
++++
 > What is "Open Source" software?
 
-Software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition.
+Software that can be freely accessed, used, changed, and shared by anyone.
 
 
 +++
@@ -349,6 +360,18 @@ No.
 
 (free as in speech)
 
+
++++
+> So if free=open, what is FOSS?
+
+Free Open Source Software, if you don't want to pick a side.
+
++++
+> ... and what is FLOSS?
+
+Occasionally called Free/Libre Open Source Software.
+
+
 +++
 > What is "copyleft"?
 
@@ -362,7 +385,7 @@ A "permissive" license is a non-copyleft open source license
 
 
 +++
-> Is <SOME PROGRAM> Open Source?
+> Is SOME PROGRAM Open Source?
 
 If it uses one of the approved licenses
 
@@ -394,7 +417,7 @@ All of them
 
 
 +++
-> How do I apply <SOME OPEN SOURCE LICENSE> to software I'm releasing?
+> How do I apply SOME OPEN SOURCE LICENSE to software I'm releasing?
 
 
 Many licenses come with instructions on how to apply them
