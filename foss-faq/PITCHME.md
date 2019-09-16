@@ -1,4 +1,4 @@
-### Fri programvare
+### Free software (open source?)
 
 ![equinor](https://raw.githubusercontent.com/pgdr/talks/master/itdagene/equinor.png)
 
@@ -7,7 +7,7 @@
 > Pål Grønås Drange, Leading Advisor
 
 +++
-### Fri programvare
+### Free software
 
 > Hvorfor gi noe bort gratis som vi har brukt millioner på å utvikle?!
 
@@ -15,24 +15,24 @@ _(cc-by-sa 4.0)_
 
 
 ---
-### Historie (før 1984)
+### History (before 1984)
 
-* Kildekode var skrevet og distribuert
-* Forskjellige arkitekturer
-* Kode var _«public domain»_
-* 1975—85: Kode ble åndsverk; proprietær kode
+* Software was written and distributed
+* Different architectures
+* Code was considered _«public domain»_
+* 1975—85: Code is copyrightable; proprietary code
 
 +++
-### Historie (1980-tallet)
+### History (1980s)
 
-* Richard Stallman startet GNU Project
-* —— skrev GNU Manifesto, senere
+* Richard Stallman started GNU Project
+* —— wrote GNU Manifesto, later
  * Free Software Foundation
  * GNU General Public License (GPL)
 
 
 +++
-### Historie (1990-tallet)
+### History (1990s)
 
 > I'm doing a (free) operating system (just a hobby, won't be big and
 > professional like gnu)
@@ -41,61 +41,50 @@ _(cc-by-sa 4.0)_
 * Linux lisensiert under GPL (1992)
 
 +++
-### Historie (1990-tallet)
+### History (1990s)
 
-> Kvaliteten på fri programvare kan møte eller overgå kvaliteten til kommersiell
-> programvare og er en potensielt alvorlig trussel mot Microsoft
-
-— Microsoft, Halloween documents (1998)
-
-+++
-### Historie (1990-tallet)
-
-> Oppfordringen til vidspredt, hurtig utvikling gir programmerere mulighet til å
-> kontinuerlig skrive og foreslå forbedringer, samt å finne bugs
+> OSS poses a direct, short-term revenue and platform threat to
+> Microsoft, particularly in server space. Additionally, the intrinsic
+> parallelism and free idea exchange in OSS has benefits that are not
+> replicable with our current licensing model and therefore present a
+> long term developer mindshare threat.
 
 — Microsoft, Halloween documents (1998)
 
 +++
-### Historie (1990-tallet)
+### History (1990s)
 
-Microsoft lanserte
+Microsoft released two attacks on the OSS process
+
 * _"fear, uncertainty and doubt"_ (FUD)
 * _"embrace, extend, extinguish"_ (EEE)
 
 
 +++
-### I dag
+### Today
 
-* 500 av de 500 kraftigste superdatamaskinene
-* Majoriteten av Microsoft Azure,
- * Google og Amazon
- * Facebook og Twitter og Instagram
- * LinkedIn og eBay og IBM
+* 500 out of 500 supercomputers
+* The majority of Microsoft Azure,
+ * Google and Amazon
+ * Facebook and Twitter and Instagram
+ * LinkedIn and eBay and IBM
 * Microsoft IoT
-* 80% av verdens mobilmarked kjører Android
+* 80% of the world's phone market runs Android
 * Toyota, Audi, Ford, Mazda, Subaru, Mercedes..
 
 
-
-
-
-
 ---
-### Lisenser
-
-
-
+### Licenses
 
 +++
-### Fri programvare
+### Free software
 
-* **kjøre** programvare som ønsket, uavhengig formål
-* **studere** & **endre** programmet etter behov
-* **redistribuere** kopier, gratis eller ikke
-* **distribuere** _endrede versjoner_ til andres nytte
+The freedom to
 
-
+* **run the program** as you wish, for any purpose
+* **study how the program works**, and change it
+* **redistribute copies** so you can help others
+* **distribute copies** of your modified versions to others
 
 
 +++
@@ -111,42 +100,26 @@ _(«Lov om opphavsrett til åndsverk»)_
 
 
 +++
-### Opphavsrett
+### Copyright
 
-* Fri programvare er basert på opphavsrett
-* Ingen kan ta bort din opphavsrett til åndsverk
-* Alt du lager er ditt åndsverk (obs: arbeidsgiver)
-* Lisenser er kontrakter
-
-
-
-
-
-+++
-### Opphavsrett
-
-* Hvis du har opphavsretten
- * du kan relisensiere
-* Du kan ikke gi bort opphavsretten
- * FSF og mange andre ber deg ...
- * signere kontrakt om relisensiering
-* FSF eier all GNU-kode
-* Linux-opphavsrett er spredt
-
+* Free software is based on the copyright law
+* Everything you create is your copyright _(opphavrett til åndsverk)_
+* Licenses are contracts giving more rights
 
 
 
 +++
-### Fri programvare
+### Free software
 
-To hovedklasser av fri programvare:
-* del på samme vilkår (share-alike, _"copyleft"_)
-* gjør hva du vil
+Two main classes of licenses:
+
+* share-alike, _"copyleft"_
+* anything you like, _"permissive"_
 
 
 
 +++
-### Eksempler
+### Examples
 
 * GNU GPL 2 (Linux, MediaWiki, Wordpress, +++)
 * GNU GPL 3 (GCC, GNU, +++)
@@ -166,20 +139,20 @@ To hovedklasser av fri programvare:
 +++
 #### GPL 2/3 states
 
-* kopiere, endre, (re)distribuere
-* endringer må under GPL 2/3
-* (med mulig bygging)
+* copy, modify, (re)distribute
+* changes must be under GPL 2/3
+* (it must be possible to actually run it)
 
-(GPL 3 inneholder noe ekstra snacks)
+(GPL 3 contains some extra snack)
 
 
 +++
 #### AGPL 3 (Affero GPL)
 
-* kopiere, endre, (re)distribuere
-* endringer må under AGPL
-* hvis programvaren er delt som "web publication"
- * må også kildekoden distribueres
+* copy, modify, (re)distribute
+* changes must be under AGPL
+* if the software is served as "web publication"
+ * the source must be distributed
 
 
 
@@ -187,25 +160,25 @@ To hovedklasser av fri programvare:
 +++
 #### LGPL 3 (Library/Lesser GPL)
 
-* kopiere, endre og distribuere programvaren
-* endringer må under LGPL
-* bruk av biblioteket trenger ikke
+* copy, modify, (re)distribute
+* changes must be under LGPL
+* software using LGPL do not need be
 
 
 +++
 #### BSD, MIT & Apache
 
 * BSD, MIT & Apache
- * Gjør som du vil
- * Behold opprinnelig lisens
+ * Do as you wish
+ * Retain license
 * Apache
- * Noe vedr. patent
+ * Some patent stuff
 
 
 +++
 ### Creative commons
 
-(for innhold)
+(for content)
 
 * by = attribution
 * sa = share-alike
@@ -216,133 +189,111 @@ To hovedklasser av fri programvare:
 +++
 ### Open Database Licence
 
-Som cc-by-sa, men for "data"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Like cc-by-sa, but for "data"
 
 
 ---
-### Hvorfor, Equinor!?
+### Why, Equinor!?
 
 
-* Tre kategorier:
- * selskapet / aksjonærer
- * prosjektet / produktet
- * teamet / utviklerne
-
-
-
-+++
-##### (selskap) komplementærprodukter
-
-* etterspørselen av produkt
-* invers av pris på komplementærprodukt
-
-
-+++
-##### (selskap) Reklame og rekruttering
-
-* kan vise _«ekte utvikling»_
-* fortelle på konferanser, workshops, universiteter
- * dele kunnskap
- * kompetanseheving,
- * gi tilbake
+* Three categories
+ * company / shareholders
+ * project / product
+ * team / developers
 
 
 
 +++
-##### (selskap) Åpen impliserer tillitt
+##### (company) commoditize complementaries
 
-* økt tillitt til IT-miljøet (også i Equinor)
-* En av Equinors kjerneverdier er **åpenhet**
- * beste måten IT kan være åpne
-* åpen infrastruktur (Kerckhoffs' prinsipp)
+* demand of a product
+* inverse of price for complementary products
 
 
 +++
-##### (prosjekt) Reduserer produktutviklingstid
+##### (company) Advertising and recruitment
 
-* baser deg på lukket programvare
-* velg bort en hel haug med goder
+* can show _«real development»_
+* talk about it on conferences, workshops, universities
+ * share knowledge
+ * competence lift,
+ * give something back
 
-> stå på skuldrene til giganter!
+
++++
+##### (company) Openness yields trust
+
+* increased confidence to the IT community (also internally)
+* One of Equinor's code values (**åpenhet**)
+ * best way IT can be open
+* open infrastructure (Kerckhoffs' principle)
+
+
++++
+##### (project) Redice product development time
+
+* If you are based on proprietary software
+ * ignore lots of knowledge and solved problems
+
+> standing on the shoulders of giants
 
 
 
 +++
-##### (prosjekt) økt kvalitet
+##### (project) increased quality
 
-* Kildekode: skrevet én / lest tusen / kjørt million
-* bærer du fri programvare-fanen må du ha
+* Source code: written once / read thousands / run millions
+* if you claim to be free
  * README
- * oppdatert beskrivelse av prosjektet
- * instruksjonsmanual
- * installasjonsmanual
- * automatiserte tester
+ * up-to-date description of product
+ * instruction manual
+ * installation manual
+ * automatic tests
 
 +++
-##### (prosjekt) med nok øyne er enhver bug overfladisk
+##### (project) given enough eyeballs
 
-* i den åpne koden
- * færre bugs
- * flere tester
-* vi får regelmessige tilbakemeldinger fra eksterne om
- * feil
- * forbedringspotensiale
- * ny funksjonalitet
+* in open code (empirical and anecdotal)
+ * fewer bugs
+ * more tests
+* we regularly receive feedback from externals
+ * bugs
+ * improvements
+ * new functionality
 
 
 +++
-##### (team) fullt fokus på utvikling
+##### (team) complete focus on development
 
-* åpen kode får tilgang til mange flere verktøy
+* open source software development has
  * GitHub
  * Travis
  * CircleCI
  * AppVeyor
  * Codacy
-* lettere tilgang selv!
+* and easier access to the code(!)
 
 
 +++
-##### (utvikler) hver eneste patch og review: ☆ i CV
+##### (developer) every patch and review is a ☆
 
-* hver eneste
+* every
  * patch,
  * commit,
- * review en stjerne i CV-en
-* får sjelden muligheten til å vise vårt arbeid
+ * review a star in their resume
+* we rarely get to show our work
 
 
 +++
-##### (utvikler) Bidra til fri programvare-community-et
+##### (developer) Contribute back
 
-Lag en
-* pip-pakke
-* en Debian-pakke
-* en RedHat-pakke
-* en npm-pakke
+Create a
+* pip package
+* Debian package
+* RedHat package
+* npm package
 
-Ubuntu? — du rundet spillet
+Ubuntu? — you have completed the game!
 
 > `apt install my_pkg`
 
