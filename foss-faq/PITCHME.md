@@ -139,13 +139,19 @@ Two main classes of licenses:
 * GNU GPL 2 (Linux, MediaWiki, Wordpress, +++)
 * GNU GPL 3 (GCC, GNU, +++)
 * GNU AGPL (Launchpad)
-* GNU LGPL (QT, Vorbis*, Segyio)
+* GNU LGPL (QT, Vorbis, Segyio)
 * MIT (Jenkins, Atom, Compiz, Mono, Node.js)
 * APACHE (Android, Apache, Kubernetes, PyCharm)
 * BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
-* Creative Commons (Wikipedia-innhold)
+* Creative Commons (Wikipedia content)
 * Open Database Licence (OpenStreetMaps, ...)
 
++++
+### Examples
+
+(important note)
+
+requirements are only for distributing!
 
 +++
 ### GNU General Public License
@@ -197,8 +203,8 @@ Two main classes of licenses:
 
 * by = attribution
 * sa = share-alike
-* nc = non-commercial (ufri!)
-* nd = no-derivates (ufri?)
+* nc = non-commercial (non-free)
+* nd = no-derivates (non-free)
 
 
 +++
@@ -316,16 +322,6 @@ Ubuntu? — you have completed the game!
 
 # FAQ
 
-+++
-> Do I need to be afraid of open source?
-
-1. Are you only _using_ software?  No
-2. Are you distributing/selling software?  Perhaps
-
-+++
-> Do I need to give away my software if I use open source?
-
-Not unless you distribute software containing copyleft software
 
 +++
 > What is "Open Source" software?
@@ -337,20 +333,6 @@ Software that can be freely accessed, used, changed, and shared by anyone.
 > Can Open Source software be used for commercial purposes?
 
 Yes!
-
-
-+++
-> Can I restrict how people use an Open Source licensed program?
-
-
-No.
-
-
-+++
-> Can I stop "evil people" from using my program?
-
-No.
-
 
 +++
 > "Free software" vs "open source"?
@@ -385,21 +367,34 @@ A "permissive" license is a non-copyleft open source license
 
 
 +++
-> Is SOME PROGRAM Open Source?
+> Do I need to be afraid of open source?
 
-If it uses one of the approved licenses
+1. Are you only _using_ software?  No
+2. Are you distributing/selling software?  Perhaps
+
++++
+> Do I need to give away my software if I use open source?
+
+Not unless you distribute software containing copyleft software
 
 
 
 +++
-> What about software in the "public domain"? Is that Open Source?
+> Can I restrict how people use an Open Source licensed program?
 
-For most practical purposes, it is — sort of.
+
+No.
+
+
++++
+> Can I stop "evil people" from using my program?
+
+No.
 
 
 
 +++
-> What if I do not want to distribute my program in source code
+> What if I do not want to distribute my program in source form
 
 Not "Open Source".
 
@@ -415,12 +410,6 @@ Good question!
 
 All of them
 
-
-+++
-> How do I apply SOME OPEN SOURCE LICENSE to software I'm releasing?
-
-
-Many licenses come with instructions on how to apply them
 
 
 +++
