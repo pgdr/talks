@@ -507,7 +507,7 @@ Any commercially-available software creates risk of executing malicious code
 
 
 +++
-> Does the DoD already use open source software?
+> Does ~the DoD~ Equinor already use open source software?
 
 Yes, extensively.
 
@@ -521,10 +521,11 @@ Yes
 +++
 > What are the risks of the government not releasing software as OSS?
 
-* Greatly increased costs, (maintaining and developing)
+* Greatly increased costs (maintaining and developing)
 * Inability to use improvements (patches and innovations)
 * The development and release of a competing OSS project
 * Questions about why the government is not releasing software paid for by the people
+
 
 ---
 
