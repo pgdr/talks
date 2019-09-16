@@ -507,7 +507,7 @@ Any commercially-available software creates risk of executing malicious code
 
 
 +++
-> Does ~the DoD~ Equinor already use open source software?
+> Does ~~the DoD~~ Equinor already use open source software?
 
 Yes, extensively.
 
