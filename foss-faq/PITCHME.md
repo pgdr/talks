@@ -84,7 +84,22 @@ The freedom to
 * **run the program** as you wish, for any purpose
 * **study how the program works**, and change it
 * **redistribute copies** so you can help others
-* **distribute copies** of your modified versions to others
+* **distribute copies** of your modified versions
+
+
++++
+### Open source
+
+1. Free Redistribution
+2. Source Code
+3. Derived Works
+4. Integrity of The Author's Source Code
+5. No Discrimination Against Persons or Groups
+6. No Discrimination Against Fields of Endeavor
+7. Distribution of License
+8. License Must Not Be Specific to a Product
+9. License Must Not Restrict Other Software
+10. License Must Be Technology-Neutral
 
 
 +++
@@ -302,128 +317,93 @@ Ubuntu? — you have completed the game!
 # FAQ
 
 +++
-# Basics of Open Source
-
-+++
-## What is "Open Source" software?
+> What is "Open Source" software?
 
 Software that can be freely accessed, used, changed, and shared (in modified or unmodified form) by anyone. Open source software is made by many people, and distributed under licenses that comply with the Open Source Definition.
 
-1. Free Redistribution
-2. Source Code
-3. Derived Works
-4. Integrity of The Author's Source Code
-5. No Discrimination Against Persons or Groups
-6. No Discrimination Against Fields of Endeavor
-7. Distribution of License
-8. License Must Not Be Specific to a Product
-9. License Must Not Restrict Other Software
-10. License Must Be Technology-Neutral
+
++++
+> Can Open Source software be used for commercial purposes?
+
+Yes!
 
 
 +++
-## Can Open Source software be used for commercial purposes?
-
-All Open Source software can be used for commercial purpose; the Open Source Definition guarantees this. You can even sell Open Source software.
+> Can I restrict how people use an Open Source licensed program?
 
 
-+++
-## Can I restrict how people use an Open Source licensed program?
-
-
-No. The freedom to use the program for any purpose is part of the Open Source Definition
+No.
 
 
 +++
-## Can I stop "evil people" from using my program?
+> Can I stop "evil people" from using my program?
 
-No. The Open Source Definition specifies that Open Source licenses may not discriminate against persons or groups. Giving everyone freedom means giving evil people freedom, too.
-
-
-+++
-## What is "free software" and is it the same as "open source"?
-
-
-"Free software" and "open source software" are two terms for the same thing: software released under licenses that guarantee a certain specific set of freedoms.
-
-The term "free software" is older, and is reflected in the name of the Free Software Foundation (FSF)
-
-strategy and rhetoric
-
-free: ideological
-open: practical
-
-
-One of the tactical concerns often cited by adopters of the term "open source" was the ambiguity of the English word "free", which can refer either to freedom or to mere monetary price
-
-+++
-## What is "copyleft"? Is it the same as "open source"?
-
-"Copyleft" refers to licenses that allow derivative works but require them to use the same license as the original work.
-
-Most copyleft licenses are Open Source, but not all Open Source licenses are copyleft. When an Open Source license is not copyleft, that means software released under that license can be used as part of programs distributed under other licenses, including proprietary (non-open-source) licenses. For example, the BSD license is a non-copyleft Open Source license. Such licenses are usually called either "non-copyleft" or "permissive" open source licenses
+No.
 
 
 +++
-## What is a "permissive" Open Source license?
+> "Free software" vs "open source"?
 
-A "permissive" license is simply a non-copyleft open source license — one that guarantees the freedoms to use, modify, and redistribute, but that permits proprietary derivative works. See the copyleft entry for more information.
+* free: ideological
+* open: practical
+
+(free as in speech)
+
++++
+> What is "copyleft"?
+
+"Copyleft" refers to licenses that are _share-alike_
 
 
 +++
-## Is <SOME PROGRAM> Open Source?
+> What is a "permissive" Open Source license?
 
-Only if it uses one of the approved licenses, and releases appropriate software.
+A "permissive" license is a non-copyleft open source license
+
+
++++
+> Is <SOME PROGRAM> Open Source?
+
+If it uses one of the approved licenses
 
 
 
 +++
-## Is <SOME LICENSE> an Open Source license, even if it is not listed on your web site?
+> What about software in the "public domain"? Is that Open Source?
 
-In general, no. We run all licenses through an approval process to provide an accepted standard on which licenses are Open Source, and we list the approved ones. Be dubious of claimed Open Source-ness for licenses that haven't gone through the process. See also the license proliferation page for why this matters so much.
-
-+++
-## Is a license an Open Source license if it is just a few words different from a license listed on your web site?
-
-Many older licenses, such as the BSD license, have several variations that differ only by a few words or sentences. Unfortunately, it is not possible for OSI to approve every variation, so we cannot say if a specific variation is approved. Where possible, please avoid using these variants, and instead use the same version used on the OSI website.
-
-+++
-## What about software in the "public domain"? Is that Open Source?
-
-For most practical purposes, it is — sort of. This is a complicated question, so please read on.
+For most practical purposes, it is — sort of.
 
 
 
 +++
-## Distributing and Using Open Source Software
+> What if I do not want to distribute my program in source code
 
-What if I do not want to distribute my program in source code form? Or what if I don't want to distribute it in either source or binary form?
-
-If you don't distribute source code, then what you are distributing cannot meaningfully be called "Open Source". And if you don't distribute at all, then by definition you're not distributing source code, so you're not distributing anything Open Source.
-
-+++
-## Which Open Source license should I choose to release my software under?
-
-You can choose any license from the open source licenses listed starting here: opensource.org/licenses.
+Not "Open Source".
 
 
 +++
-## Which Open Source license is best?
+> Which Open Source license should I choose to release my software under?
+
+Good question!
+
+
++++
+> Which Open Source license is best?
 
 All of them
 
 
 +++
-## How do I apply <SOME OPEN SOURCE LICENSE> to software I'm releasing?
+> How do I apply <SOME OPEN SOURCE LICENSE> to software I'm releasing?
 
 
 Many licenses come with instructions on how to apply them
 
 
 +++
-## What are "contributor agreements"? Are they like open source licenses?
+> What are "contributor agreements"? Are they like open source licenses?
 
-Many open source projects will only accept patches (code contributions or documentation contributions) from people who have submitted a legal document known as a contributor agreement.
+A legal document for contributors
 
 * Contributor License Agreement (CLA)
 * Copyright Assignment Agreement (CAA)
@@ -431,30 +411,101 @@ Many open source projects will only accept patches (code contributions or docume
 
 
 +++
-## Can I write proprietary code that links to a shared library that's open source?
+> Can I write proprietary code that links to a shared library that's open source?
 
 Sometimes you can; it depends on the Open Source license.
 
 
 +++
-## How do I make money if anybody can sell my code?
+> How do I make money if anybody can sell my code?
 
-You can sell services based on the code (i.e., sell your time), sell warranties and other assurances, sell customization and maintenance work, license the trademark, etc.
-
-
-+++
-## Can I sell Open Source programs? Even if I haven't written it?
-
-Yes, you can. But depending on the license, you probably can't stop your customers from selling it in the same manner as you.
+* sell services based on the code
+* sell warranties and other assurances
+* sell customization and maintenance work
+* license the trademark, etc.
 
 
 +++
-## Does Open Source mean anybody else can use my name and logo?
+> Can I sell Open Source programs? Even if I haven't written it?
 
-No, at least not any more than they could otherwise.
+Yes.
 
 
++++
+> Does Open Source mean anybody else can use my name and logo?
 
+No.
+
+
++++
+> How is OSS typically developed?
+
+* OSS is typically developed through a collaborative process.
+ * Users take part in testing and reporting, documenting etc.
+ * This can create an avalanche-like “virtuous cycle”.
+
++++
+> Isn't OSS developed primarily by inexperienced students?
+
+* No.
+* A study found average age ~ 30 years old, 12 years CS experience
+
+
++++
+> What is the legal basis of OSS licenses?
+
+Software licenses, including those for open source software, are typically based on copyright law.
+
+
++++
+> Are OSS licenses legally enforceable?
+
+Yes, in general.  Ask legal.
+
+
++++
+> Can OSS licenses and approaches be used for material other than software?
+
+Yes and no.  Creative commons and Open database license.
+
+
++++
+> Is it more difficult to comply with OSS licenses than proprietary licenses?
+
+No, complying with OSS licenses is much easier than proprietary licenses.
+
+
++++
+> Doesn't hiding source code automatically make software more secure?
+
+No.
+
+
++++
+> Is there a risk of malicious code becoming embedded into OSS?
+
+Any commercially-available software creates risk of executing malicious code
+
+
++++
+> Does the DoD already use open source software?
+
+Yes, extensively.
+
+
++++
+> Is there any quantitative evidence that open source software can be as good as (or better than) proprietary software?
+
+Yes
+
+
++++
+> What are the risks of the government not releasing software as OSS?
+
+* Greatly increased costs, (maintaining and developing)
+* Inability to use improvements (patches and innovations)
+* The development and release of a competing OSS project
+* Questions about why the government is not releasing software paid for by the people
 
 ---
 
