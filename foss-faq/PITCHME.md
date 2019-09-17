@@ -7,12 +7,23 @@
 > Pål Grønås Drange, Leading Advisor
 
 +++
+### Free software (open source?)
+
+>_All software developed by or for Equinor shall be made open source unless …_
+
++++
 ### Free software
 
 > Hvorfor gi noe bort gratis som vi har brukt millioner på å utvikle?!
 
 _(cc-by-sa 4.0)_
 
++++
+### Free software
+
+1. What is open source software?
+2. Why do we use it?
+3. Why do we give away code for free?
 
 ---
 ### History (before 1984)
@@ -74,7 +85,9 @@ Microsoft released two attacks on the OSS process
 
 
 ---
-### Licenses
+### Q
+
+What is free software?
 
 +++
 ### Free software
@@ -83,8 +96,14 @@ The freedom to
 
 * **run the program** as you wish, for any purpose
 * **study how the program works**, and change it
-* **redistribute copies** so you can help others
+* **redistribute copies** so you can _help others_
 * **distribute copies** of your modified versions
+
+
++++
+### Q
+
+What is open source?
 
 
 +++
@@ -100,6 +119,43 @@ The freedom to
 8. License Must Not Be Specific to a Product
 9. License Must Not Restrict Other Software
 10. License Must Be Technology-Neutral
+
+
++++
+### Q
+
+"Free software" vs "open source"?
+
+* free: ideological
+* open: practical
+
+
++++
+### Q
+
+Can Open Source software be used for commercial purposes?
+
+
++++
+### Q
+
+But is it really free?
+
++++
+
+is it free?
+
+* Free as in "free speech"
+* not necessarily free as in "free beer"
+
+
+
+
+
++++
+### Q
+
+What is the legal basis of OSS licenses?
 
 
 +++
@@ -132,6 +188,8 @@ Two main classes of licenses:
 * anything you like, _"permissive"_
 
 
+(requirements are only for distributing!)
+
 
 +++
 ### Examples
@@ -146,12 +204,7 @@ Two main classes of licenses:
 * Creative Commons (Wikipedia content)
 * Open Database Licence (OpenStreetMaps, ...)
 
-+++
-### Examples
 
-(important note)
-
-requirements are only for distributing!
 
 +++
 ### GNU General Public License
@@ -186,6 +239,7 @@ requirements are only for distributing!
 * software using LGPL do not need be
 
 
+
 +++
 #### BSD, MIT & Apache
 
@@ -211,6 +265,36 @@ requirements are only for distributing!
 ### Open Database Licence
 
 Like cc-by-sa, but for "data"
+
++++
+### Q
+
+Which Open Source license should I choose to release my software under?
+
+
+
++++
+### Q
+
+Which Open Source license is best?
+
+
+
++++
+### Q
+Do I need to be afraid of open source?
+
+
++++
+afraid of open source?
+
+1. Are you only _using_ software?  No
+2. Are you distributing/selling software?  Perhaps
+
++++
+### Q
+
+Do I need to give away my software if I use open source?
 
 
 ---
@@ -320,206 +404,77 @@ Ubuntu? — you have completed the game!
 
 ---
 
-# FAQ
 
 
-+++
-> What is "Open Source" software?
-
-Software that can be freely accessed, used, changed, and shared by anyone.
-
-
-+++
-> Can Open Source software be used for commercial purposes?
-
-Yes!
-
-
-+++
-> But is it really free?
-
-* Free as in "free speech"
-* not necessarily free as in "free beer"
-
-
-+++
-> "Free software" vs "open source"?
-
-* free: ideological
-* open: practical
 
 
 
 +++
-> So if free=open, what is FOSS?
+### Q
 
-Free Open Source Software, if you don't want to pick a side.
-
-+++
-> ... and what is FLOSS?
-
-Occasionally called Free/Libre Open Source Software.
+What are "contributor agreements"? Are they like open source licenses?
 
 
 +++
-> What is "copyleft"?
+### Q
 
-"Copyleft" refers to licenses that are _share-alike_
-
-
-+++
-> What is a "permissive" Open Source license?
-
-A "permissive" license is a non-copyleft open source license
-
-
-+++
-> Do I need to be afraid of open source?
-
-1. Are you only _using_ software?  No
-2. Are you distributing/selling software?  Perhaps
-
-+++
-> Do I need to give away my software if I use open source?
-
-Not unless you distribute software containing copyleft software
+Can I write proprietary code that links to a shared library that's open source?
 
 
 
 +++
-> Can I restrict how people use an Open Source licensed program?
-
-
-No.
-
-
-+++
-> Can I stop "evil people" from using my program?
-
-No.
+### Q
+How do I make money if anybody can sell my code?
 
 
 
 +++
-> What if I do not want to distribute my program in source form
-
-Not "Open Source".
-
-
-+++
-> Which Open Source license should I choose to release my software under?
-
-Good question!
+### Q
+How is OSS typically developed?
 
 
 +++
-> Which Open Source license is best?
+### Q
 
-All of them
+Isn't OSS developed primarily by inexperienced students?
+
+
 
 
 
 +++
-> What are "contributor agreements"? Are they like open source licenses?
+### Q
+Are OSS licenses legally enforceable?
 
-A legal document for contributors
++++
+### Q
+Is it more difficult to comply with OSS licenses than proprietary licenses?
 
-* Contributor License Agreement (CLA)
-* Copyright Assignment Agreement (CAA)
+
++++
+### Q
+
+Doesn't hiding source code automatically make software more secure?
+
+
++++
+### Q
+Does ~~the DoD~~ Equinor already use open source software?
 
 
 
 +++
-> Can I write proprietary code that links to a shared library that's open source?
+### Q
+Is there any quantitative evidence that open source software is better than proprietary software?
 
-Sometimes you can; it depends on the Open Source license.
 
-
-+++
-> How do I make money if anybody can sell my code?
-
-* sell services based on the code
-* sell warranties and other assurances
-* sell customization and maintenance work
-* license the trademark, etc.
 
 
 +++
-> Can I sell Open Source programs? Even if I haven't written it?
-
-Yes.
-
+### Q
+What are the risks of the government not releasing software as OSS?
 
 +++
-> Does Open Source mean anybody else can use my name and logo?
-
-No.
-
-
-+++
-> How is OSS typically developed?
-
-* OSS is typically developed through a collaborative process.
- * Users take part in testing and reporting, documenting etc.
- * This can create an avalanche-like “virtuous cycle”.
-
-+++
-> Isn't OSS developed primarily by inexperienced students?
-
-* No.
-* A study found average age ~ 30 years old, 12 years CS experience
-
-
-+++
-> What is the legal basis of OSS licenses?
-
-Software licenses, including those for open source software, are typically based on copyright law.
-
-
-+++
-> Are OSS licenses legally enforceable?
-
-Yes, in general.  Ask legal.
-
-
-+++
-> Can OSS licenses and approaches be used for material other than software?
-
-Yes and no.  Creative commons and Open database license.
-
-
-+++
-> Is it more difficult to comply with OSS licenses than proprietary licenses?
-
-No, complying with OSS licenses is much easier than proprietary licenses.
-
-
-+++
-> Doesn't hiding source code automatically make software more secure?
-
-No.
-
-
-+++
-> Is there a risk of malicious code becoming embedded into OSS?
-
-Any commercially-available software creates risk of executing malicious code
-
-
-+++
-> Does ~~the DoD~~ Equinor already use open source software?
-
-Yes, extensively.
-
-
-+++
-> Is there any quantitative evidence that open source software can be as good as (or better than) proprietary software?
-
-Yes
-
-
-+++
-> What are the risks of the government not releasing software as OSS?
 
 * Greatly increased costs (maintaining and developing)
 * Inability to use improvements (patches and innovations)
