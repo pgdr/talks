@@ -130,11 +130,6 @@ What is open source?
 * open: practical
 
 
-+++
-### Q
-
-Can Open Source software be used for commercial purposes?
-
 
 +++
 ### Q
@@ -149,6 +144,15 @@ is it free?
 * not necessarily free as in "free beer"
 
 
++++
+### Q
+
+Can Open Source software be used for commercial purposes?
+
+
++++
+
+Money is "irrelevant"
 
 
 
