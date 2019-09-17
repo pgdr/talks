@@ -11,6 +11,9 @@
 
 >_All software developed by or for Equinor shall be made open source unless …_
 
+
+
+
 +++
 ### Free software
 
@@ -178,7 +181,7 @@ _(«Lov om opphavsrett til åndsverk»)_
 ### Copyright
 
 * Free software is based on the copyright law
-* Everything you create is your copyright _(opphavrett til åndsverk)_
+* Everything you create is your copyright _(opphavsrett til åndsverk)_
 * Licenses are contracts giving more rights
 
 
@@ -219,9 +222,6 @@ Two main classes of licenses:
 
 * copy, modify, (re)distribute
 * changes must be under GPL 2/3
-* (it must be possible to actually run it)
-
-(GPL 3 contains some extra snack)
 
 
 +++
@@ -289,11 +289,6 @@ Which Open Source license is best?
 Do I need to be afraid of open source?
 
 
-+++
-afraid of open source?
-
-1. Are you only _using_ software?  No
-2. Are you distributing/selling software?  Perhaps
 
 +++
 ### Q
@@ -320,6 +315,15 @@ Do I need to give away my software if I use open source?
 
 
 +++
+##### (company) risks inherent in closed dev
+
+* Greatly increased costs
+* Inability to use improvements
+* The release of a competing OSS project
+* Questions about the openness of Equinor
+
+
++++
 ##### (company) Advertising and recruitment
 
 * can show _«real development»_
@@ -333,7 +337,7 @@ Do I need to give away my software if I use open source?
 ##### (company) Openness yields trust
 
 * increased confidence to the IT community
-* One of Equinor's code values (**åpenhet**)
+* One of Equinor's core values (**åpenhet**)
  * best way IT can be open
 * open infrastructure (Kerckhoffs' principle)
 
@@ -351,7 +355,7 @@ Do I need to give away my software if I use open source?
 +++
 ##### (project) increased quality
 
-* if you claim to be free
+* if you claim to be free/open
  * README
  * up-to-date description of product
  * instruction manual
@@ -474,16 +478,6 @@ Is there any quantitative evidence that open source software is better than prop
 
 
 
-+++
-### Q
-What are the risks of the government not releasing software as OSS?
-
-+++
-
-* Greatly increased costs (maintaining and developing)
-* Inability to use improvements (patches and innovations)
-* The development and release of a competing OSS project
-* Questions about why the government is not releasing software paid for by the people
 
 
 ---
