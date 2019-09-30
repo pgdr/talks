@@ -190,3 +190,15 @@ git merge newbranch
 ```
 git rebase --interactive HEADˆˆˆˆ
 ```
+
+---
+### Exercise 6, remotes
+
++++
+
+```
+git remote
+git remote add origin git@github.com:username/repo
+git remote show origin
+git push --set-upstream origin master
+```
