@@ -19,17 +19,28 @@ Snapshots
 
 ### Linear local
 
-`init` `log` `status` `diff` `add` `commit` `reset` `clean` `stash` `tag` `blame` `show` `filter-banch` `bisect`
+* `init`
+* `log` `status` `diff` `show`
+* `add` `commit` `reset` `clean`
+* `stash` `tag` `blame`
+* `filter-banch` `bisect`
 
 +++
 ### Local
 
-`branch` `checkout` `merge` `rebase` `cherry-pick` `reflog`
+* `branch` `checkout`
+* `merge` `rebase`
+* `cherry-pick`
+* `reflog`
 
 +++
 ### Remote
 
-`clone` `remote` `push` `fetch` `pull`
+* `clone`
+* `remote`
+* `push`
+* `fetch`
+* `pull`
 
 
 +++
@@ -37,7 +48,7 @@ Snapshots
 
 Repeat:
 
-```
+```bash
 edit myfile
 git add myfile
 git commit
@@ -49,7 +60,7 @@ git commit
 
 Repeat:
 
-```
+```bash
 git pull
 edit myfile
 git add myfile
@@ -63,7 +74,7 @@ git push
 
 Repeat:
 
-```
+```bash
 git checkout -b newbranch
 edit myfile
 git add myfile
@@ -80,10 +91,10 @@ showtime
 ---
 ### Exercises
 +++
-Exercise 1, linear local
+##### Exercise 1, linear local
 +++
 
-```
+```bash
 git init
 edit README.md
 git add
@@ -94,7 +105,7 @@ git commit
 
 Repeat
 
-```
+```bash
 edit README.md
 git diff
 git status
@@ -105,13 +116,13 @@ git log  # --oneline --graph
 
 +++
 
-Exercise 2, local
+##### Exercise 2, local
 
 +++
 
 branch
 
-```
+```bash
 git checkout -b newbranch
 edit README.md
 git diff
@@ -127,7 +138,7 @@ git merge newbranch
 
 branch, non-trivial merge
 
-```
+```bash
 git checkout -b newbranch
 edit README.md
 git add
@@ -141,13 +152,13 @@ git merge newbranch
 
 +++
 
-## Exercise 3, conflict
+##### Exercise 3, conflict
 
 +++
 
 branch, conflict
 
-```
+```bash
 git checkout -b newbranch
 edit README.md
 git add
@@ -164,11 +175,11 @@ git commit
 
 +++
 
-### Exercise 4, rebase
+##### Exercise 4, rebase
 
 +++
 
-```
+```bash
 git checkout -b newbranch
 edit README.md
 git add
@@ -183,20 +194,23 @@ git checkout master
 git merge newbranch
 ```
 
-### Exercise 5, rebase interactive
++++
+
+##### Exercise 5, rebase interactive
 
 +++
 
-```
+```bash
 git rebase --interactive HEADˆˆˆˆ
 ```
 
----
-### Exercise 6, remotes
++++
+
+#####  Exercise 6, remotes
 
 +++
 
-```
+```bash
 git remote
 git remote add origin git@github.com:username/repo
 git remote show origin
