@@ -22,13 +22,14 @@ Snapshots
 * `init`
 * `log` `status` `diff` `show`
 * `add` `commit` `reset` `clean`
+* `rm` `mv` `restore`
 * `stash` `tag` `blame`
-* `filter-banch` `bisect`
+* `filter-branch` `bisect`
 
 +++
 ### Local
 
-* `branch` `checkout`
+* `branch` `checkout` `(switch)`
 * `merge` `rebase`
 * `cherry-pick`
 * `reflog`
