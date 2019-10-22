@@ -1,4 +1,4 @@
-### Software Engineering Practices
+### Inhouse Software Development
 
 
 > [`https://github.com/equinor`](https://github.com/equinor)
@@ -14,11 +14,18 @@ Agenda
   * domain knowledge
   * close with users
   * keep knowledge ...
+  * speed of development
 * Main benefit from softw. dev. is the knowledge
+* Some drawbacks in Equinor
+  * governing (controlling the creatively unpredictable)
+  * bad management
+  * bad project lead believing they can
+  * bad strategies coming from above
+    * ... a reverse correlation between technical competence and position in ladder
 * Open development
-* Open source
-  * what is it
-  * why we do it
+  * Open source
+    * what is it
+    * why we do it
 * Programmer's oath
 
 ---
