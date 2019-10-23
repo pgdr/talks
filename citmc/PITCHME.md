@@ -20,23 +20,21 @@ we never solve the same thing twice
 
 completely different project management
 
+@ul
 * leaders do not understand the complexity
 * leaders do not believe developers' estimates
 * software projects are more like research projects than trad projects
-
-
-
-
-
-
+@ulend
 
 
 ---
 #### Software engineering is a craft
 
+@ul
 * craft
 * profession
 * complex field
+@ulend
 
 +++
 #### Software engineering is a craft
@@ -47,12 +45,13 @@ However, we feel a lack of support
 ---
 #### Why in-house development
 
+@ul
 * close with users
 * speed of development (weeks vs years)
 * domain knowledge
 * keep knowledge ...
 * main benefit: knowledge
-
+@ulend
 
 
 
@@ -65,7 +64,7 @@ However, we feel a lack of support
 
 > acquire trust by giving trust
 
-**governing** = _controlling the creative & unpredictable_
+@css(**governing** = _controlling the creative & unpredictable_)
 
 +++
 #### challenge: governance
