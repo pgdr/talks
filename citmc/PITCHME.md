@@ -89,9 +89,11 @@ The main benefit of a software development process:
 +++
 #### challenge: project lead
 
-project leaders — _What you see is all there is"_
+project leaders — _What you see is all there is_
 
+@box[fragment](
 > People under time pressure don't think faster.
+)
 
 +++
 #### challenge: strategies
