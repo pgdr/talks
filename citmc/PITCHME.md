@@ -80,18 +80,13 @@ The main benefit of a software development process:
 
 
 +++
-#### challenge: management
-
-> The first law of bad management
->
-> If something isn't working, **do more of it**
-
-+++
 #### challenge: no-slack project lead
 
-project leaders — _What you see is all there is_
+Limited respect for knowledge workers and the craft.
 
 > People under time pressure don't think faster.
+
+— Lister's law
 
 +++
 #### challenge: strategies
@@ -108,6 +103,7 @@ non-developers doing development: no
 * understanding of software
 * knowledge of development process
 * awareness of _good_ practices
+* idea about _cost and lifecycle commitment_
 
 @ulend
 
@@ -115,18 +111,20 @@ non-developers doing development: no
 
 
 +++
-### challenge: mindlessly cutting costs,
+#### challenge: mindlessly cutting costs,
 
 or: how to throw the baby out with the bathwater
 simultaneously losing trust
 
-> Optimization using data and model update resulted in production
-> potential; estimated value of this optimization has been estimated to
-> NOK2bn
+> Optimization using data and model update resulted in production potential;
+>
+> the value of this optimization has been estimated to NOK2bn
 
 +++
-#### challenge: excellence—in what?
 
+#### challenge: excellence — in what?
+
+people doing "digital" delivering subpar
 
 
 ---
