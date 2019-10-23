@@ -119,14 +119,16 @@ non-developers doing development: no
 ### Open source: what is it?
 The freedom to
 
+@ul
 1. **run the program** as you wish, for any purpose
 1. **study how the program works**, and change it
 1. **redistribute copies** so you can _help others_
 1. **distribute copies** of your modified versions
-
+@ulend
 +++
 ### Open source: why do we do it?
 
+@ul
 * _(company)_ risks inherent in closed dev
 * _(company)_ Advertising and recruitment
 * _(company)_ Openness yields trust
@@ -136,6 +138,7 @@ The freedom to
 * _(team)_ complete focus on development
 * _(developer)_ every patch and review is a ☆
 * _(developer)_ Contribute back
+@ulend
 
 +++
 ### Open data
@@ -143,19 +146,23 @@ The freedom to
 +++
 ### Open data: important contributor
 
+@ul
 * innovation
 * business development
 * openness in society
 * increase understanding of facts
+@ulend
 
 +++
 ### Open data: open standards
 
+@ul
 * necessary for open standards
 * we are in a better position if
   * students
   * vendors
   * contractors know and understand the data and facts
+@ulend
 
 +++
 ### Open data: the legal side of it
@@ -211,6 +218,7 @@ The freedom to
 ---
 ### Summary
 
+@ul
 * Inhouse development is far superior to outsourced
 * The knowledge always trumps any software
 * Impediments:
@@ -218,6 +226,7 @@ The freedom to
   * leadership without experience in the field
   * lack of competence
   * ratio of doers and non-doers is 20/80
+@ulend
 
 +++
 
