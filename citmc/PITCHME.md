@@ -87,13 +87,11 @@ The main benefit of a software development process:
 > If something isn't working, **do more of it**
 
 +++
-#### challenge: project lead
+#### challenge: no-slack project lead
 
 project leaders — _What you see is all there is_
 
-@box[fragment](
 > People under time pressure don't think faster.
-)
 
 +++
 #### challenge: strategies
@@ -116,9 +114,20 @@ non-developers doing development: no
 (note the omission of _governance_)
 
 
++++
+#### challenge: excellence—in what?
+
+
 
 ---
-#### Open development
+#### Some remedies ...
+
+* Open development
+* Community building
+* Courses
+
+(note omission of _governance_)
+
 
 +++
 ### Open source
@@ -235,6 +244,7 @@ The freedom to
   * leadership without experience in the field
   * lack of competence
   * ratio of doers and non-doers is 20/80
+  * no backing of the field
 @ulend
 
 +++
