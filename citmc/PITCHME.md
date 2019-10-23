@@ -10,12 +10,14 @@ Agenda
   * keep knowledge ...
   * speed of development
   * Main benefit from softw. dev. is the knowledge
++++
 * Software engineering is unlike everything
   * we never solve the same thing twice
   * completely different project management
     * leaders do not understand the complexity
     * leaders do not believe developers' estimates
     * software projects are more like research projects than trad projects
++++
 * Some drawbacks in large corporations
   * > acquire trust by giving trust
   * governing (controlling the creatively unpredictable)
@@ -27,6 +29,7 @@ Agenda
   * bad strategies coming from above
     * ... a reverse correlation between technical competence and position in ladder
   * non-developers doing development without understanding
++++
 * Open development
   * Open source
     * what is it
@@ -39,6 +42,7 @@ Agenda
       * students
       * vendors
       * contractors know and understand the data and facts
++++
 * Programmer's oath
 
 ---
