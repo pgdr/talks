@@ -78,7 +78,20 @@ The main benefit of a software development process:
 
 > I will dictate to you exactly how you must do every aspect of the work ... except the hard part
 
++++
+#### challenge: governance
+
 "okay, management don't trust me, I'll just follow the rules ..."
+
+The hard part is
+@ul
+* innovation
+* going out on a limb
+* being vulnerable
+* being humble
+* trying your best to solve a hard problem
+* ... and improving status quo
+@ulend
 
 +++
 #### challenge: no-slack project lead
