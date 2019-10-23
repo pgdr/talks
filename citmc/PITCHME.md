@@ -43,10 +43,10 @@ However, we feel a lack of support
 
 
 ---
-#### Why in-house development
+#### Why inhouse development
 
 @ul
-* close with users
+* very close to users
 * speed of development (weeks vs years)
 * domain knowledge
 * keep knowledge ...
@@ -54,6 +54,13 @@ However, we feel a lack of support
 @ulend
 
 
++++
+#### Why inhouse development
+
+The main benefit of a software development process:
+
+* not the software itself
+* the knowledge of the people
 
 ---
 #### Some challenges in large corporations
@@ -64,7 +71,7 @@ However, we feel a lack of support
 
 > acquire trust by giving trust
 
-@css(**governing** = _controlling the creative & unpredictable_)
+@css[fragment](**governing** = _controlling the creative & unpredictable_)
 
 +++
 #### challenge: governance
