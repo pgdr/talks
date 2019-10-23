@@ -1,7 +1,53 @@
 ### Inhouse Software Development
 
-+++
+---
+#### Software engineering is unlike everything
 
++++
+#### Software engineering is unlike everything
+
+software development is the art of formalizing ideas
+
++++
+#### Software engineering is unlike everything
+
+we never solve the same thing twice
+
++++
+#### Software engineering is unlike everything
+
+completely different project management
+
+* leaders do not understand the complexity
+* leaders do not believe developers' estimates
+* software projects are more like research projects than trad projects
+
+
+
+
+
+
+
+
+---
+#### Software engineering is a craft
+
+* craft
+* profession
+* complex field
+
+However, we feel a lack of support
+
+
+
+
+
+
+
+
+
+
+---
 #### Why in-house development
 
 * domain knowledge
