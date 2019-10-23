@@ -115,6 +115,16 @@ non-developers doing development: no
 
 
 +++
+### challenge: mindlessly cutting costs,
+
+or: how to throw the baby out with the bathwater
+simultaneously losing trust
+
+> Optimization using data and model update resulted in production
+> potential; estimated value of this optimization has been estimated to
+> NOK2bn
+
++++
 #### challenge: excellence—in what?
 
 
