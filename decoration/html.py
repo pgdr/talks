@@ -1,12 +1,14 @@
 #!/usr/bin/env python
 from __future__ import print_function
 
+
 def html(fun):
     def wrapper(arg):
-        print('<p>')
+        print("<p>")
         x = fun(arg)
-        print('</p>')
+        print("</p>")
         return x
+
     return wrapper
 
 
@@ -16,7 +18,7 @@ def write(text):
     return 7
 
 
-x = write('hello worlds')
+x = write("hello worlds")
 print(x)
 
 # <h1>

@@ -11,9 +11,9 @@ def timed():
     print("I'm timing you ... ")
     yield
     end = dt.now()
-    print('Yay!!')
+    print("Yay!!")
     d = ((end - start) * 1000).total_seconds()
-    print('%d ms' % d)
+    print("%d ms" % d)
 
 
 def fib(n):
@@ -37,9 +37,10 @@ def main(n):
     return s
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from sys import argv
+
     if len(argv) != 2:
-        exit('Usage: timed n')
+        exit("Usage: timed n")
     n = int(argv[1])
     main(n)

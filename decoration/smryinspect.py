@@ -25,25 +25,23 @@ def edit(s, t):
     if not t:
         return len(s)  # the shortest edit is to add s
 
-    c = 0 if s[-1] == t[-1] or s[-1] == '*' or t[-1] == '*' else 1
+    c = 0 if s[-1] == t[-1] or s[-1] == "*" or t[-1] == "*" else 1
 
-    del_s = edit(s[:-1], t)       # delete last from s
-    del_t = edit(s, t[:-1])       # delete last from t
+    del_s = edit(s[:-1], t)  # delete last from s
+    del_t = edit(s, t[:-1])  # delete last from t
     del_b = edit(s[:-1], t[:-1])  # delete both
 
-    return min(del_s + 1,
-               del_t + 1,
-               del_b + c)
+    return min(del_s + 1, del_t + 1, del_b + c)
+
 
 def to_pandas(kw, smry):
     lst = list(smry[kw])
-    split = (map(lambda x: x.days,  lst),
-             map(lambda x: x.value, lst))
-    return DataFrame({'days': split[0],
-                      'value': split[1]})
+    split = (map(lambda x: x.days, lst), map(lambda x: x.value, lst))
+    return DataFrame({"days": split[0], "value": split[1]})
+
 
 def find_closest(kw, keys):
-    best_score = 10**10
+    best_score = 10 ** 10
     matches = None
     for key in keys:
         dist = edit(kw, key)
@@ -68,42 +66,44 @@ def lookup(smry, keys, kw):
     else:
         score, match = find_closest(kw, keys)
         if score <= 4:
-            print('Did you mean (score: %d): \n\t%s' % (score,
-                                                        '\n\t'.join(match)))
+            print("Did you mean (score: %d): \n\t%s" % (score, "\n\t".join(match)))
         else:
-            print('No such keyword.  Try [L]ist to see keywords.')
+            print("No such keyword.  Try [L]ist to see keywords.")
 
 
 def interactive(smry, keys):
     """Interactive smry inspector."""
     kw = None
-    while kw != 'q':
-        kw = raw_input('Enter kw (q to exit): ').upper().strip()
-        if kw in ('Q', 'QUIT'):
+    while kw != "q":
+        kw = raw_input("Enter kw (q to exit): ").upper().strip()
+        if kw in ("Q", "QUIT"):
             return
-        if kw in ('L', 'LIST'):
-            print('\n\t'.join(keys))
+        if kw in ("L", "LIST"):
+            print("\n\t".join(keys))
             continue
-        if kw in ('H', 'HELP'):
-            print('Commands: Q (quit), L (list), H (this)')
+        if kw in ("H", "HELP"):
+            print("Commands: Q (quit), L (list), H (this)")
             continue
         lookup(smry, keys, kw)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     from sys import argv
+
     if len(argv) not in (2, 3):
-        exit("""usage: smryinspect.py NORNE_ATW2013.UNSMRY
+        exit(
+            """usage: smryinspect.py NORNE_ATW2013.UNSMRY
        smryinspect.py NORNE_ATW2013.UNSMRY FOPR
-        """)
+        """
+        )
 
     smry, keys = load_smry(argv[1])
     if len(argv) == 2:
         try:
             interactive(smry, keys)
         except EOFError:
-            exit('\n')
+            exit("\n")
         except KeyboardInterrupt:
-            exit('\n')
+            exit("\n")
     else:
         lookup(smry, keys, argv[2].upper().strip())

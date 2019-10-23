@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 
+
 class memoize(dict):
     """Memoization wrapper for unary function."""
+
     def __init__(self, fun):
         self.fun = fun
 
@@ -11,6 +13,7 @@ class memoize(dict):
     def __missing__(self, args):
         y = self[args] = self.fun(*args)
         return y
+
 
 @memoize
 def edit(s, t):
@@ -22,16 +25,16 @@ def edit(s, t):
 
     c = 0 if s[-1] == t[-1] else 1
 
-    del_s = edit(s[:-1], t)       # delete last from s
-    del_t = edit(s, t[:-1])       # delete last from t
+    del_s = edit(s[:-1], t)  # delete last from s
+    del_t = edit(s, t[:-1])  # delete last from t
     del_b = edit(s[:-1], t[:-1])  # delete both
 
-    return min(del_s + 1,
-               del_t + 1,
-               del_b + c)
+    return min(del_s + 1, del_t + 1, del_b + c)
 
-if __name__ == '__main__':
+
+if __name__ == "__main__":
     from sys import argv
+
     if len(argv) != 3:
-        exit('usage: edit string1 string2')
+        exit("usage: edit string1 string2")
     print(edit(argv[1], argv[2]))

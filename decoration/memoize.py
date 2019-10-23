@@ -1,5 +1,6 @@
 class memoize(dict):
     """Memoization wrapper for any unary function."""
+
     def __init__(self, fun):
         self.fun = fun
 
@@ -7,12 +8,13 @@ class memoize(dict):
         return self[x]
 
     def __missing__(self, x):
-        print('computing fun(%s)' % x)
+        print("computing fun(%s)" % x)
         y = self[x] = self.fun(x)
         return y
+
 
 @memoize
 def fib(n):
     if n <= 2:
         return 1
-    return fib(n-1) + fib(n-2)
+    return fib(n - 1) + fib(n - 2)
