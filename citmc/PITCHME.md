@@ -95,12 +95,17 @@ project leaders — _What you see is all there is"_
 +++
 #### challenge: undevelopment
 
-non-developers doing development
-* without even a basic understanding of software
-* not even a rudimentary knowledge of development process
-* unaware of even _good_ practices
+non-developers doing development: no
 
+@ul
 
+* understanding of software
+* knowledge of development process
+* awareness of _good_ practices
+
+@ulend
+
+(note the omission of _governance_)
 
 
 
