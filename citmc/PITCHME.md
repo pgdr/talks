@@ -17,9 +17,13 @@ Agenda
     * leaders do not believe developers' estimates
     * software projects are more like research projects than trad projects
 * Some drawbacks in large corporations
+  * > acquire trust by giving trust
   * governing (controlling the creatively unpredictable)
+    * > I will dictate to you exactly how you must do every aspect of the work ... except the hard part
   * bad management
+    * The first law of bad management: If something isn't working, do more of it
   * bad project lead believing they can
+    * > People under time pressure don't think faster.
   * bad strategies coming from above
     * ... a reverse correlation between technical competence and position in ladder
   * non-developers doing development without understanding
