@@ -1,5 +1,7 @@
 ### Inhouse Software Development
 
+_(cc-by-sa 4.0)_
+
 ---
 #### Software engineering is unlike everything
 
@@ -36,25 +38,20 @@ completely different project management
 * profession
 * complex field
 
++++
+#### Software engineering is a craft
+
 However, we feel a lack of support
-
-
-
-
-
-
-
-
 
 
 ---
 #### Why in-house development
 
-* domain knowledge
 * close with users
+* speed of development (weeks vs years)
+* domain knowledge
 * keep knowledge ...
-* speed of development
-* Main benefit from softw. dev. is the knowledge
+* main benefit: knowledge
 
 
 
@@ -68,7 +65,7 @@ However, we feel a lack of support
 
 > acquire trust by giving trust
 
-governing (controlling the creatively unpredictable)
+**governing** = _controlling the creative & unpredictable_
 
 +++
 #### challenge: governance
@@ -79,22 +76,21 @@ governing (controlling the creatively unpredictable)
 +++
 #### challenge: management
 
-bad management:
-> The first law of bad management: If something isn't working, do more of it
+> The first law of bad management
+>
+> If something isn't working, **do more of it**
 
 +++
 #### challenge: project lead
 
-bad project lead believing they can
+project leaders — _What you see is all there is"_
 
 > People under time pressure don't think faster.
 
 +++
 #### challenge: strategies
 
-* bad strategies coming from above
-  * ... a reverse correlation between technical competence and position in ladder
-
+... an inverse correlation between technical competence and position in professional ladder
 
 +++
 #### challenge: undevelopment
