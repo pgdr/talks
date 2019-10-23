@@ -78,6 +78,7 @@ The main benefit of a software development process:
 
 > I will dictate to you exactly how you must do every aspect of the work ... except the hard part
 
+"okay, management don't trust me, I'll just follow the rules ..."
 
 +++
 #### challenge: no-slack project lead
