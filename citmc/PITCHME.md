@@ -1,31 +1,40 @@
 ### Inhouse Software Development
 
-
-> [`https://github.com/equinor`](https://github.com/equinor)
-
-> Pål Grønås Drange, Leading Advisor
-
 +++
 
 Agenda
 
-* Why is softw. eng. difficult?
 * Why in-house development
   * domain knowledge
   * close with users
   * keep knowledge ...
   * speed of development
-* Main benefit from softw. dev. is the knowledge
-* Some drawbacks in Equinor
+  * Main benefit from softw. dev. is the knowledge
+* Software engineering is unlike everything
+  * we never solve the same thing twice
+  * completely different project management
+    * leaders do not understand the complexity
+    * leaders do not believe developers' estimates
+    * software projects are more like research projects than trad projects
+* Some drawbacks in large corporations
   * governing (controlling the creatively unpredictable)
   * bad management
   * bad project lead believing they can
   * bad strategies coming from above
     * ... a reverse correlation between technical competence and position in ladder
+  * non-developers doing development without understanding
 * Open development
   * Open source
     * what is it
     * why we do it
+  * Open data
+    * not so easy as people would like
+    * increase understanding of facts
+    * necessary for open standards
+    * we are in a better position if
+      * students
+      * vendors
+      * contractors know and understand the data and facts
 * Programmer's oath
 
 ---
