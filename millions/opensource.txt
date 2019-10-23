@@ -1,0 +1,184 @@
+Open source software in Equinor
+
+Governing documents TR1621 v7 gives the foundation for open source in
+Equinor, stating that
+
+> (2.1.7) All IT solution procurement and software deliveries shall have
+> evaluated open source alternatives.
+
+> (2.8.1) All software developed by/for Equinor shall be made opensource,
+> unless IP rights prevents this or there are unacceptable risks.
+
+> (2.8.4) All software development shall, if relevant, utilize open source
+> technologies, frameworks and tools.
+
+This document is meant to explain some of the rationale behind these
+entries in the governing documents, as well as assisting in choosing the
+correct license.
+
+
+A sneak peak at the license selection process:
+
+; Are we writing a library?
+: Use LGPL 3
+; Do we want to force other people to release back all changes?
+: Use GPL 3
+; Otherwise
+: Use MIT
+
+
+
+
+== Reasons for writing open source software ==
+
+
+Public visibility encourages good standards.
+
+
+'''Easy and robust building and testing and a clean repository.'''
+
+When putting your software out you need to also make clear and neutral
+instructions that work on any machine, not just your own.  Furthermore,
+we cannot have hard coded usernames, passwords, file paths or other
+elements that are considered bad practice in software development.  This
+encourages clean and general code.
+
+
+
+'''Internal network means hidden assumptions.'''
+When you build, test and deploy your code on your internal network you
+have access to thousands of sweet libraries.  However!  These sweet
+libraries come with a hidden cost, because they are hidden assumptions.
+It makes your software tightly (and invisibly so) coupled to your
+internal infrastructure. This makes it harder to change your
+infrastructure, and harder to change your software.
+
+
+
+'''Why would we give away our precious software for free?'''
+A common misconseption is that free software is free to use.  Especially
+software that is designed to solve one company's or customer's need.
+Anyone who wants to use the software themselves need to make changes and
+bugfixes.  These means that they (most likely) want to contribute back
+with new features, new generalizations, new improvements, etc.
+
+
+
+'''Given enough eyeballs, all bugs are shallow.'''
+The more people that test the software, the more robust it gets.  Nearly
+all software today should be cross platform.  We do not have access, nor
+time, to test our software on all architectures, platforms, operating
+systems, in all environments in Equinor.  However, when people try to
+build our system with a new and unknown compiler, for a new and untested
+architecture, we get valuable feedback if that doesn't work.
+
+
+
+'''Great advertising.'''
+When you develop free software you can give a "10 Reasons Why My Company
+Develops Free Software" on Booster.  When recruting developers, you get
+to point them to code and review practices on github or lauchpad or
+wherever you have your code.  If you develop software that students
+might use, they can download it and test it even before they start
+working in your company.
+
+
+
+'''Develop reference implementations for file formats.'''
+The software package, or library, segyio, today serves as a first
+reference implementation for the SEG-Y file format developed in the 70s.
+Any file format without a reference implementation risks being
+under-defined and thus several incompatible formats will appear.  This
+hurts, not only Equinor, but the entire industry.
+
+
+
+'''Open company increases public trust.'''
+Being open is one of Equinor's core values.  Putting our source code
+online for everyone to see, puts our money where our mouth's at.
+
+
+'''Contributing to the open source community.'''
+All the world, and Equinor is no exception, is today dependent on open
+source software.  We use it, very often for free, and one can argue that
+we have a moral responsibility of contributing back.  There are several
+cases where we have contributed back to software we use, but we are far
+from a major player in the open source community.  We have a way to go.
+
+
+
+''' Open source is like science.'''
+
+
+
+== Choosing a license ==
+
+There are several licenses to choose from, and that can be confusing,
+however, there aren't that many licenses relevant for Equinor.
+
+Here is a long list of licenses:
+
+* GNU GPL 2 v 3
+* GNU AGPL
+* GNU LGPL
+* MIT
+* APACHE
+* BSD
+
+Open licenses for non-code projects:
+
+* CREATIVE COMMONS
+* ODbL
+
+
+
+Out of them, we highly recommend the subset
+
+* GNU GPL 3
+* GNU LGPL
+* MIT
+
+=== How to choose ===
+
+The choice should be as follows:
+
+: Are we writing a library?
+; Use LGPL 3
+: Do we want to force other people to release back all changes?
+; Use GPL 3
+: Otherwise
+; Use MIT
+
+
+
+=== Examples of open source licenses is the real world ===
+
+Here are some examples:
+
+* GNU GPL 2 (Linux, MediaWiki, Wordpress, +++, ERT, OPM)
+* GNU GPL 3 (GCC, GNU, +++, Sunbeam)
+* GNU AGPL (Launchpad)
+* GNU LGPL (QT, Vorbis*, Segyio)
+* MIT (Jenkins, Atom, Compiz, Mono, Ncurses, Node.js)
+* APACHE (Android, Apache, Kubernetes, PyCharm)
+* BSD (Chromium, D3, Django, Flask, Nginx, Vorbis)
+
+For the content licenses,
+
+* CREATIVE COMMONS (Wikipedia content, pictures, music)
+* Open Database Licence (Norne)
+
+
+=== How to maintain an open source project ===
+
+There are many resources for maintaining an open source project, among
+them is a guide from Digial Ocean:
+https://www.digitalocean.com/community/tutorials/how-to-maintain-open-source-software-projects
+
+Opensource.guide also has several articles on the subject:
+https://opensource.guide/best-practices/
+https://opensource.guide/building-community/
+
+Zalando is a fashion company well-known for their open source
+activities:
+https://opensource.zalando.com/blog/

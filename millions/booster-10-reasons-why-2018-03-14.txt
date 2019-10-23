@@ -1,0 +1,406 @@
+Introduction:
+
+(01 Statoil splash)
+
+I work for a team in Statoil that primarily works with scientific computing.
+INNOVATION
+
+We either write functions that compute stuff, write functions that run
+simulators, or make visualizers and data analysers for people to use in
+analysing; and make decisions, from their data.
+
+Like any other development team, we are constantly striving to improve our
+products, and the efficiency, stability and quality of our deliveries.
+
+
+
+
+(02 Health chart)
+
+We have tried many different metrics for measuring the quality of a project or
+product, and here's a small chart we made.  Every one of these columns
+correspond to something we feel improves the foundation of a project.  As can be
+seen, the majority of our products are open source.
+
+This talk will be about why we consider open source a good and important feature.
+
+By the way, this presentation was made in Gimp, and I wanted to use green
+checkmarks and red crosses, but Gimp doesn't have that; what is available,
+however, are elguitars and lizards, so ...  So if you ever question my
+commitment to open source, remember that I use Gimp voluntarily to create
+presentations.
+
+
+
+
+(03 Show github screenshot)
+
+
+So what follows is a list of just some of the reasons we believe in open source,
+and reasons we use to convince our project leaders.
+
+Now, not every item on this list will be applicable for your company.  Not every
+item will be according to your ideology.
+
+Statoil is not a software company (yet)
+
+But I hope you can take some of these points with you home.
+
+
+
+
+(04 Reasons fall into 3 categories)
+
+The items on this list naturally falls into three categories:
+
+1. company / stakeholders
+2. project / product
+3. team / developers
+
+
+
+The first is a technical market analytic and economic reasoning.
+
+
+(Company 1: commoditize your complements)
+
+Go backwards to explain this.  Complements to you products are things that fall
+naturally together.
+
+Example: flight Bahamas.  Hotels in Bahamas.  If hotel prices are cheap, demand
+for flights go up, and then prices go up.
+
+When Netscape decided to release Mozilla as free software, it wasn't out of a
+will to do good; they were selling servers.  If browsers were a commodity,
+demand for servers would go up.
+
+When IBM and Redhat spend millions of dollars on developing free software it
+isn't out of a will to do good, they are in the business of IT consulting.  A
+complement to consulting is software.  If software is a commodity, demand for
+consulting goes up.
+
+When Intel spends million of dollars on developing the Linux kernel, they are
+making operating systems a commodity.  They are in the business of making CPUs
+and chipsets, a complement of operating systems.
+
+
+
+
+
+(Company 2: Great advertising and recruting potential --- attracts talent!)
+
+When we give presentations at universities, they are intruiged by our open
+source commitment.
+
+When we interview people, almost all of them have checked out our Github pages
+and want to work for us.
+
+Wwe go to universities and can really show them that we are doing testing and
+reviewing, and they will study our projects before they start working for us.
+
+
+
+
+(Company 3: Being an open company increases public trust)
+
+(Whatever negative we think of Facebook, Google, Twitter, Dropbox, etc., always
+gets overshadowed when we learn that they open up a new project.
+
+Who do you trust, more; and who would you choose? Redhat/Debian/Canonical or
+Microsoft.  Elkstackpeople or Adobe?  Apache or Acrobat?)
+
+
+
+(Company/project 4: More users gives better funding yields higher quality)
+
+If all else is equal, being a free software will make more people use the
+software than otherwise.
+
+If your competitors, or your clients are using your software, _your_ name will
+always be in focus.  That's something you company will be proud of.  People
+depend on you.
+
+That gives your project more funding, which again gives higher momentum to the
+project and increases the quality of the product.
+
+This again gives more users, and the loop is closed.
+
+
+
+
+(Project 5: NIH!?  It decreases product development time.)
+
+When you sell your closed source software, you lose out on lots of good stuff.
+
+Who wants to reimplement a csv parser, plotting library, web framework,
+whatever.  Start at the top, and solve problems other's haven't yet solved.
+
+Most problems are in fact solved, the rest is glue.
+
+Using other's software means that you don't carry the load of maintenance and
+bugfixing.  Leave that to someone who knows this stuff.
+
+
+
+
+(Project 6:  Modular, good lookin' and easy to build and install.)
+
+Clean. An open source project means that your code base _must_ be good.
+
+There needs to be installation instructions available in the readme.
+
+And everyone knows that the installation difficulty is synonymous with the
+code/product quality.
+
+
+
+
+
+(Project 7: Given enough eyeballs, all bugs are shallow.)
+
+This has been proved and proven.
+
+
+
+(Team 7: Full attention on developing)
+
+
+No firewalls!  Every single second of your attention goes into developing.
+
+Get to use many tools like Travis and Github and source checkers that work best
+on open projects.
+
+Don't get me wrong, Github and Travis works great on private repositories, but
+there's always something extra you need to take care of.  Tokens everywhere
+(who's?), cannot easily share stuff with others without them registering (with
+2FA).
+
+
+High compatibility / Ease of integration.
+
+
+
+
+
+
+(Developer 9: Every patch and review is an extra star in your resume!)
+
+Every open commit and review is an extra star in your resume!
+
+
+Is this a threat to your current employer?
+
+The first thing you do when you get a new job, it doesn't matter if it's a
+promotion, your first job, a summer internship or a position as CEO; you go home
+that date and update your resume.  Why?  Not because you're going to apply to a
+new job, it's because you're proud!
+
+We programmers rarely get to show off our actual work, the lines of codes, the
+reviews, the discussions ... this is a chance.
+
+
+The first question I ask on an interview is "Do you have code on github"?  It's
+like asking a designer "Do you have a portfolio?" and them saying "no".
+
+
+
+
+(Developer 10:   You are contributing to the open source community)
+
+It feels good!
+
+
+Make a pip package, make a debian package, Red Hat.  Get your software into
+Ubuntu's standard distribution.  You effectly win in the game of software
+development.
+
+
+
+
+
+10 reasons why my team in Statoil prefers developing open source software
+
+
+Note to self:  read  "making software"
+
+
+This is Communism!
+
+"When I asked them where this free software was coming from, they would use
+lines like, 'You know, it's from engineers according to their skill, to
+engineers according to their need.'"  [5]
+
+"I decided that there was something going on here," he says. "Either I had to
+change my worldview and recognize that altruism does work and is scalable,
+(which I did not believe) or there was something going on here that the
+engineers did not understand."  [ibid]
+
+
+Your ideas are not new.  There have been software projects on those ideas for 50
+years.  I'm working with a brand new optimization suite.  It's not like that's
+nothing the developers of the 70's 80's and 90's did.
+
+
+
+I'm working in Statoil for a sector called Software Innovation.  We prefer to
+develop open source software, and in fact, in my team (pic of health chart), the
+majority of our projects are GPL licensed on github.
+
+Some of the things I'll say won't hold for the company you're working in, and
+some of the things won't appeal to your ideology.  These are, however, 10 of the
+reasons why _we_ and _I_ prefer to develop open source software.
+
+
+
+# Company / stakeholders
+
+1.  One simple rule of business: commoditize your complements [1].  Dual-license
+gives us ultimate power.
+
+
+(As you know, Statoil is not a software company --- yet.)
+
+
+Google (1998) derived effectively zero revenue from software directly.
+
+Facebook (2004), Twitter (2006), GitHub (2008), Dropbox (2016?), like Google,
+software is the means to an end rather than the end itself.
+
+Releasing as open source software — whether it’s general goodwill, amortizing
+development costs, greater efficiencies in hiring and recruitment, etc — are
+believed to outweigh the costs.
+
+Software is nothing more than technical knowledge.  (When alchemists began
+sharing their work, we began calling them scientists, and the scientific
+revolution was born.)
+
+Waste minimization?!?
+
+
+
+2.  Great advertising and recruting potential --- attracts talent!  Teaching the
+next generation — Many of the industry’s most prominent engineers today cut
+their teeth by learning from open source.  Attract developers to your
+organization.
+
+
+3. Being an open company, ethical, obligation to give back?  Increase public
+trust.  Showing your work — As we increasingly rely on technology to regulate
+industries and deliver citizen services, being able to see the underlying
+algorithms and processes are essential to checking our work — from inside and
+outside.  It’s the right thing to do.
+
+
+
+
+
+
+
+# Project / product
+
+4.  NIH!?  It decreases product development time by letting you freely use a
+wide range of state-of-the-art modern software: If you can't use open source you
+are doomed to reimplement boring stuff. Buggy.  Who wants to implement a csv
+parser?  A plot lib?
+
+5.  Modular, good lookin' and easy to build and install.  A healthy development
+community with open-to-the public reviews make the developers more on guard.
+Two developers working through dialog and collaboration, each bringing their own
+knowledge and experience; society is better as a result.  Encourages efficient,
+open, constructive and friendly dialogs.
+
+6.  Given enough eyeballs, all bugs are shallow [2,3].  This has been shown over
+and over again (Us Dept. Homeland Sec)[4].
+
+Getting upstream improvements.  Distribute development across a community.
+
+Software used on more platforms, for a wider range of tasks.
+
+You get to the core of the problem you are trying to solve.
+
+
+
+
+
+
+
+# Team / Developer
+
+
+7.  [make this a positive statement] No firewalls!  Every single second of your
+attention goes into developing.  (Who said this?)  Get to use many tools like
+Travis and Github and source checkers that work best on open projects.
+
+Don't get me wrong, Github and Travis works great on private repositories, but
+there's always something extra you need to take care of.  Tokens everywhere
+(who's?), cannot easily share stuff with others without them registering (with
+2FA).
+
+High compatibility / Ease of integration.
+
+
+8.  Every open commit and public comment (review) is an extra star in your
+resume!
+
+Is this a threat to your current employer?
+
+The first thing you do when you get a new job, it doesn't matter if it's a
+promotion, your first job, a summer internship or a position as CEO; you go home
+that date and update your resume.  Why?  Not because you're going to apply to a
+new job, it's because you're proud!
+
+We programmers rarely get to show off our actual work, the lines of codes, the
+reviews, the discussions ... this is a chance.
+
+
+The first question I ask on an interview is "Do you have code on github"?  It's
+like asking a designer "Do you have a portfolio?" and them saying "no".
+
+
+9.  The RMS argument (free speech).  You are contributing to the open source
+community.  It feels good!?
+
+Categorical imperative.
+
+Imagine how sad the world would be with no free software.  A real dysopian
+nightmare.  Somebody needs to make this software.
+
+Golden rule.  What would Jesus do!?!
+
+Open source software implies open standards implies cooperability.
+
+Publish vs save draft!
+
+
+# Bonus
+
+10.  Give talks liek this.  Everyone loves free libre open source software!  You
+develop floss.  By modus ponens, everybody loves you.  Make a pip package, make
+a debian package, Red Hat.  Get your software into Ubuntu's standard
+distribution.  You effectly win in the game of software development.  You can't
+beat it unless you contribute to the Linux kernel.  And then you're kindof
+developing floss anyway, so there's that.
+
+
+Break free from vendor lock-in.
+
+Force multiplier
+
+
+
+
+References:
+
+[1] https://www.joelonsoftware.com/2002/06/12/strategy-letter-v/ Smart companies
+try to commoditize their products’ complements.
+
+[2] https://en.wikipedia.org/wiki/Linus%27s_Law Linus's Law.--code reviews may
+be more efficient than testing
+
+[3] Eric S. Raymond in his essay and book The Cathedral and the Bazaar
+
+[4] https://techcrunch.com/2012/02/23/with-many-eyeballs-all-bugs-are-shallow/
+
+
+[5]
+https://opensource.com/open-organization/16/10/history-open-source-teaches-strategic-advantage

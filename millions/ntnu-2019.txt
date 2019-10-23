@@ -1,0 +1,328 @@
+Åpen kildekode: Hvorfor gi noe bort gratis som vi har brukt millioner på å
+utvikle?!
+
+Kom og få en million kroner i kode.
+
+
+
+> I have no idea where this will lead us,
+> but I have a definite feeling it will be
+> a place both wonderful and strange.
+
+
+
+Introduksjon til Wikipedia (som analogi for open source community).
+
+Wikipedia er bygget på open source-filsofi og -teknologi, og ikke minst
+-community.  Alle i dag setter pris på Wikipedia, men slik var det ikke alltid.
+
+Mange var skeptisk og mente prosjektet ville feile, aldri klare å holde seg
+oppdatert, ikke ha mer enn nisjeartikler, og at innholdet ikke ville være
+troverdig.  Disse argumentene har i stor grad forsvunnet, og Wikipedia er i dag
+det største og mest populære referanseverktøyet på Internett.
+
+Fri programvare-prosjektet begynte for alvor på midten av 80-tallet.  På
+begynnelsen av 90-tallet bestemte Linus Torvalds seg for å lisensiere
+Linux-kjernen under en åpen kildekode-lisens (GPL), noe som for startet fri
+programvares fremtreden.  På slutten av 90-tallet lanserte Netscape sin
+nettleser som fri programvare, et for dem logisk valg (skal vi se senere).  Fri
+programvare tok utgangspunkt i at brukere av programvare må få lov til å
+
+* kjøre programvare som ønsket, for hvilket formål som helst
+* endre programmet til å bedre passe behov
+* redistribuere kopier, enten gratis eller for en pris
+* distribuere endrede versjoner av programvaren slik at community-et kan nyte
+  godt av dine modifikasjoner.
+
+
+
+Fri programvare
+
+Fri programvare dreier seg altså om at du får innsyn i koden du kjører på din
+datamaskin og din telefon.  Det dreier seg om at du får lov til å endre denne
+koden, fikse bugs, legge til nye features, eller få programvaren til å fungere
+på en ny plattform eller arkitektur.  Det dreier seg om at dersom du endrer
+koden, kan du dele denne koden med andre som har bruk for den.  Resultatet er
+ofte at alle disse endringene, reparasjonene og forbedringene kommer tilbake til
+den originale forfatteren, som kan velge å ta de med i en ny versjon, som igjen
+fører til at forbedringer kommer alle brukere til gode.
+
+To hovedklasser av fri programvare:
+* del på samme vilkår
+* gjør hva du vil
+
+En av de klassiske frie lisensene, BSD (fra Berkeley), har en lisens som høres
+mer eller mindre ut som "gjør hva du vil".  Det er en ubegrenset frihet så lenge
+du inkluderer BSD opphavsrett- & lisensteksten.
+
+Noen fri programvare-lisenser, som GPL, kommer med et ekstra krav, som på
+engelsk heter "Share Alike", eller på norsk "Del På Samme Vilkår".  Dette kravet
+sier at "dersom du vil DISTRIBUERE programvare som er lisensiert under GPL, så
+må du gi mottakerne samme mulighet som du fikk, nemlig til å endre og
+redistribuere, og også Del På Samme Vilkår."  Dette ble famøst kalt for
+programvarens kreft av Steve Ballmer, den gang CEO i Microsoft.
+
+
+
+Vi har kommet en lang vei fra den gang.  Da mente Microsoft om fri programvare
+at
+
+> the quality of free software can meet or exceed that of commercial programs
+  and describes it as a potentially serious threat to Microsoft.
+
+> free programs can compete with commercial software in terms of quality; the
+  free software movement is a "long-term credible" threat; Employing the
+  traditional Microsoft marketing strategy known as "FUD," ("fear, uncertainty
+  and doubt") will not succeed against the developers of free software.
+
+> The ability of the O.S.S. process to collect and harness the collective
+  I.Q. of thousands of individuals across the Internet is simply amazing
+
+> The competitive issues go beyond the fact that the software is free.  It is
+  also part of the open-source software, or O.S.S., movement, which encourages
+  widespread, rapid development efforts by making the source code readily
+  available to anyone.  This enables programmers the world over to continually
+  write or suggest improvements or to warn of bugs that need to be fixed.
+
+
+Noen tall: Nå er 500 av de 500 kraftigste superdatamaskinene Linux.  Mesteparten
+av Microsofts egen sky er drevet av Linux, for ikke å snakke om Google og
+Amazon.  Facebook og Twitter og Instagram.  Microsoft har videre gått over til
+Linux-dreven IoT.  Googles utviklere bruker Chromebook, som også er
+Linux-basert.  80% av verdens mobilmarket kjører Android, som er basert på
+Linux.  Toyota, Audi, Ford, Mazda, Subaru, Mercedes, Mitsubishi, Honda, Suzuki,
+Nissan og mange flere er selskaper som utgjør Automotive Grade Linux.
+
+
+
+
+
+Grunnene til å skrive åpen kildekode faller ofte inn i tre kategorier:
+* selskapet / aksjonærer
+* prosjektet / produktet
+* teamet / utviklerne
+
+
+(1—selskap) Gjør komplementærgoder til forbruksvarer
+
+Komplementærgoder er produkter som faller naturlig sammen med ditt produkt.  De
+kan være avhengig av hverandre.  Nøkkelen med komplementærgoder er at når prisen
+på komplementærgoder går ned, går etterspørselen av ditt produkt opp, og dermed
+prisen.
+
+
+Når Netscape bestemte seg for å åpne opp og gi bort nettleseren sin, så var ikke
+det av et ønske om å gjøre noe bra for verden.  Netscape var et server-selskap.
+De solgte servere.  De tenkte at hvis nettlesere er en forbruksvare, så vil
+etterspørselen etter servere gå opp.
+
+RedHat og IBM pøser årlig inn millioner av dollar i utvikling av Linux-kjernen
+og annen Linux-programvare.  Det er ikke fordi de ønsker å gjøre verden en
+tjeneste.  De er konsulent- og serviceselskaper som tilbyr tjenester til folk
+som bruker Linux.  Strategien deres er at dersom Linux-operativsystemer er noe
+alle har, så vil etterspørselen etter deres tjenester gå opp.
+
+Intel utvikler linux-kjernen, ikke fordi de ønsker å bruke den selv, eller for å
+gjøre veldedighet.  De selger CPU-er og ser for seg at hvis operativsystemer er
+allment tilgjengelig, går etterspørsel etter CPU-er opp.
+
+Facebook vil gi gratis internett, det vil også Google, til alle i India.  Gjett
+hvorfor.  Veldedighet?
+
+
+Equinor selger ikke programvare eller tjeneste på den måten, men vi har andre
+tilsvarende eksmpler.  Vi bruker protokoller og "standarder" som har vært
+utviklet og videreutviklet og endret siden 90-tallet hvor det ikke har fantes en
+åpen referanseimplementasjon.  Siden de som har laget standardene ikke
+nødvendigvis er informatikere, har ikke standardene nødvendigvis vært i form av
+BNF-er og andre formelle spesifikasjoner.  På grunn av mangel på
+referanseimplementasjoner har selskaper sett seg nødt til å utvikle sine egne
+lesere og skriver, og alle gjør ting litt på forskjellig måte.
+
+Vi har skrevet åpne biblioteker nå som begynner å fungere som
+referanseimplementasjoner for flere standarder.  Dette tjener selvsagt våre
+konkurrenter på; de kan laste ned en ypperlig parser helt gratis.  Men vi tjener
+enda mer.  Ikke bare kan vi endelig lese alle formater, samarbeide med
+samarbeidspartnere, men vi har bygget opp den fremste forståelsen av disse
+formatene i vårt selskap.  Ja, våre konkurrenter får noe gratis, men vi får enda
+mer.
+
+
+
+(2–selskap) Reklame og rekruttering
+
+Vi reiser rundt på konferanser, på workshops, på universiteter og forteller om
+vår satsing på fri programvare, på deling av kunnskap, på kompetanseheving, på
+at vi gir tilbake til community-et.
+
+Folk er imponert og fascinert og flere jeg har intervjuet har nevnt våre bidrag
+til åpen kildekode som en av grunnene til å ville jobbe jobbe for oss.  Folk har
+på forhånd sjekket GitHub-sidene våre og sett hva vi jobber med og hvordan vi
+jobber.
+
+Når vi går på universiteter kan vi virkelig vise at vi driver med testdreven
+utvikling og med reviews.
+
+
+
+
+(3—selskap) Åpen impliserer tillitt
+
+Men det er ikke bare for rekruttering, vi ser også en økt tillitt til IT-miljøet
+i Equinor ved å spille med åpne kort.
+
+En av Equinors kjerneverdier er åpenhet, og en av måtene IT virkelig kan være
+åpne på er nettopp ved å åpne opp kildekoden.
+
+Vi jobber med å åpne også vår infrastruktur.  Det finnes et prinsipp innen
+kryptografi som heter Kerckhoffs' prinsipp.  Dette sier at et system ikke må
+kreve hemmelighold; at det ikke skal være et problem at systemet faller i
+fiendens hender (prinsippet er skrevet for militær kryptografi).
+
+Vår infrastruktur og våre eiendeler, varer, og operasjon skal være sikker, og
+den skal oppfylle Kerckhoffs' prinsipp.
+
+Et system som er basert på hemmelighold og ikke på sikkerhet kalles ofte for
+security by obscurity, eller sikkerhet via tåkelegging.
+
+
+
+
+
+(5—prosjekt) Reduserer produktutviklingstid
+
+Når du baserer deg på lukket programvare, så velger du samtidig bort en hel haug
+med goder.
+
+> ansible aptana audacity automake bluefish drupal danymede gedit genesis git
+> gnu* joomla librecad linux mariadb mysql moinmoin ns octopus qdevelop redhat
+> wordpress
+
+Hvem er det egentlig som har lyst å reimplementere en CSV-parser,
+plottebibliotek, databaseserver, web-rammeverk, osb.?
+
+Enhver utvikler ønsker å starte på toppen; løs problemer som enda ikke er løst.
+Ikke bruk tid på å gjen-utvikle ting som eksisterer!
+
+Å bruke programvare som andre har skrevet betyr at du ikke bærer byrden med å
+vedlikeholde og fikse koden.  Overlat det til noen som vet hva de gjør på.
+
+Dette er virkelig å stå på skuldrene til giganter!
+
+
+
+(6—prosjekt)
+
+Noen av utviklerne jeg snakker om sier at de er redd for at koden ikke er bra
+nok, eller fin nok, til å bli lagt ut på Internett for alle å se.  Jeg svarer da
+at jeg er enig i at vi har et problem, men kanskje vi ikke er enig om hva
+problemet er.
+
+Forteller du meg at koden vi skriver er bra nok til å sikre menneskene våre ute,
+bra nok til å sørge for effektiv og sikker drift, trygg og nøyaktig forvaltning
+av våre ressurser, men ikke bra nok til at det norske folk kan se den?
+
+Kildekode, heter det seg, blir skrevet én gang, men lest tusen ganger og kjørt
+en million ganger.
+
+Ja, et prosjekt vi utvikler kan bli inspisert av eksterne interessenter; vi
+utvikler med dette i tankene våre.  Det fører til en renere kodebase, med færre
+snarveier.  Det fører igjen til en sunnere kodebase.
+
+Et prosjekt som bærer fri programvare-fanen må ha en README, en oppdatert
+beskrivelse av prosjektet.  En instruksjonsmanual og installasjonsmanual.  Det
+må være automatiserte tester og ikke minst mulig for alle å installere.  Man
+skulle tro at det å bygge og installere programvare var det minste problemet i
+et prosjekt, men der må man tro igjen.
+
+Vi møter prosjekter utviklet av eksterne som ikke lenger lar seg bygge, eller
+som bare én person er i stand til å bygge.  Det har gjerne ingen tester, og skal
+man først bygge det, må man skru på igjen en server fra 90-tallet.
+
+Det sier seg selv at det er ingen enkel sak å komme inn i et slikt prosjekt som
+ny utvikler.
+
+
+Når instruksjonsmanualer og beskrivelser først må på plass, er det mye lettere å
+modularisere prosjektet; det vil si, bestemme hvilken deler som naturlig faller
+inn under dette prosjektet, og hvilke deler som hører hjemme en annen plass.
+
+
+
+(7—prosjekt) Med nok øyne er enhver bug overfladisk.
+
+Et kjent utsagn som ofte er attributert Linus Torvalds, men som det
+sannsynligvis ikke var ham som sa.
+
+Det har ihvertfall blitt bevist å stemme i flere forskningsartikler, og dette er
+også vår erfaring.  Når vi i min avdeling ser på programvare som ligger internt
+og sammenligner med programvare som er åpen, så ser vi at det er færre bugs og
+flere tester i den åpne koden.
+
+I tillegg mottar vi regelmessige tilbakemeldinger fra eksterne om feil og
+forbedringspotensiale i programvaren vår som ligger ute.
+
+
+
+
+(8—team) Fullt fokus på utvikling.
+
+Når koden ligger åpen får man tilgang til mange flere verktøy enn dersom man har
+kildekoden bak brannmurer.  Verktøy som GitHub og Travis er utviklet for fri
+programvare-prosjekter med fri programvare i førersetet.
+
+Ikke misforstå; GitHub og Travis fungerer utmerket på lukkede prosjekter også,
+men det er alltid ett ekstra steg mellom deg og koden.  Tokens overalt,
+tofaktor-autentisering, registrere deg her og der.  Det eneste man kanskje vil,
+er å se over en patch en søndags ettermiddag i familebesøket.
+
+
+
+(9—utvikler)  Som utvikler er hver eneste patch og review en ekstra stjerne i CV
+
+Når du utvikler kode som ligger åpent på for eksempel GitHub er hver eneste
+patch, commit og review en stjerne i CV-en din.
+
+Er ikke dette en trussel for din nåværende arbeidsgiver?
+
+Vel, hvis arbeidsgiveren din sliter med å ha folk med de beste CV-ene, så finnes
+det verre ting å slite med.
+
+Men samtidig, det først vi gjør når vi har blitt forfremmet, fått en ny jobb,
+være seg internship eller stilling som CEO, er å gå hjem den dagen og oppdatere
+CV-en.  Hvorfor?  Det er ikke fordi vi ønsker å bruke CV-en til å søke på ny
+jobb; nei, det er fordi man blir stolt!
+
+Vi programmerere får sjelden muligheten til å vise vårt arbeid, vårt faktiske
+virke; linjer med koder, reviews, diskusjoner med fagfeller, bidrag til kjente
+programmer.  Dette er en egen sjanse til nettopp det.  Vise frem noe du har
+gjort som du er stolt av.
+
+
+Noe av det første jeg spør på et teknisk intervju er "har du noe kode på GitHub
+vi kan ta en titt på?".
+
+Dette er som å spørre en designer "har du en portefølje"; tror du de noensinne
+sier nei?
+
+
+
+(10—utvikler) Bidra til fri programvare-community-et
+
+Lag en pip-pakke, en Debian-pakke, en RedHat-pakke.  Hvis du får din programvare
+inn i Ubuntus standard-distribusjon ... du har rundet spillet som utvikler.  Den
+dagen kan du gå hjem tidlig.
+
+
+
+
+
+Avslutning
+
+
+Ja, selvsagt er noen av oss idealister og skulle ønske at vi alle bare kunne
+dele mer.  Verden hadde vært et bedre sted, hadde all programvare vært fri;
+hadde alle kunne samarbeidet om å lage de beste produktene.  Det er ingen som er
+uenig i dette.
+
+Vi som skulle ønske å se åpen kildekode hvor Wikipedia er i dag.

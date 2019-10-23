@@ -1,0 +1,9 @@
+# Use C-c C-x C-i / C-c C-x C-o
+# Use C-u C-c !
+# C-t toggles state
+** DONE  Give presentation on review for PLANT in SVG
+   CLOCK: [2018-05-28 ma. 14:34]--[2018-05-28 ma. 14:35] =>  0:01
+   PROGRESS:
+     - wait for mail from Magrete
+     - will travel to SVG
+     - cancelled
