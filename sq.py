@@ -13,6 +13,6 @@ class memoize(dict):
 sq = memoize(lambda x: x**2)
 
 for i in range(4):
-    print sq(i)
+    print(sq(i))
 for i in range(10):
-    print sq(i)
+    print(sq(i))
