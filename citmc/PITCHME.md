@@ -46,10 +46,14 @@ However, we feel a lack of support
 #### Why inhouse development
 
 @ul
-* very close to users
+* direct access to users and developers
+* being our own client makes life simpler
+* have (access to) domain knowledge
+* we build the necessary culture
 * speed of development (weeks vs years)
-* domain knowledge
-* keep knowledge ...
+* no off-the-shelf alternatives
+* we may build on _all_ open source software
+* build expertise ...
 * main benefit: knowledge
 @ulend
 
