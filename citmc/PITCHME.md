@@ -49,10 +49,10 @@ However, we feel a lack of support
 * direct access to users and developers
 * being our own client makes life simpler
 * have (access to) domain knowledge
-* we build the necessary culture
 * speed of development (weeks vs years)
 * no off-the-shelf alternatives
 * we may build on _all_ open source software
+* we build the necessary culture
 * build expertise ...
 * main benefit: knowledge
 @ulend
