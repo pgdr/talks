@@ -151,8 +151,8 @@ people doing "digital" delivering subpar
 #### Some remedies ...
 
 * Open development
-* Community building
-* Courses
+* Community building and sharing
+* Competence building, courses, etc..
 
 (note omission of _governance_)
 
@@ -253,10 +253,6 @@ The freedom to
 +++
 ##### Programmer's oath (9)
 >I will never stop learning and improving my craft.
-
-
-
----
 
 
 
