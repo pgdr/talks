@@ -75,14 +75,8 @@ The main benefit of a software development process:
 +++
 #### challenge: governance
 
-> acquire trust by giving trust
-
-@css[fragment](**governing** = _controlling the creative & unpredictable_)
-
-+++
-#### challenge: governance
-
 > I will dictate to you exactly how you must do every aspect of the work ... except the hard part
+
 
 +++
 #### challenge: governance
@@ -99,19 +93,30 @@ The hard part is
 * ... and improving status quo
 @ulend
 
+
 +++
-#### challenge: no-slack project lead
+#### challenge: governance
 
-Limited respect for knowledge workers and the craft.
+> acquire trust by giving trust
 
-> People under time pressure don't think faster.
+@css[fragment](**governing** = _controlling the creative & unpredictable_)
 
-— Lister's law
+
++++
+#### challenge: no-slack incompetent project lead
+
+@ul
+* Limited respect for knowledge workers and the craft.
+* Incompetent project leaders.
+* _People under time pressure don't think faster._ (Lister's law)
+@ulend
 
 +++
 #### challenge: strategies
 
-... an inverse correlation between technical competence and position in professional ladder
+> There is an inverse correlation between technical competence and position in professional ladder
+
+— Pål's law
 
 +++
 #### challenge: undevelopment
