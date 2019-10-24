@@ -72,7 +72,7 @@ The main benefit of a software development process:
 +++
 #### challenge: governance
 
-"okay, management don't trust me, I'll just follow the rules ..."
+> management don't trust me, I'll just follow the rules
 
 The hard part is
 @ul
