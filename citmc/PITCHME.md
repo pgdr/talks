@@ -30,16 +30,7 @@ completely different project management
 ---
 #### Software engineering is a craft
 
-@ul
-* craft
-* profession
-* complex field
-@ulend
-
-+++
-#### Software engineering is a craft
-
-However, we feel a lack of support
+... but who's on our side?
 
 
 ---
@@ -108,6 +99,7 @@ The hard part is
 @ul
 * Limited respect for knowledge workers and the craft.
 * Incompetent project leaders.
+* Top-heavy project organization.
 * _People under time pressure don't think faster._ (Lister's law)
 @ulend
 
@@ -272,28 +264,31 @@ The freedom to
 ---
 ### Summary
 
+> Access to developers is a bigger threat to business success than access to capital
+
+— Stripe 2018 report
+
++++
+### Summary
+
+> People are not your most important asset.  The right people are.
+
+— Jim Collins
+
++++
+### Summary
+
 @ul
 * Inhouse development is far superior to outsourced
 * The knowledge always trumps any software
 * Impediments:
   * lack of trust
   * leadership without experience in the field
-  * lack of competence
+  * lack of competence (but follow governance)
   * ratio of doers and non-doers is 20/80
-  * no backing of the field
+  * little backing of the craft
 @ulend
 
-+++
-
-> Access to developers is a bigger threat to business success than access to capital
-
-— Stripe 2018 report
-
-+++
-
-> People are not your most important asset.  The right people are.
-
-— Jim Collins
 
 
 ---
