@@ -46,8 +46,10 @@ However, we feel a lack of support
 #### Why inhouse development
 
 @ul
+* long-term commitment, deep involvement
 * direct access to users and developers
-* being our own client makes life simpler
+* being our own client makes life simpler, fail fast
+* no language or culture boundaries
 * have (access to) domain knowledge
 * speed of development (weeks vs years)
 * no off-the-shelf alternatives
