@@ -43,7 +43,7 @@ completely different project management
 * no language or culture boundaries
 * have (access to) domain knowledge
 * speed of development (weeks vs years)
-* no off-the-shelf alternatives
+* no off-the-shelf alternatives (e.g. tempest)
 * we may build on _all_ open source software
 * we build the necessary culture
 * build expertise ...
