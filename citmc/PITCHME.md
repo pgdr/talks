@@ -140,12 +140,16 @@ non-developers doing development: no
 or: how to throw the baby out with the bathwater
 simultaneously losing trust
 
-> Optimization using data and model update resulted in production potential;
->
-> the value of this optimization has been estimated to NOK2bn
+@snap[fragment]
+>Optimization using data and model update resulted in increased production potential
+@snapend
+
+@snap[fragment]
+>the value of this optimization has been estimated to NOK2bn
+@snapend
+
 
 +++
-
 #### challenge: excellence — in what?
 
 people doing "digital" delivering subpar
