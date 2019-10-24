@@ -124,15 +124,14 @@ The hard part is
 non-developers doing development: no
 
 @ul
-
 * understanding of software
+* conception of _correctness_
 * knowledge of development process
 * awareness of _good_ practices
-* idea about _cost and lifecycle commitment_
-
+* grasp about _cost and lifecycle commitment_
+* _(note the omission of **governance**)_
 @ulend
 
-(note the omission of _governance_)
 
 
 +++
