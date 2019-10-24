@@ -27,7 +27,7 @@ completely different project management
 @ulend
 
 
----
++++
 #### Software engineering is a craft
 
 ... but who's on our side?
