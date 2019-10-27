@@ -154,6 +154,9 @@ Frankensteinian teams delivering subpar "digital"
 * but it comes with _cons_ as well:
   * our natural culture is a second-class citizen
   * the primary culture is shoehorned to fit programming
+    * safety
+    * corruption
+    * ... other values?
 @ulend
 
 
