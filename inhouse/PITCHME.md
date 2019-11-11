@@ -109,9 +109,13 @@ The main benefit of a software development process:
 * not the software itself
 * the knowledge of the people
 
+
+
+
+
+
 ---
 #### Some challenges in large corporations
-
 
 +++
 #### challenge: governance
@@ -138,9 +142,13 @@ The hard part is
 +++
 #### challenge: governance
 
-> acquire trust by giving trust
+Why do we have governance?
 
-@css[fragment](**governing** = _controlling the creative & unpredictable_)
+@ul
+* The CEO on a hearing after an "incident"
+  * Did we follow the governing documents?
+  * ... and do we believe that that's enough?
+@ulend
 
 
 +++
@@ -194,7 +202,9 @@ simultaneously losing trust
 +++
 #### challenge: excellence — in what?
 
-Frankensteinian teams delivering subpar "digital"
+* Frankensteinian teams delivering sub-excellence
+* Causes frustration among developers
+* Causes confusions among stakeholders
 
 +++
 #### challenge: the dark side of the shared culture
@@ -203,21 +213,15 @@ Frankensteinian teams delivering subpar "digital"
 * shared culture has several _pros_
 * but it comes with _cons_ as well:
   * our natural culture is a second-class citizen
+    * principles
+    * programmer's oath
+    * open source
+    * ...
   * the primary culture is shoehorned to fit programming
     * safety
     * corruption
     * ... other values?
 @ulend
-
-
----
-#### Some remedies ...
-
-* Open development
-* Community building and sharing
-* Competence building, courses, etc..
-
-(note omission of _governance_)
 
 
 
@@ -266,29 +270,15 @@ Frankensteinian teams delivering subpar "digital"
 ---
 ### Summary
 
-> Access to developers is a bigger threat to business success than access to capital
-
-— Stripe 2018 report
-
-+++
-### Summary
-
-> People are not your most important asset.  The right people are.
-
-— Jim Collins
-
-+++
-### Summary
-
 @ul
 * Inhouse development is far superior to outsourced
 * The knowledge always trumps any software
 * Impediments:
   * lack of trust
   * leadership without experience in the field
-  * lack of competence (but follow governance)
-  * ratio of doers and non-doers is 20/80
-  * little backing of the craft
+  * lack of competence (but manage to follow governance)
+  * ratio of doers and non-doers: 20/80?
+  * little support of _The Craft_
 @ulend
 
 
