@@ -19,7 +19,7 @@ _(cc-by-sa 4.0)_
 #### Leading advisor
 
 @ul
-* Purely advisory role (no "power") <br /> ![power](https://raw.githubusercontent.com/pgdr/talks/master/inhouse/power.gif)
+* Purely advisory role (no "power") <br /> ![power](https://raw.githubusercontent.com/pgdr/talks/master/inhouse/nopower.gif)
 * Ask for help without being scared of retribution
 * The professional network (Chief Engineer) will have your back
 * We write some governance, but don't control it
