@@ -20,10 +20,17 @@ _(cc-by-sa 4.0)_
 
 @ul
 * Purely advisory role (no "power") <br /> ![power](https://raw.githubusercontent.com/pgdr/talks/master/inhouse/nopower.gif)
-* We write some governance, but we don't "own" it
+* We write some governance <br /> ![tr1621](https://raw.githubusercontent.com/pgdr/talks/master/inhouse/tr1621.jpg)
+@ulend
+
+
+---
+#### Leading advisor
+
+* Purely advisory role (no "power")
+* We write some governance, but don't "own" it
 * Ask for help without being scared of retribution
 * The Chief Engineer has your back!
-@ulend
 
 
 ---
