@@ -20,14 +20,16 @@ _(cc-by-sa 4.0)_
 
 @ul
 * Purely advisory role (no "power") <br /> ![power](https://raw.githubusercontent.com/pgdr/talks/master/inhouse/nopower.gif)
+* We write some governance, but we don't "own" it
 * Ask for help without being scared of retribution
-* The professional network (Chief Engineer) will have your back
-* We write some governance, but don't control it
+* The Chief Engineer has your back!
 @ulend
 
 
 ---
-#### Software engineering is unlike anything
+#### Why pros and cons of SW?
+
+What makes software development different?
 
 +++
 #### Software engineering is unlike anything
@@ -38,6 +40,7 @@ _(cc-by-sa 4.0)_
   * so very little intuition
   * especially non-developers
 * don't solve the same problem twice, hence more like research
+* we have **Turing completeness**®
 @ulend
 
 +++
@@ -46,14 +49,14 @@ _(cc-by-sa 4.0)_
 completely different project management
 
 @ul
+* leaders do not grasp the fundamental difference
 * leaders do not understand the complexity
 * leaders do not believe developers' estimates
-* software projects are more like research projects than trad projects
 @ulend
 
 
 +++
-#### Software engineering is a craft
+#### Software engineering is a special craft
 
 ![nobody is on my side](https://raw.githubusercontent.com/pgdr/talks/master/inhouse/side.jpg)
 
@@ -63,14 +66,15 @@ completely different project management
 #### Why inhouse development
 
 @ul
+* sib
 * long-term commitment, deep involvement
 * direct access to users and developers
 * being our own client makes life simpler, fail fast
-* no language or culture boundaries
+* no language or culture boundaries, same time zone
 * have (access to) domain knowledge
 * speed of development (weeks vs years)
 * no off-the-shelf alternatives (e.g. tempest)
-* we may build on _all_ open source software
+* we may build upon _all_ open source software
 * we build the necessary culture
 * build expertise ...
 * main benefit: knowledge
