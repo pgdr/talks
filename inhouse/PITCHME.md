@@ -7,11 +7,9 @@ _(cc-by-sa 4.0)_
 #### Inhouse developers
 
 * Enormous cost
-  * wrong people
-  * good people might leave
 * We don't have the competence
-* Nor the traditions of the craft
-* Nor the culture
+* ... nor the traditions of the craft
+* ... nor the culture
 
 
 
@@ -48,24 +46,6 @@ What makes software development different?
   * especially non-developers
 * don't solve the same problem twice, hence more like research
 * **Turing completeness**® (& Church-Turing thesis)
-@ulend
-
-+++
-#### Software engineering is unlike anything
-
-> "The cruelty of teaching computer science"
-
-— E. W. Dijkstra
-
-+++
-#### Software engineering is unlike anything
-
-completely different project management
-
-@ul
-* leaders do not grasp the fundamental difference
-* leaders do not understand the complexity
-* leaders do not believe developers' estimates
 @ulend
 
 
@@ -146,17 +126,6 @@ The hard part is
 @ulend
 
 
-+++
-#### challenge: governance
-
-Why do we have governance?
-
-@ul
-* The CEO on a hearing after an "incident"
-  * Did we follow the governing documents?
-  * ... and do we believe that that's enough?
-@ulend
-
 
 +++
 #### challenge: no-slack incompetent project lead
@@ -190,22 +159,6 @@ non-developers doing development: no
 @ulend
 
 
-
-+++
-#### challenge: mindlessly cutting costs,
-
-or: how to throw the baby out with the bathwater
-simultaneously losing trust
-
-@snap[fragment]
->Optimization using data and model update resulted in increased production potential
-@snapend
-
-@snap[fragment]
->the value of this optimization has been estimated to NOK2bn
-@snapend
-
-
 +++
 #### challenge: excellence — in what?
 
@@ -231,49 +184,6 @@ simultaneously losing trust
 @ulend
 
 
-
----
-#### Programmer's oath
-
-+++
-##### Programmer's oath (1)
->I will not produce harmful code.
-
-+++
-##### Programmer's oath (2)
->The code that I produce will always be my best work. I will not knowingly allow code that is defective either in behavior or structure to accumulate.
-
-+++
-##### Programmer's oath (3)
->I will produce, with each release, a quick, sure, and repeatable proof that every element of the code works as it should.
-
-+++
-##### Programmer's oath (4)
->I will make frequent, small, releases so that I do not impede the progress of others.
-
-+++
-##### Programmer's oath (5)
->I will fearlessly and relentlessly improve my creations at every opportunity. I will never degrade them.
-
-+++
-##### Programmer's oath (6)
->I will do all that I can to keep the productivity of myself, and others, as high as possible. I will do nothing that decreases that productivity.
-
-+++
-##### Programmer's oath (7)
->I will continuously ensure that others can cover for me, and that I can cover for them.
-
-+++
-##### Programmer's oath (8)
->I will produce estimates that are honest both in magnitude and precision. I will not make promises without certainty.
-
-+++
-##### Programmer's oath (9)
->I will never stop learning and improving my craft.
-
-
-
-
 ---
 ### Summary
 
@@ -288,6 +198,10 @@ simultaneously losing trust
   * little support of _The Craft_
 @ulend
 
+---
+#### Open questions and future work
+
+* What next?
 
 
 ---
