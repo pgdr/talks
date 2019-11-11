@@ -24,7 +24,7 @@ _(cc-by-sa 4.0)_
 @ulend
 
 
----
++++
 #### Leading advisor
 
 * Purely advisory role (no "power")
@@ -47,8 +47,15 @@ What makes software development different?
   * so very little intuition
   * especially non-developers
 * don't solve the same problem twice, hence more like research
-* we have **Turing completeness**®
+* **Turing completeness**® (& Church-Turing thesis)
 @ulend
+
++++
+#### Software engineering is unlike anything
+
+> "The cruelty of teaching computer science"
+
+— E. W. Dijkstra
 
 +++
 #### Software engineering is unlike anything
@@ -70,6 +77,12 @@ completely different project management
 
 
 ---
+#### Why inhouse development
+
+* as opposed to outsourced development
+* not _as opposed to off-the-shelf procurement_
+
++++
 #### Why inhouse development
 
 @ul
