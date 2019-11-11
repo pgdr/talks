@@ -2,21 +2,46 @@
 
 _(cc-by-sa 4.0)_
 
++++
+
+#### Inhouse developers
+
+* Enormous cost
+  * wrong people
+  * good people might leave
+* We don't have the competence
+* Nor the traditions of the craft
+* Nor the culture
+
+
+
 ---
-#### Software engineering is unlike everything
+#### Leading advisor
+
+@ul
+* Purely advisory role (no "power")
+* Ask for help without being scared of retribution
+* The professional network (Chief Engineer) will have your back
+* We write some governance, but don't control it
+@ulend
+
+
+---
+#### Software engineering is unlike anything
 
 +++
-#### Software engineering is unlike everything
+#### Software engineering is unlike anything
 
-software development is the art of formalizing ideas
+@ul
+* the art of formalizing ideas
+* no laws of nature, limitations
+  * so very little intuition
+  * especially non-developers
+* don't solve the same problem twice, hence more like research
+@ulend
 
 +++
-#### Software engineering is unlike everything
-
-we never solve the same thing twice
-
-+++
-#### Software engineering is unlike everything
+#### Software engineering is unlike anything
 
 completely different project management
 
@@ -30,7 +55,8 @@ completely different project management
 +++
 #### Software engineering is a craft
 
-... but who's on our side?
+![nobody is on my side](https://raw.githubusercontent.com/pgdr/talks/master/inhouse/side.jpg)
+
 
 
 ---
