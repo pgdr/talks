@@ -86,18 +86,25 @@ completely different project management
 #### Why inhouse development
 
 @ul
-* sib
-* long-term commitment, deep involvement
-* direct access to users and developers
-* being our own client makes life simpler, fail fast
-* no language or culture boundaries, same time zone
-* have (access to) domain knowledge
-* speed of development (weeks vs years)
-* no off-the-shelf alternatives (e.g. tempest)
-* we may build upon _all_ open source software
-* we build the necessary culture
-* build expertise ...
-* main benefit: knowledge
+1. **SIB!**
+@ulend
+
++++
+#### Why inhouse development
+
+@ul
+1. long-term commitment, deep involvement
+1. we can fail fast (as in super-fast)
+1. direct access between users, PO, and developers
+1. being our own client makes life simpler
+1. no language or culture boundaries, timezone
+1. have (access to) domain knowledge
+1. speed of development (weeks vs years)
+1. no off-the-shelf alternatives (e.g. tempest)
+1. we may build upon _all_ open source software
+1. we build the necessary culture
+1. build expertise ...
+1. main benefit: knowledge
 @ulend
 
 
