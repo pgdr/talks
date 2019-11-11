@@ -116,15 +116,12 @@ The main benefit of a software development process:
 > management don't trust me, I'll just follow the rules
 
 The hard part is
-@ul
+
 * innovation
-* going out on a limb
-* being vulnerable
-* being humble
+* going out on a limb and being vulnerable
 * trying your best to solve a hard problem
 * ... and improving status quo
-@ulend
-
+* **do difficult math stuff**
 
 
 +++
