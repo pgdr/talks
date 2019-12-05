@@ -63,9 +63,9 @@
 +++
 ##### Theory
 
-* The foundation of computer science is still important
-* Algorithms are crucial to Equinor
-* Statistics is becoming more important by the day
+* Foundation of computer science: still important
+* Algorithms are crucial to Equinor future
+* Statistics becomes more important by the day
 
 +++
 ##### Soft skills
