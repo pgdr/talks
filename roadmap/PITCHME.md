@@ -137,9 +137,11 @@
 
 @ul
 * Statistics
-* Statistical analysis and algorithms
+  * Statistical analysis
+  * Linear algebra
 * Basic algorithms
-* dynamic programming
+  * dynamic programming
+  * graph algorithms
 * Functional programming
 @ulend
 
