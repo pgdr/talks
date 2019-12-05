@@ -57,11 +57,10 @@
 * automation
   * CI/CD
   * deploy
-  * Command line
-  * automation software
+  * Command line and automation software
 * plain text
   * IDE or editor
-  * libraries
+
 
 +++
 ##### Theory
@@ -86,12 +85,13 @@
 
 @ul
 * Test driven development
-* Automated CI/CD
+* DevOps
+  * Automated CI/CD
+  * operation and maintenance
+  * metrics and monitoring
+  * cloud native
 * Open Source
-* metrics and monitoring
-* version control
-* operation and maintenance
-* cloud native
+* Version control, `semver`
 * Accessibility
 @ulend
 
@@ -118,17 +118,15 @@
 
 @ul
 * Linux
-* C++
-* C
-* Qt
-* Rust
-* Docker and Kubernetes
+* C++, C
 * Python
-* git
-* Spark/K8s/SparkOnK8s
-* webassembly
 * Typescript
+* Rust
+* webassembly
 * React
+* Qt
+* Docker and Kubernetes, Spark
+* git
 * A console available text editor (Vi., Emacs)
 @ulend
 
