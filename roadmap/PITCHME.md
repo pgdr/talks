@@ -117,16 +117,16 @@
 
 @ul
 * Linux
-* C++, C
-* Python
+* C++, C, C#, Python (pick 2)
 * Typescript
-* Rust
-* webassembly
+* Rust, Go (pick 1)
+* WebAssembly
 * React
-* Qt
-* Docker and Kubernetes, Spark
+* Docker
+  * Kubernetes
+  * Spark
 * git
-* A console available text editor (Vi., Emacs)
+* Command line text editor
 @ulend
 
 
