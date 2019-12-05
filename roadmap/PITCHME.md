@@ -55,8 +55,7 @@
   * testing
 * automation
   * CI/CD
-  * deploy
-  * Command line and automation software
+  * Command line
 * plain text
   * IDE or editor
 
