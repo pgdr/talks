@@ -100,13 +100,14 @@
 ##### API
 
 @ul
-* GraphQL
-* OAuth 2.0
-* REST
-* cybersecurity
-* Solution / app security
+* Concepts
+  * REST
+  * GraphQL
+* Security
+  * OAuth 2.0
+  * cybersecurity, app security
 * Design and operation of open APIs
-* C4
+  * C4
 @ulend
 
 ---
