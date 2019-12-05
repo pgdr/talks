@@ -16,14 +16,13 @@
 
 ##### Craftsmanship
 
-* Care about your craft
-* A learning journey
-* Strive for excellence
-* principles (`8thlight.com`)
+* Care about your craft (`8thlight.com`)
   * well-crafted software
   * steadily adding value
   * a community of professionals
   * productive partnerships
+* A learning journey
+* Strive for excellence
 
 
 +++
