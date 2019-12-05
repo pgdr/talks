@@ -140,9 +140,11 @@
   * Statistical analysis
   * Linear algebra
 * Basic algorithms
-  * dynamic programming
-  * graph algorithms
-* Functional programming
+  * recursion, dynamic programming
+  * graph algorithms, optimization
+* Programming
+  * Functional programming
+  * Software architecture
 @ulend
 
 
