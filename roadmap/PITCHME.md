@@ -23,6 +23,7 @@
   * productive partnerships
 * A learning journey
 * Strive for excellence
+* Agile manifesto
 
 
 +++
@@ -118,7 +119,7 @@
 @ul
 * Linux
 * C++, C, C#, Python (pick 2)
-* Typescript
+* Typescript, CSS Houdini
 * Rust, Go (pick 1)
 * WebAssembly
 * React
