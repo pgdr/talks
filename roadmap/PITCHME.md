@@ -146,6 +146,7 @@
 * Programming
   * Functional programming
   * Software architecture
+  * `async` programming
 @ulend
 
 
