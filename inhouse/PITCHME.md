@@ -66,7 +66,7 @@ What makes software development different?
 #### Why inhouse development
 
 @ul
-1. **SIB!**
+1. **Software Innovation!**
 @ulend
 
 +++
