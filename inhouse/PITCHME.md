@@ -117,29 +117,39 @@ The main benefit of a software development process:
 
 The hard part is
 
+@ul
 * innovation
 * going out on a limb and being vulnerable
 * trying your best to solve a hard problem
 * ... and improving status quo
 * **do difficult math stuff**
+@ulend
 
 
 +++
 #### challenge: no-slack incompetent project lead
 
 @ul
-* Limited respect for knowledge workers and the craft.
 * Incompetent project leaders.
 * Top-heavy project organization.
+* Limited respect for knowledge workers and the craft.
+* Causes frustration among developers
+* Causes confusions among stakeholders
 * _People under time pressure don't think faster._ (Lister's law)
 @ulend
+
 
 +++
 #### challenge: strategies
 
 > There is an inverse correlation between technical competence and position in professional ladder
 
-— Pål's law
+@ul
+* Strategies made by non-technical leaders lowers trust
+* ... which makes it hard to get everyone to pull in _One Direction_
+@ulend
+
+
 
 +++
 #### challenge: undevelopment
@@ -155,13 +165,6 @@ non-developers doing development: no
 * _(note the omission of **governance**)_
 @ulend
 
-
-+++
-#### challenge: excellence — in what?
-
-* Frankensteinian teams delivering sub-excellence
-* Causes frustration among developers
-* Causes confusions among stakeholders
 
 +++
 #### challenge: the dark side of the shared culture
