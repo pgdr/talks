@@ -4,14 +4,35 @@ _(cc-by-sa 4.0)_
 
 +++
 
-#### Inhouse software development
-
-+++
-
 #### Software Craftsmanship Day
 
 +++
 
+**Cartesian doubt**
+
+We must doubt that the way we work is the best
+
+We must try to improve
+
+1. Always ask your colleagues
+1. Always ask your customer
+1. Always ask your users
+
+how we can be better
+
+
++++
+**Agile Manifesto**
+
+@ul
+1. _Individuals and interactions_ <br>&nbsp;&nbsp;&nbsp;&nbsp;over processes and tools
+1. _Working software_ <br>&nbsp;&nbsp;&nbsp;&nbsp;over comprehensive documentation
+1. _Customer collaboration_ <br>&nbsp;&nbsp;&nbsp;&nbsp;over contract negotiation
+1. _Responding to change_ <br>&nbsp;&nbsp;&nbsp;&nbsp;over following a plan
+@ulend
+
+
++++
 **Software Craftsmanship Manifesto**
 
 @ul
