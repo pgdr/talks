@@ -10,6 +10,34 @@ _(cc-by-sa 4.0)_
 
 **Cartesian doubt**
 
+<!--
+
+What do we actually know?
+
+If we ask everyone what you need to do to run a successful software project, you
+will not get two similar answers.
+
+* Long-lived feature branches vs. continuous integration
+* Strict and automatic style guides vs no style
+* Git commit messages describing what vs why vs how
+* Code generation vs use of macros vs none of that
+* Classes vs functional
+* UML vs C4 vs automatically generated architecture vs nothing
+* Design patterns vs just do it
+* Premature optimization is root of all evil vs is smart
+* Clever vs readable
+* MVC vs MVVM vs microservices vs command line tools vs ...
+* Unix tools and pipes vs applications
+* NoSQL vs SQL
+* Remote development is great vs colocated teams
+* PHP is the sausage cart with three consecutive frowny remarks vs PHP is great
+* Why isn't it written in Node? vs WTH is Node?
+
+Except from automated testing and version control.
+
+-->
+
+
 @ul
 1. Software Craftsmanship is not a static entity
 1. We must always doubt in the way we work
