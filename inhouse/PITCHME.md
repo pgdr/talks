@@ -4,7 +4,83 @@ _(cc-by-sa 4.0)_
 
 +++
 
-#### Inhouse developers
+#### Inhouse software development
+
++++
+
+#### Software Craftsmanship Day
+
++++
+
+**Software Craftsmanship Manifesto**
+
+1. Not only working software,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also well-crafted software
+1. Not only responding to change,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also steadily adding value
+1. Not only individuals and interactions,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also a community of professionals
+1. Not only customer collaboration,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also productive partnerships
+
++++
+**Well-Crafted Software**
+
+@ul
+* We humbly demonstrate our expertise by delivering quality software. We do not inflate our abilities or claim expertise where we have none.
+* We continually master a variety of technologies and techniques. We do not let unfamiliarity dissuade us from using the best tools.
+* We take responsibility for the correctness of our code by testing it thoroughly. We do not tolerate preventable defects.
+@ulend
+
+(_8th light principles_)
+
+
++++
+**Steadily Adding Value**
+
+@ul
+* We estimate with diligence. We do not let fear or pressure make us promise what we can’t deliver.
+* We always apply our best efforts to complete our work. We do not make excuses.
+* We work at a sustainable pace. We do not burn out.
+@ulend
+
+(_8th light principles_)
+
++++
+
+**A Community of Professionals**
+
+@ul
+* We embrace differences of opinion and personality. We do not allow our current practice to impede improvement.
+* We prefer open source tools that we can inspect, evaluate, and improve. We avoid proprietary products that lack transparency.
+* We teach anyone with a willingness to learn. We do not hoard our knowledge or practices.
+@ulend
+
+(_8th light principles_)
+
++++
+
+**Productive Partnerships**
+
+@ul
+* We show respect for our customers and fellow software crafters. We do not act unprofessionally or unethically.
+* We communicate our progress honestly and openly with our customers. We do not conceal or embellish.
+* We partner with our customers to understand their business. We do not propose solutions until we are sure we have found the right problem.
+@ulend
+
+(_8th light principles_)
+
++++
+
+Why is there a software craftsmanship movement? What motivated it? What drives
+it now? One thing; and one thing only.
+
+> We are tired of writing crap.
+
+— Robert C. Martin
+
+---
+
+#### Inhouse software development
+
+
++++
 
 * Enormous cost
 * We don't have the competence
