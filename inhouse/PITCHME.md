@@ -19,6 +19,7 @@ will not get two similar answers.
 
 * Long-lived feature branches vs. continuous integration
 * Strict and automatic style guides vs no style
+* Reviews are (un)necessary, pair programming is great
 * Git commit messages describing what vs why vs how
 * Code generation vs use of macros vs none of that
 * Classes vs functional
@@ -44,7 +45,7 @@ Except from automated testing and version control.
 * We must always try to improve
    * the way we work with software
    * the way we work with colleagues
-   * the way we work with customer
+   * the way we work with customers
    * the way we work with users
 @ulend
 
