@@ -45,7 +45,7 @@ What makes software development different?
   * so very little intuition
   * especially non-developers
 * don't solve the same problem twice, hence more like research
-* **Turing completeness**® (& Church-Turing thesis)
+* Church–Turing thesis
 @ulend
 
 
