@@ -118,7 +118,15 @@ Except from automated testing and version control.
 (_8th light principles_)
 
 +++
+**Software Craftsmanship Manifesto**
 
+1. _well-crafted software_
+1. _steadily adding value_
+1. _a community of professionals_
+1. _productive partnerships_
+
+
++++
 Why is there a software craftsmanship movement?
 
 > We are tired of writing crap.
