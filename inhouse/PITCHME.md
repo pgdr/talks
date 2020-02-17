@@ -39,13 +39,13 @@ Except from automated testing and version control.
 
 
 @ul
-1. Software Craftsmanship is not a static entity
-1. We must always doubt in the way we work
-1. We must always try to improve
-  1. the way we work with software
-  1. the way we work with colleagues
-  1. the way we work with customer
-  1. the way we work with users
+* Software Craftsmanship is not a static entity
+* We must always doubt in the way we work
+* We must always try to improve
+   * the way we work with software
+   * the way we work with colleagues
+   * the way we work with customer
+   * the way we work with users
 @ulend
 
 +++
