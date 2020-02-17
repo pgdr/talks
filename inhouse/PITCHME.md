@@ -214,7 +214,7 @@ What makes software development different?
 1. no language or culture boundaries, timezone
 1. have (access to) domain knowledge
 1. speed of development (weeks vs years)
-1. no off-the-shelf alternatives (e.g. tempest)
+1. we are the only ones who are able
 1. we may build upon _all_ open source software
 1. we build the necessary culture
 1. build expertise ...
