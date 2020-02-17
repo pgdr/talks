@@ -14,10 +14,12 @@ _(cc-by-sa 4.0)_
 
 **Software Craftsmanship Manifesto**
 
-1. Not only working software,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also well-crafted software
-1. Not only responding to change,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also steadily adding value
-1. Not only individuals and interactions,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also a community of professionals
-1. Not only customer collaboration,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also productive partnerships
+@ul
+1. Not only working software,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also _well-crafted software_
+1. Not only responding to change,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also _steadily adding value_
+1. Not only individuals and interactions,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also _a community of professionals_
+1. Not only customer collaboration,<br>&nbsp;&nbsp;&nbsp;&nbsp;but also _productive partnerships_
+@ulend
 
 +++
 **Well-Crafted Software**
@@ -68,8 +70,7 @@ _(cc-by-sa 4.0)_
 
 +++
 
-Why is there a software craftsmanship movement? What motivated it? What drives
-it now? One thing; and one thing only.
+Why is there a software craftsmanship movement?
 
 > We are tired of writing crap.
 
