@@ -10,16 +10,15 @@ _(cc-by-sa 4.0)_
 
 **Cartesian doubt**
 
-We must doubt that the way we work is the best
-
-We must try to improve
-
-1. Always ask your colleagues
-1. Always ask your customer
-1. Always ask your users
-
-how we can be better
-
+@ul
+1. Software Craftsmanship is not a static entity
+1. We must always doubt in the way we work
+1. We must always try to improve
+  1. the way we work with software
+  1. the way we work with colleagues
+  1. the way we work with customer
+  1. the way we work with users
+@ulend
 
 +++
 **Agile Manifesto**
